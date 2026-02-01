@@ -1,0 +1,63 @@
+module ALU (
+    input [31:0] A, B,
+    input ADD, SUB,          // Arithmetic Control Signals
+    input AND, OR, NEG, NOT, // Logic Control Signals
+    input SHR, SHRA, SHL, ROR, ROL, // Shift/Rotate Control Signals
+    output reg [31:0] C      // The Result
+);
+
+    wire [31:0] rca_result;
+    wire rca_cout;
+    
+    // Logic for Subtraction: 
+    // If SUB or NEG is active, we need to invert B (or A for NEG) and add 1.
+    // For standard SUB: A - B = A + (~B) + 1.
+    wire [31:0] B_input;
+    wire c_in_signal;
+
+    // If we are subtracting, invert B. Otherwise, keep B as is.
+    assign B_input = (SUB ? ~B : B); 
+    
+    // If we are subtracting, Carry In must be 1.
+    assign c_in_signal = (SUB ? 1'b1 : 1'b0);
+
+    // Instantiate your RCA
+    RCA my_adder (
+        .A(A), 
+        .B(B_input), 
+        .c_in(c_in_signal), 
+        .result(rca_result), 
+        .c_out(rca_cout)
+    );
+
+    // The Multiplexer Logic to select the correct operation
+    always @(*) begin
+        if (ADD || SUB) begin
+            C = rca_result;
+        end
+        else if (AND) begin
+            C = A & B;
+        end
+        else if (OR) begin
+            C = A | B;
+        end
+        else if (NOT) begin
+            C = ~A;
+        end
+        else if (NEG) begin
+            // Negate is essentially 0 - B, usually handled as 2's complement
+            C = -A; // Note: You might need to use the RCA for this strictly speaking
+        end
+        else if (SHR) begin
+             C = A >> B; // Shift Right
+        end
+        else if (SHL) begin
+             C = A << B; // Shift Left
+        end
+        // ... We will add other shift/rotate logic here later
+        else begin
+            C = 32'b0; // Default case
+        end
+    end
+
+endmodule

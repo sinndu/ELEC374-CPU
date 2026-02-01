@@ -16,6 +16,6 @@ always @ (posedge clock)
 		end
 	end
 	
-assign BusMuxIn <= q[DATA_WIDTH_OUT - 1:0];
+assign BusMuxIn = q[DATA_WIDTH_OUT - 1:0];
 
 endmodule
