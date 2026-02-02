@@ -1,16 +1,16 @@
 module Bus (
 	// Mux
-	 input [31:0] BusMuxIn_R0, BusMuxIn_R1, BusMuxIn_R2, BusMuxIn_R3, 
-    input [31:0] BusMuxIn_R4, BusMuxIn_R5, BusMuxIn_R6, BusMuxIn_R7, 
-    input [31:0] BusMuxIn_R8, BusMuxIn_R9, BusMuxIn_R10, BusMuxIn_R11, 
-    input [31:0] BusMuxIn_R12, BusMuxIn_R13, BusMuxIn_R14, BusMuxIn_R15, 
-    input [31:0] BusMuxIn_HI, BusMuxIn_LO, BusMuxIn_Zhigh, BusMuxIn_Zlow,
-    input [31:0] BusMuxIn_PC, BusMuxIn_MDR, BusMuxIn_InPort, C_Sign_Extended,
+	input [31:0]BusMuxIn_R0, [31:0]BusMuxIn_R1, [31:0]BusMuxIn_R2, [31:0]BusMuxIn_R3, 
+	input [31:0]BusMuxIn_R4, [31:0]BusMuxIn_R5, [31:0]BusMuxIn_R6, [31:0]BusMuxIn_7, 
+	input [31:0]BusMuxIn_R8, [31:0]BusMuxIn_R9, [31:0]BusMuxIn_R10, [31:0]BusMuxIn_R11, 
+	input [31:0]BusMuxIn_R12, [31:0]BusMuxIn_R13, [31:0]BusMuxIn_R14, [31:0]BusMuxIn_R15, 
+	input [31:0]BusMuxIn_HI, [31:0]BusMuxIn_LO, [31:0]BusMuxIn_Zhigh, [31:0]BusMuxIn_Zlow,
+	input [31:0]BusMuxIn_PC, [31:0]BusMuxIn_MDR, [31:0]BusMuxIn_InPort, [31:0]C_Sign_Extended,
 
 	// Encoder
 	input R0Out, R1Out, R2Out, R3Out, R4Out, R5Out, R6Out, R7Out, 
 	input R8Out, R9Out, R10Out, R11Out, R12Out, R13Out, R14Out, R15Out, 
-	input HIOut, LOOut, ZhighOut, ZlowOut, PCOut, MDROut, InPortOut, Cout,
+	input HIOut, LOOut, ZhighOut, ZlowOut, PCOut, MDROut, InPortOut, Cout
 			
 	output wire [31:0]BusMuxOut
 );
