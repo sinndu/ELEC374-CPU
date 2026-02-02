@@ -2,7 +2,7 @@
 
 ## 1. Register File & Storage Modules
 
-- [ ] **Generic 32-bit Register**: Module with `D`, `Q`, `clk`, `clr`, and `Rin` (enable).
+- [X] **Generic 32-bit Register**: Module with `D`, `Q`, `clk`, `clr`, and `Rin` (enable).
 - [ ] **General Purpose Registers**: Instantiate R0 through R15.
 - [ ] **PC (Program Counter)**: 32-bit register with increment logic.
 - [ ] **IR (Instruction Register)**: 32-bit register to hold fetched instructions.
@@ -13,8 +13,8 @@
 
 ## 2. Bus & Interconnects
 
-- [ ] **32-to-5 Encoder**: Logic to convert "out" signals (R0out, PCout, etc.) into a selection index.
-- [ ] **32:1 Bus Multiplexer**: The central hub connecting all register outputs to the common 32-bit bus.
+- [X] **32-to-5 Encoder**: Logic to convert "out" signals (R0out, PCout, etc.) into a selection index.
+- [X] **32:1 Bus Multiplexer**: The central hub connecting all register outputs to the common 32-bit bus.
 - [ ] **MDR (Memory Data Register)**:
   - [ ] Implement `MDMux` (Selects between BusMuxOut and Mdatain).
   - [ ] Implement 32-bit register for MDR.

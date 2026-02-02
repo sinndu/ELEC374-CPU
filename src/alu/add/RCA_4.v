@@ -1,6 +1,10 @@
-module RCA_4bit (
-	input [3:0] A, B,
-	output result);
+module RCA_4 (
+	input [3:0] A,
+	input [3:0] B,
+	input cin,
+	
+	output result
+);
 	
 reg[7:0] result;
 reg[8:0] localCarry;
