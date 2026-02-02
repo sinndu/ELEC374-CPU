@@ -14,6 +14,7 @@ module Booth_Multiplier (
     always @(M or Q or Q_extended) begin
         product = 64'b0; 
         
+        
         for (i = 0; i < 16; i = i + 1) begin
             
             three_bits = Q_extended[2*i + 2 : 2*i]; // Get 3 bits
