@@ -1,45 +1,67 @@
 module ALU (
-    input [31:0] A, B,
-    input ADD, SUB,          
-    input AND, OR, NEG, NOT, 
-    input SHR, SHRA, SHL, ROR, ROL,
-    input MUL, DIV, 
-    output reg [31:0] C, // result  
-	 output wire [63:0] ALU_Out_64 // 64 output for div and mul
+    input [31:0] A, 
+    input [31:0] B,
+    input [4:0] shift_amount,
+
+    //control signals
+    input ADD, SUB, NEG,
+    input AND_op, OR_op, NOT_op,
+    input SHR, SHL, SHRA, ROR, ROL,
+    input MUL, DIV,
+
+    //results
+    output reg [63:0] Z_data_in; // placehold for 64-bit Z register
 );
+    //internal wires to get results from sub-modules
+    wire [31:0] add_sub_res;
+    wire [31:0] logic_res;
+    wire [31:0] shift_res;
+    wire [63:0] mul_res;
+    wire [31:0] div_quotient;
+    wire [31:0] div_remainder;
+    wire cout;
 
-    wire [31:0] rca_result;
-    wire rca_cout;
+	 // Addition/Subtraction
+     wire [31:0] actual_A = (NEG) ? 32'b0 : A; // If NEG is high, set A to 0 for negation
 
-    wire [31:0] rca_A;
-    assign rca_A = (NEG ? 32'b0 : A); // set to 0 for neg
-
-    wire [31:0] rca_B;
-    assign rca_B = (SUB || NEG ? ~B : B); //invert for neg/sub (2s comp)
-
-    wire c_in_signal;
-    assign c_in_signal = (SUB || NEG ? 1'b1 : 1'b0); // carry to 1 for neg/sub (2s comp)
-
-	 // Addition / Subtraction
-    RCA_32 adder ( 
-        .A(rca_A), 
-        .B(rca_B), 
-        .c_in(c_in_signal), 
-        .result(rca_result), 
-        .c_out(rca_cout)
+    ALU_Add_Sub adder_unit ( 
+        .A(actual_A), 
+        .B(B), 
+        .sub_ctrl(SUB | NEG), 
+        .result(add_sub_res), 
+        .c_out(cout)
     );
 	 
-	 // Multiplication
-	 wire [63:0] mul_result;
+     // Logic unit 
+    ALU_LogicUnit logic_unit ( 
+        .A(A), 
+        .B(B), 
+        .AND(AND_op), 
+        .OR(OR_op), 
+        .NOT(NOT_op), 
+        .logic_result(logic_res)
+    );
+    
+     // Shifter
+    ALU_Shifter shifter_unit (
+        .A(A), 
+        .shift_amount(shift_amount), 
+        .SHR(SHR), 
+        .SHRA(SHRA), 
+        .SHL(SHL), 
+        .ROR(ROR), 
+        .ROL(ROL), 
+        .shift_result(shift_res)
+    );
+
+	 // Multiplication  
 	 Booth_Multiplier multiplier (
         .M(A), 
         .Q(B), 
-        .product(mul_result)
+        .product(mul_res)
     );
 	 
 	 // Division
-    wire [31:0] div_quotient;
-    wire [31:0] div_remainder;
     NR_Division divider ( 
         .Q(A), 
         .M(B),
@@ -47,39 +69,27 @@ module ALU (
         .remainder(div_remainder)
     );
 
-    assign ALU_Out_64 = (DIV) ? {div_remainder, div_quotient} : mul_result;
-
+    // Final output multiplexer based on control signals
     always @(*) begin
         if (ADD || SUB || NEG) begin
-            C = rca_result;
+            Z_data_in = {32'b0, add_sub_res}; // Extend to 64 bits
         end
-        else if (AND) begin
-            C = A & B;
+        else if (AND_op || OR_op || NOT_op) begin
+            Z_data_in = {32'b0, logic_res}; // Extend to 64 bits
         end
-        else if (OR) begin
-            C = A | B;
+        else if (SHR || SHL || SHRA || ROR || ROL) begin
+            Z_data_in = {32'b0, shift_res}; // Extend to 64 bits
         end
-        else if (NOT) begin
-            C = ~B; 
+        else if (MUL) begin
+            Z_data_in = mul_res; // Already 64 bits
         end
-        else if (SHR) begin
-             C = A >> B; 
-        end
-        else if (SHL) begin
-             C = A << B; 
-        end
-        else if (SHRA) begin
-             C = $signed(A) >>> B; 
-        end
-        else if (ROR) begin
-             C = (A >> B) | (A << (32 - B));
-        end
-        else if (ROL) begin
-             C = (A << B) | (A >> (32 - B));
+        else if (DIV) begin
+            Z_data_in = {div_remainder, div_quotient}; // Remainder in upper 32 bits, Quotient in lower 32 bits
         end
         else begin
-            C = 32'b0; // default
+            Z_data_in = 64'b0; // Default case
         end
     end
 
 endmodule
+    

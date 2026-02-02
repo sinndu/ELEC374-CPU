@@ -15,19 +15,19 @@
 
 - [X] **32-to-5 Encoder**: Logic to convert "out" signals (R0out, PCout, etc.) into a selection index.
 - [X] **32:1 Bus Multiplexer**: The central hub connecting all register outputs to the common 32-bit bus.
-- [ ] **MDR (Memory Data Register)**:
-  - [ ] Implement `MDMux` (Selects between BusMuxOut and Mdatain).
-  - [ ] Implement 32-bit register for MDR.
+- [X] **MDR (Memory Data Register)**:
+  - [X] Implement `MDMux` (Selects between BusMuxOut and Mdatain).
+  - [X] Implement 32-bit register for MDR.
 
 ## 3. Arithmetic Logic Unit (ALU)
 
-- [ ] **Logical Ops**: `AND`, `OR`, `NOT`.
-- [ ] **Basic Arithmetic**: `Add`, `Sub` (using Carry-Lookahead or Ripple-Carry logic).
-- [ ] **Shift/Rotate Ops**: `SHR`, `SHRA`, `SHL`, `ROR`, `ROL`.
-- [ ] **Complex Ops**:
-  - [ ] `MUL`: 32x32 Booth's Algorithm or Carry-Save.
-  - [ ] `DIV`: 32-bit Non-restoring or Restoring Division.
-  - [ ] `NEG`: Two's complement negation logic.
+- [X] **Logical Ops**: `AND`, `OR`, `NOT`.
+- [X] **Basic Arithmetic**: `Add`, `Sub` (using Carry-Lookahead or Ripple-Carry logic).
+- [X] **Shift/Rotate Ops**: `SHR`, `SHRA`, `SHL`, `ROR`, `ROL`.
+- [X] **Complex Ops**:
+  - [X] `MUL`: 32x32 Booth's Algorithm or Carry-Save.
+  - [X] `DIV`: 32-bit Non-restoring or Restoring Division.
+  - [X] `NEG`: Two's complement negation logic.
 
 ## 4. System Integration (Top-Level Datapath)
 

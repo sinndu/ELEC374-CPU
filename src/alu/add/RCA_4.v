@@ -2,24 +2,28 @@ module RCA_4 (
 	input [3:0] A,
 	input [3:0] B,
 	input cin,
-	
-	output result
+	output [3:0] sum,
+	output cout
 );
 	
-reg[7:0] result;
-reg[8:0] localCarry;
+	reg[3:0] s;
+	reg[4:0] c;
 
-integer i;
+	integer i;
 
-always@(A or B)
-	begin
-		localCarry = 9'd0;
-		for(i = 0; i < 8; i = i + 1)
-			begin
-				result[i] = A[i]^B[i]^localCarry[i];
-				localCarry[i + 1] = (A[i] & B[i]) | (A[i] & localCarry[i]) | (B[i] & localCarry[i]);
-			end
+	always @(*) begin
+		c[0] = cin;
+
+		for(i = 0; i < 4; i = i + 1) begin
+			// sum = A XOR B XOR CarryIn
+			s[i] = A[i] ^ B[i] ^ c[i]
+
+			// carry = (A AND B) OR (CarryIn AND (A XOR B))
+			c[i+1] = (A[i] & B[i] | (c[i] & (A ^ B)));
+		end
 	end
 
+	assign sum = s;
+	assign cout = c[4]; //final bit = carryout
 
 endmodule
