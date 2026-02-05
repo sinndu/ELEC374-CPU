@@ -4,9 +4,10 @@ module ALU (
     input AND, OR, NEG, NOT, 
     input SHR, SHRA, SHL, ROR, ROL,
     input MUL, DIV, 
-    output reg [31:0] C, // result  
-	 output wire [63:0] ALU_Out_64 // 64 output for div and mul
+	output wire [63:0] ALU_Out_64 // 64 output for div and mul
 );
+
+    reg [63:0] C, // result 
 
     wire [31:0] rca_result;
     wire rca_cout;
