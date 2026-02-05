@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/QueensU/ELEC374/ELEC374-CPU/simulation/modelsim
+vALU
+!s110 1770070016
+!i10b 1
+!s100 e8ai:_314fnhJf;co5Fzd3
+II8jN_F`E=l=;74i[lEh:P0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1770069954
+8C:/QueensU/ELEC374/ELEC374-CPU/src/alu/ALU.v
+FC:/QueensU/ELEC374/ELEC374-CPU/src/alu/ALU.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1770070016.000000
+!s107 C:/QueensU/ELEC374/ELEC374-CPU/src/alu/ALU.v|
+!s90 -reportprogress|300|-work|work|C:/QueensU/ELEC374/ELEC374-CPU/src/alu/ALU.v|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+n@a@l@u
+vALU_tb
+!s110 1770070013
+!i10b 1
+!s100 U0072j6RPFgTz@6KXz_JE0
+IQkBPS[7oc^Oh4G`;gCF5U3
+R1
+R0
+w1770069749
+8C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v
+FC:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1770070013.000000
+!s107 C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v|
+!s90 -reportprogress|300|-work|work|C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v|
+!i113 1
+R3
+R4
+n@a@l@u_tb
+vBooth_Multiplier
+!s110 1770070019
+!i10b 1
+!s100 X<H20IBE<`jI6@<i0cZdR0
+IgGZTIm8QADQjSE`i7G0AP0
+R1
+R0
+w1770066883
+8C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v
+FC:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1770070019.000000
+!s107 C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v|
+!s90 -reportprogress|300|-work|work|C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v|
+!i113 1
+R3
+R4
+n@booth_@multiplier
+vNR_Division
+!s110 1770070021
+!i10b 1
+!s100 gh2eOA`Yh2HYVC<`AW7eW0
+IUB4H8H@di=D^YnR=[H=NN1
+R1
+R0
+w1770064261
+8C:/QueensU/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v
+FC:/QueensU/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1770070021.000000
+!s107 C:/QueensU/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v|
+!s90 -reportprogress|300|-work|work|C:/QueensU/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v|
+!i113 1
+R3
+R4
+n@n@r_@division

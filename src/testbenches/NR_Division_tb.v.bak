@@ -1,0 +1,53 @@
+`timescale 1ns/1ps
+
+module NR_Division_tb;
+
+    reg [31:0] Q; 
+    reg [31:0] M; 
+
+    wire [31:0] quotient;
+    wire [31:0] remainder;
+
+    NR_Division div_tb (
+        .Q(Q), 
+        .M(M), 
+        .quotient(quotient), 
+        .remainder(remainder)
+    );
+
+    initial begin
+        $display("Starting Non-Restoring Division Tests:");
+
+        Q = 20; M = 4; // No remainder
+        #10;
+        if (quotient === 5 && remainder === 0) 
+            $display("PASS: 20 / 4 = 5 (rem 0)");
+        else 
+            $display("FAIL: 20 / 4. Expected 5 r0, Got %d r%d", quotient, remainder);
+
+        Q = 20; M = 3; // Remainder
+        #10;
+        if (quotient === 6 && remainder === 2) 
+            $display("PASS: 20 / 3 = 6 (rem 2)");
+        else 
+            $display("FAIL: 20 / 3. Expected 6 r2, Got %d r%d", quotient, remainder);
+
+        Q = 1000; M = 10; // Large Q
+        #10;
+        if (quotient === 100 && remainder === 0) 
+            $display("PASS: 1000 / 10 = 100");
+        else 
+            $display("FAIL: 1000 / 10. Expected 100, Got %d", quotient);
+
+        Q = 5; M = 10; // Large M
+        #10;
+        if (quotient === 0 && remainder === 5) 
+            $display("PASS: 5 / 10 = 0 (rem 5)");
+        else 
+            $display("FAIL: 5 / 10. Expected 0 r5, Got %d r%d", quotient, remainder);
+
+        $display("Division Tests Complete.");
+        $stop;
+    end
+
+endmodule

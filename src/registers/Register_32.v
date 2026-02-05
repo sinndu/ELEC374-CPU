@@ -8,7 +8,7 @@ module Register_32 #(parameter WIDTH = 32) (
 
 	reg [WIDTH - 1:0] storage;
 
-	always @ (posedge clock) begin
+	always @ (posedge clk) begin
 		if (clr) begin
 			storage <= {WIDTH{1'b0}};
 		end

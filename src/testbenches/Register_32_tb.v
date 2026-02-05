@@ -1,0 +1,69 @@
+`timescale 1ns/1ps
+
+module Register_32_tb;
+
+    reg clk;
+    reg clr;
+    reg enable;
+    reg [31:0] d;
+    wire [31:0] q;
+
+    Register_32 reg_tb (
+        .clk(clk), 
+        .clr(clr), 
+        .enable(enable), 
+        .d(d), 
+        .q(q)
+    );
+
+    initial begin // Setup clock
+        clk = 0;
+        forever #10 clk = ~clk;
+    end
+
+    initial begin
+        $display("Starting Register_32 Tests:");
+
+        clr = 0;
+        enable = 0;
+        d = 0;
+
+        #20;
+
+        $display("Test 1: Clearing Register:"); // Clearing
+        d = 32'hFFFFFFFF; 
+        enable = 1;       
+        clr = 1;          
+        #20;              
+        
+        if (q === 0) 
+            $display("PASS: Reset worked. Q = %h", q);
+        else 
+            $display("FAIL: Reset failed. Q = %h (Expected 0)", q);
+
+        $display("Test 2: Writing Data:"); // Load into Q
+        clr = 0;          
+        enable = 1;       
+        d = 32'hA5A5A5A5; 
+        #20;
+        
+        if (q === 32'hA5A5A5A5) 
+            $display("PASS: Write successful. Q = %h", q);
+        else 
+            $display("FAIL: Write failed. Q = %h (Expected A5A5A5A5)", q);
+
+        $display("Test 3: Holding Data:"); // Write disable
+        enable = 0;       
+        d = 32'h12345678; 
+        #20;
+        
+        if (q === 32'hA5A5A5A5) // Should still have old value !!! 
+            $display("PASS: Hold successful. Q = %h (Input was %h)", q, d);
+        else 
+            $display("FAIL: Hold failed. Register updated when disabled? Q = %h", q);
+
+        $display("Register Tests Complete.");
+        $stop;
+    end
+      
+endmodule

@@ -17,8 +17,8 @@ module Booth_Multiplier (
         
         for (i = 0; i < 16; i = i + 1) begin
             
-            three_bits = Q_extended[2*i + 2 : 2*i]; // Get 3 bits
-            
+				three_bits = Q_extended[2*i +: 3];  
+          
             partial_product = 64'b0;
 
             case (three_bits) // Get value from table for bit pair

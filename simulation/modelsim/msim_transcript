@@ -1,0 +1,87 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do CPU_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul {C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:06:43 on Feb 02,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul" C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v 
+# -- Compiling module Booth_Multiplier
+# 
+# Top level modules:
+# 	Booth_Multiplier
+# End time: 17:06:43 on Feb 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:06:53 on Feb 02,2026
+# vlog -reportprogress 300 -work work C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v 
+# -- Compiling module ALU_tb
+# 
+# Top level modules:
+# 	ALU_tb
+# End time: 17:06:53 on Feb 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/QueensU/ELEC374/ELEC374-CPU/src/alu/ALU.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:06:56 on Feb 02,2026
+# vlog -reportprogress 300 -work work C:/QueensU/ELEC374/ELEC374-CPU/src/alu/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 17:06:56 on Feb 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:06:59 on Feb 02,2026
+# vlog -reportprogress 300 -work work C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v 
+# -- Compiling module Booth_Multiplier
+# 
+# Top level modules:
+# 	Booth_Multiplier
+# End time: 17:06:59 on Feb 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/QueensU/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:07:01 on Feb 02,2026
+# vlog -reportprogress 300 -work work C:/QueensU/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v 
+# -- Compiling module NR_Division
+# 
+# Top level modules:
+# 	NR_Division
+# End time: 17:07:01 on Feb 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -l msim_transcript work.ALU_tb
+# vsim -gui -l msim_transcript work.ALU_tb 
+# Start time: 17:07:11 on Feb 02,2026
+# Loading work.ALU_tb
+# Loading work.ALU
+# Loading work.Booth_Multiplier
+# Loading work.NR_Division
+run -all
+# Starting ALU Tests:
+# PASS: AND Correct
+# PASS: OR Correct
+# PASS: NOT Correct
+# PASS: MUL 100 * 100 = 10000
+# PASS: DIV 100 / 4 = 25 r0
+# PASS: SHL 1 << 4 = 16
+# PASS: SHR 16 >> 2 = 4
+# PASS: ROL Correct
+# PASS: ROR Correct
+# ALU Logic & Shift Tests Complete.
+# ** Note: $stop    : C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v(101)
+#    Time: 240 ns  Iteration: 0  Instance: /ALU_tb
+# Break in Module ALU_tb at C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v line 101
+# End time: 17:12:00 on Feb 02,2026, Elapsed time: 0:04:49
+# Errors: 0, Warnings: 0

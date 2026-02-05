@@ -21,14 +21,14 @@ module ALU (
     wire c_in_signal;
     assign c_in_signal = (SUB || NEG ? 1'b1 : 1'b0); // carry to 1 for neg/sub (2s comp)
 
-	 // Addition / Subtraction
-    RCA_32 adder ( 
-        .A(rca_A), 
-        .B(rca_B), 
-        .c_in(c_in_signal), 
-        .result(rca_result), 
-        .c_out(rca_cout)
-    );
+//	 // Addition / Subtraction
+//    RCA_32 adder ( 
+//        .A(rca_A), 
+//        .B(rca_B), 
+//        .c_in(c_in_signal), 
+//        .result(rca_result), 
+//        .c_out(rca_cout)
+//    );
 	 
 	 // Multiplication
 	 wire [63:0] mul_result;
@@ -52,7 +52,7 @@ module ALU (
 
     always @(*) begin
         if (ADD || SUB || NEG) begin
-            C = rca_result;
+//            C = rca_result;
         end
         else if (AND) begin
             C = A & B;
