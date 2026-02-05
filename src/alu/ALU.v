@@ -1,32 +1,37 @@
 module ALU (
     input [31:0] A, B,
-    input [4:0] shift_amount,
-
-    //control signals
-    input ADD, SUB, NEG,
-    input AND, OR, NOT,
-    input SHR, SHL, SHRA, ROR, ROL,
-    input MUL, DIV,
-
-    //results
-    output reg [63:0] Z_data_in
+    input ADD, SUB,          
+    input AND, OR, NEG, NOT, 
+    input SHR, SHRA, SHL, ROR, ROL,
+    input MUL, DIV, 
+	output wire [63:0] ALU_Out_64 // 64 output for div and mul
 );
-    //internal wires to get results from sub-modules
-    wire [31:0] add_sub_res;
-    wire [63:0] mul_res;
-    wire [31:0] div_quotient, div_remainder;
-    wire cout;
 
-	 // Addition/Subtraction module
-    ALU_Add_Sub adder_unit (
-        .A((NEG) ? 32'b0 : A), 
-        .B(B), 
-        .sub_ctrl(SUB | NEG), 
-        .result(add_sub_res), 
-        .c_out(cout)
-    );
+    reg [63:0] C, // result 
 
-	 // Multiplication  
+    wire [31:0] rca_result;
+    wire rca_cout;
+
+    wire [31:0] rca_A;
+    assign rca_A = (NEG ? 32'b0 : A); // set to 0 for neg
+
+    wire [31:0] rca_B;
+    assign rca_B = (SUB || NEG ? ~B : B); //invert for neg/sub (2s comp)
+
+    wire c_in_signal;
+    assign c_in_signal = (SUB || NEG ? 1'b1 : 1'b0); // carry to 1 for neg/sub (2s comp)
+
+//	 // Addition / Subtraction
+//    RCA_32 adder ( 
+//        .A(rca_A), 
+//        .B(rca_B), 
+//        .c_in(c_in_signal), 
+//        .result(rca_result), 
+//        .c_out(rca_cout)
+//    );
+	 
+	 // Multiplication
+	 wire [63:0] mul_result;
 	 Booth_Multiplier multiplier (
         .M(A), .Q(B), .product(mul_res)
     );
@@ -43,7 +48,7 @@ module ALU (
 
         // addition/subtraction/negation unit
         if (ADD || SUB || NEG) begin
-            Z_data_in = { {32{add_sub_res[31]}}, add_sub_res};
+//            C = rca_result;
         end
 
         // internal logic unit
