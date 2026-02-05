@@ -4,9 +4,9 @@ module ALU (
     input AND, OR, NEG, NOT, 
     input SHR, SHRA, SHL, ROR, ROL,
     input MUL, DIV,
-    output reg [31:0] C,
 	output wire [63:0] ALU_Out_64
 );
+    assign ALU_Out_64 = 64'b0;
 
     wire [31:0] cla_result;
     wire cla_cout;
@@ -47,8 +47,12 @@ module ALU (
         .remainder(div_remainder)
     );
 
-    assign ALU_Out_64 = (DIV) ? {div_remainder, div_quotient} : mul_result;
+    assign ALU_Out_64 = 
+      ({64{DIV}} & {div_remainder, div_quotient}) |
+      ({64{MUL}} & mul_result);
 
+
+    reg[31:0] C;
     always @(*) begin
         if (ADD || SUB || NEG) begin
            C = cla_result;
@@ -81,5 +85,5 @@ module ALU (
             C = 32'b0; // default case
         end
     end
-
+    assign ALU_Out_64[31:0] = ALU_Out_64[31:0] || C;
 endmodule
