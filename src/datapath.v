@@ -7,6 +7,7 @@ module datapath(
 
     //control signals
     input wire PCin, PCout,
+    input wire IncPC,
     input wire IRin,
     input wire MARin, MDRin, MDRout,
     input wire HIin, HIout, LOin, LOout,
@@ -65,7 +66,17 @@ wire [31:0] IR_wire; //IR output does not feed back into the bus
 Register_32 IR(clock, clear, IRin, BusMuxOut, IR_wire);
 
 //control
-Register_32 PC(clock, clear, PCin, BusMuxOut, BusMuxIn_PC);
+
+//PC incrementation logic
+localparam [31:0] PC_INC = 32'd4; //increment by 4
+
+wire [31:0] PC_added;
+assign PC_added = BusMuxIn_PC + PC_INC;
+
+wire [31:0] PC_next;
+assign PC_next = IncPC ? PC_added : BusMuxOut;
+
+Register_32 PC(clock, clear, PCin | IncPC, PC_next, BusMuxIn_PC);
 
 wire [31:0] MAR_wire;
 Register_32 MAR(clock, clear, MARin, BusMuxOut, MAR_wire);
