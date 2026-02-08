@@ -1,8 +1,8 @@
 // and datapath_tb.v file: <This is the filename>
 `timescale 1ns/10ps
-module DataPath_tb;
+module DataPath_tb_and;
     reg [3:0] reg_select;
-    reg PCout, Zlowout, MDRout, Rout; // add any other signals to see in your simulation
+    reg PCout, Zlowout, MDRout, Rout;
     reg MARin, Zin, PCin, MDRin, IRin, Yin;
     reg Read, Rin;
     reg Clock, clear;

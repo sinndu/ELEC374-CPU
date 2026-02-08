@@ -13,7 +13,7 @@ module datapath(
     input wire Yin, Zin, ZHighout, ZLowout, 
     input wire InPortin, InPortout,
     input wire OutPortin, OutPortout,
-    input wire Cout,
+    input wire Cin, Cout,
     input wire [3:0] reg_select,
     input wire Rin, Rout, 
     input wire [3:0] ALU_operation
@@ -61,6 +61,8 @@ Register_32 R15(clock, clear, reg_in[15], BusMuxOut, BusMuxIn_R15);
 MDR MDR(clock, clear, MDRin, read, BusMuxOut, in_memory_data, BusMuxIn_MDR);
 Register_32 HI(clock, clear, HIin, BusMuxOut, BusMuxIn_HI);
 Register_32 LO(clock, clear, LOin, BusMuxOut, BusMuxIn_LO);
+
+Register_32 C(clock, clear, Cin, BusMuxOut, C_Sign_Extended);
 
 wire [31:0] IR_wire; //IR output does not feed back into the bus
 Register_32 IR(clock, clear, IRin, BusMuxOut, IR_wire);
