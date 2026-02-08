@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPU
-Mon Feb 02 17:06:27 2026
+Thu Feb 05 17:25:01 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Feb 02 17:06:27 2026       ;
+; Analysis & Synthesis Status     ; Successful - Thu Feb 05 17:25:01 2026       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; CPU                                         ;
 ; Top-level Entity Name           ; Booth_Multiplier                            ;
@@ -155,27 +155,30 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 20          ;
-; Maximum allowed            ; 14          ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 7           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                  ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
-; src/alu/mul/Booth_Multiplier.v   ; yes             ; User Verilog HDL File  ; C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                            ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+; src/alu/mul/Booth_Multiplier.v   ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -288,7 +291,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -298,30 +301,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Feb 02 17:06:09 2026
+    Info: Processing started: Thu Feb 05 17:24:44 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/booth_multiplier_tb.v
-    Info (12023): Found entity 1: Booth_Multiplier_tb File: C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/Booth_Multiplier_tb.v Line: 3
+    Info (12023): Found entity 1: Booth_Multiplier_tb File: C:/Users/raele/ELEC374-CPU/src/testbenches/Booth_Multiplier_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/registers/register_32.v
-    Info (12023): Found entity 1: Register_32 File: C:/QueensU/ELEC374/ELEC374-CPU/src/registers/Register_32.v Line: 1
+    Info (12023): Found entity 1: Register_32 File: C:/Users/raele/ELEC374-CPU/src/registers/Register_32.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/bus/mdr.v
-    Info (12023): Found entity 1: MDR File: C:/QueensU/ELEC374/ELEC374-CPU/src/bus/MDR.v Line: 1
+    Info (12023): Found entity 1: MDR File: C:/Users/raele/ELEC374-CPU/src/bus/MDR.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/bus/bus.v
-    Info (12023): Found entity 1: Bus File: C:/QueensU/ELEC374/ELEC374-CPU/src/bus/Bus.v Line: 1
+    Info (12023): Found entity 1: Bus File: C:/Users/raele/ELEC374-CPU/src/bus/Bus.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/mul/booth_multiplier.v
-    Info (12023): Found entity 1: Booth_Multiplier File: C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v Line: 1
+    Info (12023): Found entity 1: Booth_Multiplier File: C:/Users/raele/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/div/nr_division.v
-    Info (12023): Found entity 1: NR_Division File: C:/QueensU/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v Line: 1
+    Info (12023): Found entity 1: NR_Division File: C:/Users/raele/ELEC374-CPU/src/alu/div/NR_Division.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/alu.v
-    Info (12023): Found entity 1: ALU File: C:/QueensU/ELEC374/ELEC374-CPU/src/alu/ALU.v Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/raele/ELEC374-CPU/src/alu/ALU.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/nr_division_tb.v
-    Info (12023): Found entity 1: NR_Division_tb File: C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/NR_Division_tb.v Line: 3
+    Info (12023): Found entity 1: NR_Division_tb File: C:/Users/raele/ELEC374-CPU/src/testbenches/NR_Division_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/register_32_tb.v
-    Info (12023): Found entity 1: Register_32_tb File: C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/Register_32_tb.v Line: 3
+    Info (12023): Found entity 1: Register_32_tb File: C:/Users/raele/ELEC374-CPU/src/testbenches/Register_32_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/alu_tb.v
-    Info (12023): Found entity 1: ALU_tb File: C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v Line: 3
+    Info (12023): Found entity 1: ALU_tb File: C:/Users/raele/ELEC374-CPU/src/testbenches/ALU_tb.v Line: 3
 Info (12127): Elaborating entity "Booth_Multiplier" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -331,9 +334,9 @@ Info (21057): Implemented 1064 device resources after synthesis - the final reso
     Info (21059): Implemented 64 output pins
     Info (21061): Implemented 936 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4853 megabytes
-    Info: Processing ended: Mon Feb 02 17:06:27 2026
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:38
+    Info: Peak virtual memory: 4850 megabytes
+    Info: Processing ended: Thu Feb 05 17:25:01 2026
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:33
 
 
