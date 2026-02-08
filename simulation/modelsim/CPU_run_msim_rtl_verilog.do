@@ -17,11 +17,11 @@ vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul
 vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/div {C:/QueensU/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v}
 vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu {C:/QueensU/ELEC374/ELEC374-CPU/src/alu/ALU.v}
 
-vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/DataPath {C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_neg.v}
+vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_sub.v}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  DataPath_tb_neg
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  DataPath_tb_sub
 
 add wave *
 view structure
 view signals
-run 500 ns
+run -all

@@ -1,9 +1,5 @@
 Analysis & Synthesis report for CPU
-<<<<<<< HEAD
-Thu Feb 05 17:25:01 2026
-=======
-Sat Feb 07 20:10:31 2026
->>>>>>> b5187a75eb338420f1624d6621b92a81efe0df34
+Sun Feb 08 15:46:32 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,24 +33,25 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  25. Parameter Settings for User Entity Instance: MDR:MDR|Register_32:MDR_Reg
  26. Parameter Settings for User Entity Instance: Register_32:HI
  27. Parameter Settings for User Entity Instance: Register_32:LO
- 28. Parameter Settings for User Entity Instance: Register_32:IR
- 29. Parameter Settings for User Entity Instance: Register_32:PC
- 30. Parameter Settings for User Entity Instance: Register_32:MAR
- 31. Parameter Settings for User Entity Instance: Register_32:InPort
- 32. Parameter Settings for User Entity Instance: Register_32:OutPort
- 33. Parameter Settings for User Entity Instance: Register_32:RY
- 34. Parameter Settings for User Entity Instance: Register_32:RZhigh
- 35. Parameter Settings for User Entity Instance: Register_32:RZlow
- 36. Port Connectivity Checks: "ALU:alu_op|CLA_32:adder|CLA_16:high_16"
- 37. Port Connectivity Checks: "ALU:alu_op|CLA_32:adder|CLA_16:low_16"
- 38. Port Connectivity Checks: "ALU:alu_op|CLA_32:adder"
- 39. Port Connectivity Checks: "Register_32:OutPort"
- 40. Port Connectivity Checks: "Register_32:MAR"
- 41. Port Connectivity Checks: "Register_32:IR"
- 42. Post-Synthesis Netlist Statistics for Top Partition
- 43. Elapsed Time Per Partition
- 44. Analysis & Synthesis Messages
- 45. Analysis & Synthesis Suppressed Messages
+ 28. Parameter Settings for User Entity Instance: Register_32:C
+ 29. Parameter Settings for User Entity Instance: Register_32:IR
+ 30. Parameter Settings for User Entity Instance: Register_32:PC
+ 31. Parameter Settings for User Entity Instance: Register_32:MAR
+ 32. Parameter Settings for User Entity Instance: Register_32:InPort
+ 33. Parameter Settings for User Entity Instance: Register_32:OutPort
+ 34. Parameter Settings for User Entity Instance: Register_32:RY
+ 35. Parameter Settings for User Entity Instance: Register_32:RZhigh
+ 36. Parameter Settings for User Entity Instance: Register_32:RZlow
+ 37. Port Connectivity Checks: "ALU:alu_op|CLA_32:adder|CLA_16:high_16"
+ 38. Port Connectivity Checks: "ALU:alu_op|CLA_32:adder|CLA_16:low_16"
+ 39. Port Connectivity Checks: "ALU:alu_op|CLA_32:adder"
+ 40. Port Connectivity Checks: "Register_32:OutPort"
+ 41. Port Connectivity Checks: "Register_32:MAR"
+ 42. Port Connectivity Checks: "Register_32:IR"
+ 43. Post-Synthesis Netlist Statistics for Top Partition
+ 44. Elapsed Time Per Partition
+ 45. Analysis & Synthesis Messages
+ 46. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -80,18 +77,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-<<<<<<< HEAD
-; Analysis & Synthesis Status     ; Successful - Thu Feb 05 17:25:01 2026       ;
-=======
-; Analysis & Synthesis Status     ; Successful - Sat Feb 07 20:10:31 2026       ;
->>>>>>> b5187a75eb338420f1624d6621b92a81efe0df34
+; Analysis & Synthesis Status     ; Successful - Sun Feb 08 15:46:32 2026       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; CPU                                         ;
 ; Top-level Entity Name           ; datapath                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 96                                          ;
+; Total pins                      ; 97                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -196,32 +189,6 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-<<<<<<< HEAD
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 10          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 7           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
-;     Processor 5            ;   0.0%      ;
-;     Processor 6            ;   0.0%      ;
-;     Processor 7            ;   0.0%      ;
-+----------------------------+-------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                            ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                              ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
-; src/alu/mul/Booth_Multiplier.v   ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
-=======
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
@@ -250,7 +217,6 @@ refer to the applicable agreement for further details.
 ; src/alu/div/NR_Division.v        ; yes             ; User Verilog HDL File  ; C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v      ;         ;
 ; src/alu/ALU.v                    ; yes             ; User Verilog HDL File  ; C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v                  ;         ;
 +----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------+---------+
->>>>>>> b5187a75eb338420f1624d6621b92a81efe0df34
 
 
 +-----------------------------------------------------+
@@ -269,13 +235,13 @@ refer to the applicable agreement for further details.
 ;                                             ;       ;
 ; Dedicated logic registers                   ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 96    ;
+; I/O pins                                    ; 97    ;
 ;                                             ;       ;
 ; Total DSP Blocks                            ; 0     ;
 ;                                             ;       ;
 ; Maximum fan-out node                        ; clock ;
 ; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 96    ;
+; Total fan-out                               ; 97    ;
 ; Average fan-out                             ; 0.50  ;
 +---------------------------------------------+-------+
 
@@ -285,7 +251,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |datapath                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 96   ; 0            ; |datapath           ; datapath    ; work         ;
+; |datapath                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 97   ; 0            ; |datapath           ; datapath    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -495,6 +461,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Register_32:C ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 32    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Register_32:IR ;
 +----------------+-------+------------------------------------+
@@ -636,7 +612,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------+---------------------------------+
 ; Type              ; Count                           ;
 +-------------------+---------------------------------+
-; boundary_port     ; 96                              ;
+; boundary_port     ; 97                              ;
 ;                   ;                                 ;
 ; Max LUT depth     ; 0.00                            ;
 ; Average LUT depth ; 0.00                            ;
@@ -648,11 +624,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-<<<<<<< HEAD
-; Top            ; 00:00:03     ;
-=======
 ; Top            ; 00:00:00     ;
->>>>>>> b5187a75eb338420f1624d6621b92a81efe0df34
 +----------------+--------------+
 
 
@@ -662,49 +634,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-<<<<<<< HEAD
-    Info: Processing started: Thu Feb 05 17:24:44 2026
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/booth_multiplier_tb.v
-    Info (12023): Found entity 1: Booth_Multiplier_tb File: C:/Users/raele/ELEC374-CPU/src/testbenches/Booth_Multiplier_tb.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/registers/register_32.v
-    Info (12023): Found entity 1: Register_32 File: C:/Users/raele/ELEC374-CPU/src/registers/Register_32.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/bus/mdr.v
-    Info (12023): Found entity 1: MDR File: C:/Users/raele/ELEC374-CPU/src/bus/MDR.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/bus/bus.v
-    Info (12023): Found entity 1: Bus File: C:/Users/raele/ELEC374-CPU/src/bus/Bus.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/alu/mul/booth_multiplier.v
-    Info (12023): Found entity 1: Booth_Multiplier File: C:/Users/raele/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/alu/div/nr_division.v
-    Info (12023): Found entity 1: NR_Division File: C:/Users/raele/ELEC374-CPU/src/alu/div/NR_Division.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/alu/alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/raele/ELEC374-CPU/src/alu/ALU.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/nr_division_tb.v
-    Info (12023): Found entity 1: NR_Division_tb File: C:/Users/raele/ELEC374-CPU/src/testbenches/NR_Division_tb.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/register_32_tb.v
-    Info (12023): Found entity 1: Register_32_tb File: C:/Users/raele/ELEC374-CPU/src/testbenches/Register_32_tb.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/alu_tb.v
-    Info (12023): Found entity 1: ALU_tb File: C:/Users/raele/ELEC374-CPU/src/testbenches/ALU_tb.v Line: 3
-Info (12127): Elaborating entity "Booth_Multiplier" for the top level hierarchy
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1064 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 64 input pins
-    Info (21059): Implemented 64 output pins
-    Info (21061): Implemented 936 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4850 megabytes
-    Info: Processing ended: Thu Feb 05 17:25:01 2026
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:33
-=======
-    Info: Processing started: Sat Feb 07 20:09:58 2026
+    Info: Processing started: Sun Feb 08 15:45:35 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_and.v
+    Info (12023): Found entity 1: DataPath_tb_and File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_and.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/add/rca_4.v
     Info (12023): Found entity 1: RCA_4 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/RCA_4.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/add/pfa.v
@@ -717,8 +652,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/alu
     Info (12023): Found entity 1: CLA_4 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_4.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/add/alu_add_sub.v
     Info (12023): Found entity 1: ALU_Add_Sub File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/ALU_Add_Sub.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath_tb.v
-    Info (12023): Found entity 1: DataPath_tb File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/datapath.v
     Info (12023): Found entity 1: datapath File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/booth_multiplier_tb.v
@@ -741,22 +674,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/tes
     Info (12023): Found entity 1: Register_32_tb File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Register_32_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/alu_tb.v
     Info (12023): Found entity 1: ALU_tb File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_or.v
+    Info (12023): Found entity 1: DataPath_tb_or File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_or.v Line: 3
 Info (12127): Elaborating entity "datapath" for the top level hierarchy
 Info (12128): Elaborating entity "Register_32" for hierarchy "Register_32:R0" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 42
 Info (12128): Elaborating entity "MDR" for hierarchy "MDR:MDR" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 61
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu_op" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 100
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu_op" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 102
 Info (12128): Elaborating entity "CLA_32" for hierarchy "ALU:alu_op|CLA_32:adder" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v Line: 30
 Info (12128): Elaborating entity "CLA_16" for hierarchy "ALU:alu_op|CLA_32:adder|CLA_16:low_16" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v Line: 17
 Info (12128): Elaborating entity "CLA_4" for hierarchy "ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v Line: 14
 Info (12128): Elaborating entity "PFA" for hierarchy "ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa0" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_4.v Line: 13
 Info (12128): Elaborating entity "Booth_Multiplier" for hierarchy "ALU:alu_op|Booth_Multiplier:multiplier" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v Line: 38
 Info (12128): Elaborating entity "NR_Division" for hierarchy "ALU:alu_op|NR_Division:divider" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v Line: 48
-Info (12128): Elaborating entity "Bus" for hierarchy "Bus:bus" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 120
+Info (12128): Elaborating entity "Bus" for hierarchy "Bus:bus" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 122
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/output_files/CPU.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 96 input pin(s) that do not drive logic
+Warning (21074): Design contains 97 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "clock" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 2
     Warning (15610): No output dependent on input pin "clear" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 2
     Warning (15610): No output dependent on input pin "in_memory_data[0]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
@@ -842,6 +777,7 @@ Warning (21074): Design contains 96 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "InPortout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 14
     Warning (15610): No output dependent on input pin "OutPortin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 15
     Warning (15610): No output dependent on input pin "OutPortout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 15
+    Warning (15610): No output dependent on input pin "Cin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 16
     Warning (15610): No output dependent on input pin "Cout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 16
     Warning (15610): No output dependent on input pin "reg_select[0]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 17
     Warning (15610): No output dependent on input pin "reg_select[1]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 17
@@ -853,20 +789,19 @@ Warning (21074): Design contains 96 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "ALU_operation[1]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 20
     Warning (15610): No output dependent on input pin "ALU_operation[2]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 20
     Warning (15610): No output dependent on input pin "ALU_operation[3]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 20
-Info (21057): Implemented 96 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 96 input pins
+Info (21057): Implemented 97 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 97 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 99 warnings
-    Info: Peak virtual memory: 4811 megabytes
-    Info: Processing ended: Sat Feb 07 20:10:31 2026
-    Info: Elapsed time: 00:00:33
-    Info: Total CPU time (on all processors): 00:00:50
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 100 warnings
+    Info: Peak virtual memory: 4816 megabytes
+    Info: Processing ended: Sun Feb 08 15:46:32 2026
+    Info: Elapsed time: 00:00:57
+    Info: Total CPU time (on all processors): 00:00:49
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
 The suppressed messages can be found in C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/output_files/CPU.map.smsg.
->>>>>>> b5187a75eb338420f1624d6621b92a81efe0df34
 
 
