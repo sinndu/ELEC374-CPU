@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+Analysis & Synthesis Status : Successful - Thu Feb 05 17:25:01 2026
+=======
 Analysis & Synthesis Status : Successful - Sat Feb 07 20:10:31 2026
+>>>>>>> b5187a75eb338420f1624d6621b92a81efe0df34
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : CPU
 Top-level Entity Name : datapath

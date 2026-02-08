@@ -1,5 +1,9 @@
 Flow report for CPU
+<<<<<<< HEAD
+Thu Feb 05 17:25:01 2026
+=======
 Sat Feb 07 20:11:58 2026
+>>>>>>> b5187a75eb338420f1624d6621b92a81efe0df34
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +44,11 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
+<<<<<<< HEAD
+; Flow Status                     ; Successful - Thu Feb 05 17:25:01 2026       ;
+=======
 ; Flow Status                     ; Successful - Sat Feb 07 20:11:58 2026       ;
+>>>>>>> b5187a75eb338420f1624d6621b92a81efe0df34
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; CPU                                         ;
 ; Top-level Entity Name           ; datapath                                    ;
@@ -67,12 +75,37 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
+<<<<<<< HEAD
+; Start date & time ; 02/05/2026 17:24:44 ;
+=======
 ; Start date & time ; 02/07/2026 20:10:02 ;
+>>>>>>> b5187a75eb338420f1624d6621b92a81efe0df34
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPU                 ;
 +-------------------+---------------------+
 
 
+<<<<<<< HEAD
++----------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                 ;
++-------------------------------------+----------------------------------------+---------------+------------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name      ; Section Id     ;
++-------------------------------------+----------------------------------------+---------------+------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 38917505025.177033028419172            ; --            ; --               ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --               ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --               ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --               ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --               ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --               ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; Booth_Multiplier ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; Booth_Multiplier ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; Booth_Multiplier ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --               ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --               ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --               ; --             ;
+; TOP_LEVEL_ENTITY                    ; Booth_Multiplier                       ; CPU           ; --               ; --             ;
++-------------------------------------+----------------------------------------+---------------+------------------+----------------+
+=======
 +------------------------------------------------------------------------------------------------------------------------------+
 ; Flow Non-Default Global Settings                                                                                             ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
@@ -99,6 +132,7 @@ refer to the applicable agreement for further details.
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --             ;
 ; TOP_LEVEL_ENTITY                     ; datapath                               ; CPU           ; --          ; --             ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
+>>>>>>> b5187a75eb338420f1624d6621b92a81efe0df34
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -106,12 +140,17 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
+<<<<<<< HEAD
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4850 MB             ; 00:00:33                           ;
+; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:33                           ;
+=======
 ; Analysis & Synthesis ; 00:00:33     ; 1.0                     ; 4796 MB             ; 00:00:49                           ;
 ; Fitter               ; 00:00:51     ; 1.0                     ; 5913 MB             ; 00:00:50                           ;
 ; Assembler            ; 00:00:10     ; 1.0                     ; 4807 MB             ; 00:00:09                           ;
 ; Timing Analyzer      ; 00:00:11     ; 1.0                     ; 5004 MB             ; 00:00:09                           ;
 ; EDA Netlist Writer   ; 00:00:06     ; 1.0                     ; 4719 MB             ; 00:00:05                           ;
 ; Total                ; 00:01:51     ; --                      ; --                  ; 00:02:02                           ;
+>>>>>>> b5187a75eb338420f1624d6621b92a81efe0df34
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -120,11 +159,15 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
+<<<<<<< HEAD
+; Analysis & Synthesis ; raelen           ; Windows 10 ; 10.0       ; x86_64         ;
+=======
 ; Analysis & Synthesis ; DESKTOP-TNA4NQD  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Fitter               ; DESKTOP-TNA4NQD  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; DESKTOP-TNA4NQD  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; DESKTOP-TNA4NQD  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-TNA4NQD  ; Windows 10 ; 10.0       ; x86_64         ;
+>>>>>>> b5187a75eb338420f1624d6621b92a81efe0df34
 +----------------------+------------------+------------+------------+----------------+
 
 
