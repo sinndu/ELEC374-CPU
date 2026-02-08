@@ -4,21 +4,21 @@ module ALU (
     input AND, OR, NEG, NOT, 
     input SHR, SHRA, SHL, ROR, ROL,
     input MUL, DIV,
+	 input IncPC,
 	output wire [63:0] ALU_Out_64
 );
-    assign ALU_Out_64 = 64'b0;
 
     wire [31:0] cla_result;
     wire cla_cout;
 
     wire [31:0] cla_A;
-    assign cla_A = (NEG ? 32'b0 : A); // set to 0 for neg
+    assign cla_A = (NEG || IncPC ? 32'b0 : A); // set to 0 for neg or incrementing PC
 
     wire [31:0] cla_B;
     assign cla_B = (SUB || NEG ? ~B : B); // invert for neg/sub (2s comp)
 
     wire c_in_signal;
-    assign c_in_signal = (SUB || NEG ? 1'b1 : 1'b0); // carry to 1 for neg/sub (2s comp)
+    assign c_in_signal = (SUB || NEG || IncPC ? 1'b1 : 1'b0); // carry to 1 for neg/sub (2s comp), or to increment PC by 1
 
 	 // add/sub
     CLA_32 adder ( 
@@ -47,14 +47,10 @@ module ALU (
         .remainder(div_remainder)
     );
 
-    assign ALU_Out_64 = 
-      ({64{DIV}} & {div_remainder, div_quotient}) |
-      ({64{MUL}} & mul_result);
-
 
     reg[31:0] C;
     always @(*) begin
-        if (ADD || SUB || NEG) begin
+        if (ADD || SUB || NEG || IncPC) begin
            C = cla_result;
         end
         else if (AND) begin
@@ -85,5 +81,10 @@ module ALU (
             C = 32'b0; // default case
         end
     end
-    assign ALU_Out_64[31:0] = ALU_Out_64[31:0] || C;
+	 
+    assign ALU_Out_64 =
+      ({64{MUL}} & mul_result) |
+      ({64{DIV}} & {div_remainder, div_quotient}) |
+      {32'b0, C};
+		
 endmodule

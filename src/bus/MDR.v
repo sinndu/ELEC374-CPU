@@ -1,10 +1,10 @@
 module MDR (
+	 input clk, 
+    input clr,
+	 input MDR_in, 
+	 input read, 
     input [31:0] BusMuxOut,
-    input [31:0] MDataIn,
-    input read,       
-    input clr, 
-    input clk, 
-    input MDR_in,      
+    input [31:0] MDataIn,         
     output [31:0] MDR_out
 );
 

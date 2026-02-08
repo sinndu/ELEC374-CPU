@@ -16,7 +16,7 @@ module RCA_4 (
 
 		for(i = 0; i < 4; i = i + 1) begin
 			// sum = A XOR B XOR CarryIn
-			s[i] = A[i] ^ B[i] ^ c[i]
+			s[i] = A[i] ^ B[i] ^ c[i];
 
 			// carry = (A AND B) OR (CarryIn AND (A XOR B))
 			c[i+1] = (A[i] & B[i] | (c[i] & (A ^ B)));

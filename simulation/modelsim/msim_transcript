@@ -10,78 +10,730 @@
 # Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul {C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/PFA.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:43 on Feb 02,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul" C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v 
+# Start time: 19:49:41 on Feb 07,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/PFA.v 
+# -- Compiling module PFA
+# 
+# Top level modules:
+# 	PFA
+# End time: 19:49:41 on Feb 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:49:41 on Feb 07,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v 
+# -- Compiling module CLA_32
+# 
+# Top level modules:
+# 	CLA_32
+# End time: 19:49:41 on Feb 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:49:41 on Feb 07,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v 
+# -- Compiling module CLA_16
+# 
+# Top level modules:
+# 	CLA_16
+# End time: 19:49:41 on Feb 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_4.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:49:41 on Feb 07,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_4.v 
+# -- Compiling module CLA_4
+# 
+# Top level modules:
+# 	CLA_4
+# End time: 19:49:42 on Feb 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:49:42 on Feb 07,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 19:49:42 on Feb 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers/Register_32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:49:42 on Feb 07,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers/Register_32.v 
+# -- Compiling module Register_32
+# 
+# Top level modules:
+# 	Register_32
+# End time: 19:49:42 on Feb 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/bus {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/bus/MDR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:49:42 on Feb 07,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/bus" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/bus/MDR.v 
+# -- Compiling module MDR
+# 
+# Top level modules:
+# 	MDR
+# End time: 19:49:42 on Feb 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/bus {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/bus/Bus.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:49:42 on Feb 07,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/bus" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/bus/Bus.v 
+# -- Compiling module Bus
+# 
+# Top level modules:
+# 	Bus
+# End time: 19:49:43 on Feb 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/mul {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:49:43 on Feb 07,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/mul" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v 
 # -- Compiling module Booth_Multiplier
 # 
 # Top level modules:
 # 	Booth_Multiplier
-# End time: 17:06:43 on Feb 02,2026, Elapsed time: 0:00:00
+# End time: 19:49:43 on Feb 07,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-vlog -reportprogress 300 -work work C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v
+# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/div {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:53 on Feb 02,2026
-# vlog -reportprogress 300 -work work C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v 
-# -- Compiling module ALU_tb
-# 
-# Top level modules:
-# 	ALU_tb
-# End time: 17:06:53 on Feb 02,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work C:/QueensU/ELEC374/ELEC374-CPU/src/alu/ALU.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:56 on Feb 02,2026
-# vlog -reportprogress 300 -work work C:/QueensU/ELEC374/ELEC374-CPU/src/alu/ALU.v 
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# End time: 17:06:56 on Feb 02,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:59 on Feb 02,2026
-# vlog -reportprogress 300 -work work C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v 
-# -- Compiling module Booth_Multiplier
-# 
-# Top level modules:
-# 	Booth_Multiplier
-# End time: 17:06:59 on Feb 02,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work C:/QueensU/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:07:01 on Feb 02,2026
-# vlog -reportprogress 300 -work work C:/QueensU/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v 
+# Start time: 19:49:43 on Feb 07,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/div" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v 
 # -- Compiling module NR_Division
 # 
 # Top level modules:
 # 	NR_Division
-# End time: 17:07:01 on Feb 02,2026, Elapsed time: 0:00:00
+# End time: 19:49:43 on Feb 07,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim -gui -l msim_transcript work.ALU_tb
-# vsim -gui -l msim_transcript work.ALU_tb 
-# Start time: 17:07:11 on Feb 02,2026
-# Loading work.ALU_tb
+# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:49:43 on Feb 07,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 19:49:43 on Feb 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:49:43 on Feb 07,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v 
+# -- Compiling module DataPath_tb
+# 
+# Top level modules:
+# 	DataPath_tb
+# End time: 19:49:44 on Feb 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  DataPath_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" DataPath_tb 
+# Start time: 19:49:44 on Feb 07,2026
+# Loading work.DataPath_tb
+# Loading work.datapath
+# Loading work.Register_32
+# Loading work.MDR
 # Loading work.ALU
+# Loading work.CLA_32
+# Loading work.CLA_16
+# Loading work.CLA_4
+# Loading work.PFA
 # Loading work.Booth_Multiplier
 # Loading work.NR_Division
-run -all
-# Starting ALU Tests:
-# PASS: AND Correct
-# PASS: OR Correct
-# PASS: NOT Correct
-# PASS: MUL 100 * 100 = 10000
-# PASS: DIV 100 / 4 = 25 r0
-# PASS: SHL 1 << 4 = 16
-# PASS: SHR 16 >> 2 = 4
-# PASS: ROL Correct
-# PASS: ROR Correct
-# ALU Logic & Shift Tests Complete.
-# ** Note: $stop    : C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v(101)
-#    Time: 240 ns  Iteration: 0  Instance: /ALU_tb
-# Break in Module ALU_tb at C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v line 101
-# End time: 17:12:00 on Feb 02,2026, Elapsed time: 0:04:49
+# Loading work.Bus
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Too few port connections. Expected 28, found 17.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'in_inport_data'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'ZHighout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/low_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'PG16'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/high_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'PG16'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# T0 @ 140000 | PC=0 MAR=00000000000000000000000000000000 MDR=00000000000000000000000001100111 IR=00000000000000000000000000000000 ALU_op=13 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000001100111 0000000000000000000000000000000000000000000000000000000000000000
+# T1 @ 160000 | PC=0 MAR=00000000000000000000000000000000 MDR=00000000000000000000000001100111 IR=00000000000000000000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# T2 @ 180000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00000000000000000000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# T3 @ 200000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00010001001010110000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# T4 @ 220000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=2 Zlow=0 reg_select=0000000000100000 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000000110100 0000000000000000000000000000000000000000000000000000000000000000
+# T5 @ 240000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=0 reg_select=0000000001000000 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000001000101 0000000000000000000000000000000000000000000000000000000000000000
+# End @ 260000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000000000000 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# ** Note: $stop    : C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(176)
+#    Time: 260 ns  Iteration: 1  Instance: /DataPath_tb
+# Break in Module DataPath_tb at C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v line 176
+vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:52:13 on Feb 07,2026
+# vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v 
+# -- Compiling module DataPath_tb
+# 
+# Top level modules:
+# 	DataPath_tb
+# End time: 19:52:13 on Feb 07,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" work.DataPath_tb
+# End time: 19:52:28 on Feb 07,2026, Elapsed time: 0:02:44
+# Errors: 0, Warnings: 18
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" work.DataPath_tb 
+# Start time: 19:52:28 on Feb 07,2026
+# Loading work.DataPath_tb
+# Loading work.datapath
+# Loading work.Register_32
+# Loading work.MDR
+# Loading work.ALU
+# Loading work.CLA_32
+# Loading work.CLA_16
+# Loading work.CLA_4
+# Loading work.PFA
+# Loading work.Booth_Multiplier
+# Loading work.NR_Division
+# Loading work.Bus
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Too few port connections. Expected 28, found 17.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'in_inport_data'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'ZHighout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/low_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'PG16'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/high_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'PG16'.
+run -all
+# T0 @ 140000 | PC=0 MAR=00000000000000000000000000000000 MDR=00000000000000000000000001100111 IR=00000000000000000000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# T1 @ 160000 | PC=0 MAR=00000000000000000000000000000000 MDR=00000000000000000000000001100111 IR=00000000000000000000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# T2 @ 180000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00000000000000000000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00010001001010110000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# T3 @ 200000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000100000 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000000110100 0000000000000000000000000000000000000000000000000000000000000000
+# T4 @ 220000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=0 reg_select=0000000001000000 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000001000101 0000000000000000000000000000000000000000000000000000000000000000
+# T5 @ 240000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# End @ 260000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000000000000 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# ** Note: $stop    : C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(177)
+#    Time: 260 ns  Iteration: 1  Instance: /DataPath_tb
+# Break in Module DataPath_tb at C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v line 177
+vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:00:52 on Feb 07,2026
+# vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v 
+# -- Compiling module DataPath_tb
+# 
+# Top level modules:
+# 	DataPath_tb
+# End time: 20:00:52 on Feb 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" work.DataPath_tb
+# End time: 20:01:07 on Feb 07,2026, Elapsed time: 0:08:39
+# Errors: 0, Warnings: 18
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" work.DataPath_tb 
+# Start time: 20:01:07 on Feb 07,2026
+# Loading work.DataPath_tb
+# Loading work.datapath
+# Loading work.Register_32
+# Loading work.MDR
+# Loading work.ALU
+# Loading work.CLA_32
+# Loading work.CLA_16
+# Loading work.CLA_4
+# Loading work.PFA
+# Loading work.Booth_Multiplier
+# Loading work.NR_Division
+# Loading work.Bus
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Too few port connections. Expected 28, found 17.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'in_inport_data'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'ZHighout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/low_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'PG16'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/high_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'PG16'.
+run -all
+# T0 @ 140000 | PC=0 MAR=00000000000000000000000000000000 MDR=00000000000000000000000001100111 IR=00000000000000000000000000000000 ALU_op=13 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000001100111 0000000000000000000000000000000000000000000000000000000000000000
+# T1 @ 160000 | PC=0 MAR=00000000000000000000000000000000 MDR=00000000000000000000000001100111 IR=00000000000000000000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# T2 @ 180000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00000000000000000000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# T3 @ 200000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00010001001010110000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# T4 @ 220000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=2 Zlow=0 reg_select=0000000000100000 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000000110100 0000000000000000000000000000000000000000000000000000000000000000
+# T5 @ 240000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=0 reg_select=0000000001000000 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000001000101 0000000000000000000000000000000000000000000000000000000000000000
+# End @ 260000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000000000000 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# ** Note: $stop    : C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(176)
+#    Time: 260 ns  Iteration: 1  Instance: /DataPath_tb
+# Break in Module DataPath_tb at C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v line 176
+vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:12:17 on Feb 07,2026
+# vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v 
+# -- Compiling module DataPath_tb
+# 
+# Top level modules:
+# 	DataPath_tb
+# End time: 20:12:17 on Feb 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:12:21 on Feb 07,2026
+# vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 20:12:21 on Feb 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:12:31 on Feb 07,2026
+# vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 20:12:31 on Feb 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# internal error on MenuItemCan
+# m is .mBar.file label is End Simulation state is disabled
+#  Trace back: 
+#    <4:eval:1: ::Vsimmenu::MenuItemCan .mBar.file {End Simulation} disabled
+#    <3:proc:234: ::Process::Action .main_pane.process SetMenuState {{can_open {::Vsimmenu::MenuItemCan .mBar.file Open...}} {can_close_file {::Vsimmenu::MenuItemCan .mBar.file {End Simulation}}} {can_save {::Vsimmenu::MenuItemCan .mBar.file {Save Dataset...}}} {can_saveas {::Vsimmenu::MenuItemCan .mBar.file {Save List...}}} {can_report {::Vsimmenu::MenuItemCan .mBar.file Report...}} {can_use_source_file {::Vsimmenu::MenuItemCan .mBar.file {Use Source...}}} {can_environment {::Vsimmenu::MenuItemCan .mBar.file Environment}} {can_page_setup {::Vsimmenu::MenuItemCan .mBar.file {Page Setup...}}} {can_print {::Vsimmenu::MenuItemCan .mBar.file Print...}} {can_print_postscript {::Vsimmenu::MenuItemCan .mBar.file {Print Postscript...}}} {can_close_window {::Vsimmenu::MenuItemCan .mBar.file {Close Window}}}}
+#    >2:eval:1: ::.vcop Action SetMenuState {{can_open {::Vsimmenu::MenuItemCan .mBar.file Open...}} {can_close_file {::Vsimmenu::MenuItemCan .mBar.file {End Simulation}}} {can_save {::Vsimmenu::MenuItemCan .mBar.file {Save Dataset...}}} {can_saveas {::Vsimmenu::MenuItemCan .mBar.file {Save List...}}} {can_report {::Vsimmenu::MenuItemCan .mBar.file Report...}} {can_use_source_file {::Vsimmenu::MenuItemCan .mBar.file {Use Source...}}} {can_environment {::Vsimmenu::MenuItemCan .mBar.file Environment}} {can_page_setup {::Vsimmenu::MenuItemCan .mBar.file {Page Setup...}}} {can_print {::Vsimmenu::MenuItemCan .mBar.file Print...}} {can_print_postscript {::Vsimmenu::MenuItemCan .mBar.file {Print Postscript...}}} {can_close_window {::Vsimmenu::MenuItemCan .mBar.file {Close Window}}}}
+#    <1:proc:107: ::Vsimmenu::DefaultMenuPostCmd .mBar.file {FileMenuPostCmd .mBar.file} SetMenuState
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" work.DataPath_tb
+# End time: 20:12:47 on Feb 07,2026, Elapsed time: 0:11:40
+# Errors: 0, Warnings: 18
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" work.DataPath_tb 
+# Start time: 20:12:47 on Feb 07,2026
+# Loading work.DataPath_tb
+# Loading work.datapath
+# Loading work.Register_32
+# Loading work.MDR
+# Loading work.ALU
+# Loading work.CLA_32
+# Loading work.CLA_16
+# Loading work.CLA_4
+# Loading work.PFA
+# Loading work.Booth_Multiplier
+# Loading work.NR_Division
+# Loading work.Bus
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Too few port connections. Expected 28, found 17.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'in_inport_data'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'ZHighout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/low_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'PG16'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/high_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'PG16'.
+run -all
+# T=10000: Y=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# T=30000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# T=50000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000110100 ALU_op=1110 ALU_out=0 Zin=0
+# T=70000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# T=90000: Y=00000000000000000000000000000000 Bus=00000000000000000000000001000101 ALU_op=1110 ALU_out=0 Zin=0
+# T=110000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# T=130000: Y=00000000000000000000000000000000 Bus=00000000000000000000000001100111 ALU_op=1110 ALU_out=0 Zin=0
+# T0 @ 140000 | PC=0 MAR=00000000000000000000000000000000 MDR=00000000000000000000000001100111 IR=00000000000000000000000000000000 ALU_op=13 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000001100111 0000000000000000000000000000000000000000000000000000000000000000
+# T=150000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=1
+# T1 @ 160000 | PC=0 MAR=00000000000000000000000000000000 MDR=00000000000000000000000001100111 IR=00000000000000000000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# T=170000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# T2 @ 180000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00000000000000000000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# T=190000: Y=00000000000000000000000000000000 Bus=00010001001010110000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# T3 @ 200000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00010001001010110000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# T=210000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000110100 ALU_op=1110 ALU_out=0 Zin=0
+# T4 @ 220000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=2 Zlow=0 reg_select=0000000000100000 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000000110100 0000000000000000000000000000000000000000000000000000000000000000
+# T=230000: Y=00000000000000000000000000110100 Bus=00000000000000000000000001000101 ALU_op=1110 ALU_out=0 Zin=1
+# T5 @ 240000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=0 reg_select=0000000001000000 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000001000101 0000000000000000000000000000000000000000000000000000000000000000
+# T=250000: Y=00000000000000000000000000110100 Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# End @ 260000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000000000000 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# ** Note: $stop    : C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(176)
+#    Time: 260 ns  Iteration: 1  Instance: /DataPath_tb
+# Break in Module DataPath_tb at C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v line 176
+vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:15:21 on Feb 07,2026
+# vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 20:15:22 on Feb 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:15:24 on Feb 07,2026
+# vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v 
+# -- Compiling module DataPath_tb
+# ** Error: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(181): (vlog-2730) Undefined variable: 'clock'.
+# End time: 20:15:25 on Feb 07,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:15:46 on Feb 07,2026
+# vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v 
+# -- Compiling module DataPath_tb
+# 
+# Top level modules:
+# 	DataPath_tb
+# End time: 20:15:46 on Feb 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" work.DataPath_tb
+# End time: 20:16:08 on Feb 07,2026, Elapsed time: 0:03:21
+# Errors: 1, Warnings: 18
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" work.DataPath_tb 
+# Start time: 20:16:08 on Feb 07,2026
+# Loading work.DataPath_tb
+# Loading work.datapath
+# Loading work.Register_32
+# Loading work.MDR
+# Loading work.ALU
+# Loading work.CLA_32
+# Loading work.CLA_16
+# Loading work.CLA_4
+# Loading work.PFA
+# Loading work.Booth_Multiplier
+# Loading work.NR_Division
+# Loading work.Bus
+# ** Error: (vsim-3043) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(182): Unresolved reference to 'BusMuxOut'.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v
+# ** Error: (vsim-3043) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(182): Unresolved reference to 'RY'.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v
+# ** Error: (vsim-3043) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(182): Unresolved reference to 'alu_op'.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Too few port connections. Expected 28, found 17.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'in_inport_data'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'ZHighout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/low_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'PG16'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/high_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'PG16'.
+# Error loading design
+# End time: 20:16:11 on Feb 07,2026, Elapsed time: 0:00:03
+# Errors: 3, Warnings: 18
+vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:17:02 on Feb 07,2026
+# vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v 
+# -- Compiling module DataPath_tb
+# 
+# Top level modules:
+# 	DataPath_tb
+# End time: 20:17:02 on Feb 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" work.DataPath_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" work.DataPath_tb 
+# Start time: 20:17:10 on Feb 07,2026
+# Loading work.DataPath_tb
+# Loading work.datapath
+# Loading work.Register_32
+# Loading work.MDR
+# Loading work.ALU
+# Loading work.CLA_32
+# Loading work.CLA_16
+# Loading work.CLA_4
+# Loading work.PFA
+# Loading work.Booth_Multiplier
+# Loading work.NR_Division
+# Loading work.Bus
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Too few port connections. Expected 28, found 17.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'in_inport_data'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'ZHighout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/low_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'PG16'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/high_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'PG16'.
+run -all
+# T=10000: Y=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# T=30000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# T=50000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000110100 ALU_op=1110 ALU_out=0 Zin=0
+# T=70000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# T=90000: Y=00000000000000000000000000000000 Bus=00000000000000000000000001000101 ALU_op=1110 ALU_out=0 Zin=0
+# T=110000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# T=130000: Y=00000000000000000000000000000000 Bus=00000000000000000000000001100111 ALU_op=1110 ALU_out=0 Zin=0
+# T0 @ 140000 | PC=0 MAR=00000000000000000000000000000000 MDR=00000000000000000000000001100111 IR=00000000000000000000000000000000 ALU_op=13 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000001100111 0000000000000000000000000000000000000000000000000000000000000000
+# T=150000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=1
+# T1 @ 160000 | PC=0 MAR=00000000000000000000000000000000 MDR=00000000000000000000000001100111 IR=00000000000000000000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# T=170000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# T2 @ 180000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00000000000000000000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# T=190000: Y=00000000000000000000000000000000 Bus=00010001001010110000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# T3 @ 200000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00010001001010110000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# T=210000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000110100 ALU_op=1110 ALU_out=0 Zin=0
+# T4 @ 220000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=2 Zlow=0 reg_select=0000000000100000 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000000110100 0000000000000000000000000000000000000000000000000000000000000000
+# T=230000: Y=00000000000000000000000000110100 Bus=00000000000000000000000001000101 ALU_op=1110 ALU_out=0 Zin=1
+# T5 @ 240000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=0 reg_select=0000000001000000 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000001000101 0000000000000000000000000000000000000000000000000000000000000000
+# T=250000: Y=00000000000000000000000000110100 Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# End @ 260000 | PC=0 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000000000000 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# ** Note: $stop    : C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(176)
+#    Time: 260 ns  Iteration: 1  Instance: /DataPath_tb
+# Break in Module DataPath_tb at C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v line 176
+vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:29:39 on Feb 07,2026
+# vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v 
+# -- Compiling module DataPath_tb
+# 
+# Top level modules:
+# 	DataPath_tb
+# End time: 20:29:40 on Feb 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" work.DataPath_tb
+# End time: 20:29:59 on Feb 07,2026, Elapsed time: 0:12:49
+# Errors: 0, Warnings: 18
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" work.DataPath_tb 
+# Start time: 20:29:59 on Feb 07,2026
+# Loading work.DataPath_tb
+# Loading work.datapath
+# Loading work.Register_32
+# Loading work.MDR
+# Loading work.ALU
+# Loading work.CLA_32
+# Loading work.CLA_16
+# Loading work.CLA_4
+# Loading work.PFA
+# Loading work.Booth_Multiplier
+# Loading work.NR_Division
+# Loading work.Bus
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Too few port connections. Expected 28, found 17.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'in_inport_data'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'ZHighout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/low_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'PG16'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/high_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'PG16'.
+run -all
+# T=10000: Y=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# T=30000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# T=50000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000110100 ALU_op=1110 ALU_out=0 Zin=0
+# T=70000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# T=90000: Y=00000000000000000000000000000000 Bus=00000000000000000000000001000101 ALU_op=1110 ALU_out=0 Zin=0
+# T=110000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# T=130000: Y=00000000000000000000000000000000 Bus=00000000000000000000000001100111 ALU_op=1110 ALU_out=0 Zin=0
+# T0 @ 140000 | PC=0 MAR=00000000000000000000000000000000 MDR=00000000000000000000000001100111 IR=00000000000000000000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000001100111 0000000000000000000000000000000000000000000000000000000000000000
+# T=150000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 ALU_op=1101 ALU_out=1 Zin=1
+# T1 @ 160000 | PC=0 MAR=00000000000000000000000000000000 MDR=00000000000000000000000001100111 IR=00000000000000000000000000000000 ALU_op=13 Zlow=1 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000001
+# T=170000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000000001 ALU_op=1110 ALU_out=0 Zin=0
+# T2 @ 180000 | PC=1 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00000000000000000000000000000000 ALU_op=14 Zlow=1 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000000000001 0000000000000000000000000000000000000000000000000000000000000000
+# T=190000: Y=00000000000000000000000000000000 Bus=00010001001010110000000000000000 ALU_op=1110 ALU_out=0 Zin=0
+# T3 @ 200000 | PC=1 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=1 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00010001001010110000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# T=210000: Y=00000000000000000000000000000000 Bus=00000000000000000000000000110100 ALU_op=1110 ALU_out=0 Zin=0
+# T4 @ 220000 | PC=1 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=1 reg_select=0000000000100000 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000000110100 0000000000000000000000000000000000000000000000000000000000000000
+# T=230000: Y=00000000000000000000000000110100 Bus=00000000000000000000000001000101 ALU_op=0010 ALU_out=4 Zin=1
+# T5 @ 240000 | PC=1 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=2 Zlow=4 reg_select=0000000001000000 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000001000101 0000000000000000000000000000000000000000000000000000000000000100
+# T=250000: Y=00000000000000000000000000110100 Bus=00000000000000000000000000000100 ALU_op=1110 ALU_out=0 Zin=0
+# End @ 260000 | PC=1 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=4 reg_select=0000000000000100 R2=00000000000000000000000000000100 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000000000100 0000000000000000000000000000000000000000000000000000000000000000
+# ** Note: $stop    : C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(176)
+#    Time: 260 ns  Iteration: 1  Instance: /DataPath_tb
+# Break in Module DataPath_tb at C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v line 176
+vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:30:57 on Feb 07,2026
+# vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v 
+# -- Compiling module DataPath_tb
+# 
+# Top level modules:
+# 	DataPath_tb
+# End time: 20:30:57 on Feb 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" work.DataPath_tb
+# End time: 20:31:22 on Feb 07,2026, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 18
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" work.DataPath_tb 
+# Start time: 20:31:22 on Feb 07,2026
+# Loading work.DataPath_tb
+# Loading work.datapath
+# Loading work.Register_32
+# Loading work.MDR
+# Loading work.ALU
+# Loading work.CLA_32
+# Loading work.CLA_16
+# Loading work.CLA_4
+# Loading work.PFA
+# Loading work.Booth_Multiplier
+# Loading work.NR_Division
+# Loading work.Bus
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Too few port connections. Expected 28, found 17.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'in_inport_data'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'ZHighout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/low_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'PG16'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/high_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'PG16'.
+run -all
+# T0 @ 140000 | PC=0 MAR=00000000000000000000000000000000 MDR=00000000000000000000000001100111 IR=00000000000000000000000000000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000001100111 0000000000000000000000000000000000000000000000000000000000000000
+# T1 @ 160000 | PC=0 MAR=00000000000000000000000000000000 MDR=00000000000000000000000001100111 IR=00000000000000000000000000000000 ALU_op=13 Zlow=1 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000001
+# T2 @ 180000 | PC=1 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00000000000000000000000000000000 ALU_op=14 Zlow=1 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00000000000000000000000000000001 0000000000000000000000000000000000000000000000000000000000000000
+# T3 @ 200000 | PC=1 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=1 reg_select=0000000000000100 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000000000 Bus=00010001001010110000000000000000 0000000000000000000000000000000000000000000000000000000000000000
+# T4 @ 220000 | PC=1 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=1 reg_select=0000000000100000 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000000110100 0000000000000000000000000000000000000000000000000000000000000000
+# T5 @ 240000 | PC=1 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=2 Zlow=4 reg_select=0000000001000000 R2=00000000000000000000000001100111 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000001000101 0000000000000000000000000000000000000000000000000000000000000100
+# End @ 260000 | PC=1 MAR=00000000000000000000000000000000 MDR=00010001001010110000000000000000 IR=00010001001010110000000000000000 ALU_op=14 Zlow=4 reg_select=0000000000000100 R2=00000000000000000000000000000100 R5=00000000000000000000000000110100 R6=00000000000000000000000001000101 Y=00000000000000000000000000110100 Bus=00000000000000000000000000000100 0000000000000000000000000000000000000000000000000000000000000000
+# ** Note: $stop    : C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(176)
+#    Time: 260 ns  Iteration: 1  Instance: /DataPath_tb
+# Break in Module DataPath_tb at C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v line 176
+vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:36:08 on Feb 07,2026
+# vlog -reportprogress 300 -work work C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v 
+# -- Compiling module DataPath_tb
+# 
+# Top level modules:
+# 	DataPath_tb
+# End time: 20:36:08 on Feb 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" work.DataPath_tb
+# End time: 20:36:28 on Feb 07,2026, Elapsed time: 0:05:06
+# Errors: 0, Warnings: 18
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" work.DataPath_tb 
+# Start time: 20:36:28 on Feb 07,2026
+# Loading work.DataPath_tb
+# Loading work.datapath
+# Loading work.Register_32
+# Loading work.MDR
+# Loading work.ALU
+# Loading work.CLA_32
+# Loading work.CLA_16
+# Loading work.CLA_4
+# Loading work.PFA
+# Loading work.Booth_Multiplier
+# Loading work.NR_Division
+# Loading work.Bus
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Too few port connections. Expected 28, found 17.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'in_inport_data'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'HIout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'LOout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'ZHighout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'InPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortin'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'OutPortout'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(20): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/low_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'PG16'.
+# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb/DUT/alu_op/adder/high_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'PG16'.
+run -all
+# T0 @ 140000 | PC=0 MAR=00000000 MDR=00000067 IR=00000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000067 R5=00000034 R6=00000045 Y=00000000 Bus=00000067 
+# T1 @ 160000 | PC=0 MAR=00000000 MDR=00000067 IR=00000000 ALU_op=13 Zlow=1 reg_select=0000000000000100 R2=00000067 R5=00000034 R6=00000045 Y=00000000 Bus=00000000 
+# T2 @ 180000 | PC=1 MAR=00000000 MDR=112b0000 IR=00000000 ALU_op=14 Zlow=1 reg_select=0000000000000100 R2=00000067 R5=00000034 R6=00000045 Y=00000000 Bus=00000001 
+# T3 @ 200000 | PC=1 MAR=00000000 MDR=112b0000 IR=112b0000 ALU_op=14 Zlow=1 reg_select=0000000000000100 R2=00000067 R5=00000034 R6=00000045 Y=00000000 Bus=112b0000 
+# T4 @ 220000 | PC=1 MAR=00000000 MDR=112b0000 IR=112b0000 ALU_op=14 Zlow=1 reg_select=0000000000100000 R2=00000067 R5=00000034 R6=00000045 Y=00000034 Bus=00000034 
+# T5 @ 240000 | PC=1 MAR=00000000 MDR=112b0000 IR=112b0000 ALU_op=2 Zlow=4 reg_select=0000000001000000 R2=00000067 R5=00000034 R6=00000045 Y=00000034 Bus=00000045 
+# End @ 260000 | PC=1 MAR=00000000 MDR=112b0000 IR=112b0000 ALU_op=14 Zlow=4 reg_select=0000000000000100 R2=00000004 R5=00000034 R6=00000045 Y=00000034 Bus=00000004 
+# ** Note: $stop    : C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v(176)
+#    Time: 260 ns  Iteration: 1  Instance: /DataPath_tb
+# Break in Module DataPath_tb at C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v line 176

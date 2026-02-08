@@ -1,9 +1,9 @@
 module CLA_32 (
     input [31:0] A,
     input [31:0] B,
-    input cin,
-    output [31:0] sum,
-    output cout
+    input c_in,
+    output [31:0] result,
+    output c_out
 );
     wire c_mid; //carry signal between the two 16-bit CLAs
 
@@ -11,8 +11,8 @@ module CLA_32 (
     CLA_16 low_16 (
         .A(A[15:0]),
         .B(B[15:0]),
-        .cin(cin),
-        .sum(sum[15:0]),
+        .cin(c_in),
+        .sum(result[15:0]),
         .cout(c_mid)
     );
 
@@ -21,8 +21,8 @@ module CLA_32 (
         .A(A[31:16]),
         .B(B[31:16]),
         .cin(c_mid),
-        .sum(sum[31:16]),
-        .cout(cout)
+        .sum(result[31:16]),
+        .cout(c_out)
     );
 
 endmodule
