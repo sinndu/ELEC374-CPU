@@ -7,9 +7,8 @@ module datapath(
 
     //control signals
     input wire PCin, PCout,
-    input wire IncPC,
     input wire IRin,
-    input wire MARin, MDRin, MDRout,
+    input wire MARin, MDRin, MDRout, read,
     input wire HIin, HIout, LOin, LOout,
     input wire Yin, Zin, ZHighout, ZLowout, 
     input wire InPortin, InPortout,
@@ -58,7 +57,8 @@ Register_32 R14(clock, clear, reg_in[14], BusMuxOut, BusMuxIn_R14);
 Register_32 R15(clock, clear, reg_in[15], BusMuxOut, BusMuxIn_R15);
 
 //data
-Register_32 MDR(clock, clear, MDRin, BusMuxOut, BusMuxIn_MDR);
+//use special mdr register 
+MDR MDR(clock, clear, MDRin, read, BusMuxOut, in_memory_data, BusMuxIn_MDR);
 Register_32 HI(clock, clear, HIin, BusMuxOut, BusMuxIn_HI);
 Register_32 LO(clock, clear, LOin, BusMuxOut, BusMuxIn_LO);
 
@@ -66,19 +66,9 @@ wire [31:0] IR_wire; //IR output does not feed back into the bus
 Register_32 IR(clock, clear, IRin, BusMuxOut, IR_wire);
 
 //control
+Register_32 PC(clock, clear, PCin, BusMuxOut, BusMuxIn_PC);
 
-//PC incrementation logic
-localparam [31:0] PC_INC = 32'd4; //increment by 4
-
-wire [31:0] PC_added;
-assign PC_added = BusMuxIn_PC + PC_INC;
-
-wire [31:0] PC_next;
-assign PC_next = IncPC ? PC_added : BusMuxOut;
-
-Register_32 PC(clock, clear, PCin | IncPC, PC_next, BusMuxIn_PC);
-
-wire [31:0] MAR_wire;
+wire [31:0] MAR_wire; //subject to change, this is the MAR output to the memory chip
 Register_32 MAR(clock, clear, MARin, BusMuxOut, MAR_wire);
 
 //IO
@@ -105,6 +95,7 @@ ALU alu_op(
     ALU_decode[2], ALU_decode[3], ALU_decode[4], ALU_decode[5],
     ALU_decode[6], ALU_decode[7], ALU_decode[8], ALU_decode[9], ALU_decode[10],
     ALU_decode[11], ALU_decode[12],
+	 ALU_decode[13],
     Z
 );
 
@@ -123,9 +114,13 @@ Bus bus(
 
 	reg_out[0], reg_out[1], reg_out[2], reg_out[3], reg_out[4], reg_out[5], reg_out[6], reg_out[7], 
 	reg_out[8], reg_out[9], reg_out[10], reg_out[11], reg_out[12], reg_out[13], reg_out[14], reg_out[15], 
-	HIout, LOout, ZHighOut, ZLowOut, PCout, MDRout, InPortout, Cout,
+	HIout, LOout, ZHighout, ZLowout, PCout, MDRout, InPortout, Cout,
 			
 	BusMuxOut
-)
+);
+
+
+
+
 
 endmodule

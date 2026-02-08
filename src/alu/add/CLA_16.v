@@ -3,7 +3,7 @@ module CLA_16 (
     input [15:0] B,
     input cin,
     output [15:0] sum,
-    output cout
+    output cout,
     output GG16, PG16 // for next hierachy level
 );
 

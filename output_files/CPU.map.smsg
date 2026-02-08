@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at DataPath_tb.v(68): always construct contains both blocking and non-blocking assignments File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v Line: 68

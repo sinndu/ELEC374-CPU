@@ -18,6 +18,7 @@ Sim dir               :  simulation\modelsim
 
 Info: Starting NativeLink simulation with ModelSim-Altera software
 Sourced NativeLink script c:/intelfpga_lite/18.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+<<<<<<< HEAD
 Error: Can't launch the ModelSim-Altera software -- the path to the location of the executables for the ModelSim-Altera software were not specified or the executables were not found at specified path.
 Error: You can specify the path in the EDA Tool Options page of the Options dialog box or using the Tcl command set_user_option.
 Error: NativeLink simulation flow was NOT successful
@@ -56,3 +57,8 @@ Nativelink TCL script failed with errorInfo:  Can't launch the ModelSim-Altera s
     (procedure "run_eda_simulation_tool" line 334)
     invoked from within
 "run_eda_simulation_tool eda_opts_hash"
+=======
+Warning: File CPU_run_msim_rtl_verilog.do already exists - backing up current file as CPU_run_msim_rtl_verilog.do.bak11
+Info: Spawning ModelSim-Altera Simulation software 
+Info: NativeLink simulation flow was successful
+>>>>>>> b5187a75eb338420f1624d6621b92a81efe0df34
