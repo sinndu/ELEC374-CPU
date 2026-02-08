@@ -17,15 +17,9 @@ vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul
 vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/div {C:/QueensU/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v}
 vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu {C:/QueensU/ELEC374/ELEC374-CPU/src/alu/ALU.v}
 
-<<<<<<< HEAD
-vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath {C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_shra.v}
+vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches {C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  DataPath_tb_shra
-=======
-vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_sub.v}
-
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  DataPath_tb_sub
->>>>>>> c078805b79c727babd937a6492ccc2c178dc0ef1
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  ALU_tb
 
 add wave *
 view structure
