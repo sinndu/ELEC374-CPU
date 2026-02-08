@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/simulation/modelsim
 vALU
-Z1 !s110 1770578506
+Z1 !s110 1770586787
 !i10b 1
 !s100 _=DlR5kJ76?`D>42lX]kY2
 I5d]RllJ4@TOmd0XC@jBE]0
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1770578506.000000
+Z4 !s108 1770586787.000000
 !s107 C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu|C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v|
 !i113 1
@@ -46,7 +46,7 @@ R3
 r1
 !s85 0
 31
-Z8 !s108 1770578505.000000
+Z8 !s108 1770586786.000000
 !s107 C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/mul|C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v|
 !i113 1
@@ -55,7 +55,7 @@ R5
 R6
 n@booth_@multiplier
 vBus
-Z9 !s110 1770578505
+Z9 !s110 1770586786
 !i10b 1
 !s100 Ib<LRm7SSM7cVCNCmDafN1
 IHl1[kmBac[M_?T=Z7S`H12
@@ -78,7 +78,7 @@ Z10 !s92 -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC
 R6
 n@bus
 vCLA_16
-Z11 !s110 1770578504
+Z11 !s110 1770586785
 !i10b 1
 !s100 :gTAJKMdJcID`md_JYKJJ0
 IlWh>[e>VSQ@2=fSTHoQIM2
@@ -92,7 +92,7 @@ R3
 r1
 !s85 0
 31
-Z12 !s108 1770578503.000000
+Z12 !s108 1770586785.000000
 !s107 C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add|C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v|
 !i113 1
@@ -101,7 +101,7 @@ Z13 !s92 -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC
 R6
 n@c@l@a_16
 vCLA_32
-Z14 !s110 1770578503
+R11
 !i10b 1
 !s100 YzgUfIILjHXGbc3F;<S5a0
 I9K6K`3MYYk:8PLFmJj_e00
@@ -130,7 +130,7 @@ R11
 I[]J<jzf7BfXk;oecAa?3b1
 R2
 R0
-Z15 w1770326789
+Z14 w1770326789
 8C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_4.v
 FC:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_4.v
 L0 1
@@ -138,7 +138,7 @@ R3
 r1
 !s85 0
 31
-Z16 !s108 1770578504.000000
+R12
 !s107 C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_4.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add|C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_4.v|
 !i113 1
@@ -147,13 +147,13 @@ R13
 R6
 n@c@l@a_4
 vdatapath
-R11
+R9
 !i10b 1
-!s100 >5=[7?KUDde[A>0hnL8]01
-IP6Gae6n<lZMABzZ3H;36z0
+!s100 kDgL@I@>Jn<bB?jnBTU0g2
+ImJD2CEcbO>_`QfaAhInOh2
 R2
 R0
-w1770513297
+w1770579380
 8C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v
 FC:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v
 L0 1
@@ -161,36 +161,36 @@ R3
 r1
 !s85 0
 31
-R16
+R12
 !s107 C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src|C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v|
 !i113 1
 R5
 !s92 -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src
 R6
-vDataPath_tb
-!s110 1770578508
+vDataPath_tb_sub
+R1
 !i10b 1
-!s100 CZAkZ9T@>3HIkFO7]X51>1
-I`Q`E^P:]gWm5K`<;GJCVf2
+!s100 lEV;aW=XJP5lN:04K=lV63
+ImlB=8dfH_CldESzzD;eVM3
 R2
 R0
-w1770514559
-8C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v
-FC:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v
+w1770586665
+8C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_sub.v
+FC:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_sub.v
 L0 3
 R3
 r1
 !s85 0
 31
-!s108 1770578507.000000
-!s107 C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches|C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath_tb.v|
+R4
+!s107 C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_sub.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath|C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_sub.v|
 !i113 1
 R5
-!s92 -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches
+!s92 -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath
 R6
-n@data@path_tb
+n@data@path_tb_sub
 vMDR
 R9
 !i10b 1
@@ -238,13 +238,13 @@ R5
 R6
 n@n@r_@division
 vPFA
-R14
+R11
 !i10b 1
 !s100 ig_RBGa9kI3GYZ`I<]onM0
 I=I1I5ji;@ec5Ca69IfCbe3
 R2
 R0
-R15
+R14
 8C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/PFA.v
 FC:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/PFA.v
 L0 1
@@ -252,7 +252,7 @@ R3
 r1
 !s85 0
 31
-R12
+!s108 1770586784.000000
 !s107 C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/PFA.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add|C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/PFA.v|
 !i113 1
@@ -275,7 +275,7 @@ R3
 r1
 !s85 0
 31
-R16
+R8
 !s107 C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers/Register_32.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers|C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers/Register_32.v|
 !i113 1

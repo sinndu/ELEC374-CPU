@@ -55,13 +55,7 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH DataPath_tb -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_NAME DataPath_tb -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id DataPath_tb
-set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id DataPath_tb
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME DataPath_tb -section_id DataPath_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath_tb.v -section_id DataPath_tb
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH DataPath_tb_sub -section_id eda_simulation
 set_global_assignment -name VERILOG_FILE src/testbenches/DataPath/DataPath_tb_and.v
 set_global_assignment -name VERILOG_FILE src/alu/add/RCA_4.v
 set_global_assignment -name VERILOG_FILE src/alu/add/PFA.v
@@ -80,3 +74,26 @@ set_global_assignment -name VERILOG_FILE src/alu/ALU.v
 set_global_assignment -name VERILOG_FILE src/testbenches/NR_Division_tb.v
 set_global_assignment -name VERILOG_FILE src/testbenches/Register_32_tb.v
 set_global_assignment -name VERILOG_FILE src/testbenches/ALU_tb.v
+set_global_assignment -name VERILOG_FILE src/testbenches/DataPath/DataPath_tb_or.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_NAME DataPath_tb_and -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id DataPath_tb_and
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id DataPath_tb_and
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME DataPath_tb_and -section_id DataPath_tb_and
+set_global_assignment -name EDA_TEST_BENCH_NAME DataPath_tb_or -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id DataPath_tb_or
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id DataPath_tb_or
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME DataPath_tb_or -section_id DataPath_tb_or
+set_global_assignment -name VERILOG_FILE src/testbenches/DataPath/DataPath_tb_add.v
+set_global_assignment -name EDA_TEST_BENCH_NAME DataPath_tb_add -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id DataPath_tb_add
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id DataPath_tb_add
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME DataPath_tb_add -section_id DataPath_tb_add
+set_global_assignment -name VERILOG_FILE src/testbenches/DataPath/DataPath_tb_sub.v
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_and.v -section_id DataPath_tb_and
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_or.v -section_id DataPath_tb_or
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_add.v -section_id DataPath_tb_add
+set_global_assignment -name EDA_TEST_BENCH_NAME DataPath_tb_sub -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id DataPath_tb_sub
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME DataPath_tb_sub -section_id DataPath_tb_sub
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_sub.v -section_id DataPath_tb_sub
