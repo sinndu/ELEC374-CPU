@@ -10,132 +10,135 @@
 # Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add {C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add/PFA.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/alu/add {C:/Users/raele/ELEC374-CPU/src/alu/add/PFA.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:19:33 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add" C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add/PFA.v 
+# Start time: 14:32:41 on Feb 23,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/raele/ELEC374-CPU/src/alu/add" C:/Users/raele/ELEC374-CPU/src/alu/add/PFA.v 
 # -- Compiling module PFA
 # 
 # Top level modules:
 # 	PFA
-# End time: 18:19:33 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 14:32:41 on Feb 23,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add {C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/alu/add {C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:19:33 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add" C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v 
+# Start time: 14:32:41 on Feb 23,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/raele/ELEC374-CPU/src/alu/add" C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v 
 # -- Compiling module CLA_32
 # 
 # Top level modules:
 # 	CLA_32
-# End time: 18:19:33 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 14:32:41 on Feb 23,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add {C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/alu/add {C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_16.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:19:33 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add" C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v 
+# Start time: 14:32:41 on Feb 23,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/raele/ELEC374-CPU/src/alu/add" C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_16.v 
 # -- Compiling module CLA_16
 # 
 # Top level modules:
 # 	CLA_16
-# End time: 18:19:33 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 14:32:41 on Feb 23,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add {C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add/CLA_4.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/alu/add {C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_4.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:19:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add" C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add/CLA_4.v 
+# Start time: 14:32:41 on Feb 23,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/raele/ELEC374-CPU/src/alu/add" C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_4.v 
 # -- Compiling module CLA_4
 # 
 # Top level modules:
 # 	CLA_4
-# End time: 18:19:34 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 14:32:42 on Feb 23,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src {C:/QueensU/ELEC374/ELEC374-CPU/src/datapath.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src {C:/Users/raele/ELEC374-CPU/src/datapath.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:19:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueensU/ELEC374/ELEC374-CPU/src" C:/QueensU/ELEC374/ELEC374-CPU/src/datapath.v 
+# Start time: 14:32:42 on Feb 23,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/raele/ELEC374-CPU/src" C:/Users/raele/ELEC374-CPU/src/datapath.v 
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# End time: 18:19:34 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 14:32:42 on Feb 23,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/registers {C:/QueensU/ELEC374/ELEC374-CPU/src/registers/Register_32.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/registers {C:/Users/raele/ELEC374-CPU/src/registers/Register_32.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:19:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/registers" C:/QueensU/ELEC374/ELEC374-CPU/src/registers/Register_32.v 
+# Start time: 14:32:42 on Feb 23,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/raele/ELEC374-CPU/src/registers" C:/Users/raele/ELEC374-CPU/src/registers/Register_32.v 
 # -- Compiling module Register_32
 # 
 # Top level modules:
 # 	Register_32
-# End time: 18:19:34 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 14:32:42 on Feb 23,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/bus {C:/QueensU/ELEC374/ELEC374-CPU/src/bus/MDR.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/bus {C:/Users/raele/ELEC374-CPU/src/bus/MDR.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:19:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/bus" C:/QueensU/ELEC374/ELEC374-CPU/src/bus/MDR.v 
+# Start time: 14:32:42 on Feb 23,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/raele/ELEC374-CPU/src/bus" C:/Users/raele/ELEC374-CPU/src/bus/MDR.v 
 # -- Compiling module MDR
 # 
 # Top level modules:
 # 	MDR
-# End time: 18:19:34 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 14:32:42 on Feb 23,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/bus {C:/QueensU/ELEC374/ELEC374-CPU/src/bus/Bus.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/bus {C:/Users/raele/ELEC374-CPU/src/bus/Bus.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:19:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/bus" C:/QueensU/ELEC374/ELEC374-CPU/src/bus/Bus.v 
+# Start time: 14:32:42 on Feb 23,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/raele/ELEC374-CPU/src/bus" C:/Users/raele/ELEC374-CPU/src/bus/Bus.v 
 # -- Compiling module Bus
 # 
 # Top level modules:
 # 	Bus
-# End time: 18:19:34 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 14:32:42 on Feb 23,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul {C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/alu/mul {C:/Users/raele/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:19:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul" C:/QueensU/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v 
+# Start time: 14:32:43 on Feb 23,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/raele/ELEC374-CPU/src/alu/mul" C:/Users/raele/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v 
 # -- Compiling module Booth_Multiplier
 # 
 # Top level modules:
 # 	Booth_Multiplier
-# End time: 18:19:34 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 14:32:43 on Feb 23,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/div {C:/QueensU/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/alu/div {C:/Users/raele/ELEC374-CPU/src/alu/div/NR_Division.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:19:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu/div" C:/QueensU/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v 
+# Start time: 14:32:44 on Feb 23,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/raele/ELEC374-CPU/src/alu/div" C:/Users/raele/ELEC374-CPU/src/alu/div/NR_Division.v 
 # -- Compiling module NR_Division
 # 
 # Top level modules:
 # 	NR_Division
-# End time: 18:19:34 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 14:32:44 on Feb 23,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu {C:/QueensU/ELEC374/ELEC374-CPU/src/alu/ALU.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/alu {C:/Users/raele/ELEC374-CPU/src/alu/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:19:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/alu" C:/QueensU/ELEC374/ELEC374-CPU/src/alu/ALU.v 
+# Start time: 14:32:44 on Feb 23,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/raele/ELEC374-CPU/src/alu" C:/Users/raele/ELEC374-CPU/src/alu/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 18:19:34 on Feb 08,2026, Elapsed time: 0:00:00
+# End time: 14:32:44 on Feb 23,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches {C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath {C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:19:34 on Feb 08,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches" C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v 
-# -- Compiling module ALU_tb
+# Start time: 14:32:44 on Feb 23,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath" C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v 
+# -- Compiling module DataPath_tb_add
 # 
 # Top level modules:
-# 	ALU_tb
-# End time: 18:19:35 on Feb 08,2026, Elapsed time: 0:00:01
+# 	DataPath_tb_add
+# End time: 14:32:44 on Feb 23,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  ALU_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" ALU_tb 
-# Start time: 18:19:36 on Feb 08,2026
-# Loading work.ALU_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  DataPath_tb_add
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" DataPath_tb_add 
+# Start time: 14:32:44 on Feb 23,2026
+# Loading work.DataPath_tb_add
+# Loading work.datapath
+# Loading work.Register_32
+# Loading work.MDR
 # Loading work.ALU
 # Loading work.CLA_32
 # Loading work.CLA_16
@@ -143,37 +146,45 @@
 # Loading work.PFA
 # Loading work.Booth_Multiplier
 # Loading work.NR_Division
-# ** Warning: (vsim-3017) C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Too few port connections. Expected 7, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/alu_tb/adder/low_16 File: C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
-# ** Warning: (vsim-3722) C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'GG16'.
-# ** Warning: (vsim-3722) C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'PG16'.
-# ** Warning: (vsim-3017) C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Too few port connections. Expected 7, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/alu_tb/adder/high_16 File: C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v
-# ** Warning: (vsim-3722) C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'GG16'.
-# ** Warning: (vsim-3722) C:/QueensU/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'PG16'.
+# Loading work.Bus
+# ** Warning: (vsim-3017) C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v(20): [TFMPC] - Too few port connections. Expected 29, found 17.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb_add/DUT File: C:/Users/raele/ELEC374-CPU/src/datapath.v
+# ** Warning: (vsim-3722) C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v(20): [TFMPC] - Missing connection for port 'in_inport_data'.
+# ** Warning: (vsim-3722) C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v(20): [TFMPC] - Missing connection for port 'HIin'.
+# ** Warning: (vsim-3722) C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v(20): [TFMPC] - Missing connection for port 'HIout'.
+# ** Warning: (vsim-3722) C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v(20): [TFMPC] - Missing connection for port 'LOin'.
+# ** Warning: (vsim-3722) C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v(20): [TFMPC] - Missing connection for port 'LOout'.
+# ** Warning: (vsim-3722) C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v(20): [TFMPC] - Missing connection for port 'ZHighout'.
+# ** Warning: (vsim-3722) C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v(20): [TFMPC] - Missing connection for port 'InPortin'.
+# ** Warning: (vsim-3722) C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v(20): [TFMPC] - Missing connection for port 'InPortout'.
+# ** Warning: (vsim-3722) C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v(20): [TFMPC] - Missing connection for port 'OutPortin'.
+# ** Warning: (vsim-3722) C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v(20): [TFMPC] - Missing connection for port 'OutPortout'.
+# ** Warning: (vsim-3722) C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v(20): [TFMPC] - Missing connection for port 'Cin'.
+# ** Warning: (vsim-3722) C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v(20): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3017) C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb_add/DUT/alu_op/adder/low_16 File: C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v(11): [TFMPC] - Missing connection for port 'PG16'.
+# ** Warning: (vsim-3017) C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /DataPath_tb_add/DUT/alu_op/adder/high_16 File: C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_16.v
+# ** Warning: (vsim-3722) C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'GG16'.
+# ** Warning: (vsim-3722) C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v(20): [TFMPC] - Missing connection for port 'PG16'.
 # 
 # add wave *
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run -all
-# Starting ALU Tests:
-# PASS: ADD 10 + 20 = 30
-# PASS: SUB 50 - 20 = 30
-# PASS: NEG -25 Correct
-# PASS: AND Correct
-# PASS: OR Correct
-# PASS: NOT Correct
-# PASS: MUL 100 * 100 = 10000
-# PASS: DIV 100 / 4 = 25 r0
-# PASS: SHL 1 << 4 = 16
-# PASS: SHR 16 >> 2 = 4
-# PASS: ROL Correct
-# PASS: ROR Correct
-# ALU Logic, Arithmetic & Shift Tests Complete.
-# ** Note: $stop    : C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v(125)
-#    Time: 300 ns  Iteration: 0  Instance: /ALU_tb
-# Break in Module ALU_tb at C:/QueensU/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v line 125
-# End time: 18:19:50 on Feb 08,2026, Elapsed time: 0:00:14
-# Errors: 0, Warnings: 6
+# run 500 ns
+# T0 @ 140000 | PC=0 MAR=00000000 MDR=00000067 IR=00000000 ALU_op=14 Zlow=0 reg_select=0000000000000100 R2=00000067 R5=00000034 R6=00000045 Y=00000000 Bus=00000067 
+# T1 @ 160000 | PC=0 MAR=00000000 MDR=00000067 IR=00000000 ALU_op=13 Zlow=1 reg_select=0000000000000100 R2=00000067 R5=00000034 R6=00000045 Y=00000000 Bus=00000000 
+# T2 @ 180000 | PC=1 MAR=00000000 MDR=112b0000 IR=00000000 ALU_op=14 Zlow=1 reg_select=0000000000000100 R2=00000067 R5=00000034 R6=00000045 Y=00000000 Bus=00000001 
+# T3 @ 200000 | PC=1 MAR=00000000 MDR=112b0000 IR=112b0000 ALU_op=14 Zlow=1 reg_select=0000000000000100 R2=00000067 R5=00000034 R6=00000045 Y=00000000 Bus=112b0000 
+# T4 @ 220000 | PC=1 MAR=00000000 MDR=112b0000 IR=112b0000 ALU_op=14 Zlow=1 reg_select=0000000000100000 R2=00000067 R5=00000034 R6=00000045 Y=00000034 Bus=00000034 
+# T5 @ 240000 | PC=1 MAR=00000000 MDR=112b0000 IR=112b0000 ALU_op=0 Zlow=121 reg_select=0000000001000000 R2=00000067 R5=00000034 R6=00000045 Y=00000034 Bus=00000045 
+# End @ 260000 | PC=1 MAR=00000000 MDR=112b0000 IR=112b0000 ALU_op=14 Zlow=121 reg_select=0000000000000100 R2=00000079 R5=00000034 R6=00000045 Y=00000034 Bus=00000079 
+# ** Note: $stop    : C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v(176)
+#    Time: 260 ns  Iteration: 1  Instance: /DataPath_tb_add
+# Break in Module DataPath_tb_add at C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v line 176
+# End time: 14:40:48 on Feb 23,2026, Elapsed time: 0:08:04
+# Errors: 0, Warnings: 19

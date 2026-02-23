@@ -4,7 +4,7 @@ module ALU (
     input AND, OR, NEG, NOT, 
     input SHR, SHRA, SHL, ROR, ROL,
     input MUL, DIV,
-	 input IncPC,
+	input IncPC,
 	output wire [63:0] ALU_Out_64
 );
 
@@ -46,7 +46,6 @@ module ALU (
         .quotient(div_quotient), 
         .remainder(div_remainder)
     );
-
 
     reg[31:0] C;
     always @(*) begin

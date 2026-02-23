@@ -90,7 +90,7 @@ set_global_assignment -name VERILOG_FILE src/testbenches/DataPath/DataPath_tb_ne
 set_global_assignment -name VERILOG_FILE src/testbenches/DataPath/DataPath_tb_rol.v
 set_global_assignment -name VERILOG_FILE src/testbenches/DataPath/DataPath_tb_ror.v
 set_global_assignment -name VERILOG_FILE src/testbenches/DataPath/DataPath_tb_shl.v
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH ALU_tb -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH DataPath_tb_add -section_id eda_simulation
 set_global_assignment -name VERILOG_FILE src/testbenches/DataPath/DataPath_tb_and.v
 set_global_assignment -name VERILOG_FILE src/alu/add/RCA_4.v
 set_global_assignment -name VERILOG_FILE src/alu/add/PFA.v
@@ -124,7 +124,6 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id DataPath_tb_
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id DataPath_tb_div
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME DataPath_tb_div -section_id DataPath_tb_div
 set_global_assignment -name VERILOG_FILE src/testbenches/DataPath/DataPath_tb_or.v
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name EDA_TEST_BENCH_NAME DataPath_tb_and -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id DataPath_tb_and
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id DataPath_tb_and
@@ -143,6 +142,14 @@ set_global_assignment -name EDA_TEST_BENCH_NAME DataPath_tb_sub -section_id eda_
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id DataPath_tb_sub
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME DataPath_tb_sub -section_id DataPath_tb_sub
 
+set_global_assignment -name EDA_TEST_BENCH_NAME ALU_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id ALU_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ALU_tb -section_id ALU_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME mul_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id mul_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id mul_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Booth_Multiplier_tb -section_id mul_tb
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath_tb.v -section_id DataPath_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_shl.v -section_id datapath_shl
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_ror.v -section_id datapath_ror
@@ -157,7 +164,5 @@ set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPat
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_or.v -section_id DataPath_tb_or
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_add.v -section_id DataPath_tb_add
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_sub.v -section_id DataPath_tb_sub
-set_global_assignment -name EDA_TEST_BENCH_NAME ALU_tb -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id ALU_tb
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ALU_tb -section_id ALU_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/ALU_tb.v -section_id ALU_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Booth_Multiplier_tb.v -section_id mul_tb
