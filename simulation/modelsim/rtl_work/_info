@@ -7,6 +7,7 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
+<<<<<<< HEAD
 Z0 dC:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/simulation/modelsim
 vALU
 Z1 !s110 1771883782
@@ -18,11 +19,25 @@ R0
 w1770512722
 8C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v
 FC:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v
+=======
+Z0 dC:/Users/raele/ELEC374-CPU/simulation/modelsim
+vALU
+Z1 !s110 1771875164
+!i10b 1
+!s100 F]AIMiM7JjofDDXOK<4_G1
+IQVD^QNJZmP^b:O`cAOJ:M2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1771614085
+8C:/Users/raele/ELEC374-CPU/src/alu/ALU.v
+FC:/Users/raele/ELEC374-CPU/src/alu/ALU.v
+>>>>>>> 046d96be0e84611b7a38d928f9d56889e891d824
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
+<<<<<<< HEAD
 Z4 !s108 1771883782.000000
 !s107 C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu|C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v|
@@ -41,11 +56,261 @@ R0
 w1771875541
 8C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v
 FC:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v
+=======
+Z4 !s108 1771875164.000000
+!s107 C:/Users/raele/ELEC374-CPU/src/alu/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/raele/ELEC374-CPU/src/alu|C:/Users/raele/ELEC374-CPU/src/alu/ALU.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/alu
+Z6 tCvgOpt 0
+n@a@l@u
+vBooth_Multiplier
+!s110 1771875163
+!i10b 1
+!s100 4TFIBGHczncPi[1WK[[zN0
+IYzWz?[QZXhBVIf_mPJ`j^1
+R2
+R0
+w1771614090
+8C:/Users/raele/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v
+FC:/Users/raele/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v
 L0 1
 R3
 r1
 !s85 0
 31
+!s108 1771875163.000000
+!s107 C:/Users/raele/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/raele/ELEC374-CPU/src/alu/mul|C:/Users/raele/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/alu/mul
+R6
+n@booth_@multiplier
+vBus
+Z7 !s110 1771875162
+!i10b 1
+!s100 Ib<LRm7SSM7cVCNCmDafN1
+IBT<ZT2M0a8VDfCg8YW5Fc2
+R2
+R0
+Z8 w1770324773
+8C:/Users/raele/ELEC374-CPU/src/bus/Bus.v
+FC:/Users/raele/ELEC374-CPU/src/bus/Bus.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1771875162.000000
+!s107 C:/Users/raele/ELEC374-CPU/src/bus/Bus.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/raele/ELEC374-CPU/src/bus|C:/Users/raele/ELEC374-CPU/src/bus/Bus.v|
+!i113 1
+R5
+Z10 !s92 -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/bus
+R6
+n@bus
+vCLA_16
+Z11 !s110 1771875161
+!i10b 1
+!s100 :gTAJKMdJcID`md_JYKJJ0
+Ibm>338?Sb6U9ikn^MiDS;2
+R2
+R0
+Z12 w1770578064
+8C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_16.v
+FC:/Users/raele/ELEC374-CPU/src/alu/add/CLA_16.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z13 !s108 1771875161.000000
+!s107 C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/raele/ELEC374-CPU/src/alu/add|C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_16.v|
+!i113 1
+R5
+Z14 !s92 -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/alu/add
+R6
+n@c@l@a_16
+vCLA_32
+R11
+!i10b 1
+!s100 YzgUfIILjHXGbc3F;<S5a0
+IhBEBQi`:0YE8WozCDImc82
+R2
+R0
+R12
+8C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v
+FC:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v
+L0 1
+R3
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/raele/ELEC374-CPU/src/alu/add|C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v|
+!i113 1
+R5
+R14
+R6
+n@c@l@a_32
+vCLA_4
+R7
+!i10b 1
+!s100 WCVDU2<5SXgzj4ClN3j7>0
+IIV<g61<[jKBMkAmQL7zO51
+R2
+R0
+Z15 w1770325877
+8C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_4.v
+FC:/Users/raele/ELEC374-CPU/src/alu/add/CLA_4.v
+L0 1
+R3
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/raele/ELEC374-CPU/src/alu/add|C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_4.v|
+!i113 1
+R5
+R14
+R6
+n@c@l@a_4
+vdatapath
+R7
+!i10b 1
+!s100 kDgL@I@>Jn<bB?jnBTU0g2
+IK5cGKo`f9k?0e`o2di_JW0
+R2
+R0
+w1770582840
+8C:/Users/raele/ELEC374-CPU/src/datapath.v
+FC:/Users/raele/ELEC374-CPU/src/datapath.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/raele/ELEC374-CPU/src/datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/raele/ELEC374-CPU/src|C:/Users/raele/ELEC374-CPU/src/datapath.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src
+R6
+vDataPath_tb_add
+R1
+!i10b 1
+!s100 KTd=8;8Ie6RZPRA@zVNA63
+I1CG3^M7L[NoBfRcD4DPV?1
+R2
+R0
+w1770591660
+8C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v
+FC:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath|C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath
+R6
+n@data@path_tb_add
+vMDR
+R7
+!i10b 1
+!s100 M9N2dRU^NW_GhYJd`dUZ@0
+IkQDiR:4Gmof1hfajnUD7U0
+R2
+R0
+R12
+8C:/Users/raele/ELEC374-CPU/src/bus/MDR.v
+FC:/Users/raele/ELEC374-CPU/src/bus/MDR.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/raele/ELEC374-CPU/src/bus/MDR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/raele/ELEC374-CPU/src/bus|C:/Users/raele/ELEC374-CPU/src/bus/MDR.v|
+!i113 1
+R5
+R10
+R6
+n@m@d@r
+vNR_Division
+R1
+!i10b 1
+!s100 [Y19LJ66z6I<2_baBWXFo0
+IjYN4@H=D>zM3PnUDC2Rh63
+R2
+R0
+w1771614087
+8C:/Users/raele/ELEC374-CPU/src/alu/div/NR_Division.v
+FC:/Users/raele/ELEC374-CPU/src/alu/div/NR_Division.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/raele/ELEC374-CPU/src/alu/div/NR_Division.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/raele/ELEC374-CPU/src/alu/div|C:/Users/raele/ELEC374-CPU/src/alu/div/NR_Division.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/alu/div
+R6
+n@n@r_@division
+vPFA
+R11
+!i10b 1
+!s100 ig_RBGa9kI3GYZ`I<]onM0
+IUTk?iHNZESU2D:7LTRe3`2
+R2
+R0
+R15
+8C:/Users/raele/ELEC374-CPU/src/alu/add/PFA.v
+FC:/Users/raele/ELEC374-CPU/src/alu/add/PFA.v
+L0 1
+R3
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/raele/ELEC374-CPU/src/alu/add/PFA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/raele/ELEC374-CPU/src/alu/add|C:/Users/raele/ELEC374-CPU/src/alu/add/PFA.v|
+!i113 1
+R5
+R14
+R6
+n@p@f@a
+vRegister_32
+R7
+!i10b 1
+!s100 GUbfGzONO8C6ICnfhFB2]0
+IHa^CJHVKi8^Zg6i3aJKWG2
+R2
+R0
+R8
+8C:/Users/raele/ELEC374-CPU/src/registers/Register_32.v
+FC:/Users/raele/ELEC374-CPU/src/registers/Register_32.v
+>>>>>>> 046d96be0e84611b7a38d928f9d56889e891d824
+L0 1
+R3
+r1
+!s85 0
+31
+<<<<<<< HEAD
 R4
 !s107 C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/mul|C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v|
@@ -281,5 +546,13 @@ R8
 !i113 1
 R5
 !s92 -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers
+=======
+R9
+!s107 C:/Users/raele/ELEC374-CPU/src/registers/Register_32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/raele/ELEC374-CPU/src/registers|C:/Users/raele/ELEC374-CPU/src/registers/Register_32.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/registers
+>>>>>>> 046d96be0e84611b7a38d928f9d56889e891d824
 R6
 n@register_32

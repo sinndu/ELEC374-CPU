@@ -6,9 +6,9 @@ module ALU_tb;
     reg ADD, SUB, AND, OR, NEG, NOT;
     reg SHR, SHRA, SHL, ROR, ROL;
     reg MUL, DIV;
-    reg IncPC; 
 
-    wire [63:0] ALU_Out_64;   
+    wire [31:0] C;            
+    wire [63:0] ALU_Out_64;   // for mul/div
 
     ALU alu_tb (
         .A(A), .B(B),
@@ -16,7 +16,7 @@ module ALU_tb;
         .AND(AND), .OR(OR), .NEG(NEG), .NOT(NOT),
         .SHR(SHR), .SHRA(SHRA), .SHL(SHL), .ROR(ROR), .ROL(ROL),
         .MUL(MUL), .DIV(DIV),
-        .IncPC(IncPC),          
+        .C(C),
         .ALU_Out_64(ALU_Out_64)
     );
 
@@ -24,7 +24,7 @@ module ALU_tb;
         begin
             ADD=0; SUB=0; AND=0; OR=0; NEG=0; NOT=0;
             SHR=0; SHRA=0; SHL=0; ROR=0; ROL=0;
-            MUL=0; DIV=0; IncPC=0;
+            MUL=0; DIV=0;
         end
     endtask
 
@@ -32,49 +32,25 @@ module ALU_tb;
         $display("Starting ALU Tests:");
         clear_signals();
         
-
-        // ADD
-        A = 10; B = 20; ADD = 1;
-        #20;
-        if (ALU_Out_64[31:0] === 30) $display("PASS: ADD 10 + 20 = 30");
-        else $display("FAIL: ADD. Expected 30, Got %d", ALU_Out_64[31:0]);
-        clear_signals();
-
-        // SUB
-        A = 50; B = 20; SUB = 1;
-        #20;
-        if (ALU_Out_64[31:0] === 30) $display("PASS: SUB 50 - 20 = 30");
-        else $display("FAIL: SUB. Expected 30, Got %d", ALU_Out_64[31:0]);
-        clear_signals();
-
-        // NEG 
-        A = 32'hDEADBEEF; // should be ignored
-        B = 25; NEG = 1;
-        #20;
-        if ($signed(ALU_Out_64[31:0]) === -25) $display("PASS: NEG -25 Correct");
-        else $display("FAIL: NEG. Expected -25, Got %d", $signed(ALU_Out_64[31:0]));
-        clear_signals();
-
-
-        // AND
+		  // AND
         A = 32'hFFFF0000; B = 32'h00FFFF00; AND = 1;
         #20;
-        if (ALU_Out_64[31:0] === 32'h00FF0000) $display("PASS: AND Correct");
-        else $display("FAIL: AND. Got %h", ALU_Out_64[31:0]);
+        if (C === 32'h00FF0000) $display("PASS: AND Correct");
+        else $display("FAIL: AND. Got %h", C);
         clear_signals();
 
         // OR
         A = 32'hF0F0F0F0; B = 32'h0F0F0F0F; OR = 1;
         #20;
-        if (ALU_Out_64[31:0] === 32'hFFFFFFFF) $display("PASS: OR Correct");
-        else $display("FAIL: OR. Got %h", ALU_Out_64[31:0]);
+        if (C === 32'hFFFFFFFF) $display("PASS: OR Correct");
+        else $display("FAIL: OR. Got %h", C);
         clear_signals();
 
         // NOT
         A = 0; B = 32'h0000FFFF; NOT = 1;
         #20;
-        if (ALU_Out_64[31:0] === 32'hFFFF0000) $display("PASS: NOT Correct");
-        else $display("FAIL: NOT. Got %h", ALU_Out_64[31:0]);
+        if (C === 32'hFFFF0000) $display("PASS: NOT Correct");
+        else $display("FAIL: NOT. Got %h", C);
         clear_signals();
 
         // MUL
@@ -96,32 +72,32 @@ module ALU_tb;
         // SHL
         A = 1; B = 4; SHL = 1;
         #20;
-        if (ALU_Out_64[31:0] === 16) $display("PASS: SHL 1 << 4 = 16");
-        else $display("FAIL: SHL. Got %d", ALU_Out_64[31:0]);
+        if (C === 16) $display("PASS: SHL 1 << 4 = 16");
+        else $display("FAIL: SHL. Got %d", C);
         clear_signals();
 
         // SHR
         A = 16; B = 2; SHR = 1;
         #20;
-        if (ALU_Out_64[31:0] === 4) $display("PASS: SHR 16 >> 2 = 4");
-        else $display("FAIL: SHR. Got %d", ALU_Out_64[31:0]);
+        if (C === 4) $display("PASS: SHR 16 >> 2 = 4");
+        else $display("FAIL: SHR. Got %d", C);
         clear_signals();
 
         // ROL
         A = 32'h80000000; B = 1; ROL = 1;
         #20;
-        if (ALU_Out_64[31:0] === 1) $display("PASS: ROL Correct");
-        else $display("FAIL: ROL. Got %h", ALU_Out_64[31:0]);
+        if (C === 1) $display("PASS: ROL Correct");
+        else $display("FAIL: ROL. Got %h", C);
         clear_signals();
 
         // ROR
         A = 1; B = 1; ROR = 1;
         #20;
-        if (ALU_Out_64[31:0] === 32'h80000000) $display("PASS: ROR Correct");
-        else $display("FAIL: ROR. Got %h", ALU_Out_64[31:0]);
+        if (C === 32'h80000000) $display("PASS: ROR Correct");
+        else $display("FAIL: ROR. Got %h", C);
         clear_signals();
 
-        $display("ALU Logic, Arithmetic & Shift Tests Complete.");
+        $display("ALU Logic & Shift Tests Complete.");
         $stop;
     end
 

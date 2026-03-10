@@ -18,6 +18,8 @@ module datapath(
     input wire Gra, Grb, Grc,
     input wire BAout,
     input wire [3:0] ALU_operation
+
+    output wire out_outport_data;
 );
 
 wire [31:0] BusMuxOut, BusMuxIn_R0, BusMuxIn_R1, BusMuxIn_R2, BusMuxIn_R3, 
@@ -85,9 +87,7 @@ wire [31:0] MAR_wire; //subject to change, this is the MAR output to the memory 
 Register_32 MAR(clock, clear, MARin, BusMuxOut, MAR_wire);
 
 //IO
-wire[31:0] to_InPort;
 Register_32 InPort(clock, clear, InPortin, in_inport_data, BusMuxIn_InPort);
-wire[31:0] out_outport_data;
 Register_32 OutPort(clock, clear, OutPortin, BusMuxOut, out_outport_data);
 
 

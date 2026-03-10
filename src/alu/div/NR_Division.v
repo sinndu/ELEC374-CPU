@@ -4,7 +4,6 @@ module NR_Division (
     output reg [31:0] quotient,
     output reg [31:0] remainder
 );
-
     reg [63:0] AQ; // AQ combined 
     integer i;
 
@@ -12,9 +11,7 @@ module NR_Division (
         AQ = {32'b0, Q};  // Init AQ
 
         for (i = 0; i < 32; i = i + 1) begin
-            
             AQ = AQ << 1; // Shift AQ by 1
-				
             if (AQ[63] == 0) begin
                 AQ[63:32] = AQ[63:32] - M; // If positive, sub M
             end else begin
@@ -35,5 +32,4 @@ module NR_Division (
         quotient = AQ[31:0];
         remainder = AQ[63:32];
     end
-
 endmodule
