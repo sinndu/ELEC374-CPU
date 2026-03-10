@@ -68,6 +68,7 @@ in_inport_data[31] => in_inport_data[31].IN1
 PCin => PCin.IN1
 PCout => PCout.IN1
 IRin => IRin.IN1
+CONin => CONin.IN1
 MARin => MARin.IN1
 MDRin => MDRin.IN1
 MDRout => MDRout.IN1
@@ -96,6 +97,38 @@ ALU_operation[0] => ShiftLeft1.IN20
 ALU_operation[1] => ShiftLeft1.IN19
 ALU_operation[2] => ShiftLeft1.IN18
 ALU_operation[3] => ShiftLeft1.IN17
+out_outport_data[0] << Register_32:OutPort.port4
+out_outport_data[1] << Register_32:OutPort.port4
+out_outport_data[2] << Register_32:OutPort.port4
+out_outport_data[3] << Register_32:OutPort.port4
+out_outport_data[4] << Register_32:OutPort.port4
+out_outport_data[5] << Register_32:OutPort.port4
+out_outport_data[6] << Register_32:OutPort.port4
+out_outport_data[7] << Register_32:OutPort.port4
+out_outport_data[8] << Register_32:OutPort.port4
+out_outport_data[9] << Register_32:OutPort.port4
+out_outport_data[10] << Register_32:OutPort.port4
+out_outport_data[11] << Register_32:OutPort.port4
+out_outport_data[12] << Register_32:OutPort.port4
+out_outport_data[13] << Register_32:OutPort.port4
+out_outport_data[14] << Register_32:OutPort.port4
+out_outport_data[15] << Register_32:OutPort.port4
+out_outport_data[16] << Register_32:OutPort.port4
+out_outport_data[17] << Register_32:OutPort.port4
+out_outport_data[18] << Register_32:OutPort.port4
+out_outport_data[19] << Register_32:OutPort.port4
+out_outport_data[20] << Register_32:OutPort.port4
+out_outport_data[21] << Register_32:OutPort.port4
+out_outport_data[22] << Register_32:OutPort.port4
+out_outport_data[23] << Register_32:OutPort.port4
+out_outport_data[24] << Register_32:OutPort.port4
+out_outport_data[25] << Register_32:OutPort.port4
+out_outport_data[26] << Register_32:OutPort.port4
+out_outport_data[27] << Register_32:OutPort.port4
+out_outport_data[28] << Register_32:OutPort.port4
+out_outport_data[29] << Register_32:OutPort.port4
+out_outport_data[30] << Register_32:OutPort.port4
+out_outport_data[31] << Register_32:OutPort.port4
 
 
 |datapath|Register_32:R0
@@ -3747,6 +3780,47 @@ C_sign_extended[30] <= IR_out[18].DB_MAX_OUTPUT_PORT_TYPE
 C_sign_extended[31] <= IR_out[18].DB_MAX_OUTPUT_PORT_TYPE
 
 
+|datapath|CON_FF:CON_FF_logic
+IR_output[0] => ~NO_FANOUT~
+IR_output[1] => ~NO_FANOUT~
+IR_output[2] => ~NO_FANOUT~
+IR_output[3] => ~NO_FANOUT~
+BusMuxOut[0] => ~NO_FANOUT~
+BusMuxOut[1] => ~NO_FANOUT~
+BusMuxOut[2] => ~NO_FANOUT~
+BusMuxOut[3] => ~NO_FANOUT~
+BusMuxOut[4] => ~NO_FANOUT~
+BusMuxOut[5] => ~NO_FANOUT~
+BusMuxOut[6] => ~NO_FANOUT~
+BusMuxOut[7] => ~NO_FANOUT~
+BusMuxOut[8] => ~NO_FANOUT~
+BusMuxOut[9] => ~NO_FANOUT~
+BusMuxOut[10] => ~NO_FANOUT~
+BusMuxOut[11] => ~NO_FANOUT~
+BusMuxOut[12] => ~NO_FANOUT~
+BusMuxOut[13] => ~NO_FANOUT~
+BusMuxOut[14] => ~NO_FANOUT~
+BusMuxOut[15] => ~NO_FANOUT~
+BusMuxOut[16] => ~NO_FANOUT~
+BusMuxOut[17] => ~NO_FANOUT~
+BusMuxOut[18] => ~NO_FANOUT~
+BusMuxOut[19] => ~NO_FANOUT~
+BusMuxOut[20] => ~NO_FANOUT~
+BusMuxOut[21] => ~NO_FANOUT~
+BusMuxOut[22] => ~NO_FANOUT~
+BusMuxOut[23] => ~NO_FANOUT~
+BusMuxOut[24] => ~NO_FANOUT~
+BusMuxOut[25] => ~NO_FANOUT~
+BusMuxOut[26] => ~NO_FANOUT~
+BusMuxOut[27] => ~NO_FANOUT~
+BusMuxOut[28] => ~NO_FANOUT~
+BusMuxOut[29] => ~NO_FANOUT~
+BusMuxOut[30] => ~NO_FANOUT~
+BusMuxOut[31] => ~NO_FANOUT~
+CONin => ~NO_FANOUT~
+Q <= <GND>
+
+
 |datapath|Register_32:PC
 clk => storage[0].CLK
 clk => storage[1].CLK
@@ -5240,8 +5314,6 @@ sum[13] <= CLA_4:cla3.sum
 sum[14] <= CLA_4:cla3.sum
 sum[15] <= CLA_4:cla3.sum
 cout <= C.DB_MAX_OUTPUT_PORT_TYPE
-GG16 <= C.DB_MAX_OUTPUT_PORT_TYPE
-PG16 <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0
@@ -5543,8 +5615,6 @@ sum[13] <= CLA_4:cla3.sum
 sum[14] <= CLA_4:cla3.sum
 sum[15] <= CLA_4:cla3.sum
 cout <= C.DB_MAX_OUTPUT_PORT_TYPE
-GG16 <= C.DB_MAX_OUTPUT_PORT_TYPE
-PG16 <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla0

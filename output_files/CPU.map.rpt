@@ -1,9 +1,5 @@
 Analysis & Synthesis report for CPU
-<<<<<<< HEAD
-Tue Mar 10 14:55:54 2026
-=======
-Fri Feb 20 14:40:45 2026
->>>>>>> 046d96be0e84611b7a38d928f9d56889e891d824
+Tue Mar 10 16:33:45 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -17,45 +13,46 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Register_32:R0
- 10. Parameter Settings for User Entity Instance: Register_32:R1
- 11. Parameter Settings for User Entity Instance: Register_32:R2
- 12. Parameter Settings for User Entity Instance: Register_32:R3
- 13. Parameter Settings for User Entity Instance: Register_32:R4
- 14. Parameter Settings for User Entity Instance: Register_32:R5
- 15. Parameter Settings for User Entity Instance: Register_32:R6
- 16. Parameter Settings for User Entity Instance: Register_32:R7
- 17. Parameter Settings for User Entity Instance: Register_32:R8
- 18. Parameter Settings for User Entity Instance: Register_32:R9
- 19. Parameter Settings for User Entity Instance: Register_32:R10
- 20. Parameter Settings for User Entity Instance: Register_32:R11
- 21. Parameter Settings for User Entity Instance: Register_32:R12
- 22. Parameter Settings for User Entity Instance: Register_32:R13
- 23. Parameter Settings for User Entity Instance: Register_32:R14
- 24. Parameter Settings for User Entity Instance: Register_32:R15
- 25. Parameter Settings for User Entity Instance: MDR:MDR|Register_32:MDR_Reg
- 26. Parameter Settings for User Entity Instance: Register_32:HI
- 27. Parameter Settings for User Entity Instance: Register_32:LO
- 28. Parameter Settings for User Entity Instance: Register_32:C
- 29. Parameter Settings for User Entity Instance: Register_32:IR
- 30. Parameter Settings for User Entity Instance: Register_32:PC
- 31. Parameter Settings for User Entity Instance: Register_32:MAR
- 32. Parameter Settings for User Entity Instance: Register_32:InPort
- 33. Parameter Settings for User Entity Instance: Register_32:OutPort
- 34. Parameter Settings for User Entity Instance: Register_32:RY
- 35. Parameter Settings for User Entity Instance: Register_32:RZhigh
- 36. Parameter Settings for User Entity Instance: Register_32:RZlow
- 37. Port Connectivity Checks: "ALU:alu_op|CLA_32:adder|CLA_16:high_16"
- 38. Port Connectivity Checks: "ALU:alu_op|CLA_32:adder|CLA_16:low_16"
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Register_32:R0
+ 12. Parameter Settings for User Entity Instance: Register_32:R1
+ 13. Parameter Settings for User Entity Instance: Register_32:R2
+ 14. Parameter Settings for User Entity Instance: Register_32:R3
+ 15. Parameter Settings for User Entity Instance: Register_32:R4
+ 16. Parameter Settings for User Entity Instance: Register_32:R5
+ 17. Parameter Settings for User Entity Instance: Register_32:R6
+ 18. Parameter Settings for User Entity Instance: Register_32:R7
+ 19. Parameter Settings for User Entity Instance: Register_32:R8
+ 20. Parameter Settings for User Entity Instance: Register_32:R9
+ 21. Parameter Settings for User Entity Instance: Register_32:R10
+ 22. Parameter Settings for User Entity Instance: Register_32:R11
+ 23. Parameter Settings for User Entity Instance: Register_32:R12
+ 24. Parameter Settings for User Entity Instance: Register_32:R13
+ 25. Parameter Settings for User Entity Instance: Register_32:R14
+ 26. Parameter Settings for User Entity Instance: Register_32:R15
+ 27. Parameter Settings for User Entity Instance: MDR:MDR|Register_32:MDR_Reg
+ 28. Parameter Settings for User Entity Instance: Register_32:HI
+ 29. Parameter Settings for User Entity Instance: Register_32:LO
+ 30. Parameter Settings for User Entity Instance: Register_32:C
+ 31. Parameter Settings for User Entity Instance: Register_32:IR
+ 32. Parameter Settings for User Entity Instance: Register_32:PC
+ 33. Parameter Settings for User Entity Instance: Register_32:MAR
+ 34. Parameter Settings for User Entity Instance: Register_32:InPort
+ 35. Parameter Settings for User Entity Instance: Register_32:OutPort
+ 36. Parameter Settings for User Entity Instance: Register_32:RY
+ 37. Parameter Settings for User Entity Instance: Register_32:RZhigh
+ 38. Parameter Settings for User Entity Instance: Register_32:RZlow
  39. Port Connectivity Checks: "ALU:alu_op|CLA_32:adder"
- 40. Port Connectivity Checks: "Register_32:OutPort"
- 41. Port Connectivity Checks: "Register_32:MAR"
+ 40. Port Connectivity Checks: "Register_32:MAR"
+ 41. Port Connectivity Checks: "CON_FF:CON_FF_logic"
  42. Port Connectivity Checks: "Select_encode:S_E_logic"
- 43. Post-Synthesis Netlist Statistics for Top Partition
- 44. Elapsed Time Per Partition
- 45. Analysis & Synthesis Messages
- 46. Analysis & Synthesis Suppressed Messages
+ 43. Port Connectivity Checks: "Register_32:IR"
+ 44. Post-Synthesis Netlist Statistics for Top Partition
+ 45. Elapsed Time Per Partition
+ 46. Analysis & Synthesis Messages
+ 47. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -81,18 +78,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-<<<<<<< HEAD
-; Analysis & Synthesis Status     ; Successful - Tue Mar 10 14:55:54 2026       ;
-=======
-; Analysis & Synthesis Status     ; Successful - Fri Feb 20 14:40:45 2026       ;
->>>>>>> 046d96be0e84611b7a38d928f9d56889e891d824
+; Analysis & Synthesis Status     ; Successful - Tue Mar 10 16:33:44 2026       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; CPU                                         ;
 ; Top-level Entity Name           ; datapath                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 97                                          ;
+; Total registers                 ; 352                                         ;
+; Total pins                      ; 130                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -197,23 +190,24 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 10          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
 +----------------------------+-------------+
 
 
-<<<<<<< HEAD
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                                                           ;
 +-----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path  ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                            ; Library ;
 +-----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
+; src/select_encode/CON_FF.v        ; yes             ; User Verilog HDL File  ; C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/CON_FF.v        ;         ;
 ; src/select_encode/Select_encode.v ; yes             ; User Verilog HDL File  ; C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/Select_encode.v ;         ;
 ; src/alu/add/PFA.v                 ; yes             ; User Verilog HDL File  ; C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/PFA.v                 ;         ;
 ; src/alu/add/CLA_32.v              ; yes             ; User Verilog HDL File  ; C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v              ;         ;
@@ -227,62 +221,591 @@ refer to the applicable agreement for further details.
 ; src/alu/div/NR_Division.v         ; yes             ; User Verilog HDL File  ; C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v         ;         ;
 ; src/alu/ALU.v                     ; yes             ; User Verilog HDL File  ; C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v                     ;         ;
 +-----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
-=======
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                            ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                              ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
-; src/alu/add/PFA.v                ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/alu/add/PFA.v              ;         ;
-; src/alu/add/CLA_32.v             ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v           ;         ;
-; src/alu/add/CLA_16.v             ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_16.v           ;         ;
-; src/alu/add/CLA_4.v              ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_4.v            ;         ;
-; src/datapath.v                   ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/datapath.v                 ;         ;
-; src/registers/Register_32.v      ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/registers/Register_32.v    ;         ;
-; src/bus/MDR.v                    ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/bus/MDR.v                  ;         ;
-; src/bus/Bus.v                    ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/bus/Bus.v                  ;         ;
-; src/alu/mul/Booth_Multiplier.v   ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v ;         ;
-; src/alu/div/NR_Division.v        ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/alu/div/NR_Division.v      ;         ;
-; src/alu/ALU.v                    ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/alu/ALU.v                  ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
->>>>>>> 046d96be0e84611b7a38d928f9d56889e891d824
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimate of Logic utilization (ALMs needed) ; 0     ;
-;                                             ;       ;
-; Combinational ALUT usage for logic          ; 0     ;
-;     -- 7 input functions                    ; 0     ;
-;     -- 6 input functions                    ; 0     ;
-;     -- 5 input functions                    ; 0     ;
-;     -- 4 input functions                    ; 0     ;
-;     -- <=3 input functions                  ; 0     ;
-;                                             ;       ;
-; Dedicated logic registers                   ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 97    ;
-;                                             ;       ;
-; Total DSP Blocks                            ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; clock ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 97    ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++-----------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                           ;
++---------------------------------------------+-------------------------+
+; Resource                                    ; Usage                   ;
++---------------------------------------------+-------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 1934                    ;
+;                                             ;                         ;
+; Combinational ALUT usage for logic          ; 2974                    ;
+;     -- 7 input functions                    ; 437                     ;
+;     -- 6 input functions                    ; 400                     ;
+;     -- 5 input functions                    ; 1314                    ;
+;     -- 4 input functions                    ; 259                     ;
+;     -- <=3 input functions                  ; 564                     ;
+;                                             ;                         ;
+; Dedicated logic registers                   ; 352                     ;
+;                                             ;                         ;
+; I/O pins                                    ; 130                     ;
+;                                             ;                         ;
+; Total DSP Blocks                            ; 0                       ;
+;                                             ;                         ;
+; Maximum fan-out node                        ; Bus:bus|BusMuxOut[13]~0 ;
+; Maximum fan-out                             ; 1034                    ;
+; Total fan-out                               ; 17574                   ;
+; Average fan-out                             ; 4.90                    ;
++---------------------------------------------+-------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |datapath                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 97   ; 0            ; |datapath           ; datapath    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                   ;
++-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node          ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                  ; Entity Name      ; Library Name ;
++-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------+------------------+--------------+
+; |datapath                           ; 2974 (7)            ; 352 (0)                   ; 0                 ; 0          ; 130  ; 0            ; |datapath                                                            ; datapath         ; work         ;
+;    |ALU:alu_op|                     ; 2822 (671)          ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op                                                 ; ALU              ; work         ;
+;       |Booth_Multiplier:multiplier| ; 982 (982)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier                     ; Booth_Multiplier ; work         ;
+;       |CLA_32:adder|                ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder                                    ; CLA_32           ; work         ;
+;          |CLA_16:high_16|           ; 37 (6)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16                     ; CLA_16           ; work         ;
+;             |CLA_4:cla0|            ; 9 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla0          ; CLA_4            ; work         ;
+;                |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla0|PFA:pfa0 ; PFA              ; work         ;
+;                |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla0|PFA:pfa1 ; PFA              ; work         ;
+;                |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla0|PFA:pfa2 ; PFA              ; work         ;
+;                |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla0|PFA:pfa3 ; PFA              ; work         ;
+;             |CLA_4:cla1|            ; 9 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla1          ; CLA_4            ; work         ;
+;                |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla1|PFA:pfa0 ; PFA              ; work         ;
+;                |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla1|PFA:pfa1 ; PFA              ; work         ;
+;                |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla1|PFA:pfa2 ; PFA              ; work         ;
+;                |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla1|PFA:pfa3 ; PFA              ; work         ;
+;             |CLA_4:cla2|            ; 6 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla2          ; CLA_4            ; work         ;
+;                |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla2|PFA:pfa0 ; PFA              ; work         ;
+;                |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla2|PFA:pfa1 ; PFA              ; work         ;
+;                |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla2|PFA:pfa2 ; PFA              ; work         ;
+;                |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla2|PFA:pfa3 ; PFA              ; work         ;
+;             |CLA_4:cla3|            ; 7 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla3          ; CLA_4            ; work         ;
+;                |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla3|PFA:pfa0 ; PFA              ; work         ;
+;                |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla3|PFA:pfa1 ; PFA              ; work         ;
+;                |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla3|PFA:pfa2 ; PFA              ; work         ;
+;                |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla3|PFA:pfa3 ; PFA              ; work         ;
+;          |CLA_16:low_16|            ; 44 (9)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16                      ; CLA_16           ; work         ;
+;             |CLA_4:cla0|            ; 10 (6)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0           ; CLA_4            ; work         ;
+;                |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa0  ; PFA              ; work         ;
+;                |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa1  ; PFA              ; work         ;
+;                |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa2  ; PFA              ; work         ;
+;                |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa3  ; PFA              ; work         ;
+;             |CLA_4:cla1|            ; 9 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla1           ; CLA_4            ; work         ;
+;                |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla1|PFA:pfa0  ; PFA              ; work         ;
+;                |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla1|PFA:pfa1  ; PFA              ; work         ;
+;                |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla1|PFA:pfa2  ; PFA              ; work         ;
+;                |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla1|PFA:pfa3  ; PFA              ; work         ;
+;             |CLA_4:cla2|            ; 10 (6)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla2           ; CLA_4            ; work         ;
+;                |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla2|PFA:pfa0  ; PFA              ; work         ;
+;                |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla2|PFA:pfa1  ; PFA              ; work         ;
+;                |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla2|PFA:pfa2  ; PFA              ; work         ;
+;                |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla2|PFA:pfa3  ; PFA              ; work         ;
+;             |CLA_4:cla3|            ; 6 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla3           ; CLA_4            ; work         ;
+;                |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla3|PFA:pfa0  ; PFA              ; work         ;
+;                |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla3|PFA:pfa1  ; PFA              ; work         ;
+;                |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla3|PFA:pfa2  ; PFA              ; work         ;
+;                |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla3|PFA:pfa3  ; PFA              ; work         ;
+;       |NR_Division:divider|         ; 1088 (1088)         ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|NR_Division:divider                             ; NR_Division      ; work         ;
+;    |Bus:bus|                        ; 135 (135)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|Bus:bus                                                    ; Bus              ; work         ;
+;    |MDR:MDR|                        ; 1 (0)               ; 32 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |datapath|MDR:MDR                                                    ; MDR              ; work         ;
+;       |Register_32:MDR_Reg|         ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|MDR:MDR|Register_32:MDR_Reg                                ; Register_32      ; work         ;
+;    |Register_32:C|                  ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:C                                              ; Register_32      ; work         ;
+;    |Register_32:HI|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:HI                                             ; Register_32      ; work         ;
+;    |Register_32:InPort|             ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:InPort                                         ; Register_32      ; work         ;
+;    |Register_32:LO|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:LO                                             ; Register_32      ; work         ;
+;    |Register_32:OutPort|            ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:OutPort                                        ; Register_32      ; work         ;
+;    |Register_32:PC|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:PC                                             ; Register_32      ; work         ;
+;    |Register_32:R0|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:R0                                             ; Register_32      ; work         ;
+;    |Register_32:RY|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:RY                                             ; Register_32      ; work         ;
+;    |Register_32:RZhigh|             ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:RZhigh                                         ; Register_32      ; work         ;
+;    |Register_32:RZlow|              ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:RZlow                                          ; Register_32      ; work         ;
++-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------+
+; Registers Removed During Synthesis                           ;
++-----------------------------------------+--------------------+
+; Register name                           ; Reason for Removal ;
++-----------------------------------------+--------------------+
+; Register_32:R15|storage[0]              ; Lost fanout        ;
+; Register_32:R14|storage[0]              ; Lost fanout        ;
+; Register_32:R13|storage[0]              ; Lost fanout        ;
+; Register_32:R12|storage[0]              ; Lost fanout        ;
+; Register_32:R11|storage[0]              ; Lost fanout        ;
+; Register_32:R10|storage[0]              ; Lost fanout        ;
+; Register_32:R9|storage[0]               ; Lost fanout        ;
+; Register_32:R8|storage[0]               ; Lost fanout        ;
+; Register_32:R7|storage[0]               ; Lost fanout        ;
+; Register_32:R6|storage[0]               ; Lost fanout        ;
+; Register_32:R5|storage[0]               ; Lost fanout        ;
+; Register_32:R4|storage[0]               ; Lost fanout        ;
+; Register_32:R3|storage[0]               ; Lost fanout        ;
+; Register_32:R2|storage[0]               ; Lost fanout        ;
+; Register_32:R1|storage[0]               ; Lost fanout        ;
+; Register_32:R15|storage[1]              ; Lost fanout        ;
+; Register_32:R14|storage[1]              ; Lost fanout        ;
+; Register_32:R13|storage[1]              ; Lost fanout        ;
+; Register_32:R12|storage[1]              ; Lost fanout        ;
+; Register_32:R11|storage[1]              ; Lost fanout        ;
+; Register_32:R10|storage[1]              ; Lost fanout        ;
+; Register_32:R9|storage[1]               ; Lost fanout        ;
+; Register_32:R8|storage[1]               ; Lost fanout        ;
+; Register_32:R7|storage[1]               ; Lost fanout        ;
+; Register_32:R6|storage[1]               ; Lost fanout        ;
+; Register_32:R5|storage[1]               ; Lost fanout        ;
+; Register_32:R4|storage[1]               ; Lost fanout        ;
+; Register_32:R3|storage[1]               ; Lost fanout        ;
+; Register_32:R2|storage[1]               ; Lost fanout        ;
+; Register_32:R1|storage[1]               ; Lost fanout        ;
+; Register_32:R15|storage[2]              ; Lost fanout        ;
+; Register_32:R14|storage[2]              ; Lost fanout        ;
+; Register_32:R13|storage[2]              ; Lost fanout        ;
+; Register_32:R12|storage[2]              ; Lost fanout        ;
+; Register_32:R11|storage[2]              ; Lost fanout        ;
+; Register_32:R10|storage[2]              ; Lost fanout        ;
+; Register_32:R9|storage[2]               ; Lost fanout        ;
+; Register_32:R8|storage[2]               ; Lost fanout        ;
+; Register_32:R7|storage[2]               ; Lost fanout        ;
+; Register_32:R6|storage[2]               ; Lost fanout        ;
+; Register_32:R5|storage[2]               ; Lost fanout        ;
+; Register_32:R4|storage[2]               ; Lost fanout        ;
+; Register_32:R3|storage[2]               ; Lost fanout        ;
+; Register_32:R2|storage[2]               ; Lost fanout        ;
+; Register_32:R1|storage[2]               ; Lost fanout        ;
+; Register_32:R15|storage[3]              ; Lost fanout        ;
+; Register_32:R14|storage[3]              ; Lost fanout        ;
+; Register_32:R13|storage[3]              ; Lost fanout        ;
+; Register_32:R12|storage[3]              ; Lost fanout        ;
+; Register_32:R11|storage[3]              ; Lost fanout        ;
+; Register_32:R10|storage[3]              ; Lost fanout        ;
+; Register_32:R9|storage[3]               ; Lost fanout        ;
+; Register_32:R8|storage[3]               ; Lost fanout        ;
+; Register_32:R7|storage[3]               ; Lost fanout        ;
+; Register_32:R6|storage[3]               ; Lost fanout        ;
+; Register_32:R5|storage[3]               ; Lost fanout        ;
+; Register_32:R4|storage[3]               ; Lost fanout        ;
+; Register_32:R3|storage[3]               ; Lost fanout        ;
+; Register_32:R2|storage[3]               ; Lost fanout        ;
+; Register_32:R1|storage[3]               ; Lost fanout        ;
+; Register_32:R15|storage[4]              ; Lost fanout        ;
+; Register_32:R14|storage[4]              ; Lost fanout        ;
+; Register_32:R13|storage[4]              ; Lost fanout        ;
+; Register_32:R12|storage[4]              ; Lost fanout        ;
+; Register_32:R11|storage[4]              ; Lost fanout        ;
+; Register_32:R10|storage[4]              ; Lost fanout        ;
+; Register_32:R9|storage[4]               ; Lost fanout        ;
+; Register_32:R8|storage[4]               ; Lost fanout        ;
+; Register_32:R7|storage[4]               ; Lost fanout        ;
+; Register_32:R6|storage[4]               ; Lost fanout        ;
+; Register_32:R5|storage[4]               ; Lost fanout        ;
+; Register_32:R4|storage[4]               ; Lost fanout        ;
+; Register_32:R3|storage[4]               ; Lost fanout        ;
+; Register_32:R2|storage[4]               ; Lost fanout        ;
+; Register_32:R1|storage[4]               ; Lost fanout        ;
+; Register_32:R15|storage[5]              ; Lost fanout        ;
+; Register_32:R14|storage[5]              ; Lost fanout        ;
+; Register_32:R13|storage[5]              ; Lost fanout        ;
+; Register_32:R12|storage[5]              ; Lost fanout        ;
+; Register_32:R11|storage[5]              ; Lost fanout        ;
+; Register_32:R10|storage[5]              ; Lost fanout        ;
+; Register_32:R9|storage[5]               ; Lost fanout        ;
+; Register_32:R8|storage[5]               ; Lost fanout        ;
+; Register_32:R7|storage[5]               ; Lost fanout        ;
+; Register_32:R6|storage[5]               ; Lost fanout        ;
+; Register_32:R5|storage[5]               ; Lost fanout        ;
+; Register_32:R4|storage[5]               ; Lost fanout        ;
+; Register_32:R3|storage[5]               ; Lost fanout        ;
+; Register_32:R2|storage[5]               ; Lost fanout        ;
+; Register_32:R1|storage[5]               ; Lost fanout        ;
+; Register_32:R15|storage[6]              ; Lost fanout        ;
+; Register_32:R14|storage[6]              ; Lost fanout        ;
+; Register_32:R13|storage[6]              ; Lost fanout        ;
+; Register_32:R12|storage[6]              ; Lost fanout        ;
+; Register_32:R11|storage[6]              ; Lost fanout        ;
+; Register_32:R10|storage[6]              ; Lost fanout        ;
+; Register_32:R9|storage[6]               ; Lost fanout        ;
+; Register_32:R8|storage[6]               ; Lost fanout        ;
+; Register_32:R7|storage[6]               ; Lost fanout        ;
+; Register_32:R6|storage[6]               ; Lost fanout        ;
+; Register_32:R5|storage[6]               ; Lost fanout        ;
+; Register_32:R4|storage[6]               ; Lost fanout        ;
+; Register_32:R3|storage[6]               ; Lost fanout        ;
+; Register_32:R2|storage[6]               ; Lost fanout        ;
+; Register_32:R1|storage[6]               ; Lost fanout        ;
+; Register_32:R15|storage[7]              ; Lost fanout        ;
+; Register_32:R14|storage[7]              ; Lost fanout        ;
+; Register_32:R13|storage[7]              ; Lost fanout        ;
+; Register_32:R12|storage[7]              ; Lost fanout        ;
+; Register_32:R11|storage[7]              ; Lost fanout        ;
+; Register_32:R10|storage[7]              ; Lost fanout        ;
+; Register_32:R9|storage[7]               ; Lost fanout        ;
+; Register_32:R8|storage[7]               ; Lost fanout        ;
+; Register_32:R7|storage[7]               ; Lost fanout        ;
+; Register_32:R6|storage[7]               ; Lost fanout        ;
+; Register_32:R5|storage[7]               ; Lost fanout        ;
+; Register_32:R4|storage[7]               ; Lost fanout        ;
+; Register_32:R3|storage[7]               ; Lost fanout        ;
+; Register_32:R2|storage[7]               ; Lost fanout        ;
+; Register_32:R1|storage[7]               ; Lost fanout        ;
+; Register_32:R15|storage[8]              ; Lost fanout        ;
+; Register_32:R14|storage[8]              ; Lost fanout        ;
+; Register_32:R13|storage[8]              ; Lost fanout        ;
+; Register_32:R12|storage[8]              ; Lost fanout        ;
+; Register_32:R11|storage[8]              ; Lost fanout        ;
+; Register_32:R10|storage[8]              ; Lost fanout        ;
+; Register_32:R9|storage[8]               ; Lost fanout        ;
+; Register_32:R8|storage[8]               ; Lost fanout        ;
+; Register_32:R7|storage[8]               ; Lost fanout        ;
+; Register_32:R6|storage[8]               ; Lost fanout        ;
+; Register_32:R5|storage[8]               ; Lost fanout        ;
+; Register_32:R4|storage[8]               ; Lost fanout        ;
+; Register_32:R3|storage[8]               ; Lost fanout        ;
+; Register_32:R2|storage[8]               ; Lost fanout        ;
+; Register_32:R1|storage[8]               ; Lost fanout        ;
+; Register_32:R15|storage[9]              ; Lost fanout        ;
+; Register_32:R14|storage[9]              ; Lost fanout        ;
+; Register_32:R13|storage[9]              ; Lost fanout        ;
+; Register_32:R12|storage[9]              ; Lost fanout        ;
+; Register_32:R11|storage[9]              ; Lost fanout        ;
+; Register_32:R10|storage[9]              ; Lost fanout        ;
+; Register_32:R9|storage[9]               ; Lost fanout        ;
+; Register_32:R8|storage[9]               ; Lost fanout        ;
+; Register_32:R7|storage[9]               ; Lost fanout        ;
+; Register_32:R6|storage[9]               ; Lost fanout        ;
+; Register_32:R5|storage[9]               ; Lost fanout        ;
+; Register_32:R4|storage[9]               ; Lost fanout        ;
+; Register_32:R3|storage[9]               ; Lost fanout        ;
+; Register_32:R2|storage[9]               ; Lost fanout        ;
+; Register_32:R1|storage[9]               ; Lost fanout        ;
+; Register_32:R15|storage[10]             ; Lost fanout        ;
+; Register_32:R14|storage[10]             ; Lost fanout        ;
+; Register_32:R13|storage[10]             ; Lost fanout        ;
+; Register_32:R12|storage[10]             ; Lost fanout        ;
+; Register_32:R11|storage[10]             ; Lost fanout        ;
+; Register_32:R10|storage[10]             ; Lost fanout        ;
+; Register_32:R9|storage[10]              ; Lost fanout        ;
+; Register_32:R8|storage[10]              ; Lost fanout        ;
+; Register_32:R7|storage[10]              ; Lost fanout        ;
+; Register_32:R6|storage[10]              ; Lost fanout        ;
+; Register_32:R5|storage[10]              ; Lost fanout        ;
+; Register_32:R4|storage[10]              ; Lost fanout        ;
+; Register_32:R3|storage[10]              ; Lost fanout        ;
+; Register_32:R2|storage[10]              ; Lost fanout        ;
+; Register_32:R1|storage[10]              ; Lost fanout        ;
+; Register_32:R15|storage[11]             ; Lost fanout        ;
+; Register_32:R14|storage[11]             ; Lost fanout        ;
+; Register_32:R13|storage[11]             ; Lost fanout        ;
+; Register_32:R12|storage[11]             ; Lost fanout        ;
+; Register_32:R11|storage[11]             ; Lost fanout        ;
+; Register_32:R10|storage[11]             ; Lost fanout        ;
+; Register_32:R9|storage[11]              ; Lost fanout        ;
+; Register_32:R8|storage[11]              ; Lost fanout        ;
+; Register_32:R7|storage[11]              ; Lost fanout        ;
+; Register_32:R6|storage[11]              ; Lost fanout        ;
+; Register_32:R5|storage[11]              ; Lost fanout        ;
+; Register_32:R4|storage[11]              ; Lost fanout        ;
+; Register_32:R3|storage[11]              ; Lost fanout        ;
+; Register_32:R2|storage[11]              ; Lost fanout        ;
+; Register_32:R1|storage[11]              ; Lost fanout        ;
+; Register_32:R15|storage[12]             ; Lost fanout        ;
+; Register_32:R14|storage[12]             ; Lost fanout        ;
+; Register_32:R13|storage[12]             ; Lost fanout        ;
+; Register_32:R12|storage[12]             ; Lost fanout        ;
+; Register_32:R11|storage[12]             ; Lost fanout        ;
+; Register_32:R10|storage[12]             ; Lost fanout        ;
+; Register_32:R9|storage[12]              ; Lost fanout        ;
+; Register_32:R8|storage[12]              ; Lost fanout        ;
+; Register_32:R7|storage[12]              ; Lost fanout        ;
+; Register_32:R6|storage[12]              ; Lost fanout        ;
+; Register_32:R5|storage[12]              ; Lost fanout        ;
+; Register_32:R4|storage[12]              ; Lost fanout        ;
+; Register_32:R3|storage[12]              ; Lost fanout        ;
+; Register_32:R2|storage[12]              ; Lost fanout        ;
+; Register_32:R1|storage[12]              ; Lost fanout        ;
+; Register_32:R15|storage[13]             ; Lost fanout        ;
+; Register_32:R14|storage[13]             ; Lost fanout        ;
+; Register_32:R13|storage[13]             ; Lost fanout        ;
+; Register_32:R12|storage[13]             ; Lost fanout        ;
+; Register_32:R11|storage[13]             ; Lost fanout        ;
+; Register_32:R10|storage[13]             ; Lost fanout        ;
+; Register_32:R9|storage[13]              ; Lost fanout        ;
+; Register_32:R8|storage[13]              ; Lost fanout        ;
+; Register_32:R7|storage[13]              ; Lost fanout        ;
+; Register_32:R6|storage[13]              ; Lost fanout        ;
+; Register_32:R5|storage[13]              ; Lost fanout        ;
+; Register_32:R4|storage[13]              ; Lost fanout        ;
+; Register_32:R3|storage[13]              ; Lost fanout        ;
+; Register_32:R2|storage[13]              ; Lost fanout        ;
+; Register_32:R1|storage[13]              ; Lost fanout        ;
+; Register_32:R15|storage[14]             ; Lost fanout        ;
+; Register_32:R14|storage[14]             ; Lost fanout        ;
+; Register_32:R13|storage[14]             ; Lost fanout        ;
+; Register_32:R12|storage[14]             ; Lost fanout        ;
+; Register_32:R11|storage[14]             ; Lost fanout        ;
+; Register_32:R10|storage[14]             ; Lost fanout        ;
+; Register_32:R9|storage[14]              ; Lost fanout        ;
+; Register_32:R8|storage[14]              ; Lost fanout        ;
+; Register_32:R7|storage[14]              ; Lost fanout        ;
+; Register_32:R6|storage[14]              ; Lost fanout        ;
+; Register_32:R5|storage[14]              ; Lost fanout        ;
+; Register_32:R4|storage[14]              ; Lost fanout        ;
+; Register_32:R3|storage[14]              ; Lost fanout        ;
+; Register_32:R2|storage[14]              ; Lost fanout        ;
+; Register_32:R1|storage[14]              ; Lost fanout        ;
+; Register_32:R15|storage[15]             ; Lost fanout        ;
+; Register_32:R14|storage[15]             ; Lost fanout        ;
+; Register_32:R13|storage[15]             ; Lost fanout        ;
+; Register_32:R12|storage[15]             ; Lost fanout        ;
+; Register_32:R11|storage[15]             ; Lost fanout        ;
+; Register_32:R10|storage[15]             ; Lost fanout        ;
+; Register_32:R9|storage[15]              ; Lost fanout        ;
+; Register_32:R8|storage[15]              ; Lost fanout        ;
+; Register_32:R7|storage[15]              ; Lost fanout        ;
+; Register_32:R6|storage[15]              ; Lost fanout        ;
+; Register_32:R5|storage[15]              ; Lost fanout        ;
+; Register_32:R4|storage[15]              ; Lost fanout        ;
+; Register_32:R3|storage[15]              ; Lost fanout        ;
+; Register_32:R2|storage[15]              ; Lost fanout        ;
+; Register_32:R1|storage[15]              ; Lost fanout        ;
+; Register_32:R15|storage[16]             ; Lost fanout        ;
+; Register_32:R14|storage[16]             ; Lost fanout        ;
+; Register_32:R13|storage[16]             ; Lost fanout        ;
+; Register_32:R12|storage[16]             ; Lost fanout        ;
+; Register_32:R11|storage[16]             ; Lost fanout        ;
+; Register_32:R10|storage[16]             ; Lost fanout        ;
+; Register_32:R9|storage[16]              ; Lost fanout        ;
+; Register_32:R8|storage[16]              ; Lost fanout        ;
+; Register_32:R7|storage[16]              ; Lost fanout        ;
+; Register_32:R6|storage[16]              ; Lost fanout        ;
+; Register_32:R5|storage[16]              ; Lost fanout        ;
+; Register_32:R4|storage[16]              ; Lost fanout        ;
+; Register_32:R3|storage[16]              ; Lost fanout        ;
+; Register_32:R2|storage[16]              ; Lost fanout        ;
+; Register_32:R1|storage[16]              ; Lost fanout        ;
+; Register_32:R15|storage[17]             ; Lost fanout        ;
+; Register_32:R14|storage[17]             ; Lost fanout        ;
+; Register_32:R13|storage[17]             ; Lost fanout        ;
+; Register_32:R12|storage[17]             ; Lost fanout        ;
+; Register_32:R11|storage[17]             ; Lost fanout        ;
+; Register_32:R10|storage[17]             ; Lost fanout        ;
+; Register_32:R9|storage[17]              ; Lost fanout        ;
+; Register_32:R8|storage[17]              ; Lost fanout        ;
+; Register_32:R7|storage[17]              ; Lost fanout        ;
+; Register_32:R6|storage[17]              ; Lost fanout        ;
+; Register_32:R5|storage[17]              ; Lost fanout        ;
+; Register_32:R4|storage[17]              ; Lost fanout        ;
+; Register_32:R3|storage[17]              ; Lost fanout        ;
+; Register_32:R2|storage[17]              ; Lost fanout        ;
+; Register_32:R1|storage[17]              ; Lost fanout        ;
+; Register_32:R15|storage[18]             ; Lost fanout        ;
+; Register_32:R14|storage[18]             ; Lost fanout        ;
+; Register_32:R13|storage[18]             ; Lost fanout        ;
+; Register_32:R12|storage[18]             ; Lost fanout        ;
+; Register_32:R11|storage[18]             ; Lost fanout        ;
+; Register_32:R10|storage[18]             ; Lost fanout        ;
+; Register_32:R9|storage[18]              ; Lost fanout        ;
+; Register_32:R8|storage[18]              ; Lost fanout        ;
+; Register_32:R7|storage[18]              ; Lost fanout        ;
+; Register_32:R6|storage[18]              ; Lost fanout        ;
+; Register_32:R5|storage[18]              ; Lost fanout        ;
+; Register_32:R4|storage[18]              ; Lost fanout        ;
+; Register_32:R3|storage[18]              ; Lost fanout        ;
+; Register_32:R2|storage[18]              ; Lost fanout        ;
+; Register_32:R1|storage[18]              ; Lost fanout        ;
+; Register_32:R15|storage[19]             ; Lost fanout        ;
+; Register_32:R14|storage[19]             ; Lost fanout        ;
+; Register_32:R13|storage[19]             ; Lost fanout        ;
+; Register_32:R12|storage[19]             ; Lost fanout        ;
+; Register_32:R11|storage[19]             ; Lost fanout        ;
+; Register_32:R10|storage[19]             ; Lost fanout        ;
+; Register_32:R9|storage[19]              ; Lost fanout        ;
+; Register_32:R8|storage[19]              ; Lost fanout        ;
+; Register_32:R7|storage[19]              ; Lost fanout        ;
+; Register_32:R6|storage[19]              ; Lost fanout        ;
+; Register_32:R5|storage[19]              ; Lost fanout        ;
+; Register_32:R4|storage[19]              ; Lost fanout        ;
+; Register_32:R3|storage[19]              ; Lost fanout        ;
+; Register_32:R2|storage[19]              ; Lost fanout        ;
+; Register_32:R1|storage[19]              ; Lost fanout        ;
+; Register_32:R15|storage[20]             ; Lost fanout        ;
+; Register_32:R14|storage[20]             ; Lost fanout        ;
+; Register_32:R13|storage[20]             ; Lost fanout        ;
+; Register_32:R12|storage[20]             ; Lost fanout        ;
+; Register_32:R11|storage[20]             ; Lost fanout        ;
+; Register_32:R10|storage[20]             ; Lost fanout        ;
+; Register_32:R9|storage[20]              ; Lost fanout        ;
+; Register_32:R8|storage[20]              ; Lost fanout        ;
+; Register_32:R7|storage[20]              ; Lost fanout        ;
+; Register_32:R6|storage[20]              ; Lost fanout        ;
+; Register_32:R5|storage[20]              ; Lost fanout        ;
+; Register_32:R4|storage[20]              ; Lost fanout        ;
+; Register_32:R3|storage[20]              ; Lost fanout        ;
+; Register_32:R2|storage[20]              ; Lost fanout        ;
+; Register_32:R1|storage[20]              ; Lost fanout        ;
+; Register_32:R15|storage[21]             ; Lost fanout        ;
+; Register_32:R14|storage[21]             ; Lost fanout        ;
+; Register_32:R13|storage[21]             ; Lost fanout        ;
+; Register_32:R12|storage[21]             ; Lost fanout        ;
+; Register_32:R11|storage[21]             ; Lost fanout        ;
+; Register_32:R10|storage[21]             ; Lost fanout        ;
+; Register_32:R9|storage[21]              ; Lost fanout        ;
+; Register_32:R8|storage[21]              ; Lost fanout        ;
+; Register_32:R7|storage[21]              ; Lost fanout        ;
+; Register_32:R6|storage[21]              ; Lost fanout        ;
+; Register_32:R5|storage[21]              ; Lost fanout        ;
+; Register_32:R4|storage[21]              ; Lost fanout        ;
+; Register_32:R3|storage[21]              ; Lost fanout        ;
+; Register_32:R2|storage[21]              ; Lost fanout        ;
+; Register_32:R1|storage[21]              ; Lost fanout        ;
+; Register_32:R15|storage[22]             ; Lost fanout        ;
+; Register_32:R14|storage[22]             ; Lost fanout        ;
+; Register_32:R13|storage[22]             ; Lost fanout        ;
+; Register_32:R12|storage[22]             ; Lost fanout        ;
+; Register_32:R11|storage[22]             ; Lost fanout        ;
+; Register_32:R10|storage[22]             ; Lost fanout        ;
+; Register_32:R9|storage[22]              ; Lost fanout        ;
+; Register_32:R8|storage[22]              ; Lost fanout        ;
+; Register_32:R7|storage[22]              ; Lost fanout        ;
+; Register_32:R6|storage[22]              ; Lost fanout        ;
+; Register_32:R5|storage[22]              ; Lost fanout        ;
+; Register_32:R4|storage[22]              ; Lost fanout        ;
+; Register_32:R3|storage[22]              ; Lost fanout        ;
+; Register_32:R2|storage[22]              ; Lost fanout        ;
+; Register_32:R1|storage[22]              ; Lost fanout        ;
+; Register_32:R15|storage[23]             ; Lost fanout        ;
+; Register_32:R14|storage[23]             ; Lost fanout        ;
+; Register_32:R13|storage[23]             ; Lost fanout        ;
+; Register_32:R12|storage[23]             ; Lost fanout        ;
+; Register_32:R11|storage[23]             ; Lost fanout        ;
+; Register_32:R10|storage[23]             ; Lost fanout        ;
+; Register_32:R9|storage[23]              ; Lost fanout        ;
+; Register_32:R8|storage[23]              ; Lost fanout        ;
+; Register_32:R7|storage[23]              ; Lost fanout        ;
+; Register_32:R6|storage[23]              ; Lost fanout        ;
+; Register_32:R5|storage[23]              ; Lost fanout        ;
+; Register_32:R4|storage[23]              ; Lost fanout        ;
+; Register_32:R3|storage[23]              ; Lost fanout        ;
+; Register_32:R2|storage[23]              ; Lost fanout        ;
+; Register_32:R1|storage[23]              ; Lost fanout        ;
+; Register_32:R15|storage[24]             ; Lost fanout        ;
+; Register_32:R14|storage[24]             ; Lost fanout        ;
+; Register_32:R13|storage[24]             ; Lost fanout        ;
+; Register_32:R12|storage[24]             ; Lost fanout        ;
+; Register_32:R11|storage[24]             ; Lost fanout        ;
+; Register_32:R10|storage[24]             ; Lost fanout        ;
+; Register_32:R9|storage[24]              ; Lost fanout        ;
+; Register_32:R8|storage[24]              ; Lost fanout        ;
+; Register_32:R7|storage[24]              ; Lost fanout        ;
+; Register_32:R6|storage[24]              ; Lost fanout        ;
+; Register_32:R5|storage[24]              ; Lost fanout        ;
+; Register_32:R4|storage[24]              ; Lost fanout        ;
+; Register_32:R3|storage[24]              ; Lost fanout        ;
+; Register_32:R2|storage[24]              ; Lost fanout        ;
+; Register_32:R1|storage[24]              ; Lost fanout        ;
+; Register_32:R15|storage[25]             ; Lost fanout        ;
+; Register_32:R14|storage[25]             ; Lost fanout        ;
+; Register_32:R13|storage[25]             ; Lost fanout        ;
+; Register_32:R12|storage[25]             ; Lost fanout        ;
+; Register_32:R11|storage[25]             ; Lost fanout        ;
+; Register_32:R10|storage[25]             ; Lost fanout        ;
+; Register_32:R9|storage[25]              ; Lost fanout        ;
+; Register_32:R8|storage[25]              ; Lost fanout        ;
+; Register_32:R7|storage[25]              ; Lost fanout        ;
+; Register_32:R6|storage[25]              ; Lost fanout        ;
+; Register_32:R5|storage[25]              ; Lost fanout        ;
+; Register_32:R4|storage[25]              ; Lost fanout        ;
+; Register_32:R3|storage[25]              ; Lost fanout        ;
+; Register_32:R2|storage[25]              ; Lost fanout        ;
+; Register_32:R1|storage[25]              ; Lost fanout        ;
+; Register_32:R15|storage[26]             ; Lost fanout        ;
+; Register_32:R14|storage[26]             ; Lost fanout        ;
+; Register_32:R13|storage[26]             ; Lost fanout        ;
+; Register_32:R12|storage[26]             ; Lost fanout        ;
+; Register_32:R11|storage[26]             ; Lost fanout        ;
+; Register_32:R10|storage[26]             ; Lost fanout        ;
+; Register_32:R9|storage[26]              ; Lost fanout        ;
+; Register_32:R8|storage[26]              ; Lost fanout        ;
+; Register_32:R7|storage[26]              ; Lost fanout        ;
+; Register_32:R6|storage[26]              ; Lost fanout        ;
+; Register_32:R5|storage[26]              ; Lost fanout        ;
+; Register_32:R4|storage[26]              ; Lost fanout        ;
+; Register_32:R3|storage[26]              ; Lost fanout        ;
+; Register_32:R2|storage[26]              ; Lost fanout        ;
+; Register_32:R1|storage[26]              ; Lost fanout        ;
+; Register_32:R15|storage[27]             ; Lost fanout        ;
+; Register_32:R14|storage[27]             ; Lost fanout        ;
+; Register_32:R13|storage[27]             ; Lost fanout        ;
+; Register_32:R12|storage[27]             ; Lost fanout        ;
+; Register_32:R11|storage[27]             ; Lost fanout        ;
+; Register_32:R10|storage[27]             ; Lost fanout        ;
+; Register_32:R9|storage[27]              ; Lost fanout        ;
+; Register_32:R8|storage[27]              ; Lost fanout        ;
+; Register_32:R7|storage[27]              ; Lost fanout        ;
+; Register_32:R6|storage[27]              ; Lost fanout        ;
+; Register_32:R5|storage[27]              ; Lost fanout        ;
+; Register_32:R4|storage[27]              ; Lost fanout        ;
+; Register_32:R3|storage[27]              ; Lost fanout        ;
+; Register_32:R2|storage[27]              ; Lost fanout        ;
+; Register_32:R1|storage[27]              ; Lost fanout        ;
+; Register_32:R15|storage[28]             ; Lost fanout        ;
+; Register_32:R14|storage[28]             ; Lost fanout        ;
+; Register_32:R13|storage[28]             ; Lost fanout        ;
+; Register_32:R12|storage[28]             ; Lost fanout        ;
+; Register_32:R11|storage[28]             ; Lost fanout        ;
+; Register_32:R10|storage[28]             ; Lost fanout        ;
+; Register_32:R9|storage[28]              ; Lost fanout        ;
+; Register_32:R8|storage[28]              ; Lost fanout        ;
+; Register_32:R7|storage[28]              ; Lost fanout        ;
+; Register_32:R6|storage[28]              ; Lost fanout        ;
+; Register_32:R5|storage[28]              ; Lost fanout        ;
+; Register_32:R4|storage[28]              ; Lost fanout        ;
+; Register_32:R3|storage[28]              ; Lost fanout        ;
+; Register_32:R2|storage[28]              ; Lost fanout        ;
+; Register_32:R1|storage[28]              ; Lost fanout        ;
+; Register_32:R15|storage[29]             ; Lost fanout        ;
+; Register_32:R14|storage[29]             ; Lost fanout        ;
+; Register_32:R13|storage[29]             ; Lost fanout        ;
+; Register_32:R12|storage[29]             ; Lost fanout        ;
+; Register_32:R11|storage[29]             ; Lost fanout        ;
+; Register_32:R10|storage[29]             ; Lost fanout        ;
+; Register_32:R9|storage[29]              ; Lost fanout        ;
+; Register_32:R8|storage[29]              ; Lost fanout        ;
+; Register_32:R7|storage[29]              ; Lost fanout        ;
+; Register_32:R6|storage[29]              ; Lost fanout        ;
+; Register_32:R5|storage[29]              ; Lost fanout        ;
+; Register_32:R4|storage[29]              ; Lost fanout        ;
+; Register_32:R3|storage[29]              ; Lost fanout        ;
+; Register_32:R2|storage[29]              ; Lost fanout        ;
+; Register_32:R1|storage[29]              ; Lost fanout        ;
+; Register_32:R15|storage[30]             ; Lost fanout        ;
+; Register_32:R14|storage[30]             ; Lost fanout        ;
+; Register_32:R13|storage[30]             ; Lost fanout        ;
+; Register_32:R12|storage[30]             ; Lost fanout        ;
+; Register_32:R11|storage[30]             ; Lost fanout        ;
+; Register_32:R10|storage[30]             ; Lost fanout        ;
+; Register_32:R9|storage[30]              ; Lost fanout        ;
+; Register_32:R8|storage[30]              ; Lost fanout        ;
+; Register_32:R7|storage[30]              ; Lost fanout        ;
+; Register_32:R6|storage[30]              ; Lost fanout        ;
+; Register_32:R5|storage[30]              ; Lost fanout        ;
+; Register_32:R4|storage[30]              ; Lost fanout        ;
+; Register_32:R3|storage[30]              ; Lost fanout        ;
+; Register_32:R2|storage[30]              ; Lost fanout        ;
+; Register_32:R1|storage[30]              ; Lost fanout        ;
+; Register_32:R15|storage[31]             ; Lost fanout        ;
+; Register_32:R14|storage[31]             ; Lost fanout        ;
+; Register_32:R13|storage[31]             ; Lost fanout        ;
+; Register_32:R12|storage[31]             ; Lost fanout        ;
+; Register_32:R11|storage[31]             ; Lost fanout        ;
+; Register_32:R10|storage[31]             ; Lost fanout        ;
+; Register_32:R9|storage[31]              ; Lost fanout        ;
+; Register_32:R8|storage[31]              ; Lost fanout        ;
+; Register_32:R7|storage[31]              ; Lost fanout        ;
+; Register_32:R6|storage[31]              ; Lost fanout        ;
+; Register_32:R5|storage[31]              ; Lost fanout        ;
+; Register_32:R4|storage[31]              ; Lost fanout        ;
+; Register_32:R3|storage[31]              ; Lost fanout        ;
+; Register_32:R2|storage[31]              ; Lost fanout        ;
+; Register_32:R1|storage[31]              ; Lost fanout        ;
+; Total Number of Removed Registers = 480 ;                    ;
++-----------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -290,14 +813,73 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Total registers                              ; 352   ;
+; Number of registers using Synchronous Clear  ; 352   ;
+; Number of registers using Synchronous Load   ; 32    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 352   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:OutPort|storage[0]                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:C|storage[0]                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:InPort|storage[0]                 ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:PC|storage[25]                    ;
+; 3:1                ; 64 bits   ; 128 LEs       ; 0 LEs                ; 128 LEs                ; Yes        ; |datapath|Register_32:RZlow|storage[25]                 ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:LO|storage[9]                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:HI|storage[5]                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:R0|storage[1]                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:RY|storage[31]                    ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|MDR:MDR|Register_32:MDR_Reg|storage[4]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux39  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight1                        ;
+; 4:1                ; 49 bits   ; 98 LEs        ; 98 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight0                        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight0                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight0                        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftLeft1                         ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftLeft1                         ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight0                        ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight0                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftLeft1                         ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight1                        ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight2                        ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftLeft0                         ;
+; 4:1                ; 50 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftLeft0                         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftLeft0                         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftLeft0                         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight2                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight2                        ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight0                        ;
+; 6:1                ; 12 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftLeft1                         ;
+; 6:1                ; 24 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftLeft0                         ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux107 ;
+; 6:1                ; 31 bits   ; 124 LEs       ; 124 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux216 ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux274 ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux400 ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux496 ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux573 ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux646 ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux728 ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftLeft1                         ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux160 ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux336 ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux440 ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux527 ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux622 ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux707 ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux767 ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight2                        ;
+; 11:1               ; 32 bits   ; 224 LEs       ; 224 LEs              ; 0 LEs                  ; No         ; |datapath|Bus:bus|BusMuxOut[13]                         ;
+; 12:1               ; 16 bits   ; 128 LEs       ; 112 LEs              ; 16 LEs                 ; No         ; |datapath|ALU:alu_op|C[15]                              ;
+; 12:1               ; 14 bits   ; 112 LEs       ; 112 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|C[11]                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
 
 
 +-------------------------------------------------------------+
@@ -580,26 +1162,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:alu_op|CLA_32:adder|CLA_16:high_16"                                                                  ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                  ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; GG16 ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; PG16 ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:alu_op|CLA_32:adder|CLA_16:low_16"                                                                   ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                  ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; GG16 ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; PG16 ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "ALU:alu_op|CLA_32:adder"                                                             ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
@@ -607,15 +1169,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 ; c_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Register_32:OutPort"                                                                ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -627,25 +1180,67 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Select_encode:S_E_logic"                                                                       ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port            ; Type   ; Severity ; Details                                                                             ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
-; C_sign_extended ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CON_FF:CON_FF_logic"                                                                ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Select_encode:S_E_logic"                                                                                                                                    ;
++-----------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                                                                                          ;
++-----------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; IR_out          ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "IR_out[31..1]" will be connected to GND. ;
+; C_sign_extended ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                              ;
++-----------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Register_32:IR"                                                                          ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; q[31..23] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; q[18..0]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 97                              ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 352                         ;
+;     ENA SCLR          ; 320                         ;
+;     ENA SCLR SLD      ; 32                          ;
+; arriav_lcell_comb     ; 2974                        ;
+;     arith             ; 1213                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 64                          ;
+;         2 data inputs ; 59                          ;
+;         4 data inputs ; 94                          ;
+;         5 data inputs ; 995                         ;
+;     extend            ; 437                         ;
+;         7 data inputs ; 437                         ;
+;     normal            ; 1026                        ;
+;         2 data inputs ; 64                          ;
+;         3 data inputs ; 83                          ;
+;         4 data inputs ; 160                         ;
+;         5 data inputs ; 319                         ;
+;         6 data inputs ; 400                         ;
+;     shared            ; 298                         ;
+;         2 data inputs ; 31                          ;
+;         3 data inputs ; 262                         ;
+;         4 data inputs ; 5                           ;
+; boundary_port         ; 130                         ;
+;                       ;                             ;
+; Max LUT depth         ; 137.20                      ;
+; Average LUT depth     ; 73.66                       ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -653,7 +1248,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:35     ;
 +----------------+--------------+
 
 
@@ -663,11 +1258,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-<<<<<<< HEAD
-    Info: Processing started: Tue Mar 10 14:55:26 2026
+    Info: Processing started: Tue Mar 10 16:32:42 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file src/select_encode/con_ff.v
+    Info (12023): Found entity 1: CON_FF File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/select_encode/select_encode.v
     Info (12023): Found entity 1: Select_encode File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/Select_encode.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_shr.v
@@ -684,65 +1280,39 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/tes
     Info (12023): Found entity 1: DataPath_tb_ror File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_ror.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_shl.v
     Info (12023): Found entity 1: DataPath_tb_shl File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_shl.v Line: 3
-=======
-    Info: Processing started: Fri Feb 20 14:40:25 2026
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_shr.v
-    Info (12023): Found entity 1: DataPath_tb_shr File: C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_shr.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_shra.v
-    Info (12023): Found entity 1: DataPath_tb_shra File: C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_shra.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_not.v
-    Info (12023): Found entity 1: DataPath_tb_not File: C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_not.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_neg.v
-    Info (12023): Found entity 1: DataPath_tb_neg File: C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_neg.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_rol.v
-    Info (12023): Found entity 1: DataPath_tb_rol File: C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_rol.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_ror.v
-    Info (12023): Found entity 1: DataPath_tb_ror File: C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_ror.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_shl.v
-    Info (12023): Found entity 1: DataPath_tb_shl File: C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_shl.v Line: 3
->>>>>>> 046d96be0e84611b7a38d928f9d56889e891d824
 Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_and.v
-    Info (12023): Found entity 1: DataPath_tb_and File: C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_and.v Line: 3
+    Info (12023): Found entity 1: DataPath_tb_and File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_and.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/add/rca_4.v
-    Info (12023): Found entity 1: RCA_4 File: C:/Users/raele/ELEC374-CPU/src/alu/add/RCA_4.v Line: 1
+    Info (12023): Found entity 1: RCA_4 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/RCA_4.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/add/pfa.v
-    Info (12023): Found entity 1: PFA File: C:/Users/raele/ELEC374-CPU/src/alu/add/PFA.v Line: 1
+    Info (12023): Found entity 1: PFA File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/PFA.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/add/cla_32.v
-    Info (12023): Found entity 1: CLA_32 File: C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v Line: 1
+    Info (12023): Found entity 1: CLA_32 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/add/cla_16.v
-    Info (12023): Found entity 1: CLA_16 File: C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_16.v Line: 1
+    Info (12023): Found entity 1: CLA_16 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/add/cla_4.v
-<<<<<<< HEAD
     Info (12023): Found entity 1: CLA_4 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_4.v Line: 1
-=======
-    Info (12023): Found entity 1: CLA_4 File: C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_4.v Line: 1
-Warning (12019): Can't analyze file -- file src/alu/add/ALU_Add_Sub.v is missing
->>>>>>> 046d96be0e84611b7a38d928f9d56889e891d824
 Info (12021): Found 1 design units, including 1 entities, in source file src/datapath.v
-    Info (12023): Found entity 1: datapath File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 1
+    Info (12023): Found entity 1: datapath File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/booth_multiplier_tb.v
-    Info (12023): Found entity 1: Booth_Multiplier_tb File: C:/Users/raele/ELEC374-CPU/src/testbenches/Booth_Multiplier_tb.v Line: 3
+    Info (12023): Found entity 1: Booth_Multiplier_tb File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Booth_Multiplier_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/registers/register_32.v
-    Info (12023): Found entity 1: Register_32 File: C:/Users/raele/ELEC374-CPU/src/registers/Register_32.v Line: 1
+    Info (12023): Found entity 1: Register_32 File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers/Register_32.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/bus/mdr.v
-    Info (12023): Found entity 1: MDR File: C:/Users/raele/ELEC374-CPU/src/bus/MDR.v Line: 1
+    Info (12023): Found entity 1: MDR File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/bus/MDR.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/bus/bus.v
-    Info (12023): Found entity 1: Bus File: C:/Users/raele/ELEC374-CPU/src/bus/Bus.v Line: 1
+    Info (12023): Found entity 1: Bus File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/bus/Bus.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/mul/booth_multiplier.v
-    Info (12023): Found entity 1: Booth_Multiplier File: C:/Users/raele/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v Line: 1
+    Info (12023): Found entity 1: Booth_Multiplier File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/div/nr_division.v
-    Info (12023): Found entity 1: NR_Division File: C:/Users/raele/ELEC374-CPU/src/alu/div/NR_Division.v Line: 1
+    Info (12023): Found entity 1: NR_Division File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/raele/ELEC374-CPU/src/alu/ALU.v Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/nr_division_tb.v
-    Info (12023): Found entity 1: NR_Division_tb File: C:/Users/raele/ELEC374-CPU/src/testbenches/NR_Division_tb.v Line: 3
+    Info (12023): Found entity 1: NR_Division_tb File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/NR_Division_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/register_32_tb.v
-    Info (12023): Found entity 1: Register_32_tb File: C:/Users/raele/ELEC374-CPU/src/testbenches/Register_32_tb.v Line: 3
+    Info (12023): Found entity 1: Register_32_tb File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Register_32_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/alu_tb.v
-<<<<<<< HEAD
     Info (12023): Found entity 1: ALU_tb File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/ALU_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_mul.v
     Info (12023): Found entity 1: DataPath_tb_mul File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_mul.v Line: 3
@@ -754,265 +1324,56 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/tes
     Info (12023): Found entity 1: DataPath_tb_add File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_sub.v
     Info (12023): Found entity 1: DataPath_tb_sub File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_sub.v Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at CON_FF.v(10): created implicit net for "ALU_decode" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at CON_FF.v(23): created implicit net for "D" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at datapath.v(79): created implicit net for "IR_out" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 79
 Info (12127): Elaborating entity "datapath" for the top level hierarchy
-Info (12128): Elaborating entity "Register_32" for hierarchy "Register_32:R0" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 45
-Info (12128): Elaborating entity "MDR" for hierarchy "MDR:MDR" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 66
-Info (12128): Elaborating entity "Select_encode" for hierarchy "Select_encode:S_E_logic" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 77
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu_op" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 113
+Info (12128): Elaborating entity "Register_32" for hierarchy "Register_32:R0" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 47
+Info (12128): Elaborating entity "MDR" for hierarchy "MDR:MDR" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 68
+Info (12128): Elaborating entity "Select_encode" for hierarchy "Select_encode:S_E_logic" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 79
+Info (12128): Elaborating entity "CON_FF" for hierarchy "CON_FF:CON_FF_logic" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 83
+Warning (10036): Verilog HDL or VHDL warning at CON_FF.v(10): object "ALU_decode" assigned a value but never read File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 10
+Warning (10230): Verilog HDL assignment warning at CON_FF.v(10): truncated value with size 4 to match size of target (1) File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 10
+Warning (10235): Verilog HDL Always Construct warning at CON_FF.v(33): variable "D" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 33
+Warning (10240): Verilog HDL Always Construct warning at CON_FF.v(31): inferring latch(es) for variable "CON", which holds its previous value in one or more paths through the always construct File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 31
+Warning (10030): Net "IR_decode" at CON_FF.v(9) has no driver or initial value, using a default initial value '0' File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 9
+Info (10041): Inferred latch for "CON" at CON_FF.v(31) File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 31
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu_op" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 116
 Info (12128): Elaborating entity "CLA_32" for hierarchy "ALU:alu_op|CLA_32:adder" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v Line: 30
 Info (12128): Elaborating entity "CLA_16" for hierarchy "ALU:alu_op|CLA_32:adder|CLA_16:low_16" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v Line: 17
-Info (12128): Elaborating entity "CLA_4" for hierarchy "ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v Line: 14
+Info (12128): Elaborating entity "CLA_4" for hierarchy "ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v Line: 13
 Info (12128): Elaborating entity "PFA" for hierarchy "ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa0" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_4.v Line: 13
 Info (12128): Elaborating entity "Booth_Multiplier" for hierarchy "ALU:alu_op|Booth_Multiplier:multiplier" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v Line: 38
 Info (12128): Elaborating entity "NR_Division" for hierarchy "ALU:alu_op|NR_Division:divider" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v Line: 48
-Info (12128): Elaborating entity "Bus" for hierarchy "Bus:bus" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 133
-=======
-    Info (12023): Found entity 1: ALU_tb File: C:/Users/raele/ELEC374-CPU/src/testbenches/ALU_tb.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_mul.v
-    Info (12023): Found entity 1: DataPath_tb_mul File: C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_mul.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_div.v
-    Info (12023): Found entity 1: DataPath_tb_div File: C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_div.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_or.v
-    Info (12023): Found entity 1: DataPath_tb_or File: C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_or.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_add.v
-    Info (12023): Found entity 1: DataPath_tb_add File: C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_sub.v
-    Info (12023): Found entity 1: DataPath_tb_sub File: C:/Users/raele/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_sub.v Line: 3
-Info (12127): Elaborating entity "datapath" for the top level hierarchy
-Info (12128): Elaborating entity "Register_32" for hierarchy "Register_32:R0" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 42
-Info (12128): Elaborating entity "MDR" for hierarchy "MDR:MDR" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 61
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu_op" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 102
-Info (12128): Elaborating entity "CLA_32" for hierarchy "ALU:alu_op|CLA_32:adder" File: C:/Users/raele/ELEC374-CPU/src/alu/ALU.v Line: 30
-Info (12128): Elaborating entity "CLA_16" for hierarchy "ALU:alu_op|CLA_32:adder|CLA_16:low_16" File: C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v Line: 17
-Info (12128): Elaborating entity "CLA_4" for hierarchy "ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0" File: C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_16.v Line: 14
-Info (12128): Elaborating entity "PFA" for hierarchy "ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa0" File: C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_4.v Line: 13
-Info (12128): Elaborating entity "Booth_Multiplier" for hierarchy "ALU:alu_op|Booth_Multiplier:multiplier" File: C:/Users/raele/ELEC374-CPU/src/alu/ALU.v Line: 38
-Info (12128): Elaborating entity "NR_Division" for hierarchy "ALU:alu_op|NR_Division:divider" File: C:/Users/raele/ELEC374-CPU/src/alu/ALU.v Line: 48
-Info (12128): Elaborating entity "Bus" for hierarchy "Bus:bus" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 122
->>>>>>> 046d96be0e84611b7a38d928f9d56889e891d824
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (144001): Generated suppressed messages file C:/Users/raele/ELEC374-CPU/output_files/CPU.map.smsg
+Info (12128): Elaborating entity "Bus" for hierarchy "Bus:bus" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 136
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 480 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/output_files/CPU.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 97 input pin(s) that do not drive logic
-<<<<<<< HEAD
-    Warning (15610): No output dependent on input pin "clock" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 2
-    Warning (15610): No output dependent on input pin "clear" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 2
-    Warning (15610): No output dependent on input pin "in_memory_data[0]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[1]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[2]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[3]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[4]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[5]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[6]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[7]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[8]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[9]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[10]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[11]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[12]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[13]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[14]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[15]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[16]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[17]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[18]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[19]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[20]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[21]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[22]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[23]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[24]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[25]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[26]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[27]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[28]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[29]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[30]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[31]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_inport_data[0]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[1]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[2]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[3]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[4]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[5]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[6]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[7]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[8]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[9]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[10]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[11]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[12]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[13]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[14]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[15]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[16]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[17]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[18]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[19]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[20]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[21]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[22]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[23]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[24]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[25]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[26]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[27]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[28]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[29]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[30]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[31]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "PCin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "PCout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 9
+Warning (21074): Design contains 7 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "IRin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 10
+    Warning (15610): No output dependent on input pin "CONin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 10
     Warning (15610): No output dependent on input pin "MARin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 11
-    Warning (15610): No output dependent on input pin "MDRin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 11
-    Warning (15610): No output dependent on input pin "MDRout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 11
-    Warning (15610): No output dependent on input pin "read" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 11
-    Warning (15610): No output dependent on input pin "HIin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 12
-    Warning (15610): No output dependent on input pin "HIout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 12
-    Warning (15610): No output dependent on input pin "LOin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 12
-    Warning (15610): No output dependent on input pin "LOout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 12
-    Warning (15610): No output dependent on input pin "Yin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 13
-    Warning (15610): No output dependent on input pin "Zin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 13
-    Warning (15610): No output dependent on input pin "ZHighout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 13
-    Warning (15610): No output dependent on input pin "ZLowout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 13
-    Warning (15610): No output dependent on input pin "InPortin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 14
-    Warning (15610): No output dependent on input pin "InPortout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 14
-    Warning (15610): No output dependent on input pin "OutPortin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 15
     Warning (15610): No output dependent on input pin "OutPortout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 15
-    Warning (15610): No output dependent on input pin "Cin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 16
-    Warning (15610): No output dependent on input pin "Cout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 16
-    Warning (15610): No output dependent on input pin "Rin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 17
-    Warning (15610): No output dependent on input pin "Rout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 17
     Warning (15610): No output dependent on input pin "Gra" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 18
     Warning (15610): No output dependent on input pin "Grb" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 18
     Warning (15610): No output dependent on input pin "Grc" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 18
-    Warning (15610): No output dependent on input pin "BAout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 19
-    Warning (15610): No output dependent on input pin "ALU_operation[0]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 21
-    Warning (15610): No output dependent on input pin "ALU_operation[1]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 21
-    Warning (15610): No output dependent on input pin "ALU_operation[2]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 21
-    Warning (15610): No output dependent on input pin "ALU_operation[3]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 21
-Info (21057): Implemented 97 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 97 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 100 warnings
-    Info: Peak virtual memory: 4803 megabytes
-    Info: Processing ended: Tue Mar 10 14:55:54 2026
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:45
-=======
-    Warning (15610): No output dependent on input pin "clock" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 2
-    Warning (15610): No output dependent on input pin "clear" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 2
-    Warning (15610): No output dependent on input pin "in_memory_data[0]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[1]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[2]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[3]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[4]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[5]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[6]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[7]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[8]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[9]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[10]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[11]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[12]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[13]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[14]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[15]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[16]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[17]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[18]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[19]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[20]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[21]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[22]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[23]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[24]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[25]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[26]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[27]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[28]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[29]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[30]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_memory_data[31]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "in_inport_data[0]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[1]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[2]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[3]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[4]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[5]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[6]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[7]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[8]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[9]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[10]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[11]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[12]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[13]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[14]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[15]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[16]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[17]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[18]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[19]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[20]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[21]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[22]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[23]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[24]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[25]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[26]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[27]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[28]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[29]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[30]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "in_inport_data[31]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "PCin" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "PCout" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "IRin" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 10
-    Warning (15610): No output dependent on input pin "MARin" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 11
-    Warning (15610): No output dependent on input pin "MDRin" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 11
-    Warning (15610): No output dependent on input pin "MDRout" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 11
-    Warning (15610): No output dependent on input pin "read" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 11
-    Warning (15610): No output dependent on input pin "HIin" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 12
-    Warning (15610): No output dependent on input pin "HIout" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 12
-    Warning (15610): No output dependent on input pin "LOin" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 12
-    Warning (15610): No output dependent on input pin "LOout" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 12
-    Warning (15610): No output dependent on input pin "Yin" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 13
-    Warning (15610): No output dependent on input pin "Zin" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 13
-    Warning (15610): No output dependent on input pin "ZHighout" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 13
-    Warning (15610): No output dependent on input pin "ZLowout" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 13
-    Warning (15610): No output dependent on input pin "InPortin" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 14
-    Warning (15610): No output dependent on input pin "InPortout" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 14
-    Warning (15610): No output dependent on input pin "OutPortin" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 15
-    Warning (15610): No output dependent on input pin "OutPortout" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 15
-    Warning (15610): No output dependent on input pin "Cin" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 16
-    Warning (15610): No output dependent on input pin "Cout" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 16
-    Warning (15610): No output dependent on input pin "reg_select[0]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 17
-    Warning (15610): No output dependent on input pin "reg_select[1]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 17
-    Warning (15610): No output dependent on input pin "reg_select[2]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 17
-    Warning (15610): No output dependent on input pin "reg_select[3]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 17
-    Warning (15610): No output dependent on input pin "Rin" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 18
-    Warning (15610): No output dependent on input pin "Rout" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 18
-    Warning (15610): No output dependent on input pin "ALU_operation[0]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 20
-    Warning (15610): No output dependent on input pin "ALU_operation[1]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 20
-    Warning (15610): No output dependent on input pin "ALU_operation[2]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 20
-    Warning (15610): No output dependent on input pin "ALU_operation[3]" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 20
-Info (21057): Implemented 97 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 97 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 101 warnings
-    Info: Peak virtual memory: 4820 megabytes
-    Info: Processing ended: Fri Feb 20 14:40:45 2026
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:38
->>>>>>> 046d96be0e84611b7a38d928f9d56889e891d824
+Info (21057): Implemented 3392 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 98 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 3262 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 4838 megabytes
+    Info: Processing ended: Tue Mar 10 16:33:45 2026
+    Info: Elapsed time: 00:01:03
+    Info: Total CPU time (on all processors): 00:01:15
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/raele/ELEC374-CPU/output_files/CPU.map.smsg.
+The suppressed messages can be found in C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/output_files/CPU.map.smsg.
 
 

@@ -2,7 +2,500 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "out_outport_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[16]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[17]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[18]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[19]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[20]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[21]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[22]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[23]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[24]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[25]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[26]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[27]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[28]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[29]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[30]",
+					"strict" : false
+				},
+				{
+					"name" : "out_outport_data[31]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "Rout",
+					"strict" : false
+				},
+				{
+					"name" : "BAout",
+					"strict" : false
+				},
+				{
+					"name" : "HIout",
+					"strict" : false
+				},
+				{
+					"name" : "LOout",
+					"strict" : false
+				},
+				{
+					"name" : "MDRout",
+					"strict" : false
+				},
+				{
+					"name" : "InPortout",
+					"strict" : false
+				},
+				{
+					"name" : "PCout",
+					"strict" : false
+				},
+				{
+					"name" : "Cout",
+					"strict" : false
+				},
+				{
+					"name" : "ZHighout",
+					"strict" : false
+				},
+				{
+					"name" : "ZLowout",
+					"strict" : false
+				},
+				{
+					"name" : "clear",
+					"strict" : false
+				},
+				{
+					"name" : "OutPortin",
+					"strict" : false
+				},
+				{
+					"name" : "LOin",
+					"strict" : false
+				},
+				{
+					"name" : "Cin",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "read",
+					"strict" : false
+				},
+				{
+					"name" : "MDRin",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "InPortin",
+					"strict" : false
+				},
+				{
+					"name" : "PCin",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_operation[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_operation[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_operation[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_operation[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Zin",
+					"strict" : false
+				},
+				{
+					"name" : "HIin",
+					"strict" : false
+				},
+				{
+					"name" : "Rin",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[16]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[16]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[17]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[17]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[18]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[18]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[19]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[19]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[20]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[20]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[21]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[21]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[22]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[22]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[23]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[23]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[24]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[24]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[25]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[25]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[26]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[26]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[27]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[27]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[28]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[28]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[29]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[29]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[30]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[30]",
+					"strict" : false
+				},
+				{
+					"name" : "in_memory_data[31]",
+					"strict" : false
+				},
+				{
+					"name" : "in_inport_data[31]",
+					"strict" : false
+				},
+				{
+					"name" : "Yin",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

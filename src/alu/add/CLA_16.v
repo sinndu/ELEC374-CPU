@@ -3,7 +3,7 @@ module CLA_16 (
     input [15:0] B,
     input cin,
     output [15:0] sum,
-    output cout,
+    output cout
 );
 
     wire [3:0] G, P;

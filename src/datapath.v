@@ -17,9 +17,9 @@ module datapath(
     input wire Rin, Rout, 
     input wire Gra, Grb, Grc,
     input wire BAout,
-    input wire [3:0] ALU_operation
+    input wire [3:0] ALU_operation,
 
-    output wire out_outport_data;
+    output wire [31:0] out_outport_data
 );
 
 wire [31:0] BusMuxOut, BusMuxIn_R0, BusMuxIn_R1, BusMuxIn_R2, BusMuxIn_R3, 
