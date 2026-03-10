@@ -7,22 +7,19 @@ module CLA_32_tb;
 
     wire [31:0] SUM;
     wire COUT;
-    wire OVERFLOW;
 
-    CLA cla_tb (
+    CLA_32 cla_tb (
         .A(A), .B(B),
-        .CIN(CIN),
-        .OPCODE(OPCODE),
-        .SUM(SUM),
-        .COUT(COUT),
-        .OVERFLOW(OVERFLOW)
+        .c_in(CIN),
+        .result(SUM),
+        .c_out(COUT),
     );
 
     initial begin
         $display("Starting CLA Tests:");
 
         // Test 1: Addition
-        A = 32'h00000015; B = 32'h00000027; CIN = 0; OPCODE = 3'b000; // ADD
+        A = 32'h00000015; B = 32'h00000027; CIN = 0; // ADD
         #20;
         if (SUM === 32'h0000003C && COUT === 0) 
             $display("PASS: ADD 15 + 27 = %h", SUM);
@@ -30,7 +27,7 @@ module CLA_32_tb;
             $display("FAIL: ADD. Expected 3C, Got %h", SUM);
 
         // Test 2: Subtraction
-        A = 32'h00000050; B = 32'h00000020; CIN = 0; OPCODE = 3'b001; // SUB
+        A = 32'h00000050; B = 32'h00000020; CIN = 0; // SUB
         #20;
         if (SUM === 32'h00000030 && COUT === 0) 
             $display("PASS: SUB 50 - 20 = %h", SUM);
@@ -38,7 +35,7 @@ module CLA_32_tb;
             $display("FAIL: SUB. Expected 30, Got %h", SUM);
 
         // Test 3: Negation
-        A = 32'h00000015; B = 32'h00000027; CIN` = 1; OPCODE = 3'b111; // NEG
+        A = 32'h00000015; B = 32'h00000027; CIN` = 1; // NEG
         #20;
         if (SUM === 32'hFFFFFFE9 && COUT === 1) 
             $display("PASS: NEG -15 = %h", SUM);

@@ -92,7 +92,7 @@ always @(negedge Clock) // do the required job in each state
                         // initialize R3 with the value 0x34
             end
             Reg_load2a: begin
-                        Mdatain <= 32'h00000045;
+                        Mdatain <= 32'hFFFFFF45;
                         Read <= 1; MDRin <= 1;
             end
             Reg_load2b: begin

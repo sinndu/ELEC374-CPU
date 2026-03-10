@@ -4,7 +4,6 @@ module CLA_16 (
     input cin,
     output [15:0] sum,
     output cout,
-    output GG16, PG16 // for next hierachy level
 );
 
     wire [3:0] G, P;
@@ -23,9 +22,5 @@ module CLA_16 (
     assign C[4] = G[3] | (P[3] & G[2]) | (P[3] & P[2] & G[1]) | (P[3] & P[2] & P[1] & G[0]) | (P[3] & P[2] & P[1] & P[0] & cin);
 
     assign cout = C[4];
-
-    //group signals for next hierachy level
-    assign GG16 = G[3] | (P[3] & G[2]) | (P[3] & P[2] & G[1]) | (P[3] & P[2] & P[1] & G[0]);
-    assign PG16 = P[3] & P[2] & P[1] & P[0];
 
 endmodule

@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "02/08/2026 15:48:03"
+// DATE "03/09/2026 18:59:17"
 
 // 
 // Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -54,9 +54,12 @@ module datapath (
 	OutPortout,
 	Cin,
 	Cout,
-	reg_select,
 	Rin,
 	Rout,
+	Gra,
+	Grb,
+	Grc,
+	BAout,
 	ALU_operation);
 input 	clock;
 input 	clear;
@@ -83,9 +86,12 @@ input 	OutPortin;
 input 	OutPortout;
 input 	Cin;
 input 	Cout;
-input 	[3:0] reg_select;
 input 	Rin;
 input 	Rout;
+input 	Gra;
+input 	Grb;
+input 	Grc;
+input 	BAout;
 input 	[3:0] ALU_operation;
 
 // Design Ports Information
@@ -176,12 +182,12 @@ input 	[3:0] ALU_operation;
 // OutPortout	=>  Location: PIN_U1,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // Cin	=>  Location: PIN_P6,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // Cout	=>  Location: PIN_D7,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// reg_select[0]	=>  Location: PIN_AB7,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// reg_select[1]	=>  Location: PIN_T8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// reg_select[2]	=>  Location: PIN_H15,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// reg_select[3]	=>  Location: PIN_T20,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Rin	=>  Location: PIN_H11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Rout	=>  Location: PIN_F15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Rin	=>  Location: PIN_AB7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Rout	=>  Location: PIN_T8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Gra	=>  Location: PIN_H15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Grb	=>  Location: PIN_T20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Grc	=>  Location: PIN_H11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BAout	=>  Location: PIN_F15,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // ALU_operation[0]	=>  Location: PIN_H13,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // ALU_operation[1]	=>  Location: PIN_A13,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // ALU_operation[2]	=>  Location: PIN_AB15,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -286,12 +292,12 @@ wire \OutPortin~input_o ;
 wire \OutPortout~input_o ;
 wire \Cin~input_o ;
 wire \Cout~input_o ;
-wire \reg_select[0]~input_o ;
-wire \reg_select[1]~input_o ;
-wire \reg_select[2]~input_o ;
-wire \reg_select[3]~input_o ;
 wire \Rin~input_o ;
 wire \Rout~input_o ;
+wire \Gra~input_o ;
+wire \Grb~input_o ;
+wire \Grc~input_o ;
+wire \BAout~input_o ;
 wire \ALU_operation[0]~input_o ;
 wire \ALU_operation[1]~input_o ;
 wire \ALU_operation[2]~input_o ;
@@ -1257,50 +1263,6 @@ defparam \Cout~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: IOIBUF_X18_Y0_N35
-cyclonev_io_ibuf \reg_select[0]~input (
-	.i(reg_select[0]),
-	.ibar(gnd),
-	.dynamicterminationcontrol(gnd),
-	.o(\reg_select[0]~input_o ));
-// synopsys translate_off
-defparam \reg_select[0]~input .bus_hold = "false";
-defparam \reg_select[0]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-// Location: IOIBUF_X12_Y0_N1
-cyclonev_io_ibuf \reg_select[1]~input (
-	.i(reg_select[1]),
-	.ibar(gnd),
-	.dynamicterminationcontrol(gnd),
-	.o(\reg_select[1]~input_o ));
-// synopsys translate_off
-defparam \reg_select[1]~input .bus_hold = "false";
-defparam \reg_select[1]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-// Location: IOIBUF_X44_Y45_N18
-cyclonev_io_ibuf \reg_select[2]~input (
-	.i(reg_select[2]),
-	.ibar(gnd),
-	.dynamicterminationcontrol(gnd),
-	.o(\reg_select[2]~input_o ));
-// synopsys translate_off
-defparam \reg_select[2]~input .bus_hold = "false";
-defparam \reg_select[2]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-// Location: IOIBUF_X54_Y14_N95
-cyclonev_io_ibuf \reg_select[3]~input (
-	.i(reg_select[3]),
-	.ibar(gnd),
-	.dynamicterminationcontrol(gnd),
-	.o(\reg_select[3]~input_o ));
-// synopsys translate_off
-defparam \reg_select[3]~input .bus_hold = "false";
-defparam \reg_select[3]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-// Location: IOIBUF_X34_Y45_N1
 cyclonev_io_ibuf \Rin~input (
 	.i(Rin),
 	.ibar(gnd),
@@ -1311,7 +1273,7 @@ defparam \Rin~input .bus_hold = "false";
 defparam \Rin~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X46_Y45_N58
+// Location: IOIBUF_X12_Y0_N1
 cyclonev_io_ibuf \Rout~input (
 	.i(Rout),
 	.ibar(gnd),
@@ -1320,6 +1282,50 @@ cyclonev_io_ibuf \Rout~input (
 // synopsys translate_off
 defparam \Rout~input .bus_hold = "false";
 defparam \Rout~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X44_Y45_N18
+cyclonev_io_ibuf \Gra~input (
+	.i(Gra),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\Gra~input_o ));
+// synopsys translate_off
+defparam \Gra~input .bus_hold = "false";
+defparam \Gra~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X54_Y14_N95
+cyclonev_io_ibuf \Grb~input (
+	.i(Grb),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\Grb~input_o ));
+// synopsys translate_off
+defparam \Grb~input .bus_hold = "false";
+defparam \Grb~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y45_N1
+cyclonev_io_ibuf \Grc~input (
+	.i(Grc),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\Grc~input_o ));
+// synopsys translate_off
+defparam \Grc~input .bus_hold = "false";
+defparam \Grc~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X46_Y45_N58
+cyclonev_io_ibuf \BAout~input (
+	.i(BAout),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\BAout~input_o ));
+// synopsys translate_off
+defparam \BAout~input .bus_hold = "false";
+defparam \BAout~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: IOIBUF_X38_Y45_N1

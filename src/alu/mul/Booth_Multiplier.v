@@ -25,15 +25,15 @@ module Booth_Multiplier (
                 3'b000: partial_product = 0;             // 0
                 3'b001: partial_product = M;             // 1M
                 3'b010: partial_product = M;             // 1M
-                3'b011: partial_product = 2 * M;         // 2M
-                3'b100: partial_product = -(2 * M);      // 2M
+                3'b011: partial_product = M + M;         // 2M
+                3'b100: partial_product = -(M + M);      // 2M
                 3'b101: partial_product = -M;            // 1M
                 3'b110: partial_product = -M;            // 1M
                 3'b111: partial_product = 0;             // 0
                 default: partial_product = 0;
             endcase
 
-            product = product + (partial_product << (2*i)); // Shift by 2*i for total
+            product = product + (partial_product << (i + i)); // Shift by 2*i for total
         end
     end
 

@@ -14,8 +14,9 @@ module datapath(
     input wire InPortin, InPortout,
     input wire OutPortin, OutPortout,
     input wire Cin, Cout,
-    input wire [3:0] reg_select,
     input wire Rin, Rout, 
+    input wire Gra, Grb, Grc,
+    input wire BAout,
     input wire [3:0] ALU_operation
 );
 
@@ -39,7 +40,11 @@ assign reg_out = reg_decode & {16{Rout}};
 //Instantiate devices
 
 //General-purpose registers
-Register_32 R0(clock, clear, reg_in[0], BusMuxOut, BusMuxIn_R0);
+//deal with special register 0
+wire [31:0] R0_out;
+Register_32 R0(clock, clear, reg_in[0], BusMuxOut, R0_out);
+assign BusMuxIn_R0 = BAout ? 32'b0 : R0_out;
+
 Register_32 R1(clock, clear, reg_in[1], BusMuxOut, BusMuxIn_R1);
 Register_32 R2(clock, clear, reg_in[2], BusMuxOut, BusMuxIn_R2);
 Register_32 R3(clock, clear, reg_in[3], BusMuxOut, BusMuxIn_R3);
@@ -64,8 +69,14 @@ Register_32 LO(clock, clear, LOin, BusMuxOut, BusMuxIn_LO);
 
 Register_32 C(clock, clear, Cin, BusMuxOut, C_Sign_Extended);
 
-wire [31:0] IR_wire; //IR output does not feed back into the bus
-Register_32 IR(clock, clear, IRin, BusMuxOut, IR_wire);
+wire [31:0] IR_out; //IR output does not feed back into the bus
+Register_32 IR(clock, clear, IRin, BusMuxOut, IR_out);
+//instantiate seelct and encode logic
+wire [3:0] reg_select;
+wire [31:0] C_sign_extended;
+Select_encode S_E_logic(Gra, Grb, Grc, Rin, Rout, BAout, Cout, IR_out, reg_select, C_sign_extended);
+
+
 
 //control
 Register_32 PC(clock, clear, PCin, BusMuxOut, BusMuxIn_PC);

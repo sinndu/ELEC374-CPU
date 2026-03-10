@@ -83,7 +83,7 @@ always @(negedge Clock) // do the required job in each state
             end
             Reg_load1a: begin
 								
-                        Mdatain <= 32'h00000034;
+                        Mdatain <= 32'h00000045;
                         Read <= 1; MDRin <= 1; // Took out #15 for '1', as it may not be needed
                         // for your current implementation
             end
@@ -92,7 +92,7 @@ always @(negedge Clock) // do the required job in each state
                         // initialize R5 with the value 0x34
             end
             Reg_load2a: begin
-                        Mdatain <= 32'h00000045;
+                        Mdatain <= 32'h00000034;
                         Read <= 1; MDRin <= 1;
             end
             Reg_load2b: begin

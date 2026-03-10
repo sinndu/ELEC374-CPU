@@ -124,7 +124,7 @@ AS_DATA1, DATA1              : AB3       :        :                   :         
 AS_DATA0, ASDO, DATA0        : AB4       :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB6       :        :                   :         : 3B        :                
-reg_select[0]                : AB7       : input  : 2.5 V             :         : 3B        : N              
+Rin                          : AB7       : input  : 2.5 V             :         : 3B        : N              
 in_memory_data[20]           : AB8       : input  : 2.5 V             :         : 3B        : N              
 GND                          : AB9       : gnd    :                   :         :           :                
 in_inport_data[8]            : AB10      : input  : 2.5 V             :         : 3B        : N              
@@ -242,7 +242,7 @@ VCCIO7A                      : F11       : power  :                   : 2.5V    
 in_memory_data[29]           : F12       : input  : 2.5 V             :         : 7A        : N              
 in_inport_data[6]            : F13       : input  : 2.5 V             :         : 7A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F14       :        :                   :         : 7A        :                
-Rout                         : F15       : input  : 2.5 V             :         : 7A        : N              
+BAout                        : F15       : input  : 2.5 V             :         : 7A        : N              
 GND                          : F16       : gnd    :                   :         :           :                
 GND                          : F17       :        :                   :         : 7A        :                
 NC                           : F18       :        :                   :         :           :                
@@ -282,11 +282,11 @@ GND                          : H7        : gnd    :                   :         
 in_memory_data[6]            : H8        : input  : 2.5 V             :         : 8A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H9        :        :                   :         : 8A        :                
 in_memory_data[11]           : H10       : input  : 2.5 V             :         : 7A        : N              
-Rin                          : H11       : input  : 2.5 V             :         : 7A        : N              
+Grc                          : H11       : input  : 2.5 V             :         : 7A        : N              
 GND                          : H12       : gnd    :                   :         :           :                
 ALU_operation[0]             : H13       : input  : 2.5 V             :         : 7A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H14       :        :                   :         : 7A        :                
-reg_select[2]                : H15       : input  : 2.5 V             :         : 7A        : N              
+Gra                          : H15       : input  : 2.5 V             :         : 7A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H16       :        :                   :         : 7A        :                
 VCCIO7A                      : H17       : power  :                   : 2.5V    : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H18       :        :                   :         : 7A        :                
@@ -455,7 +455,7 @@ AS_DATA3, DATA3              : T4        :        :                   :         
 VCCA_FPLL                    : T5        : power  :                   : 2.5V    :           :                
 VCCIO3A                      : T6        : power  :                   : 2.5V    : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T7        :        :                   :         : 3A        :                
-reg_select[1]                : T8        : input  : 2.5 V             :         : 3A        : N              
+Rout                         : T8        : input  : 2.5 V             :         : 3A        : N              
 in_memory_data[0]            : T9        : input  : 2.5 V             :         : 3B        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T10       :        :                   :         : 3B        :                
 VCCIO3B                      : T11       : power  :                   : 2.5V    : 3B        :                
@@ -467,7 +467,7 @@ GND                          : T16       : gnd    :                   :         
 in_inport_data[27]           : T17       : input  : 2.5 V             :         : 5A        : N              
 in_inport_data[4]            : T18       : input  : 2.5 V             :         : 5A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T19       :        :                   :         : 5A        :                
-reg_select[3]                : T20       : input  : 2.5 V             :         : 5A        : N              
+Grb                          : T20       : input  : 2.5 V             :         : 5A        : N              
 GND                          : T21       : gnd    :                   :         :           :                
 in_inport_data[9]            : T22       : input  : 2.5 V             :         : 5A        : N              
 OutPortout                   : U1        : input  : 2.5 V             :         : 2A        : N              
