@@ -71,8 +71,8 @@ Register_32 LO(clock, clear, LOin, BusMuxOut, BusMuxIn_LO);
 
 Register_32 C(clock, clear, Cin, BusMuxOut, C_Sign_Extended);
 
-wire [31:0] IR_out; //IR output does not feed back into the bus
-Register_32 IR(clock, clear, IRin, BusMuxOut, IR_out);
+wire [31:0] IR_output; //IR output does not feed back into the bus
+Register_32 IR(clock, clear, IRin, BusMuxOut, IR_output);
 //instantiate seelct and encode logic
 wire [3:0] reg_select;
 wire [31:0] C_sign_extended;
@@ -88,7 +88,7 @@ Register_32 MAR(clock, clear, MARin, BusMuxOut, MAR_wire);
 
 //IO
 Register_32 InPort(clock, clear, InPortin, in_inport_data, BusMuxIn_InPort);
-Register_32 OutPort(clock, clear, OutPortin, BusMuxOut, out_outport_data);
+Register_32 OutPort(clock, clear, OutPortin, BusMuxOut, out_outport_data);  
 
 
 //ALU
