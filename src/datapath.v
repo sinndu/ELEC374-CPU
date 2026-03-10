@@ -7,7 +7,7 @@ module datapath(
 
     //control signals
     input wire PCin, PCout,
-    input wire IRin,
+    input wire IRin, CONin,
     input wire MARin, MDRin, MDRout, read,
     input wire HIin, HIout, LOin, LOout,
     input wire Yin, Zin, ZHighout, ZLowout, 
@@ -78,6 +78,9 @@ wire [3:0] reg_select;
 wire [31:0] C_sign_extended;
 Select_encode S_E_logic(Gra, Grb, Grc, Rin, Rout, BAout, Cout, IR_out, reg_select, C_sign_extended);
 
+//CON FF logic
+wire con_ff_out; //to control unit
+CON_FF CON_FF_logic(IR_output[22:19], BusMuxOut, CONin, con_ff_out);
 
 
 //control
