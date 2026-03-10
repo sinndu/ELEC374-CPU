@@ -131,6 +131,7 @@ set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPat
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_add.v -section_id DataPath_tb_add
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_sub.v -section_id DataPath_tb_sub
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/CLA_32_tb.v -section_id CLA_32_tb
+set_global_assignment -name VERILOG_FILE src/registers/MDR.v
 set_global_assignment -name VERILOG_FILE src/select_encode/CON_FF.v
 set_global_assignment -name VERILOG_FILE src/select_encode/Select_encode.v
 set_global_assignment -name VERILOG_FILE src/testbenches/DataPath/DataPath_tb_shr.v
@@ -149,7 +150,6 @@ set_global_assignment -name VERILOG_FILE src/alu/add/CLA_4.v
 set_global_assignment -name VERILOG_FILE src/datapath.v
 set_global_assignment -name VERILOG_FILE src/testbenches/Booth_Multiplier_tb.v
 set_global_assignment -name VERILOG_FILE src/registers/Register_32.v
-set_global_assignment -name VERILOG_FILE src/bus/MDR.v
 set_global_assignment -name VERILOG_FILE src/bus/Bus.v
 set_global_assignment -name VERILOG_FILE src/alu/mul/Booth_Multiplier.v
 set_global_assignment -name VERILOG_FILE src/alu/div/NR_Division.v

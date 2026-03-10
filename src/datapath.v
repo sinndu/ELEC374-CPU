@@ -29,15 +29,6 @@ wire [31:0] BusMuxOut, BusMuxIn_R0, BusMuxIn_R1, BusMuxIn_R2, BusMuxIn_R3,
 	BusMuxIn_HI, BusMuxIn_LO, BusMuxIn_Zhigh, BusMuxIn_Zlow,
 	BusMuxIn_PC, BusMuxIn_MDR, BusMuxIn_InPort, C_Sign_Extended;
  
-//decoder
-wire [15:0] reg_decode;
-assign reg_decode = 16'b1 << reg_select;
-
-//ensure one-hot IF Rin is enabled
-wire [15:0] reg_in;
-assign reg_in = reg_decode & {16{Rin}};
-wire [15:0] reg_out;
-assign reg_out = reg_decode & {16{Rout}};
 
 //Instantiate devices
 
@@ -76,7 +67,17 @@ Register_32 IR(clock, clear, IRin, BusMuxOut, IR_output);
 //instantiate seelct and encode logic
 wire [3:0] reg_select;
 wire [31:0] C_sign_extended;
-Select_encode S_E_logic(Gra, Grb, Grc, Rin, Rout, BAout, Cout, IR_out, reg_select, C_sign_extended);
+Select_encode S_E_logic(Gra, Grb, Grc, Rin, Rout, Cout, IR_out, reg_select, C_sign_extended);
+//decoder
+wire [15:0] reg_decode;
+assign reg_decode = 16'b1 << reg_select;
+
+//ensure one-hot IF Rin is enabled
+wire [15:0] reg_in;
+assign reg_in = reg_decode & {16{Rin}};
+wire [15:0] reg_out;
+assign reg_out = reg_decode & {16{Rout}};
+
 
 //CON FF logic
 wire con_ff_out; //to control unit
