@@ -20,6 +20,7 @@ module datapath(
     input wire [3:0] ALU_operation,
 
     output wire [31:0] MAR_out,
+    output wire [31:0] MDR_out,
     output wire [31:0] out_outport_data
 );
 
@@ -58,6 +59,8 @@ Register_32 R15(clock, clear, reg_in[15], BusMuxOut, BusMuxIn_R15);
 //data
 //use special mdr register 
 MDR MDR(clock, clear, MDRin, read, BusMuxOut, in_memory_data, BusMuxIn_MDR);
+assign MDR_out = BusMuxIn_MDR;
+
 Register_32 HI(clock, clear, HIin, BusMuxOut, BusMuxIn_HI);
 Register_32 LO(clock, clear, LOin, BusMuxOut, BusMuxIn_LO);
 
@@ -68,7 +71,7 @@ Register_32 IR(clock, clear, IRin, BusMuxOut, IR_output);
 //instantiate seelct and encode logic
 wire [3:0] reg_select;
 wire [31:0] C_sign_extended;
-Select_encode S_E_logic(Gra, Grb, Grc, Rin, Rout, Cout, IR_out, reg_select, C_sign_extended);
+Select_encode S_E_logic(Gra, Grb, Grc, Rin, Rout, Cout, IR_output, reg_select, C_sign_extended);
 //decoder
 wire [15:0] reg_decode;
 assign reg_decode = 16'b1 << reg_select;
