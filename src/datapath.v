@@ -19,6 +19,7 @@ module datapath(
     input wire BAout,
     input wire [3:0] ALU_operation,
 
+    output wire [31:0] MAR_out,
     output wire [31:0] out_outport_data
 );
 
@@ -87,8 +88,7 @@ CON_FF CON_FF_logic(IR_output[22:19], BusMuxOut, CONin, con_ff_out);
 //control
 Register_32 PC(clock, clear, PCin, BusMuxOut, BusMuxIn_PC);
 
-wire [31:0] MAR_wire; //subject to change, this is the MAR output to the memory chip
-Register_32 MAR(clock, clear, MARin, BusMuxOut, MAR_wire);
+Register_32 MAR(clock, clear, MARin, BusMuxOut, MAR_out);
 
 //IO
 Register_32 InPort(clock, clear, InPortin, in_inport_data, BusMuxIn_InPort);
