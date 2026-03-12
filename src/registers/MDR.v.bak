@@ -1,0 +1,32 @@
+module MDR (
+    input [31:0] BusMuxOut,
+    input [31:0] Mdatain,
+    input Read,       // Select signal for the Mux
+    input clear,      // Asynchronous or Synchronous clear
+    input clock,      // Clock signal
+    input MDRin,      // Write enable
+    output wire [31:0] BusMuxIn // Output Q
+);
+
+    wire [31:0] mux_out;
+    reg [31:0] q;
+
+    // 1. The 2-to-1 Multiplexer (MDMux in Figure 4)
+    // If Read is high, we take data from Memory (Mdatain).
+    // If Read is low, we take data from the Bus (BusMuxOut).
+    assign mux_out = (Read ? Mdatain : BusMuxOut); 
+
+    // 2. The Register Logic
+    always @ (posedge clock) begin
+        if (clear) begin
+            q <= 32'b0;      // Reset register to 0
+        end
+        else if (MDRin) begin
+            q <= mux_out;    // Load the output of the Mux
+        end
+    end
+
+    // 3. Output Assignment
+    assign BusMuxIn = q;
+
+endmodule

@@ -1,0 +1,17 @@
+module Select_encode(
+    input wire Gra, Grb, Grc,
+    input wire Rin, Rout,
+    input wire BAout, Cout,
+    input wire [31:0] IR_out,
+    output wire [3:0] reg_select,
+    output wire [31:0] C_sign_extended
+);
+
+reg Ra = IR_out[26:23];
+reg Rb = IR_out[22:19];
+reg Rc = IR_out[18:15];
+
+assign C_sign_extended = $signed(IR_out[18:0])
+
+assign reg_select = (Gra & Ra) | (Grb & Rb) & (Grc & Rc);
+endmodule

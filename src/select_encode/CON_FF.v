@@ -1,0 +1,40 @@
+module CON_FF (
+    input wire [3:0] IR_output,
+    input wire [31:0] BusMuxOut,
+    input wire CONin,
+    output wire Q
+);
+
+//decode lower 2 bits of IR output
+wire [3:0] IR_decode;
+assign IR_decode = 4'b1 << IR_output[1:0];
+
+reg CON; //note: may need to be initialized
+
+wire zr, nz, pl, mi;
+wire bus_or, bus_nor;
+wire bus_pos, bus_neg; 
+wire D;
+
+assign bus_or = |BusMuxOut;
+assign bus_nor = ~|BusMuxOut;
+assign bus_pos = ~BusMuxOut[31];
+assign bus_neg = BusMuxOut[31];
+
+or(D, zr, nz, pl, mi);
+and(zr, bus_nor, IR_decode[0]);
+and(nz, bus_or, IR_decode[1]);
+and(pl, bus_pos, IR_decode[2]);
+and(mi, bus_neg, IR_decode[3]);
+
+
+//latched input
+always@(CONin or IR_output or BusMuxOut) begin
+    if (CONin) begin
+        CON <= D;
+    end
+end
+
+assign Q = CON;
+
+endmodule
