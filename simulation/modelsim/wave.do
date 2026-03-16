@@ -1,41 +1,41 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /DataPath_tb_addi/Clock
-add wave -noupdate /DataPath_tb_addi/clear
-add wave -noupdate /DataPath_tb_addi/PCout
-add wave -noupdate /DataPath_tb_addi/Zlowout
-add wave -noupdate /DataPath_tb_addi/MDRout
-add wave -noupdate /DataPath_tb_addi/Rout
-add wave -noupdate /DataPath_tb_addi/MARin
-add wave -noupdate /DataPath_tb_addi/Zin
-add wave -noupdate /DataPath_tb_addi/PCin
-add wave -noupdate /DataPath_tb_addi/MDRin
-add wave -noupdate /DataPath_tb_addi/IRin
-add wave -noupdate /DataPath_tb_addi/Yin
-add wave -noupdate /DataPath_tb_addi/CONin
-add wave -noupdate /DataPath_tb_addi/ReadMDR
-add wave -noupdate /DataPath_tb_addi/ReadMem
-add wave -noupdate /DataPath_tb_addi/Write
-add wave -noupdate /DataPath_tb_addi/Rin
-add wave -noupdate /DataPath_tb_addi/Gra
-add wave -noupdate /DataPath_tb_addi/Grb
-add wave -noupdate /DataPath_tb_addi/Grc
-add wave -noupdate /DataPath_tb_addi/Cout
-add wave -noupdate -radix hexadecimal /DataPath_tb_addi/Present_state
-add wave -noupdate -radix hexadecimal /DataPath_tb_addi/ALU_operation
-add wave -noupdate -radix hexadecimal /DataPath_tb_addi/SRC/DUT/S_E_logic/reg_select
-add wave -noupdate -radix hexadecimal /DataPath_tb_addi/SRC/DUT/BusMuxOut
-add wave -noupdate -radix hexadecimal /DataPath_tb_addi/SRC/DUT/R7/storage
-add wave -noupdate -radix hexadecimal /DataPath_tb_addi/SRC/DUT/R4/storage
-add wave -noupdate -radix hexadecimal /DataPath_tb_addi/SRC/memory/addr
-add wave -noupdate -radix hexadecimal /DataPath_tb_addi/SRC/DUT/S_E_logic/Ra
-add wave -noupdate -radix hexadecimal /DataPath_tb_addi/SRC/DUT/S_E_logic/Rb
-add wave -noupdate -radix hexadecimal /DataPath_tb_addi/SRC/DUT/S_E_logic/Rc
-add wave -noupdate -radix hexadecimal /DataPath_tb_addi/SRC/DUT/S_E_logic/C_sign_extended
-add wave -noupdate -radix hexadecimal /DataPath_tb_addi/SRC/DUT/IR/storage
-add wave -noupdate -radix hexadecimal /DataPath_tb_addi/SRC/DUT/MDR/MDR_Reg/storage
-add wave -noupdate -radix hexadecimal /DataPath_tb_addi/SRC/DUT/MDR/Mux_out
-add wave -noupdate -radix hexadecimal /DataPath_tb_addi/SRC/memory/data_out
+add wave -noupdate sim:/Clock
+add wave -noupdate sim:/clear
+add wave -noupdate sim:/PCout
+add wave -noupdate sim:/Zlowout
+add wave -noupdate sim:/MDRout
+add wave -noupdate sim:/Rout
+add wave -noupdate sim:/MARin
+add wave -noupdate sim:/Zin
+add wave -noupdate sim:/PCin
+add wave -noupdate sim:/MDRin
+add wave -noupdate sim:/IRin
+add wave -noupdate sim:/Yin
+add wave -noupdate sim:/CONin
+add wave -noupdate sim:/Read
+add wave -noupdate sim:/Write
+add wave -noupdate sim:/Rin
+add wave -noupdate sim:/Gra
+add wave -noupdate sim:/Grb
+add wave -noupdate sim:/Grc
+add wave -noupdate sim:/Cout
+add wave -noupdate sim:/BAout
+add wave -noupdate -radix hexadecimal sim:/Present_state
+add wave -noupdate -radix hexadecimal sim:/ALU_operation
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/S_E_logic/reg_select
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/BusMuxOut
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/R7/storage
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/R4/storage
+add wave -noupdate -radix hexadecimal sim:/SRC/memory/addr
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/S_E_logic/Ra
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/S_E_logic/Rb
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/S_E_logic/Rc
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/S_E_logic/C_sign_extended
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/IR/storage
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/MDR/MDR_Reg/storage
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/MDR/Mux_out
+add wave -noupdate -radix hexadecimal sim:/SRC/memory/data_out
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {176332 ps} 0}
 quietly wave cursor active 1
@@ -53,4 +53,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ps} {525 ns}
+WaveRestoreZoom {0 ps} {315 ns}

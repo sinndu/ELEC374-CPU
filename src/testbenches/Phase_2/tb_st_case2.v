@@ -1,6 +1,6 @@
 // and datapath_tb.v file: <This is the filename>
 `timescale 1ns/10ps
-module DataPath_tb_add;
+module DataPath_tb;
     reg [3:0] reg_select;
     reg PCout, Zlowout, MDRout, Rout;
     reg MARin, Zin, PCin, MDRin, IRin, Yin, CONin;
@@ -19,6 +19,7 @@ module DataPath_tb_add;
                 SHR = 4'b0110, SHRA = 4'b0111, SHL = 4'b1000, ROR = 4'b1001, ROL = 4'b1010,
                 MUL = 4'b1011, DIV = 4'b1100, IncPC = 4'b1101, NONE = 4'b1110;
     reg [3:0] ALU_operation = NONE;
+    reg TEMP_FOR_GIT;
 
 datapath DUT(
 
@@ -31,7 +32,7 @@ datapath DUT(
     .Rin(Rin), .Rout(Rout), 
     .Yin(Yin), .Zin(Zin),
     .ALU_operation(ALU_operation), 
-    .Gra(Gra), Grb(Grb), Grc(Grc),
+    .Gra(Gra), .Grb(Grb), .Grc(Grc),
 
     .MAR_out(MAR_out),
     .MDR_out(MDR_out)
