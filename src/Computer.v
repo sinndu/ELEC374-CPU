@@ -4,7 +4,7 @@ module Computer(
 	input IRin, CONin,
 	input ZLowout,
 	input MARin, MDRin, MDRout,
-	input ReadMDR, ReadMem, Write,
+	input Read, Write,
 	input Rin, Rout,
 	input Yin, Zin,
 	input Cout,
@@ -25,7 +25,7 @@ datapath DUT(
     .PCin(PCin), .PCout(PCout), 	
     .IRin(IRin), .CONin(CONin),
     .ZLowout(ZLowout), 
-    .MARin(MARin), .MDRin(MDRin), .MDRout(MDRout), .read(ReadMDR),
+    .MARin(MARin), .MDRin(MDRin), .MDRout(MDRout), .read(Read),
     .Rin(Rin), .Rout(Rout), 
     .Yin(Yin), .Zin(Zin),
 	.Cout(Cout),
@@ -38,7 +38,7 @@ datapath DUT(
 
 RAM memory(
     .clk(Clock), .clear(clear),
-    .read(ReadMem), .write(Write),
+    .read(Read), .write(Write),
     .addr(MAR_out[8:0]),
     .data_in(MDR_out), 
     .data_out(Mdatain)
