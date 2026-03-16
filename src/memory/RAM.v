@@ -8,13 +8,13 @@ module RAM(
 reg [31:0] mem [0:511];
 reg [31:0] out_reg;
 
-
+integer idx;
 always@(posedge clk) begin
     if (clear) begin
-		  integer i;
-        for (i = 0; i < 512; i = i + 1) begin
-            mem[i] <= 32'b0;
+        for (idx = 0; idx < 512; idx = idx + 1) begin
+            mem[idx] <= 32'b0;
         end
+		  out_reg <= 32'b0;
     end
     else if (read) begin
         out_reg <= mem[addr];

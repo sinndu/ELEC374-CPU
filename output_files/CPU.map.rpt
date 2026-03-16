@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPU
-Wed Mar 11 18:23:44 2026
+Sun Mar 15 23:13:19 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,42 +14,40 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: Register_32:R0
- 11. Parameter Settings for User Entity Instance: Register_32:R1
- 12. Parameter Settings for User Entity Instance: Register_32:R2
- 13. Parameter Settings for User Entity Instance: Register_32:R3
- 14. Parameter Settings for User Entity Instance: Register_32:R4
- 15. Parameter Settings for User Entity Instance: Register_32:R5
- 16. Parameter Settings for User Entity Instance: Register_32:R6
- 17. Parameter Settings for User Entity Instance: Register_32:R7
- 18. Parameter Settings for User Entity Instance: Register_32:R8
- 19. Parameter Settings for User Entity Instance: Register_32:R9
- 20. Parameter Settings for User Entity Instance: Register_32:R10
- 21. Parameter Settings for User Entity Instance: Register_32:R11
- 22. Parameter Settings for User Entity Instance: Register_32:R12
- 23. Parameter Settings for User Entity Instance: Register_32:R13
- 24. Parameter Settings for User Entity Instance: Register_32:R14
- 25. Parameter Settings for User Entity Instance: Register_32:R15
- 26. Parameter Settings for User Entity Instance: MDR:MDR|Register_32:MDR_Reg
- 27. Parameter Settings for User Entity Instance: Register_32:HI
- 28. Parameter Settings for User Entity Instance: Register_32:LO
- 29. Parameter Settings for User Entity Instance: Register_32:C
- 30. Parameter Settings for User Entity Instance: Register_32:IR
- 31. Parameter Settings for User Entity Instance: Register_32:PC
- 32. Parameter Settings for User Entity Instance: Register_32:MAR
- 33. Parameter Settings for User Entity Instance: Register_32:InPort
- 34. Parameter Settings for User Entity Instance: Register_32:OutPort
- 35. Parameter Settings for User Entity Instance: Register_32:RY
- 36. Parameter Settings for User Entity Instance: Register_32:RZhigh
- 37. Parameter Settings for User Entity Instance: Register_32:RZlow
- 38. Port Connectivity Checks: "ALU:alu_op|CLA_32:adder"
- 39. Port Connectivity Checks: "CON_FF:CON_FF_logic"
- 40. Port Connectivity Checks: "Select_encode:S_E_logic"
- 41. Post-Synthesis Netlist Statistics for Top Partition
- 42. Elapsed Time Per Partition
- 43. Analysis & Synthesis Messages
- 44. Analysis & Synthesis Suppressed Messages
+  9. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R0
+ 10. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R1
+ 11. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R2
+ 12. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R3
+ 13. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R4
+ 14. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R5
+ 15. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R6
+ 16. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R7
+ 17. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R8
+ 18. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R9
+ 19. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R10
+ 20. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R11
+ 21. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R12
+ 22. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R13
+ 23. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R14
+ 24. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R15
+ 25. Parameter Settings for User Entity Instance: datapath:DUT|MDR:MDR|Register_32:MDR_Reg
+ 26. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:HI
+ 27. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:LO
+ 28. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:IR
+ 29. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:PC
+ 30. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:MAR
+ 31. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:InPort
+ 32. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:OutPort
+ 33. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:RY
+ 34. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:RZhigh
+ 35. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:RZlow
+ 36. Port Connectivity Checks: "datapath:DUT|ALU:alu_op|CLA_32:adder"
+ 37. Port Connectivity Checks: "datapath:DUT|CON_FF:CON_FF_logic"
+ 38. Port Connectivity Checks: "datapath:DUT"
+ 39. Post-Synthesis Netlist Statistics for Top Partition
+ 40. Elapsed Time Per Partition
+ 41. Analysis & Synthesis Messages
+ 42. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -75,14 +73,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Mar 11 18:23:44 2026       ;
+; Analysis & Synthesis Status     ; Successful - Sun Mar 15 23:13:19 2026       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; CPU                                         ;
-; Top-level Entity Name           ; datapath                                    ;
+; Top-level Entity Name           ; Computer                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 876                                         ;
-; Total pins                      ; 194                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 24                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -101,7 +99,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CEBA4F23C7        ;                    ;
-; Top-level entity name                                                           ; datapath           ; CPU                ;
+; Top-level entity name                                                           ; Computer           ; CPU                ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -191,11 +189,10 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -204,6 +201,8 @@ refer to the applicable agreement for further details.
 +-----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path  ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                            ; Library ;
 +-----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
+; src/Computer.v                    ; yes             ; User Verilog HDL File  ; C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v                    ;         ;
+; src/memory/RAM.v                  ; yes             ; User Verilog HDL File  ; C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/memory/RAM.v                  ;         ;
 ; src/registers/MDR.v               ; yes             ; User Verilog HDL File  ; C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers/MDR.v               ;         ;
 ; src/select_encode/CON_FF.v        ; yes             ; User Verilog HDL File  ; C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/CON_FF.v        ;         ;
 ; src/select_encode/Select_encode.v ; yes             ; User Verilog HDL File  ; C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/Select_encode.v ;         ;
@@ -220,117 +219,40 @@ refer to the applicable agreement for further details.
 +-----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 2115        ;
-;                                             ;             ;
-; Combinational ALUT usage for logic          ; 3139        ;
-;     -- 7 input functions                    ; 473         ;
-;     -- 6 input functions                    ; 502         ;
-;     -- 5 input functions                    ; 378         ;
-;     -- 4 input functions                    ; 145         ;
-;     -- <=3 input functions                  ; 1641        ;
-;                                             ;             ;
-; Dedicated logic registers                   ; 876         ;
-;                                             ;             ;
-; I/O pins                                    ; 194         ;
-;                                             ;             ;
-; Total DSP Blocks                            ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; clear~input ;
-; Maximum fan-out                             ; 903         ;
-; Total fan-out                               ; 18534       ;
-; Average fan-out                             ; 4.21        ;
-+---------------------------------------------+-------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimate of Logic utilization (ALMs needed) ; 0     ;
+;                                             ;       ;
+; Combinational ALUT usage for logic          ; 0     ;
+;     -- 7 input functions                    ; 0     ;
+;     -- 6 input functions                    ; 0     ;
+;     -- 5 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 0     ;
+;     -- <=3 input functions                  ; 0     ;
+;                                             ;       ;
+; Dedicated logic registers                   ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 24    ;
+;                                             ;       ;
+; Total DSP Blocks                            ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; Clock ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 24    ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                   ;
-+-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------+------------------+--------------+
-; Compilation Hierarchy Node          ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                  ; Entity Name      ; Library Name ;
-+-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------+------------------+--------------+
-; |datapath                           ; 3139 (14)           ; 876 (0)                   ; 0                 ; 0          ; 194  ; 0            ; |datapath                                                            ; datapath         ; work         ;
-;    |ALU:alu_op|                     ; 2773 (671)          ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op                                                 ; ALU              ; work         ;
-;       |Booth_Multiplier:multiplier| ; 933 (933)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier                     ; Booth_Multiplier ; work         ;
-;       |CLA_32:adder|                ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder                                    ; CLA_32           ; work         ;
-;          |CLA_16:high_16|           ; 37 (6)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16                     ; CLA_16           ; work         ;
-;             |CLA_4:cla0|            ; 9 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla0          ; CLA_4            ; work         ;
-;                |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla0|PFA:pfa0 ; PFA              ; work         ;
-;                |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla0|PFA:pfa1 ; PFA              ; work         ;
-;                |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla0|PFA:pfa2 ; PFA              ; work         ;
-;                |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla0|PFA:pfa3 ; PFA              ; work         ;
-;             |CLA_4:cla1|            ; 9 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla1          ; CLA_4            ; work         ;
-;                |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla1|PFA:pfa0 ; PFA              ; work         ;
-;                |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla1|PFA:pfa1 ; PFA              ; work         ;
-;                |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla1|PFA:pfa2 ; PFA              ; work         ;
-;                |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla1|PFA:pfa3 ; PFA              ; work         ;
-;             |CLA_4:cla2|            ; 6 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla2          ; CLA_4            ; work         ;
-;                |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla2|PFA:pfa0 ; PFA              ; work         ;
-;                |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla2|PFA:pfa1 ; PFA              ; work         ;
-;                |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla2|PFA:pfa2 ; PFA              ; work         ;
-;                |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla2|PFA:pfa3 ; PFA              ; work         ;
-;             |CLA_4:cla3|            ; 7 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla3          ; CLA_4            ; work         ;
-;                |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla3|PFA:pfa0 ; PFA              ; work         ;
-;                |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla3|PFA:pfa1 ; PFA              ; work         ;
-;                |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla3|PFA:pfa2 ; PFA              ; work         ;
-;                |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla3|PFA:pfa3 ; PFA              ; work         ;
-;          |CLA_16:low_16|            ; 44 (9)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16                      ; CLA_16           ; work         ;
-;             |CLA_4:cla0|            ; 10 (6)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0           ; CLA_4            ; work         ;
-;                |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa0  ; PFA              ; work         ;
-;                |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa1  ; PFA              ; work         ;
-;                |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa2  ; PFA              ; work         ;
-;                |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa3  ; PFA              ; work         ;
-;             |CLA_4:cla1|            ; 9 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla1           ; CLA_4            ; work         ;
-;                |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla1|PFA:pfa0  ; PFA              ; work         ;
-;                |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla1|PFA:pfa1  ; PFA              ; work         ;
-;                |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla1|PFA:pfa2  ; PFA              ; work         ;
-;                |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla1|PFA:pfa3  ; PFA              ; work         ;
-;             |CLA_4:cla2|            ; 10 (6)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla2           ; CLA_4            ; work         ;
-;                |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla2|PFA:pfa0  ; PFA              ; work         ;
-;                |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla2|PFA:pfa1  ; PFA              ; work         ;
-;                |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla2|PFA:pfa2  ; PFA              ; work         ;
-;                |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla2|PFA:pfa3  ; PFA              ; work         ;
-;             |CLA_4:cla3|            ; 6 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla3           ; CLA_4            ; work         ;
-;                |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla3|PFA:pfa0  ; PFA              ; work         ;
-;                |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla3|PFA:pfa1  ; PFA              ; work         ;
-;                |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla3|PFA:pfa2  ; PFA              ; work         ;
-;                |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla3|PFA:pfa3  ; PFA              ; work         ;
-;       |NR_Division:divider|         ; 1088 (1088)         ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|ALU:alu_op|NR_Division:divider                             ; NR_Division      ; work         ;
-;    |Bus:bus|                        ; 319 (319)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|Bus:bus                                                    ; Bus              ; work         ;
-;    |MDR:MDR|                        ; 1 (0)               ; 32 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |datapath|MDR:MDR                                                    ; MDR              ; work         ;
-;       |Register_32:MDR_Reg|         ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|MDR:MDR|Register_32:MDR_Reg                                ; Register_32      ; work         ;
-;    |Register_32:C|                  ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:C                                              ; Register_32      ; work         ;
-;    |Register_32:HI|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:HI                                             ; Register_32      ; work         ;
-;    |Register_32:IR|                 ; 1 (1)               ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:IR                                             ; Register_32      ; work         ;
-;    |Register_32:InPort|             ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:InPort                                         ; Register_32      ; work         ;
-;    |Register_32:LO|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:LO                                             ; Register_32      ; work         ;
-;    |Register_32:MAR|                ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:MAR                                            ; Register_32      ; work         ;
-;    |Register_32:OutPort|            ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:OutPort                                        ; Register_32      ; work         ;
-;    |Register_32:PC|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:PC                                             ; Register_32      ; work         ;
-;    |Register_32:R0|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:R0                                             ; Register_32      ; work         ;
-;    |Register_32:R10|                ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:R10                                            ; Register_32      ; work         ;
-;    |Register_32:R11|                ; 2 (2)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:R11                                            ; Register_32      ; work         ;
-;    |Register_32:R12|                ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:R12                                            ; Register_32      ; work         ;
-;    |Register_32:R13|                ; 2 (2)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:R13                                            ; Register_32      ; work         ;
-;    |Register_32:R14|                ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:R14                                            ; Register_32      ; work         ;
-;    |Register_32:R15|                ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:R15                                            ; Register_32      ; work         ;
-;    |Register_32:R1|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:R1                                             ; Register_32      ; work         ;
-;    |Register_32:R2|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:R2                                             ; Register_32      ; work         ;
-;    |Register_32:R3|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:R3                                             ; Register_32      ; work         ;
-;    |Register_32:R4|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:R4                                             ; Register_32      ; work         ;
-;    |Register_32:R5|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:R5                                             ; Register_32      ; work         ;
-;    |Register_32:R6|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:R6                                             ; Register_32      ; work         ;
-;    |Register_32:R7|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:R7                                             ; Register_32      ; work         ;
-;    |Register_32:R8|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:R8                                             ; Register_32      ; work         ;
-;    |Register_32:R9|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:R9                                             ; Register_32      ; work         ;
-;    |Register_32:RY|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:RY                                             ; Register_32      ; work         ;
-;    |Register_32:RZhigh|             ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:RZhigh                                         ; Register_32      ; work         ;
-;    |Register_32:RZlow|              ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|Register_32:RZlow                                          ; Register_32      ; work         ;
-;    |Select_encode:S_E_logic|        ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|Select_encode:S_E_logic                                    ; Select_encode    ; work         ;
-+-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------+------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |Computer                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 24   ; 0            ; |Computer           ; Computer    ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -339,254 +261,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 876   ;
-; Number of registers using Synchronous Clear  ; 876   ;
-; Number of registers using Synchronous Load   ; 32    ;
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 876   ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:MAR|storage[20]                   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:OutPort|storage[15]               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:C|storage[9]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:InPort|storage[29]                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:PC|storage[27]                    ;
-; 3:1                ; 64 bits   ; 128 LEs       ; 0 LEs                ; 128 LEs                ; Yes        ; |datapath|Register_32:RZlow|storage[21]                 ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:LO|storage[21]                    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:HI|storage[8]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:R15|storage[26]                   ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |datapath|Register_32:IR|storage[18]                    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:R14|storage[21]                   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:R13|storage[21]                   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:R12|storage[21]                   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:R11|storage[21]                   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:R10|storage[21]                   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:R9|storage[21]                    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:R8|storage[0]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:R7|storage[4]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:R6|storage[2]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:R5|storage[16]                    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:R4|storage[16]                    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:R3|storage[16]                    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:R2|storage[9]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:R1|storage[18]                    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:R0|storage[0]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|Register_32:RY|storage[19]                    ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |datapath|MDR:MDR|Register_32:MDR_Reg|storage[2]        ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux54  ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight1                        ;
-; 4:1                ; 49 bits   ; 98 LEs        ; 98 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight0                        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight0                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight0                        ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftLeft1                         ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight1                        ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight0                        ;
-; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftLeft1                         ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight1                        ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight1                        ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight2                        ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight2                        ;
-; 4:1                ; 50 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight2                        ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight2                        ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftLeft0                         ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight2                        ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftLeft0                         ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight0                        ;
-; 6:1                ; 12 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftLeft1                         ;
-; 6:1                ; 24 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight2                        ;
-; 6:1                ; 30 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux120 ;
-; 6:1                ; 31 bits   ; 124 LEs       ; 124 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux227 ;
-; 6:1                ; 30 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux274 ;
-; 6:1                ; 30 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux394 ;
-; 6:1                ; 30 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux496 ;
-; 6:1                ; 30 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux590 ;
-; 6:1                ; 30 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux656 ;
-; 6:1                ; 30 bits   ; 120 LEs       ; 120 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux737 ;
-; 9:1                ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftLeft1                         ;
-; 8:1                ; 30 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux164 ;
-; 8:1                ; 30 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux352 ;
-; 8:1                ; 30 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux429 ;
-; 8:1                ; 30 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux521 ;
-; 8:1                ; 30 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux612 ;
-; 8:1                ; 30 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux687 ;
-; 8:1                ; 30 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |datapath|ALU:alu_op|Booth_Multiplier:multiplier|Mux773 ;
-; 9:1                ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|ShiftRight2                        ;
-; 12:1               ; 16 bits   ; 128 LEs       ; 112 LEs              ; 16 LEs                 ; No         ; |datapath|ALU:alu_op|C[30]                              ;
-; 12:1               ; 14 bits   ; 112 LEs       ; 112 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_op|C[3]                               ;
-; 26:1               ; 32 bits   ; 544 LEs       ; 544 LEs              ; 0 LEs                  ; No         ; |datapath|Bus:bus|BusMuxOut[25]                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:R0 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:R1 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:R2 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:R3 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:R4 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:R5 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:R6 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:R7 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:R8 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:R9 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:R10 ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:R11 ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:R12 ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:R13 ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:R14 ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:R15 ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MDR:MDR|Register_32:MDR_Reg ;
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R0 ;
 +----------------+-------+-------------------------------------------------+
 ; Parameter Name ; Value ; Type                                            ;
 +----------------+-------+-------------------------------------------------+
@@ -595,118 +281,268 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:HI ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R1 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:LO ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R2 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:C ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; WIDTH          ; 32    ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R3 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:IR ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R4 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:PC ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R5 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:MAR ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R6 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:InPort ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R7 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:OutPort ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R8 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:RY ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R9 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:RZhigh ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R10 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register_32:RZlow ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R11 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R12 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R13 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R14 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R15 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|MDR:MDR|Register_32:MDR_Reg ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:HI ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:LO ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:IR ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:PC ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:MAR ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:InPort ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:OutPort ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:RY ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:RZhigh ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DUT|Register_32:RZlow ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:alu_op|CLA_32:adder"                                                             ;
+; Port Connectivity Checks: "datapath:DUT|ALU:alu_op|CLA_32:adder"                                                ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port  ; Type   ; Severity ; Details                                                                             ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
@@ -715,7 +551,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CON_FF:CON_FF_logic"                                                                ;
+; Port Connectivity Checks: "datapath:DUT|CON_FF:CON_FF_logic"                                                   ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -723,48 +559,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Select_encode:S_E_logic"                                                                       ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port            ; Type   ; Severity ; Details                                                                             ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
-; C_sign_extended ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:DUT"                                                                                                                                            ;
++------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                                                                                      ;
++------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; MAR_out[31..9]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
+; in_inport_data   ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; HIin             ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; HIout            ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; LOin             ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; LOout            ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; ZHighout         ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; InPortin         ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; InPortout        ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; OutPortin        ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; OutPortout       ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; Cin              ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; BAout            ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; out_outport_data ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
++------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 876                         ;
-;     ENA SCLR          ; 844                         ;
-;     ENA SCLR SLD      ; 32                          ;
-; arriav_lcell_comb     ; 3139                        ;
-;     arith             ; 1213                        ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 127                         ;
-;         2 data inputs ; 123                         ;
-;         3 data inputs ; 961                         ;
-;         5 data inputs ; 1                           ;
-;     extend            ; 473                         ;
-;         7 data inputs ; 473                         ;
-;     normal            ; 1155                        ;
-;         1 data inputs ; 15                          ;
-;         2 data inputs ; 67                          ;
-;         3 data inputs ; 54                          ;
-;         4 data inputs ; 140                         ;
-;         5 data inputs ; 377                         ;
-;         6 data inputs ; 502                         ;
-;     shared            ; 298                         ;
-;         2 data inputs ; 31                          ;
-;         3 data inputs ; 262                         ;
-;         4 data inputs ; 5                           ;
-; boundary_port         ; 194                         ;
-;                       ;                             ;
-; Max LUT depth         ; 139.20                      ;
-; Average LUT depth     ; 81.76                       ;
-+-----------------------+-----------------------------+
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 24                              ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
 
 
 +-------------------------------+
@@ -772,7 +598,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:32     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -782,10 +608,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Mar 11 18:22:46 2026
+    Info: Processing started: Sun Mar 15 23:12:46 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file src/computer.v
+    Info (12023): Found entity 1: Computer File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/phase_2/datapath_tb_addi.v
+    Info (12023): Found entity 1: DataPath_tb_addi File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/DataPath_tb_addi.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/memory/ram.v
     Info (12023): Found entity 1: RAM File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/memory/RAM.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/registers/mdr.v
@@ -852,38 +682,61 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/tes
     Info (12023): Found entity 1: DataPath_tb_sub File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_sub.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/phase_2/datapath_tb.v
     Info (12023): Found entity 1: DataPath_tb File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/DataPath_tb.v Line: 3
-Info (12127): Elaborating entity "datapath" for the top level hierarchy
-Info (12128): Elaborating entity "Register_32" for hierarchy "Register_32:R0" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 40
-Info (12128): Elaborating entity "MDR" for hierarchy "MDR:MDR" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 61
-Info (12128): Elaborating entity "Select_encode" for hierarchy "Select_encode:S_E_logic" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 74
-Info (12128): Elaborating entity "CON_FF" for hierarchy "CON_FF:CON_FF_logic" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 88
+Info (12127): Elaborating entity "Computer" for the top level hierarchy
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:DUT" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 37
+Info (12128): Elaborating entity "Register_32" for hierarchy "datapath:DUT|Register_32:R0" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 41
+Info (12128): Elaborating entity "MDR" for hierarchy "datapath:DUT|MDR:MDR" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 62
+Info (12128): Elaborating entity "Select_encode" for hierarchy "datapath:DUT|Select_encode:S_E_logic" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 74
+Info (12128): Elaborating entity "CON_FF" for hierarchy "datapath:DUT|CON_FF:CON_FF_logic" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 87
 Warning (10235): Verilog HDL Always Construct warning at CON_FF.v(34): variable "D" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 34
 Warning (10240): Verilog HDL Always Construct warning at CON_FF.v(32): inferring latch(es) for variable "CON", which holds its previous value in one or more paths through the always construct File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 32
 Info (10041): Inferred latch for "CON" at CON_FF.v(32) File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 32
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu_op" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 120
-Info (12128): Elaborating entity "CLA_32" for hierarchy "ALU:alu_op|CLA_32:adder" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v Line: 30
-Info (12128): Elaborating entity "CLA_16" for hierarchy "ALU:alu_op|CLA_32:adder|CLA_16:low_16" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v Line: 17
-Info (12128): Elaborating entity "CLA_4" for hierarchy "ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v Line: 13
-Info (12128): Elaborating entity "PFA" for hierarchy "ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa0" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_4.v Line: 13
-Info (12128): Elaborating entity "Booth_Multiplier" for hierarchy "ALU:alu_op|Booth_Multiplier:multiplier" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v Line: 38
-Info (12128): Elaborating entity "NR_Division" for hierarchy "ALU:alu_op|NR_Division:divider" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v Line: 48
-Info (12128): Elaborating entity "Bus" for hierarchy "Bus:bus" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 140
-Info (286030): Timing-Driven Synthesis is running
+Info (12128): Elaborating entity "ALU" for hierarchy "datapath:DUT|ALU:alu_op" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 119
+Info (12128): Elaborating entity "CLA_32" for hierarchy "datapath:DUT|ALU:alu_op|CLA_32:adder" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v Line: 30
+Info (12128): Elaborating entity "CLA_16" for hierarchy "datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v Line: 17
+Info (12128): Elaborating entity "CLA_4" for hierarchy "datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v Line: 13
+Info (12128): Elaborating entity "PFA" for hierarchy "datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa0" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_4.v Line: 13
+Info (12128): Elaborating entity "Booth_Multiplier" for hierarchy "datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v Line: 38
+Info (12128): Elaborating entity "NR_Division" for hierarchy "datapath:DUT|ALU:alu_op|NR_Division:divider" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v Line: 48
+Info (12128): Elaborating entity "Bus" for hierarchy "datapath:DUT|Bus:bus" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 139
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:memory" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 46
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/output_files/CPU.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CONin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 10
-    Warning (15610): No output dependent on input pin "OutPortout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v Line: 15
-Info (21057): Implemented 4145 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 98 input pins
-    Info (21059): Implemented 96 output pins
-    Info (21061): Implemented 3951 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4843 megabytes
-    Info: Processing ended: Wed Mar 11 18:23:45 2026
-    Info: Elapsed time: 00:00:59
-    Info: Total CPU time (on all processors): 00:01:15
+Warning (21074): Design contains 24 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Clock" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 2
+    Warning (15610): No output dependent on input pin "clear" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 2
+    Warning (15610): No output dependent on input pin "PCin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 3
+    Warning (15610): No output dependent on input pin "PCout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 3
+    Warning (15610): No output dependent on input pin "IRin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 4
+    Warning (15610): No output dependent on input pin "CONin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 4
+    Warning (15610): No output dependent on input pin "ZLowout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 5
+    Warning (15610): No output dependent on input pin "MARin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 6
+    Warning (15610): No output dependent on input pin "MDRin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 6
+    Warning (15610): No output dependent on input pin "MDRout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 6
+    Warning (15610): No output dependent on input pin "Read" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 7
+    Warning (15610): No output dependent on input pin "Write" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 7
+    Warning (15610): No output dependent on input pin "Rin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 8
+    Warning (15610): No output dependent on input pin "Rout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 8
+    Warning (15610): No output dependent on input pin "Yin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 9
+    Warning (15610): No output dependent on input pin "Zin" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 9
+    Warning (15610): No output dependent on input pin "Cout" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 10
+    Warning (15610): No output dependent on input pin "ALU_operation[0]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 11
+    Warning (15610): No output dependent on input pin "ALU_operation[1]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 11
+    Warning (15610): No output dependent on input pin "ALU_operation[2]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 11
+    Warning (15610): No output dependent on input pin "ALU_operation[3]" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 11
+    Warning (15610): No output dependent on input pin "Gra" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 12
+    Warning (15610): No output dependent on input pin "Grb" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 12
+    Warning (15610): No output dependent on input pin "Grc" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v Line: 14
+Info (21057): Implemented 24 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 24 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
+    Info: Peak virtual memory: 4850 megabytes
+    Info: Processing ended: Sun Mar 15 23:13:19 2026
+    Info: Elapsed time: 00:00:33
+    Info: Total CPU time (on all processors): 00:00:52
 
 
 +------------------------------------------+

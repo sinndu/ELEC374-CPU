@@ -1,0 +1,51 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/simulation/modelsim
+vdatapath
+!s110 1773607818
+!i10b 1
+!s100 bYz;V?ddX]2EmaI]_JfYP0
+In_DL=nY87=W4ZHkh_h9Ji0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1773605556
+8C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v
+FC:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1773607818.000000
+!s107 C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v|
+!s90 -reportprogress|300|C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v|
+!i113 1
+Z3 tCvgOpt 0
+vRAM
+!s110 1773607811
+!i10b 1
+!s100 LVN;97:Q@DCzMY_j93J9M3
+IKMTX@dL:?Jj8Cfc<bcAAh2
+R1
+R0
+w1773606968
+8C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/memory/RAM.v
+FC:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/memory/RAM.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1773607811.000000
+!s107 C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/memory/RAM.v|
+!s90 -reportprogress|300|C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/memory/RAM.v|
+!i113 1
+R3
+n@r@a@m

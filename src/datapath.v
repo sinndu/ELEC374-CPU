@@ -35,6 +35,7 @@ wire [31:0] BusMuxOut, BusMuxIn_R0, BusMuxIn_R1, BusMuxIn_R2, BusMuxIn_R3,
 //Instantiate devices
 
 //General-purpose registers
+wire [15:0] reg_in;
 //deal with special register 0
 wire [31:0] R0_out;
 Register_32 R0(clock, clear, reg_in[0], BusMuxOut, R0_out);
@@ -64,20 +65,18 @@ assign MDR_out = BusMuxIn_MDR;
 Register_32 HI(clock, clear, HIin, BusMuxOut, BusMuxIn_HI);
 Register_32 LO(clock, clear, LOin, BusMuxOut, BusMuxIn_LO);
 
-Register_32 C(clock, clear, Cin, BusMuxOut, C_Sign_Extended);
+//Register_32 C(clock, clear, Cin, BusMuxOut, C_Sign_Extended);
 
 wire [31:0] IR_output; //IR output does not feed back into the bus
 Register_32 IR(clock, clear, IRin, BusMuxOut, IR_output);
 //instantiate seelct and encode logic
 wire [3:0] reg_select;
-wire [31:0] C_sign_extended;
-Select_encode S_E_logic(Gra, Grb, Grc, Rin, Rout, Cout, IR_output, reg_select, C_sign_extended);
+Select_encode S_E_logic(Gra, Grb, Grc, Rin, Rout, Cout, IR_output, reg_select, C_Sign_Extended);
 //decoder
 wire [15:0] reg_decode;
 assign reg_decode = 16'b1 << reg_select;
 
 //ensure one-hot IF Rin is enabled
-wire [15:0] reg_in;
 assign reg_in = reg_decode & {16{Rin}};
 wire [15:0] reg_out;
 assign reg_out = reg_decode & {16{Rout}};
