@@ -47,7 +47,6 @@ initial
 		//initialize memory and registers
 		$readmemh("ld_case1.hex", SRC.memory.mem);
 		SRC.DUT.R7.storage = 32'h0000ab45;
-		SRC.DUT.R4.storage = 32'h000000b9;
 end
 
 always @(posedge Clock) // finite state machine; if clock rising-edge
