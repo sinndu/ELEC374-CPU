@@ -2,4 +2,100 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1100mV 85C Model Setup 'Clock'
+Slack : -96.221
+TNS   : -177770.789
+
+Type  : Slow 1100mV 85C Model Setup 'CONin'
+Slack : -9.309
+TNS   : -9.309
+
+Type  : Slow 1100mV 85C Model Hold 'Clock'
+Slack : 0.473
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'CONin'
+Slack : 1.470
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Clock'
+Slack : -0.538
+TNS   : -13380.137
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CONin'
+Slack : 0.323
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'Clock'
+Slack : -99.893
+TNS   : -169924.797
+
+Type  : Slow 1100mV 0C Model Setup 'CONin'
+Slack : -9.293
+TNS   : -9.293
+
+Type  : Slow 1100mV 0C Model Hold 'Clock'
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'CONin'
+Slack : 1.545
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -0.538
+TNS   : -13587.175
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CONin'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'Clock'
+Slack : -48.807
+TNS   : -102368.374
+
+Type  : Fast 1100mV 85C Model Setup 'CONin'
+Slack : -4.149
+TNS   : -4.149
+
+Type  : Fast 1100mV 85C Model Hold 'Clock'
+Slack : 0.241
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CONin'
+Slack : 0.534
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Clock'
+Slack : -0.096
+TNS   : -1457.720
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CONin'
+Slack : -0.006
+TNS   : -0.006
+
+Type  : Fast 1100mV 0C Model Setup 'Clock'
+Slack : -46.496
+TNS   : -87353.746
+
+Type  : Fast 1100mV 0C Model Setup 'CONin'
+Slack : -3.685
+TNS   : -3.685
+
+Type  : Fast 1100mV 0C Model Hold 'Clock'
+Slack : 0.213
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CONin'
+Slack : 0.502
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -0.096
+TNS   : -1499.834
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CONin'
+Slack : -0.009
+TNS   : -0.009
+
 ------------------------------------------------------------

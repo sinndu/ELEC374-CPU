@@ -10,7 +10,9 @@ module Computer(
 	input Cout,
 	input [3:0] ALU_operation,
 	input Gra, Grb, Grc,
-	input BAout
+	input BAout,
+	
+	output con_ff_out
 );
 
 wire [31:0] Mdatain;
@@ -33,7 +35,8 @@ datapath DUT(
     .Gra(Gra), .Grb(Grb), .Grc(Grc),
     .BAout(BAout),
     .MAR_out(MAR_out),
-    .MDR_out(MDR_out)
+    .MDR_out(MDR_out),
+	 .con_ff_out(con_ff_out)
 );
 
 RAM memory(

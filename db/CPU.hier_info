@@ -9,8 +9,7 @@ ZLowout => ZLowout.IN1
 MARin => MARin.IN1
 MDRin => MDRin.IN1
 MDRout => MDRout.IN1
-ReadMDR => ReadMDR.IN1
-ReadMem => ReadMem.IN1
+Read => Read.IN2
 Write => Write.IN1
 Rin => Rin.IN1
 Rout => Rout.IN1
@@ -24,6 +23,8 @@ ALU_operation[3] => ALU_operation[3].IN1
 Gra => Gra.IN1
 Grb => Grb.IN1
 Grc => Grc.IN1
+BAout => BAout.IN1
+con_ff_out <= datapath:DUT.con_ff_out
 
 
 |Computer|datapath:DUT
@@ -252,6 +253,7 @@ out_outport_data[28] <= Register_32:OutPort.port4
 out_outport_data[29] <= Register_32:OutPort.port4
 out_outport_data[30] <= Register_32:OutPort.port4
 out_outport_data[31] <= Register_32:OutPort.port4
+con_ff_out <= CON_FF:CON_FF_logic.port3
 
 
 |Computer|datapath:DUT|Register_32:R0

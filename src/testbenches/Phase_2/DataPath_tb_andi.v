@@ -7,6 +7,7 @@ module DataPath_tb_andi;
     reg Gra, Grb, Grc;
 	 reg Cout;
     reg Clock, clear;
+	 reg BAout;
     parameter   Default = 4'b0000, Reg_load1a = 4'b0001, Reg_load1b = 4'b0010, Reg_load2a = 4'b0011,
                 Reg_load2b = 4'b0100, Reg_load3a = 4'b0101, Reg_load3b = 4'b0110, T0 = 4'b0111,
                 T1 = 4'b1000, T2 = 4'b1001, T3 = 4'b1010, T4 = 4'b1011, T5 = 4'b1100, T6 = 4'b1101, done = 4'b1110;
@@ -16,6 +17,7 @@ module DataPath_tb_andi;
                 SHR = 4'b0110, SHRA = 4'b0111, SHL = 4'b1000, ROR = 4'b1001, ROL = 4'b1010,
                 MUL = 4'b1011, DIV = 4'b1100, IncPC = 4'b1101, NONE = 4'b1110;
     reg [3:0] ALU_operation = NONE;
+	 wire con_ff_out;
 	 
 Computer SRC(
 	.Clock(Clock), .clear(clear),
@@ -28,7 +30,9 @@ Computer SRC(
 	.Yin(Yin), .Zin(Zin),
 	.Cout(Cout),
 	.ALU_operation(ALU_operation),
-	.Gra(Gra), .Grb(Grb), .Grc(Grc)
+	.Gra(Gra), .Grb(Grb), .Grc(Grc),
+	.BAout(BAout),
+	.con_ff_out(con_ff_out)
 );
 
 // add test logic here

@@ -1,13 +1,13 @@
-Fitter Status : Successful - Sun Mar 15 22:03:32 2026
-Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Fitter Status : Successful - Mon Mar 16 19:04:54 2026
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : CPU
 Top-level Entity Name : Computer
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 1 / 18,480 ( < 1 % )
-Total registers : 0
-Total pins : 23 / 224 ( 10 % )
+Logic utilization (in ALMs) : 9,849 / 18,480 ( 53 % )
+Total registers : 17060
+Total pins : 26 / 224 ( 12 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 3,153,920 ( 0 % )
 Total RAM Blocks : 0 / 308 ( 0 % )

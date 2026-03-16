@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPU
-Mon Mar 16 15:27:50 2026
+Mon Mar 16 18:59:06 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -13,41 +13,43 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R0
- 10. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R1
- 11. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R2
- 12. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R3
- 13. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R4
- 14. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R5
- 15. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R6
- 16. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R7
- 17. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R8
- 18. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R9
- 19. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R10
- 20. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R11
- 21. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R12
- 22. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R13
- 23. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R14
- 24. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R15
- 25. Parameter Settings for User Entity Instance: datapath:DUT|MDR:MDR|Register_32:MDR_Reg
- 26. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:HI
- 27. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:LO
- 28. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:IR
- 29. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:PC
- 30. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:MAR
- 31. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:InPort
- 32. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:OutPort
- 33. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:RY
- 34. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:RZhigh
- 35. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:RZlow
- 36. Port Connectivity Checks: "datapath:DUT|ALU:alu_op|CLA_32:adder"
- 37. Port Connectivity Checks: "datapath:DUT|CON_FF:CON_FF_logic"
- 38. Port Connectivity Checks: "datapath:DUT"
- 39. Post-Synthesis Netlist Statistics for Top Partition
- 40. Elapsed Time Per Partition
- 41. Analysis & Synthesis Messages
- 42. Analysis & Synthesis Suppressed Messages
+  8. User-Specified and Inferred Latches
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R0
+ 13. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R1
+ 14. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R2
+ 15. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R3
+ 16. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R4
+ 17. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R5
+ 18. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R6
+ 19. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R7
+ 20. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R8
+ 21. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R9
+ 22. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R10
+ 23. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R11
+ 24. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R12
+ 25. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R13
+ 26. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R14
+ 27. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:R15
+ 28. Parameter Settings for User Entity Instance: datapath:DUT|MDR:MDR|Register_32:MDR_Reg
+ 29. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:HI
+ 30. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:LO
+ 31. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:IR
+ 32. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:PC
+ 33. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:MAR
+ 34. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:InPort
+ 35. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:OutPort
+ 36. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:RY
+ 37. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:RZhigh
+ 38. Parameter Settings for User Entity Instance: datapath:DUT|Register_32:RZlow
+ 39. Port Connectivity Checks: "datapath:DUT|ALU:alu_op|CLA_32:adder"
+ 40. Port Connectivity Checks: "datapath:DUT"
+ 41. Post-Synthesis Netlist Statistics for Top Partition
+ 42. Elapsed Time Per Partition
+ 43. Analysis & Synthesis Messages
+ 44. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -73,14 +75,14 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Mar 16 15:27:50 2026           ;
+; Analysis & Synthesis Status     ; Successful - Mon Mar 16 18:59:06 2026           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; CPU                                             ;
 ; Top-level Entity Name           ; Computer                                        ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 0                                               ;
-; Total pins                      ; 25                                              ;
+; Total registers                 ; 17060                                           ;
+; Total pins                      ; 26                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
 ; Total DSP Blocks                ; 0                                               ;
@@ -188,11 +190,19 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Average used               ; 2.10        ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;  36.3%      ;
+;     Processor 3            ;  36.3%      ;
+;     Processor 4            ;  36.3%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.1%      ;
+;     Processor 7            ;   0.1%      ;
+;     Processor 8            ;   0.1%      ;
+;     Processors 9-16        ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -219,41 +229,138 @@ refer to the applicable agreement for further details.
 +-----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimate of Logic utilization (ALMs needed) ; 0     ;
-;                                             ;       ;
-; Combinational ALUT usage for logic          ; 0     ;
-;     -- 7 input functions                    ; 0     ;
-;     -- 6 input functions                    ; 0     ;
-;     -- 5 input functions                    ; 0     ;
-;     -- 4 input functions                    ; 0     ;
-;     -- <=3 input functions                  ; 0     ;
-;                                             ;       ;
-; Dedicated logic registers                   ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 25    ;
-;                                             ;       ;
-; Total DSP Blocks                            ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; Clock ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 25    ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 12207       ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 8607        ;
+;     -- 7 input functions                    ; 230         ;
+;     -- 6 input functions                    ; 5930        ;
+;     -- 5 input functions                    ; 360         ;
+;     -- 4 input functions                    ; 130         ;
+;     -- <=3 input functions                  ; 1957        ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 17060       ;
+;                                             ;             ;
+; I/O pins                                    ; 26          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clear~input ;
+; Maximum fan-out                             ; 17594       ;
+; Total fan-out                               ; 114416      ;
+; Average fan-out                             ; 4.45        ;
++---------------------------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |Computer                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 25   ; 0            ; |Computer           ; Computer    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                   ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                               ; Entity Name      ; Library Name ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------+------------------+--------------+
+; |Computer                              ; 8607 (0)            ; 17060 (0)                 ; 0                 ; 0          ; 26   ; 0            ; |Computer                                                                         ; Computer         ; work         ;
+;    |RAM:memory|                        ; 560 (560)           ; 16384 (16384)             ; 0                 ; 0          ; 0    ; 0            ; |Computer|RAM:memory                                                              ; RAM              ; work         ;
+;    |datapath:DUT|                      ; 8047 (9)            ; 676 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT                                                            ; datapath         ; work         ;
+;       |ALU:alu_op|                     ; 2285 (632)          ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op                                                 ; ALU              ; work         ;
+;          |Booth_Multiplier:multiplier| ; 486 (486)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier                     ; Booth_Multiplier ; work         ;
+;          |CLA_32:adder|                ; 81 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder                                    ; CLA_32           ; work         ;
+;             |CLA_16:high_16|           ; 37 (6)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16                     ; CLA_16           ; work         ;
+;                |CLA_4:cla0|            ; 9 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla0          ; CLA_4            ; work         ;
+;                   |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla0|PFA:pfa0 ; PFA              ; work         ;
+;                   |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla0|PFA:pfa1 ; PFA              ; work         ;
+;                   |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla0|PFA:pfa2 ; PFA              ; work         ;
+;                   |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla0|PFA:pfa3 ; PFA              ; work         ;
+;                |CLA_4:cla1|            ; 9 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla1          ; CLA_4            ; work         ;
+;                   |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla1|PFA:pfa0 ; PFA              ; work         ;
+;                   |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla1|PFA:pfa1 ; PFA              ; work         ;
+;                   |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla1|PFA:pfa2 ; PFA              ; work         ;
+;                   |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla1|PFA:pfa3 ; PFA              ; work         ;
+;                |CLA_4:cla2|            ; 6 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla2          ; CLA_4            ; work         ;
+;                   |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla2|PFA:pfa0 ; PFA              ; work         ;
+;                   |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla2|PFA:pfa1 ; PFA              ; work         ;
+;                   |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla2|PFA:pfa2 ; PFA              ; work         ;
+;                   |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla2|PFA:pfa3 ; PFA              ; work         ;
+;                |CLA_4:cla3|            ; 7 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla3          ; CLA_4            ; work         ;
+;                   |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla3|PFA:pfa0 ; PFA              ; work         ;
+;                   |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla3|PFA:pfa1 ; PFA              ; work         ;
+;                   |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla3|PFA:pfa2 ; PFA              ; work         ;
+;                   |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:high_16|CLA_4:cla3|PFA:pfa3 ; PFA              ; work         ;
+;             |CLA_16:low_16|            ; 44 (9)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16                      ; CLA_16           ; work         ;
+;                |CLA_4:cla0|            ; 9 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0           ; CLA_4            ; work         ;
+;                   |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa1  ; PFA              ; work         ;
+;                   |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa2  ; PFA              ; work         ;
+;                   |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa3  ; PFA              ; work         ;
+;                |CLA_4:cla1|            ; 9 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla1           ; CLA_4            ; work         ;
+;                   |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla1|PFA:pfa0  ; PFA              ; work         ;
+;                   |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla1|PFA:pfa1  ; PFA              ; work         ;
+;                   |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla1|PFA:pfa2  ; PFA              ; work         ;
+;                   |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla1|PFA:pfa3  ; PFA              ; work         ;
+;                |CLA_4:cla2|            ; 11 (6)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla2           ; CLA_4            ; work         ;
+;                   |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla2|PFA:pfa0  ; PFA              ; work         ;
+;                   |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla2|PFA:pfa1  ; PFA              ; work         ;
+;                   |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla2|PFA:pfa2  ; PFA              ; work         ;
+;                   |PFA:pfa3|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla2|PFA:pfa3  ; PFA              ; work         ;
+;                |CLA_4:cla3|            ; 6 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla3           ; CLA_4            ; work         ;
+;                   |PFA:pfa0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla3|PFA:pfa0  ; PFA              ; work         ;
+;                   |PFA:pfa1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla3|PFA:pfa1  ; PFA              ; work         ;
+;                   |PFA:pfa2|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla3|PFA:pfa2  ; PFA              ; work         ;
+;                   |PFA:pfa3|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla3|PFA:pfa3  ; PFA              ; work         ;
+;          |NR_Division:divider|         ; 1086 (1086)         ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|ALU:alu_op|NR_Division:divider                             ; NR_Division      ; work         ;
+;       |Bus:bus|                        ; 244 (244)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Bus:bus                                                    ; Bus              ; work         ;
+;       |CON_FF:CON_FF_logic|            ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|CON_FF:CON_FF_logic                                        ; CON_FF           ; work         ;
+;       |MDR:MDR|                        ; 5473 (0)            ; 32 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|MDR:MDR                                                    ; MDR              ; work         ;
+;          |Register_32:MDR_Reg|         ; 5473 (5473)         ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|MDR:MDR|Register_32:MDR_Reg                                ; Register_32      ; work         ;
+;       |Register_32:IR|                 ; 1 (1)               ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:IR                                             ; Register_32      ; work         ;
+;       |Register_32:MAR|                ; 1 (1)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:MAR                                            ; Register_32      ; work         ;
+;       |Register_32:PC|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:PC                                             ; Register_32      ; work         ;
+;       |Register_32:R0|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:R0                                             ; Register_32      ; work         ;
+;       |Register_32:R10|                ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:R10                                            ; Register_32      ; work         ;
+;       |Register_32:R11|                ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:R11                                            ; Register_32      ; work         ;
+;       |Register_32:R12|                ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:R12                                            ; Register_32      ; work         ;
+;       |Register_32:R13|                ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:R13                                            ; Register_32      ; work         ;
+;       |Register_32:R14|                ; 2 (2)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:R14                                            ; Register_32      ; work         ;
+;       |Register_32:R15|                ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:R15                                            ; Register_32      ; work         ;
+;       |Register_32:R1|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:R1                                             ; Register_32      ; work         ;
+;       |Register_32:R2|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:R2                                             ; Register_32      ; work         ;
+;       |Register_32:R3|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:R3                                             ; Register_32      ; work         ;
+;       |Register_32:R4|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:R4                                             ; Register_32      ; work         ;
+;       |Register_32:R5|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:R5                                             ; Register_32      ; work         ;
+;       |Register_32:R6|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:R6                                             ; Register_32      ; work         ;
+;       |Register_32:R7|                 ; 2 (2)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:R7                                             ; Register_32      ; work         ;
+;       |Register_32:R8|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:R8                                             ; Register_32      ; work         ;
+;       |Register_32:R9|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:R9                                             ; Register_32      ; work         ;
+;       |Register_32:RY|                 ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:RY                                             ; Register_32      ; work         ;
+;       |Register_32:RZlow|              ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Register_32:RZlow                                          ; Register_32      ; work         ;
+;       |Select_encode:S_E_logic|        ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computer|datapath:DUT|Select_encode:S_E_logic                                    ; Select_encode    ; work         ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; datapath:DUT|CON_FF:CON_FF_logic|CON               ; CONin               ; yes                    ;
+; Number of user-specified and inferred latches = 1  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++---------------------------------------------------------------------+
+; Registers Removed During Synthesis                                  ;
++------------------------------------------------+--------------------+
+; Register name                                  ; Reason for Removal ;
++------------------------------------------------+--------------------+
+; datapath:DUT|Register_32:RZhigh|storage[0..31] ; Lost fanout        ;
+; datapath:DUT|Register_32:InPort|storage[0..31] ; Lost fanout        ;
+; datapath:DUT|Register_32:LO|storage[0..31]     ; Lost fanout        ;
+; datapath:DUT|Register_32:HI|storage[0..31]     ; Lost fanout        ;
+; Total Number of Removed Registers = 128        ;                    ;
++------------------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -261,14 +368,602 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 17060 ;
+; Number of registers using Synchronous Clear  ; 17060 ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 17060 ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[0][7]                                       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[1][31]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[2][31]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[3][31]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[4][16]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[5][31]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[6][31]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[7][7]                                       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[8][31]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[9][9]                                       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[10][17]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[11][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[12][28]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[13][17]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[14][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[15][3]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[16][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[17][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[18][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[19][16]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[20][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[21][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[22][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[23][15]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[24][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[25][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[26][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[27][7]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[28][16]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[29][13]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[30][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[31][7]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[32][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[33][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[34][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[35][16]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[36][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[37][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[38][7]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[39][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[40][9]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[41][17]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[42][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[43][28]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[44][17]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[45][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[46][7]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[47][0]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[48][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[49][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[50][8]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[51][16]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[52][0]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[53][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[54][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[55][15]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[56][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[57][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[58][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[59][7]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[60][16]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[61][12]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[62][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[63][8]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[64][30]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[65][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[66][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[67][16]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[68][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[69][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[70][7]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[71][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[72][9]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[73][17]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[74][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[75][28]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[76][17]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[77][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[78][3]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[79][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[80][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[81][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[82][16]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[83][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[84][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[85][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[86][15]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[87][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[88][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[89][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[90][7]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[91][16]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[92][13]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[93][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[94][3]                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[95][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[96][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[97][14]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[98][16]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[99][31]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[100][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[101][23]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[102][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[103][30]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[104][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[105][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[106][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[107][8]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[108][1]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[109][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[110][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[111][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[112][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[113][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[114][8]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[115][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[116][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[117][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[118][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[119][15]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[120][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[121][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[122][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[123][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[124][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[125][11]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[126][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[127][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[128][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[129][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[130][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[131][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[132][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[133][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[134][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[135][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[136][9]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[137][17]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[138][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[139][28]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[140][17]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[141][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[142][3]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[143][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[144][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[145][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[146][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[147][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[148][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[149][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[150][15]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[151][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[152][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[153][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[154][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[155][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[156][13]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[157][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[158][3]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[159][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[160][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[161][14]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[162][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[163][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[164][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[165][23]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[166][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[167][30]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[168][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[169][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[170][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[171][8]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[172][1]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[173][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[174][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[175][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[176][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[177][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[178][8]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[179][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[180][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[181][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[182][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[183][15]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[184][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[185][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[186][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[187][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[188][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[189][12]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[190][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[191][8]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[192][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[193][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[194][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[195][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[196][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[197][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[198][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[199][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[200][9]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[201][17]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[202][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[203][28]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[204][17]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[205][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[206][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[207][24]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[208][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[209][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[210][8]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[211][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[212][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[213][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[214][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[215][15]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[216][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[217][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[218][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[219][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[220][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[221][13]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[222][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[223][3]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[224][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[225][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[226][14]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[227][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[228][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[229][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[230][23]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[231][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[232][30]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[233][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[234][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[235][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[236][8]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[237][1]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[238][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[239][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[240][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[241][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[242][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[243][8]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[244][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[245][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[246][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[247][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[248][15]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[249][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[250][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[251][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[252][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[253][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[254][9]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[255][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[256][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[257][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[258][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[259][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[260][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[261][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[262][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[263][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[264][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[265][9]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[266][17]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[267][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[268][28]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[269][17]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[270][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[271][3]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[272][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[273][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[274][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[275][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[276][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[277][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[278][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[279][15]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[280][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[281][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[282][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[283][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[284][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[285][13]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[286][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[287][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[288][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[289][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[290][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[291][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[292][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[293][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[294][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[295][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[296][9]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[297][17]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[298][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[299][28]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[300][17]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[301][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[302][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[303][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[304][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[305][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[306][8]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[307][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[308][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[309][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[310][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[311][15]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[312][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[313][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[314][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[315][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[316][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[317][12]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[318][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[319][8]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[320][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[321][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[322][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[323][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[324][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[325][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[326][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[327][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[328][9]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[329][17]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[330][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[331][28]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[332][17]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[333][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[334][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[335][24]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[336][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[337][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[338][8]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[339][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[340][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[341][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[342][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[343][15]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[344][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[345][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[346][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[347][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[348][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[349][13]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[350][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[351][3]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[352][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[353][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[354][14]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[355][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[356][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[357][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[358][23]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[359][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[360][30]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[361][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[362][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[363][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[364][8]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[365][1]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[366][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[367][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[368][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[369][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[370][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[371][8]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[372][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[373][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[374][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[375][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[376][15]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[377][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[378][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[379][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[380][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[381][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[382][11]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[383][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[384][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[385][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[386][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[387][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[388][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[389][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[390][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[391][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[392][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[393][9]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[394][17]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[395][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[396][28]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[397][17]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[398][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[399][3]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[400][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[401][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[402][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[403][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[404][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[405][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[406][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[407][15]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[408][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[409][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[410][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[411][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[412][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[413][13]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[414][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[415][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[416][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[417][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[418][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[419][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[420][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[421][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[422][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[423][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[424][9]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[425][17]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[426][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[427][28]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[428][17]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[429][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[430][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[431][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[432][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[433][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[434][8]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[435][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[436][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[437][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[438][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[439][15]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[440][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[441][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[442][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[443][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[444][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[445][12]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[446][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[447][8]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[448][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[449][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[450][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[451][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[452][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[453][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[454][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[455][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[456][9]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[457][17]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[458][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[459][28]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[460][17]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[461][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[462][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[463][24]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[464][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[465][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[466][8]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[467][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[468][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[469][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[470][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[471][15]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[472][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[473][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[474][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[475][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[476][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[477][13]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[478][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[479][3]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[480][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[481][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[482][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[483][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[484][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[485][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[486][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[487][15]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[488][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[489][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[490][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[491][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[492][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[493][14]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[494][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[495][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[496][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[497][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[498][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[499][7]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[500][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[501][0]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[502][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[503][27]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[504][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[505][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[506][31]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[507][23]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[508][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[509][16]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[510][20]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|RAM:memory|mem[511][21]                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:RZlow|storage[2]                  ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 0 LEs                ; 18 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:MAR|storage[2]                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:PC|storage[28]                    ;
+; 3:1                ; 27 bits   ; 54 LEs        ; 0 LEs                ; 54 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:IR|storage[23]                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:RY|storage[11]                    ;
+; 515:1              ; 32 bits   ; 10976 LEs     ; 10944 LEs            ; 32 LEs                 ; Yes        ; |Computer|datapath:DUT|MDR:MDR|Register_32:MDR_Reg|storage[6]        ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftLeft1                         ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftLeft1                         ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftLeft1                         ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier|Mux51  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftLeft1                         ;
+; 4:1                ; 49 bits   ; 98 LEs        ; 98 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftLeft1                         ;
+; 3:1                ; 29 bits   ; 58 LEs        ; 58 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftRight1                        ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftRight1                        ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftRight0                        ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftRight1                        ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftRight0                        ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftRight2                        ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftLeft0                         ;
+; 4:1                ; 50 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftLeft0                         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftRight2                        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftRight2                        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftLeft0                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftRight2                        ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftRight1                        ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftRight1                        ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftRight0                        ;
+; 6:1                ; 12 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftLeft1                         ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftRight0                        ;
+; 6:1                ; 24 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftRight2                        ;
+; 6:1                ; 18 bits   ; 72 LEs        ; 72 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier|Mux393 ;
+; 6:1                ; 22 bits   ; 88 LEs        ; 88 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier|Mux287 ;
+; 6:1                ; 26 bits   ; 104 LEs       ; 104 LEs              ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier|Mux183 ;
+; 6:1                ; 14 bits   ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier|Mux494 ;
+; 6:1                ; 10 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier|Mux586 ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier|Mux668 ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier|Mux747 ;
+; 8:1                ; 17 bits   ; 85 LEs        ; 68 LEs               ; 17 LEs                 ; No         ; |Computer|datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier|Mux441 ;
+; 8:1                ; 21 bits   ; 105 LEs       ; 84 LEs               ; 21 LEs                 ; No         ; |Computer|datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier|Mux340 ;
+; 8:1                ; 25 bits   ; 125 LEs       ; 100 LEs              ; 25 LEs                 ; No         ; |Computer|datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier|Mux239 ;
+; 8:1                ; 29 bits   ; 145 LEs       ; 116 LEs              ; 29 LEs                 ; No         ; |Computer|datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier|Mux108 ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftLeft1                         ;
+; 8:1                ; 13 bits   ; 65 LEs        ; 52 LEs               ; 13 LEs                 ; No         ; |Computer|datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier|Mux545 ;
+; 8:1                ; 9 bits    ; 45 LEs        ; 36 LEs               ; 9 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier|Mux634 ;
+; 8:1                ; 5 bits    ; 25 LEs        ; 20 LEs               ; 5 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier|Mux710 ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|ShiftLeft0                         ;
+; 12:1               ; 14 bits   ; 112 LEs       ; 98 LEs               ; 14 LEs                 ; No         ; |Computer|datapath:DUT|ALU:alu_op|C[20]                              ;
+; 12:1               ; 11 bits   ; 88 LEs        ; 88 LEs               ; 0 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|C[5]                               ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 14 LEs               ; 2 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|C[26]                              ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 16 LEs               ; 2 LEs                  ; No         ; |Computer|datapath:DUT|ALU:alu_op|C[9]                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:R15|storage[5]                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:R14|storage[30]                   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:R13|storage[11]                   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:R12|storage[17]                   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:R11|storage[23]                   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:R10|storage[21]                   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:R9|storage[20]                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:R8|storage[22]                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:R7|storage[27]                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:R6|storage[17]                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:R5|storage[16]                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:R4|storage[5]                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:R3|storage[28]                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:R2|storage[22]                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:R1|storage[2]                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Computer|datapath:DUT|Register_32:R0|storage[21]                    ;
+; 21:1               ; 14 bits   ; 196 LEs       ; 196 LEs              ; 0 LEs                  ; No         ; |Computer|datapath:DUT|Bus:bus|BusMuxOut[29]                         ;
+; 22:1               ; 18 bits   ; 252 LEs       ; 252 LEs              ; 0 LEs                  ; No         ; |Computer|datapath:DUT|Bus:bus|BusMuxOut[13]                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -550,15 +1245,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "datapath:DUT|CON_FF:CON_FF_logic"                                                   ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "datapath:DUT"                                                                                                                                            ;
 +------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -576,21 +1262,42 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; OutPortin        ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 ; OutPortout       ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 ; Cin              ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; BAout            ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 ; out_outport_data ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
 +------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 25                              ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 17060                       ;
+;     ENA SCLR          ; 17060                       ;
+; arriav_lcell_comb     ; 8607                        ;
+;     arith             ; 1145                        ;
+;         1 data inputs ; 125                         ;
+;         2 data inputs ; 88                          ;
+;         3 data inputs ; 930                         ;
+;         4 data inputs ; 1                           ;
+;         5 data inputs ; 1                           ;
+;     extend            ; 230                         ;
+;         7 data inputs ; 230                         ;
+;     normal            ; 7044                        ;
+;         2 data inputs ; 55                          ;
+;         3 data inputs ; 574                         ;
+;         4 data inputs ; 126                         ;
+;         5 data inputs ; 359                         ;
+;         6 data inputs ; 5930                        ;
+;     shared            ; 188                         ;
+;         1 data inputs ; 31                          ;
+;         2 data inputs ; 66                          ;
+;         3 data inputs ; 88                          ;
+;         4 data inputs ; 3                           ;
+; boundary_port         ; 26                          ;
+;                       ;                             ;
+; Max LUT depth         ; 135.00                      ;
+; Average LUT depth     ; 19.52                       ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -598,7 +1305,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:17     ;
 +----------------+--------------+
 
 
@@ -608,14 +1315,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Mar 16 15:27:42 2026
+    Info: Processing started: Mon Mar 16 18:58:39 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/phase_2/tb_ld_case1.v
+    Info (12023): Found entity 1: tb_ld_case1 File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/tb_ld_case1.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/phase_2/tb_addi.v
+    Info (12023): Found entity 1: tb_addi File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/tb_addi.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/computer.v
     Info (12023): Found entity 1: Computer File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/phase_2/datapath_tb_addi.v
-    Info (12023): Found entity 1: DataPath_tb_addi File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/DataPath_tb_addi.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file src/memory/ram.v
     Info (12023): Found entity 1: RAM File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/registers/mdr.v
@@ -624,22 +1333,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/sel
     Info (12023): Found entity 1: CON_FF File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/select_encode/select_encode.v
     Info (12023): Found entity 1: Select_encode File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/select_encode/Select_encode.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_shr.v
-    Info (12023): Found entity 1: DataPath_tb_shr File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_shr.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_shra.v
-    Info (12023): Found entity 1: DataPath_tb_shra File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_shra.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_not.v
-    Info (12023): Found entity 1: DataPath_tb_not File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_not.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_neg.v
-    Info (12023): Found entity 1: DataPath_tb_neg File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_neg.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_rol.v
-    Info (12023): Found entity 1: DataPath_tb_rol File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_rol.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_ror.v
-    Info (12023): Found entity 1: DataPath_tb_ror File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_ror.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_shl.v
-    Info (12023): Found entity 1: DataPath_tb_shl File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_shl.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_and.v
-    Info (12023): Found entity 1: DataPath_tb_and File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_and.v Line: 3
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_shr.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_shra.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_not.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_neg.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_rol.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_ror.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_shl.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_and.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/add/rca_4.v
     Info (12023): Found entity 1: RCA_4 File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/add/RCA_4.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/add/pfa.v
@@ -652,8 +1353,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/alu
     Info (12023): Found entity 1: CLA_4 File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/add/CLA_4.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/datapath.v
     Info (12023): Found entity 1: datapath File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/datapath.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/booth_multiplier_tb.v
-    Info (12023): Found entity 1: Booth_Multiplier_tb File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Booth_Multiplier_tb.v Line: 3
+Warning (12019): Can't analyze file -- file src/testbenches/Booth_Multiplier_tb.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file src/registers/register_32.v
     Info (12023): Found entity 1: Register_32 File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/registers/Register_32.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/bus/bus.v
@@ -664,29 +1364,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/alu
     Info (12023): Found entity 1: NR_Division File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/div/NR_Division.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/alu.v
     Info (12023): Found entity 1: ALU File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/ALU.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/nr_division_tb.v
-    Info (12023): Found entity 1: NR_Division_tb File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/NR_Division_tb.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/register_32_tb.v
-    Info (12023): Found entity 1: Register_32_tb File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Register_32_tb.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/alu_tb.v
-    Info (12023): Found entity 1: ALU_tb File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/ALU_tb.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_mul.v
-    Info (12023): Found entity 1: DataPath_tb_mul File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_mul.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_div.v
-    Info (12023): Found entity 1: DataPath_tb_div File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_div.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_or.v
-    Info (12023): Found entity 1: DataPath_tb_or File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_or.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_add.v
-    Info (12023): Found entity 1: DataPath_tb_add File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_sub.v
-    Info (12023): Found entity 1: DataPath_tb_sub File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_sub.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/phase_2/datapath_tb.v
-    Info (12023): Found entity 1: DataPath_tb File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/DataPath_tb.v Line: 3
+Warning (12019): Can't analyze file -- file src/testbenches/NR_Division_tb.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/Register_32_tb.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/ALU_tb.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_mul.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_div.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_or.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_add.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_sub.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/Phase_2/DataPath_tb.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/phase_2/tb_ori.v
+    Info (12023): Found entity 1: tb_ori File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/tb_ori.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/phase_2/tb_brzr.v
+    Info (12023): Found entity 1: tb_lbrzr File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/tb_brzr.v Line: 2
 Info (12127): Elaborating entity "Computer" for the top level hierarchy
-Info (12128): Elaborating entity "datapath" for hierarchy "datapath:DUT" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 37
-Info (12128): Elaborating entity "Register_32" for hierarchy "datapath:DUT|Register_32:R0" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/datapath.v Line: 41
-Info (12128): Elaborating entity "MDR" for hierarchy "datapath:DUT|MDR:MDR" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/datapath.v Line: 62
-Info (12128): Elaborating entity "Select_encode" for hierarchy "datapath:DUT|Select_encode:S_E_logic" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/datapath.v Line: 74
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:DUT" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 40
+Info (12128): Elaborating entity "Register_32" for hierarchy "datapath:DUT|Register_32:R0" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/datapath.v Line: 42
+Info (12128): Elaborating entity "MDR" for hierarchy "datapath:DUT|MDR:MDR" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/datapath.v Line: 63
+Info (12128): Elaborating entity "Select_encode" for hierarchy "datapath:DUT|Select_encode:S_E_logic" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/datapath.v Line: 75
 Info (12128): Elaborating entity "CON_FF" for hierarchy "datapath:DUT|CON_FF:CON_FF_logic" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/datapath.v Line: 87
 Warning (10235): Verilog HDL Always Construct warning at CON_FF.v(34): variable "D" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 34
 Warning (10240): Verilog HDL Always Construct warning at CON_FF.v(32): inferring latch(es) for variable "CON", which holds its previous value in one or more paths through the always construct File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 32
@@ -699,45 +1394,55 @@ Info (12128): Elaborating entity "PFA" for hierarchy "datapath:DUT|ALU:alu_op|CL
 Info (12128): Elaborating entity "Booth_Multiplier" for hierarchy "datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/ALU.v Line: 38
 Info (12128): Elaborating entity "NR_Division" for hierarchy "datapath:DUT|ALU:alu_op|NR_Division:divider" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/ALU.v Line: 48
 Info (12128): Elaborating entity "Bus" for hierarchy "datapath:DUT|Bus:bus" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/datapath.v Line: 139
-Info (12128): Elaborating entity "RAM" for hierarchy "RAM:memory" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 46
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:memory" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 49
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[31]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[30]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[29]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[28]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[27]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[26]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[25]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[24]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[23]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[22]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[21]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[20]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[19]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[18]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[17]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[16]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[15]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[14]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[13]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[12]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[11]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[10]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[9]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[8]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[7]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[6]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[5]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[4]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[3]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[2]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[1]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
+    Warning (13049): Converted tri-state buffer "RAM:memory|data_out[0]" feeding internal logic into a wire File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 7
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 128 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/22nkj/Documents/elec374/ELEC374-CPU/output_files/CPU.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 25 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Clock" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 2
-    Warning (15610): No output dependent on input pin "clear" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 2
-    Warning (15610): No output dependent on input pin "PCin" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 3
-    Warning (15610): No output dependent on input pin "PCout" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 3
-    Warning (15610): No output dependent on input pin "IRin" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 4
-    Warning (15610): No output dependent on input pin "CONin" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 4
-    Warning (15610): No output dependent on input pin "ZLowout" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 5
-    Warning (15610): No output dependent on input pin "MARin" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 6
-    Warning (15610): No output dependent on input pin "MDRin" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 6
-    Warning (15610): No output dependent on input pin "MDRout" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 6
-    Warning (15610): No output dependent on input pin "ReadMDR" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 7
-    Warning (15610): No output dependent on input pin "ReadMem" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 7
-    Warning (15610): No output dependent on input pin "Write" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 7
-    Warning (15610): No output dependent on input pin "Rin" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 8
-    Warning (15610): No output dependent on input pin "Rout" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 8
-    Warning (15610): No output dependent on input pin "Yin" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 9
-    Warning (15610): No output dependent on input pin "Zin" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 9
-    Warning (15610): No output dependent on input pin "Cout" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 10
-    Warning (15610): No output dependent on input pin "ALU_operation[0]" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 11
-    Warning (15610): No output dependent on input pin "ALU_operation[1]" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 11
-    Warning (15610): No output dependent on input pin "ALU_operation[2]" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 11
-    Warning (15610): No output dependent on input pin "ALU_operation[3]" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 11
-    Warning (15610): No output dependent on input pin "Gra" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 12
-    Warning (15610): No output dependent on input pin "Grb" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 12
-    Warning (15610): No output dependent on input pin "Grc" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 14
-Info (21057): Implemented 25 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 25629 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 25 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
-    Info: Peak virtual memory: 4850 megabytes
-    Info: Processing ended: Mon Mar 16 15:27:50 2026
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:07
+    Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 25603 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 55 warnings
+    Info: Peak virtual memory: 5085 megabytes
+    Info: Processing ended: Mon Mar 16 18:59:06 2026
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:30
 
 
 +------------------------------------------+
