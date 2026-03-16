@@ -9,8 +9,8 @@ module Computer(
 	input Yin, Zin,
 	input Cout,
 	input [3:0] ALU_operation,
-	input Gra, Grb, Grc
-	
+	input Gra, Grb, Grc,
+	input BAout
 );
 
 wire [31:0] Mdatain;
@@ -28,10 +28,10 @@ datapath DUT(
     .MARin(MARin), .MDRin(MDRin), .MDRout(MDRout), .read(Read),
     .Rin(Rin), .Rout(Rout), 
     .Yin(Yin), .Zin(Zin),
-	 .Cout(Cout),
+	.Cout(Cout),
     .ALU_operation(ALU_operation), 
     .Gra(Gra), .Grb(Grb), .Grc(Grc),
-
+    .BAout(BAout),
     .MAR_out(MAR_out),
     .MDR_out(MDR_out)
 );
