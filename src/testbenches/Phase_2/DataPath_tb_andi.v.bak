@@ -1,6 +1,6 @@
 // and datapath_tb.v file: <This is the filename>
 `timescale 1ns/10ps
-module DataPath_tb_addi;
+module DataPath_tb_andi;
     reg PCout, Zlowout, MDRout, Rout;
     reg MARin, Zin, PCin, MDRin, IRin, Yin, CONin;
     reg Read, Write, Rin;
@@ -45,7 +45,7 @@ initial
 		clear = 0;
 		//initialize memory and registers
 		
-		$readmemh("addi_r7_r4.hex", SRC.memory.mem);
+		$readmemh("andi_r7_r4.hex", SRC.memory.mem);
 		SRC.DUT.R7.storage = 32'h0000ab45;
 		SRC.DUT.R4.storage = 32'h000000b9;
 end
@@ -104,7 +104,7 @@ always @(negedge Clock) // do the required job in each state
                         Grb <= 1; Rout <= 1; Yin <= 1;
             end
             T4: begin
-                        Cout <= 1; ALU_operation <= ADD; Zin <= 1;
+                        Cout <= 1; ALU_operation <= AND; Zin <= 1;
             end
             T5: begin
                         Zlowout <= 1; Gra <= 1; Rin <= 1;
