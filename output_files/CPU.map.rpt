@@ -1,6 +1,6 @@
 Analysis & Synthesis report for CPU
-Mon Mar 16 15:27:50 2026
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Mon Mar 16 17:53:39 2026
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -70,27 +70,27 @@ refer to the applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                      ;
-+---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Mar 16 15:27:50 2026           ;
-; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
-; Revision Name                   ; CPU                                             ;
-; Top-level Entity Name           ; Computer                                        ;
-; Family                          ; Cyclone V                                       ;
-; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 0                                               ;
-; Total pins                      ; 25                                              ;
-; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 0                                               ;
-; Total DSP Blocks                ; 0                                               ;
-; Total HSSI RX PCSs              ; 0                                               ;
-; Total HSSI PMA RX Deserializers ; 0                                               ;
-; Total HSSI TX PCSs              ; 0                                               ;
-; Total HSSI PMA TX Serializers   ; 0                                               ;
-; Total PLLs                      ; 0                                               ;
-; Total DLLs                      ; 0                                               ;
-+---------------------------------+-------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Mar 16 17:53:39 2026       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; CPU                                         ;
+; Top-level Entity Name           ; Computer                                    ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 26                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -185,8 +185,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -196,27 +196,27 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                  ;
-+-----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path  ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                   ; Library ;
-+-----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
-; src/Computer.v                    ; yes             ; User Verilog HDL File  ; C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v                    ;         ;
-; src/memory/RAM.v                  ; yes             ; User Verilog HDL File  ; C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v                  ;         ;
-; src/registers/MDR.v               ; yes             ; User Verilog HDL File  ; C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/registers/MDR.v               ;         ;
-; src/select_encode/CON_FF.v        ; yes             ; User Verilog HDL File  ; C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/select_encode/CON_FF.v        ;         ;
-; src/select_encode/Select_encode.v ; yes             ; User Verilog HDL File  ; C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/select_encode/Select_encode.v ;         ;
-; src/alu/add/PFA.v                 ; yes             ; User Verilog HDL File  ; C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/add/PFA.v                 ;         ;
-; src/alu/add/CLA_32.v              ; yes             ; User Verilog HDL File  ; C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/add/CLA_32.v              ;         ;
-; src/alu/add/CLA_16.v              ; yes             ; User Verilog HDL File  ; C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/add/CLA_16.v              ;         ;
-; src/alu/add/CLA_4.v               ; yes             ; User Verilog HDL File  ; C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/add/CLA_4.v               ;         ;
-; src/datapath.v                    ; yes             ; User Verilog HDL File  ; C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/datapath.v                    ;         ;
-; src/registers/Register_32.v       ; yes             ; User Verilog HDL File  ; C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/registers/Register_32.v       ;         ;
-; src/bus/Bus.v                     ; yes             ; User Verilog HDL File  ; C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/bus/Bus.v                     ;         ;
-; src/alu/mul/Booth_Multiplier.v    ; yes             ; User Verilog HDL File  ; C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v    ;         ;
-; src/alu/div/NR_Division.v         ; yes             ; User Verilog HDL File  ; C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/div/NR_Division.v         ;         ;
-; src/alu/ALU.v                     ; yes             ; User Verilog HDL File  ; C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/ALU.v                     ;         ;
-+-----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++-----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
+; File Name with User-Entered Path  ; Used in Netlist ; File Type              ; File Name with Absolute Path                                 ; Library ;
++-----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
+; src/Computer.v                    ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/Computer.v                    ;         ;
+; src/memory/RAM.v                  ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/memory/RAM.v                  ;         ;
+; src/registers/MDR.v               ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/registers/MDR.v               ;         ;
+; src/select_encode/CON_FF.v        ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/select_encode/CON_FF.v        ;         ;
+; src/select_encode/Select_encode.v ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/select_encode/Select_encode.v ;         ;
+; src/alu/add/PFA.v                 ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/alu/add/PFA.v                 ;         ;
+; src/alu/add/CLA_32.v              ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v              ;         ;
+; src/alu/add/CLA_16.v              ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_16.v              ;         ;
+; src/alu/add/CLA_4.v               ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_4.v               ;         ;
+; src/datapath.v                    ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/datapath.v                    ;         ;
+; src/registers/Register_32.v       ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/registers/Register_32.v       ;         ;
+; src/bus/Bus.v                     ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/bus/Bus.v                     ;         ;
+; src/alu/mul/Booth_Multiplier.v    ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v    ;         ;
+; src/alu/div/NR_Division.v         ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/alu/div/NR_Division.v         ;         ;
+; src/alu/ALU.v                     ; yes             ; User Verilog HDL File  ; C:/Users/raele/ELEC374-CPU/src/alu/ALU.v                     ;         ;
++-----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -235,13 +235,13 @@ refer to the applicable agreement for further details.
 ;                                             ;       ;
 ; Dedicated logic registers                   ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 25    ;
+; I/O pins                                    ; 26    ;
 ;                                             ;       ;
 ; Total DSP Blocks                            ; 0     ;
 ;                                             ;       ;
 ; Maximum fan-out node                        ; Clock ;
 ; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 25    ;
+; Total fan-out                               ; 26    ;
 ; Average fan-out                             ; 0.50  ;
 +---------------------------------------------+-------+
 
@@ -251,7 +251,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |Computer                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 25   ; 0            ; |Computer           ; Computer    ; work         ;
+; |Computer                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 26   ; 0            ; |Computer           ; Computer    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -576,7 +576,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; OutPortin        ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 ; OutPortout       ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 ; Cin              ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; BAout            ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 ; out_outport_data ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
 +------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -586,7 +585,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------+---------------------------------+
 ; Type              ; Count                           ;
 +-------------------+---------------------------------+
-; boundary_port     ; 25                              ;
+; boundary_port     ; 26                              ;
 ;                   ;                                 ;
 ; Max LUT depth     ; 0.00                            ;
 ; Average LUT depth ; 0.00                            ;
@@ -607,142 +606,128 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Mar 16 15:27:42 2026
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Mon Mar 16 17:53:24 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/phase_2/tb_ld_case2.v
+    Info (12023): Found entity 1: tb_ld_case2 File: C:/Users/raele/ELEC374-CPU/src/testbenches/Phase_2/tb_ld_case2.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/phase_2/tb_ld_case1.v
+    Info (12023): Found entity 1: tb_ld_case1 File: C:/Users/raele/ELEC374-CPU/src/testbenches/Phase_2/tb_ld_case1.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file src/computer.v
-    Info (12023): Found entity 1: Computer File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/phase_2/datapath_tb_addi.v
-    Info (12023): Found entity 1: DataPath_tb_addi File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/DataPath_tb_addi.v Line: 3
+    Info (12023): Found entity 1: Computer File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 1
+Warning (12019): Can't analyze file -- file src/testbenches/Phase_2/DataPath_tb_addi.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file src/memory/ram.v
-    Info (12023): Found entity 1: RAM File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/memory/RAM.v Line: 1
+    Info (12023): Found entity 1: RAM File: C:/Users/raele/ELEC374-CPU/src/memory/RAM.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/registers/mdr.v
-    Info (12023): Found entity 1: MDR File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/registers/MDR.v Line: 1
+    Info (12023): Found entity 1: MDR File: C:/Users/raele/ELEC374-CPU/src/registers/MDR.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/select_encode/con_ff.v
-    Info (12023): Found entity 1: CON_FF File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 1
+    Info (12023): Found entity 1: CON_FF File: C:/Users/raele/ELEC374-CPU/src/select_encode/CON_FF.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/select_encode/select_encode.v
-    Info (12023): Found entity 1: Select_encode File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/select_encode/Select_encode.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_shr.v
-    Info (12023): Found entity 1: DataPath_tb_shr File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_shr.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_shra.v
-    Info (12023): Found entity 1: DataPath_tb_shra File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_shra.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_not.v
-    Info (12023): Found entity 1: DataPath_tb_not File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_not.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_neg.v
-    Info (12023): Found entity 1: DataPath_tb_neg File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_neg.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_rol.v
-    Info (12023): Found entity 1: DataPath_tb_rol File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_rol.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_ror.v
-    Info (12023): Found entity 1: DataPath_tb_ror File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_ror.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_shl.v
-    Info (12023): Found entity 1: DataPath_tb_shl File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_shl.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_and.v
-    Info (12023): Found entity 1: DataPath_tb_and File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_and.v Line: 3
+    Info (12023): Found entity 1: Select_encode File: C:/Users/raele/ELEC374-CPU/src/select_encode/Select_encode.v Line: 1
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_shr.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_shra.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_not.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_neg.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_rol.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_ror.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_shl.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_and.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/add/rca_4.v
-    Info (12023): Found entity 1: RCA_4 File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/add/RCA_4.v Line: 1
+    Info (12023): Found entity 1: RCA_4 File: C:/Users/raele/ELEC374-CPU/src/alu/add/RCA_4.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/add/pfa.v
-    Info (12023): Found entity 1: PFA File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/add/PFA.v Line: 1
+    Info (12023): Found entity 1: PFA File: C:/Users/raele/ELEC374-CPU/src/alu/add/PFA.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/add/cla_32.v
-    Info (12023): Found entity 1: CLA_32 File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/add/CLA_32.v Line: 1
+    Info (12023): Found entity 1: CLA_32 File: C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/add/cla_16.v
-    Info (12023): Found entity 1: CLA_16 File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/add/CLA_16.v Line: 1
+    Info (12023): Found entity 1: CLA_16 File: C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_16.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/add/cla_4.v
-    Info (12023): Found entity 1: CLA_4 File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/add/CLA_4.v Line: 1
+    Info (12023): Found entity 1: CLA_4 File: C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_4.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/datapath.v
-    Info (12023): Found entity 1: datapath File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/datapath.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/booth_multiplier_tb.v
-    Info (12023): Found entity 1: Booth_Multiplier_tb File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Booth_Multiplier_tb.v Line: 3
+    Info (12023): Found entity 1: datapath File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 1
+Warning (12019): Can't analyze file -- file src/testbenches/Booth_Multiplier_tb.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file src/registers/register_32.v
-    Info (12023): Found entity 1: Register_32 File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/registers/Register_32.v Line: 1
+    Info (12023): Found entity 1: Register_32 File: C:/Users/raele/ELEC374-CPU/src/registers/Register_32.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/bus/bus.v
-    Info (12023): Found entity 1: Bus File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/bus/Bus.v Line: 1
+    Info (12023): Found entity 1: Bus File: C:/Users/raele/ELEC374-CPU/src/bus/Bus.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/mul/booth_multiplier.v
-    Info (12023): Found entity 1: Booth_Multiplier File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v Line: 1
+    Info (12023): Found entity 1: Booth_Multiplier File: C:/Users/raele/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/div/nr_division.v
-    Info (12023): Found entity 1: NR_Division File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/div/NR_Division.v Line: 1
+    Info (12023): Found entity 1: NR_Division File: C:/Users/raele/ELEC374-CPU/src/alu/div/NR_Division.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file src/alu/alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/ALU.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/nr_division_tb.v
-    Info (12023): Found entity 1: NR_Division_tb File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/NR_Division_tb.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/register_32_tb.v
-    Info (12023): Found entity 1: Register_32_tb File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Register_32_tb.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/alu_tb.v
-    Info (12023): Found entity 1: ALU_tb File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/ALU_tb.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_mul.v
-    Info (12023): Found entity 1: DataPath_tb_mul File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_mul.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_div.v
-    Info (12023): Found entity 1: DataPath_tb_div File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_div.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_or.v
-    Info (12023): Found entity 1: DataPath_tb_or File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_or.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_add.v
-    Info (12023): Found entity 1: DataPath_tb_add File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_add.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/datapath/datapath_tb_sub.v
-    Info (12023): Found entity 1: DataPath_tb_sub File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/DataPath/DataPath_tb_sub.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/testbenches/phase_2/datapath_tb.v
-    Info (12023): Found entity 1: DataPath_tb File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/DataPath_tb.v Line: 3
+    Info (12023): Found entity 1: ALU File: C:/Users/raele/ELEC374-CPU/src/alu/ALU.v Line: 1
+Warning (12019): Can't analyze file -- file src/testbenches/NR_Division_tb.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/Register_32_tb.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/ALU_tb.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_mul.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_div.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_or.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_add.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/DataPath/DataPath_tb_sub.v is missing
+Warning (12019): Can't analyze file -- file src/testbenches/Phase_2/DataPath_tb.v is missing
 Info (12127): Elaborating entity "Computer" for the top level hierarchy
-Info (12128): Elaborating entity "datapath" for hierarchy "datapath:DUT" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 37
-Info (12128): Elaborating entity "Register_32" for hierarchy "datapath:DUT|Register_32:R0" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/datapath.v Line: 41
-Info (12128): Elaborating entity "MDR" for hierarchy "datapath:DUT|MDR:MDR" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/datapath.v Line: 62
-Info (12128): Elaborating entity "Select_encode" for hierarchy "datapath:DUT|Select_encode:S_E_logic" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/datapath.v Line: 74
-Info (12128): Elaborating entity "CON_FF" for hierarchy "datapath:DUT|CON_FF:CON_FF_logic" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/datapath.v Line: 87
-Warning (10235): Verilog HDL Always Construct warning at CON_FF.v(34): variable "D" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 34
-Warning (10240): Verilog HDL Always Construct warning at CON_FF.v(32): inferring latch(es) for variable "CON", which holds its previous value in one or more paths through the always construct File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 32
-Info (10041): Inferred latch for "CON" at CON_FF.v(32) File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/select_encode/CON_FF.v Line: 32
-Info (12128): Elaborating entity "ALU" for hierarchy "datapath:DUT|ALU:alu_op" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/datapath.v Line: 119
-Info (12128): Elaborating entity "CLA_32" for hierarchy "datapath:DUT|ALU:alu_op|CLA_32:adder" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/ALU.v Line: 30
-Info (12128): Elaborating entity "CLA_16" for hierarchy "datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/add/CLA_32.v Line: 17
-Info (12128): Elaborating entity "CLA_4" for hierarchy "datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/add/CLA_16.v Line: 13
-Info (12128): Elaborating entity "PFA" for hierarchy "datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa0" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/add/CLA_4.v Line: 13
-Info (12128): Elaborating entity "Booth_Multiplier" for hierarchy "datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/ALU.v Line: 38
-Info (12128): Elaborating entity "NR_Division" for hierarchy "datapath:DUT|ALU:alu_op|NR_Division:divider" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/ALU.v Line: 48
-Info (12128): Elaborating entity "Bus" for hierarchy "datapath:DUT|Bus:bus" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/datapath.v Line: 139
-Info (12128): Elaborating entity "RAM" for hierarchy "RAM:memory" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 46
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:DUT" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 37
+Info (12128): Elaborating entity "Register_32" for hierarchy "datapath:DUT|Register_32:R0" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 41
+Info (12128): Elaborating entity "MDR" for hierarchy "datapath:DUT|MDR:MDR" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 62
+Info (12128): Elaborating entity "Select_encode" for hierarchy "datapath:DUT|Select_encode:S_E_logic" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 74
+Info (12128): Elaborating entity "CON_FF" for hierarchy "datapath:DUT|CON_FF:CON_FF_logic" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 87
+Warning (10235): Verilog HDL Always Construct warning at CON_FF.v(34): variable "D" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/raele/ELEC374-CPU/src/select_encode/CON_FF.v Line: 34
+Warning (10240): Verilog HDL Always Construct warning at CON_FF.v(32): inferring latch(es) for variable "CON", which holds its previous value in one or more paths through the always construct File: C:/Users/raele/ELEC374-CPU/src/select_encode/CON_FF.v Line: 32
+Info (10041): Inferred latch for "CON" at CON_FF.v(32) File: C:/Users/raele/ELEC374-CPU/src/select_encode/CON_FF.v Line: 32
+Info (12128): Elaborating entity "ALU" for hierarchy "datapath:DUT|ALU:alu_op" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 119
+Info (12128): Elaborating entity "CLA_32" for hierarchy "datapath:DUT|ALU:alu_op|CLA_32:adder" File: C:/Users/raele/ELEC374-CPU/src/alu/ALU.v Line: 30
+Info (12128): Elaborating entity "CLA_16" for hierarchy "datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16" File: C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_32.v Line: 17
+Info (12128): Elaborating entity "CLA_4" for hierarchy "datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0" File: C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_16.v Line: 13
+Info (12128): Elaborating entity "PFA" for hierarchy "datapath:DUT|ALU:alu_op|CLA_32:adder|CLA_16:low_16|CLA_4:cla0|PFA:pfa0" File: C:/Users/raele/ELEC374-CPU/src/alu/add/CLA_4.v Line: 13
+Info (12128): Elaborating entity "Booth_Multiplier" for hierarchy "datapath:DUT|ALU:alu_op|Booth_Multiplier:multiplier" File: C:/Users/raele/ELEC374-CPU/src/alu/ALU.v Line: 38
+Info (12128): Elaborating entity "NR_Division" for hierarchy "datapath:DUT|ALU:alu_op|NR_Division:divider" File: C:/Users/raele/ELEC374-CPU/src/alu/ALU.v Line: 48
+Info (12128): Elaborating entity "Bus" for hierarchy "datapath:DUT|Bus:bus" File: C:/Users/raele/ELEC374-CPU/src/datapath.v Line: 139
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:memory" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 46
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (144001): Generated suppressed messages file C:/Users/22nkj/Documents/elec374/ELEC374-CPU/output_files/CPU.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/raele/ELEC374-CPU/output_files/CPU.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 25 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Clock" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 2
-    Warning (15610): No output dependent on input pin "clear" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 2
-    Warning (15610): No output dependent on input pin "PCin" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 3
-    Warning (15610): No output dependent on input pin "PCout" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 3
-    Warning (15610): No output dependent on input pin "IRin" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 4
-    Warning (15610): No output dependent on input pin "CONin" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 4
-    Warning (15610): No output dependent on input pin "ZLowout" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 5
-    Warning (15610): No output dependent on input pin "MARin" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 6
-    Warning (15610): No output dependent on input pin "MDRin" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 6
-    Warning (15610): No output dependent on input pin "MDRout" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 6
-    Warning (15610): No output dependent on input pin "ReadMDR" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 7
-    Warning (15610): No output dependent on input pin "ReadMem" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 7
-    Warning (15610): No output dependent on input pin "Write" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 7
-    Warning (15610): No output dependent on input pin "Rin" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 8
-    Warning (15610): No output dependent on input pin "Rout" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 8
-    Warning (15610): No output dependent on input pin "Yin" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 9
-    Warning (15610): No output dependent on input pin "Zin" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 9
-    Warning (15610): No output dependent on input pin "Cout" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 10
-    Warning (15610): No output dependent on input pin "ALU_operation[0]" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 11
-    Warning (15610): No output dependent on input pin "ALU_operation[1]" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 11
-    Warning (15610): No output dependent on input pin "ALU_operation[2]" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 11
-    Warning (15610): No output dependent on input pin "ALU_operation[3]" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 11
-    Warning (15610): No output dependent on input pin "Gra" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 12
-    Warning (15610): No output dependent on input pin "Grb" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 12
-    Warning (15610): No output dependent on input pin "Grc" File: C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/Computer.v Line: 14
-Info (21057): Implemented 25 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 25 input pins
+Warning (21074): Design contains 26 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Clock" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 2
+    Warning (15610): No output dependent on input pin "clear" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 2
+    Warning (15610): No output dependent on input pin "PCin" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 3
+    Warning (15610): No output dependent on input pin "PCout" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 3
+    Warning (15610): No output dependent on input pin "IRin" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 4
+    Warning (15610): No output dependent on input pin "CONin" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 4
+    Warning (15610): No output dependent on input pin "ZLowout" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 5
+    Warning (15610): No output dependent on input pin "MARin" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 6
+    Warning (15610): No output dependent on input pin "MDRin" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 6
+    Warning (15610): No output dependent on input pin "MDRout" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 6
+    Warning (15610): No output dependent on input pin "ReadMDR" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 7
+    Warning (15610): No output dependent on input pin "ReadMem" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 7
+    Warning (15610): No output dependent on input pin "Write" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 7
+    Warning (15610): No output dependent on input pin "Rin" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 8
+    Warning (15610): No output dependent on input pin "Rout" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 8
+    Warning (15610): No output dependent on input pin "Yin" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 9
+    Warning (15610): No output dependent on input pin "Zin" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 9
+    Warning (15610): No output dependent on input pin "Cout" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 10
+    Warning (15610): No output dependent on input pin "ALU_operation[0]" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 11
+    Warning (15610): No output dependent on input pin "ALU_operation[1]" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 11
+    Warning (15610): No output dependent on input pin "ALU_operation[2]" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 11
+    Warning (15610): No output dependent on input pin "ALU_operation[3]" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 11
+    Warning (15610): No output dependent on input pin "Gra" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 12
+    Warning (15610): No output dependent on input pin "Grb" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 12
+    Warning (15610): No output dependent on input pin "Grc" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 12
+    Warning (15610): No output dependent on input pin "BAout" File: C:/Users/raele/ELEC374-CPU/src/Computer.v Line: 14
+Info (21057): Implemented 26 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 26 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
-    Info: Peak virtual memory: 4850 megabytes
-    Info: Processing ended: Mon Mar 16 15:27:50 2026
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:07
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 50 warnings
+    Info: Peak virtual memory: 4847 megabytes
+    Info: Processing ended: Mon Mar 16 17:53:39 2026
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:25
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/22nkj/Documents/elec374/ELEC374-CPU/output_files/CPU.map.smsg.
+The suppressed messages can be found in C:/Users/raele/ELEC374-CPU/output_files/CPU.map.smsg.
 
 

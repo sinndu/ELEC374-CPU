@@ -1,5 +1,5 @@
 Timing Analyzer report for CPU
-Sun Mar 15 22:03:55 2026
+Mon Mar 16 17:54:15 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -90,15 +90,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 10          ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Average used               ; 1.03        ;
+; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processors 2-10        ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -302,12 +302,14 @@ No synchronizer chains to report.
 ; MARin            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; MDRin            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; MDRout           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; Read             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ReadMDR          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ReadMem          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; Write            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; Rin              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; Rout             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; Yin              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; Zin              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Cout             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ALU_operation[0] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ALU_operation[1] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ALU_operation[2] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -315,6 +317,7 @@ No synchronizer chains to report.
 ; Gra              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; Grb              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; Grc              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; BAout            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 +------------------+--------------+-----------------+-----------------+
 
 
@@ -384,11 +387,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Mar 15 22:03:46 2026
+    Info: Processing started: Mon Mar 16 17:54:12 2026
 Info: Command: quartus_sta CPU -c CPU
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'CPU.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -444,9 +447,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5011 megabytes
-    Info: Processing ended: Sun Mar 15 22:03:55 2026
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Peak virtual memory: 5112 megabytes
+    Info: Processing ended: Mon Mar 16 17:54:15 2026
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
 
 

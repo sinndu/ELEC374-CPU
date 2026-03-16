@@ -24,6 +24,7 @@ ALU_operation[3] => ALU_operation[3].IN1
 Gra => Gra.IN1
 Grb => Grb.IN1
 Grc => Grc.IN1
+BAout => BAout.IN1
 
 
 |Computer|datapath:DUT
