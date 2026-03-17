@@ -24,7 +24,7 @@ Gra => Gra.IN1
 Grb => Grb.IN1
 Grc => Grc.IN1
 BAout => BAout.IN1
-con_ff_out <= datapath:DUT.con_ff_out
+con_ff_out << datapath:DUT.con_ff_out
 
 
 |Computer|datapath:DUT

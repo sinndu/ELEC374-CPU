@@ -1,5 +1,5 @@
 Flow report for CPU
-Mon Mar 16 19:05:29 2026
+Mon Mar 16 20:02:43 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Mon Mar 16 19:05:29 2026           ;
+; Flow Status                     ; Successful - Mon Mar 16 20:02:43 2026           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; CPU                                             ;
 ; Top-level Entity Name           ; Computer                                        ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/16/2026 18:58:40 ;
+; Start date & time ; 03/16/2026 19:55:54 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPU                 ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+---------------------------------------------+---------------+-------------+-----------------+
 ; Assignment Name                      ; Value                                       ; Default Value ; Entity Name ; Section Id      ;
 +--------------------------------------+---------------------------------------------+---------------+-------------+-----------------+
-; COMPILER_SIGNATURE_ID                ; 53671034207461.177370192022180              ; --            ; --          ; --              ;
+; COMPILER_SIGNATURE_ID                ; 53671034207461.177370535423288              ; --            ; --          ; --              ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; datapath_shl    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_addi         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; datapath_rol    ;
@@ -91,13 +91,14 @@ refer to the applicable agreement for further details.
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; datapath_neg    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; DataPath_tb_mul ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; datapath_ror    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_ld_case1     ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; DataPath_tb_add ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; CLA_32_tb       ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_brzr         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; DataPath_tb_or  ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; datapath_shra   ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; datapath_shr    ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_brzr                                     ; --            ; --          ; eda_simulation  ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_ld_case1                                 ; --            ; --          ; eda_simulation  ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                 ; --            ; --          ; eda_simulation  ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)                   ; <None>        ; --          ; --              ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                             ; --            ; --          ; eda_simulation  ;
@@ -113,6 +114,7 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_neg.v  ; --            ; --          ; datapath_neg    ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_mul.v  ; --            ; --          ; DataPath_tb_mul ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_ror.v  ; --            ; --          ; datapath_ror    ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_ld_case1.v       ; --            ; --          ; tb_ld_case1     ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_add.v  ; --            ; --          ; DataPath_tb_add ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/CLA_32_tb.v                 ; --            ; --          ; CLA_32_tb       ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_brzr.v           ; --            ; --          ; tb_brzr         ;
@@ -131,6 +133,7 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_neg                             ; --            ; --          ; datapath_neg    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_mul                             ; --            ; --          ; DataPath_tb_mul ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_ror                             ; --            ; --          ; datapath_ror    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_ld_case1                                 ; --            ; --          ; tb_ld_case1     ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_add                             ; --            ; --          ; DataPath_tb_add ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; CLA_32_tb                                   ; --            ; --          ; CLA_32_tb       ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_brzr                                     ; --            ; --          ; tb_brzr         ;
@@ -155,6 +158,7 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_NAME                  ; tb_addi                                     ; --            ; --          ; eda_simulation  ;
 ; EDA_TEST_BENCH_NAME                  ; tb_ori                                      ; --            ; --          ; eda_simulation  ;
 ; EDA_TEST_BENCH_NAME                  ; tb_brzr                                     ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; tb_ld_case1                                 ; --            ; --          ; eda_simulation  ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; datapath_shl    ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_addi         ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; datapath_rol    ;
@@ -166,6 +170,7 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; datapath_neg    ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; DataPath_tb_mul ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; datapath_ror    ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_ld_case1     ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; DataPath_tb_add ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; CLA_32_tb       ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_brzr         ;
@@ -190,12 +195,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:26     ; 2.1                     ; 5085 MB             ; 00:00:28                           ;
-; Fitter               ; 00:05:47     ; 1.4                     ; 7922 MB             ; 00:20:21                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 4971 MB             ; 00:00:07                           ;
-; Timing Analyzer      ; 00:00:16     ; 6.3                     ; 5562 MB             ; 00:01:04                           ;
-; EDA Netlist Writer   ; 00:00:05     ; 1.0                     ; 4997 MB             ; 00:00:05                           ;
-; Total                ; 00:06:41     ; --                      ; --                  ; 00:22:05                           ;
+; Analysis & Synthesis ; 00:00:25     ; 2.1                     ; 5110 MB             ; 00:00:28                           ;
+; Fitter               ; 00:05:48     ; 1.4                     ; 7933 MB             ; 00:20:26                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 4974 MB             ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:16     ; 6.4                     ; 5564 MB             ; 00:01:05                           ;
+; EDA Netlist Writer   ; 00:00:05     ; 1.0                     ; 4996 MB             ; 00:00:05                           ;
+; Total                ; 00:06:41     ; --                      ; --                  ; 00:22:11                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

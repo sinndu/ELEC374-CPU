@@ -26,6 +26,7 @@ add wave -noupdate -radix hexadecimal sim:/ALU_operation
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/S_E_logic/reg_select
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/BusMuxOut
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/PC/storage
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/R0/storage
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/R7/storage
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/R4/storage
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/R3/storage

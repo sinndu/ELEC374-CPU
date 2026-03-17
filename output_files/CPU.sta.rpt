@@ -1,5 +1,5 @@
 Timing Analyzer report for CPU
-Mon Mar 16 19:05:23 2026
+Mon Mar 16 20:02:37 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -99,26 +99,26 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 6.35        ;
+; Average used               ; 6.38        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  46.4%      ;
-;     Processor 3            ;  45.5%      ;
-;     Processor 4            ;  45.4%      ;
-;     Processor 5            ;  33.2%      ;
-;     Processor 6            ;  33.2%      ;
-;     Processor 7            ;  33.2%      ;
-;     Processor 8            ;  33.2%      ;
-;     Processor 9            ;  33.2%      ;
-;     Processor 10           ;  33.2%      ;
-;     Processor 11           ;  33.2%      ;
-;     Processor 12           ;  33.2%      ;
-;     Processor 13           ;  33.2%      ;
-;     Processor 14           ;  33.2%      ;
-;     Processor 15           ;  33.2%      ;
-;     Processor 16           ;  33.2%      ;
+;     Processor 2            ;  46.5%      ;
+;     Processor 3            ;  45.7%      ;
+;     Processor 4            ;  45.6%      ;
+;     Processor 5            ;  33.4%      ;
+;     Processor 6            ;  33.4%      ;
+;     Processor 7            ;  33.4%      ;
+;     Processor 8            ;  33.4%      ;
+;     Processor 9            ;  33.4%      ;
+;     Processor 10           ;  33.4%      ;
+;     Processor 11           ;  33.4%      ;
+;     Processor 12           ;  33.4%      ;
+;     Processor 13           ;  33.4%      ;
+;     Processor 14           ;  33.4%      ;
+;     Processor 15           ;  33.4%      ;
+;     Processor 16           ;  33.4%      ;
 +----------------------------+-------------+
 
 
@@ -586,7 +586,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Mar 16 19:05:07 2026
+    Info: Processing started: Mon Mar 16 20:02:21 2026
 Info: Command: quartus_sta CPU -c CPU
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -692,8 +692,8 @@ Info (332146): Worst-case minimum pulse width slack is -0.096
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5562 megabytes
-    Info: Processing ended: Mon Mar 16 19:05:23 2026
+    Info: Peak virtual memory: 5564 megabytes
+    Info: Processing ended: Mon Mar 16 20:02:37 2026
     Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:01:05
 

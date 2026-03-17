@@ -1,4 +1,7 @@
 vendor_name = ModelSim
+source_file = 1, C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/tb_ld_case2.v
+source_file = 1, C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/hex/ld_case2.hex
+source_file = 1, C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/hex/ld_case1.hex
 source_file = 1, C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/hex/brzr_r3_48.hex
 source_file = 1, C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/tb_ld_case1.v
 source_file = 1, C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/hex/ori_r7_r4.hex
@@ -40,6 +43,7 @@ source_file = 1, src/testbenches/DataPath/DataPath_tb_sub.v
 source_file = 1, src/testbenches/Phase_2/DataPath_tb.v
 source_file = 1, C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/tb_ori.v
 source_file = 1, C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/tb_brzr.v
+source_file = 1, ld_case2.hex
 source_file = 1, ld_case1.hex
 source_file = 1, ori_r7_r4.hex
 source_file = 1, brzr_r3_48.hex

@@ -1,6 +1,6 @@
 // and datapath_tb.v file: <This is the filename>
 `timescale 1ns/10ps
-module DataPath_tb;
+module tb_st_case2;
     reg [3:0] reg_select;
     reg PCout, Zlowout, MDRout, Rout;
     reg MARin, Zin, PCin, MDRin, IRin, Yin, CONin;

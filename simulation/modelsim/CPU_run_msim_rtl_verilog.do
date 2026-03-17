@@ -21,9 +21,9 @@ vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/elec374/ELEC374-C
 vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/div {C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/div/NR_Division.v}
 vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu {C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/alu/ALU.v}
 
-vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2 {C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/tb_brzr.v}
+vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2 {C:/Users/22nkj/Documents/elec374/ELEC374-CPU/src/testbenches/Phase_2/tb_ld_case2.v}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_brzr
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_ld_case2
 
 add wave *
 view structure

@@ -2,7 +2,7 @@
 module tb_ld_case2;
     reg PCout, Zlowout, MDRout, Rout;
     reg MARin, Zin, PCin, MDRin, IRin, Yin, CONin;
-    reg ReadMDR, ReadMem, Write, Rin;
+    reg Read, Write, Rin;
     reg Gra, Grb, Grc;
 	 reg Cout;
     reg Clock, clear;
@@ -23,7 +23,7 @@ Computer SRC(
 	.IRin(IRin), .CONin(CONin),
 	.ZLowout(Zlowout),
 	.MARin(MARin), .MDRin(MDRin), .MDRout(MDRout),
-	.ReadMDR(ReadMDR), .ReadMem(ReadMem), .Write(Write),
+	.Read(Read), .Write(Write),
 	.Rin(Rin), .Rout(Rout),
 	.Yin(Yin), .Zin(Zin),
 	.Cout(Cout),
@@ -75,7 +75,7 @@ always @(negedge Clock)
     //clear all signals before switch case
     PCout <= 0; Zlowout <= 0; MDRout <= 0; Rout <= 0;
     MARin <= 0; Zin <= 0; PCin <= 0; MDRin <= 0;
-    IRin <= 0; Yin <= 0; ReadMDR <= 0; ReadMem <= 0; Write <= 0;
+    IRin <= 0; Yin <= 0; Read <= 0; Write <= 0;
     Rin <= 0; ALU_operation <= NONE;
     Gra <= 0; Grb <= 0; Grc <= 0;
 	Cout <= 0; CONin <= 0; BAout <= 0;
@@ -85,7 +85,7 @@ always @(negedge Clock)
                         PCout = 0; Zlowout = 0; MDRout = 0; // initialize the signals
                         Rout = 0; MARin = 0; Zin = 0;
                         PCin = 0; MDRin = 0; IRin = 0; Yin = 0;
-                        ReadMDR = 0; ReadMem = 0; Write = 0; ALU_operation = NONE;
+                        Read = 0; Write = 0; ALU_operation = NONE;
                         Rin = 0;
 						Gra = 0; Grb = 0; Grc = 0;
 						Cout = 0; CONin = 0;
@@ -96,13 +96,13 @@ always @(negedge Clock)
                         PCout <= 1; MARin <= 1; ALU_operation <= IncPC; Zin <= 1;
             end
             T1: begin
-                        Zlowout <= 1; PCin <= 1; ReadMem <= 1; ReadMDR <= 1; MDRin <= 1;
+                        Zlowout <= 1; PCin <= 1; Read <= 1; MDRin <= 1;
             end
             T2: begin
                         MDRout <= 1; IRin <= 1;
             end
             T3: begin
-                        Grb <= 1; BAout <= 1; Yin <= 1;
+                        Grb <= 1; BAout <= 1; Yin <= 1; Rout <= 1;
             end
             T4: begin
                         Cout <= 1; ALU_operation <= ADD; Zin <= 1;
@@ -111,7 +111,7 @@ always @(negedge Clock)
                         Zlowout <= 1; MARin <= 1;
             end
             T6: begin
-                        ReadMem <= 1; ReadMDR <= 1; MDRin <= 1;
+                        Read <= 1; MDRin <= 1;
             end
             T7: begin
                         MDRout <= 1; Gra <= 1; Rin <= 1;
