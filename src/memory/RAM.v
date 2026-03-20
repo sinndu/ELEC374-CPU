@@ -6,24 +6,22 @@ module RAM(
     output wire [31:0] data_out
 );
 reg [31:0] mem [0:511];
-reg [31:0] out_reg;
 
+
+//synchronous clear/write logic, asynchronous read logic 
 integer idx;
 always@(posedge clk) begin
     if (clear) begin
         for (idx = 0; idx < 512; idx = idx + 1) begin
             mem[idx] <= 32'b0;
         end
-		  out_reg <= 32'b0;
-    end
-    else if (read) begin
-        out_reg <= mem[addr];
     end
     else if (write) begin
         mem[addr] <= data_in;
     end 
 end
 
-assign data_out = out_reg;
+//read logic must be asynchronous to meet timing requirements 
+assign data_out = read ? mem[addr] : 32'bz;
 
 endmodule

@@ -21,7 +21,8 @@ module datapath(
 
     output wire [31:0] MAR_out,
     output wire [31:0] MDR_out,
-    output wire [31:0] out_outport_data
+    output wire [31:0] out_outport_data,
+	 output wire con_ff_out
 );
 
 wire [31:0] BusMuxOut, BusMuxIn_R0, BusMuxIn_R1, BusMuxIn_R2, BusMuxIn_R3, 
@@ -83,7 +84,6 @@ assign reg_out = reg_decode & {16{Rout}};
 
 
 //CON FF logic
-wire con_ff_out; //to control unit
 CON_FF CON_FF_logic(IR_output[22:19], BusMuxOut, CONin, con_ff_out);
 
 

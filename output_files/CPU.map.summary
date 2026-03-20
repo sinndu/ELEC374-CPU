@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Sun Mar 15 23:13:19 2026
-Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Analysis & Synthesis Status : Successful - Mon Mar 16 19:56:20 2026
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : CPU
 Top-level Entity Name : Computer
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
-Total pins : 24
+Total registers : 17060
+Total pins : 26
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0
