@@ -102,7 +102,7 @@ always @(negedge Clock)
                         MDRout <= 1; IRin <= 1;
             end
             T3: begin
-                        Grb <= 1; BAout <= 1; Yin <= 1; Rout <= 1;
+                        Grb <= 1; BAout <= 1; Rout <= 1; Yin <= 1;
             end
             T4: begin
                         Cout <= 1; ALU_operation <= ADD; Zin <= 1;

@@ -46,7 +46,6 @@ initial
 
 		//initialize memory and registers
 		$readmemh("ld_case1.hex", SRC.memory.mem);
-		SRC.DUT.R7.storage = 32'h0000ab45;
 end
 
 always @(posedge Clock) // finite state machine; if clock rising-edge
@@ -102,7 +101,7 @@ always @(negedge Clock)
                         MDRout <= 1; IRin <= 1;
             end
             T3: begin
-                        Grb <= 1; BAout <= 1; Yin <= 1; Rout <= 1;
+                        Grb <= 1; BAout <= 1; Rout <= 1; Yin <= 1;
             end
             T4: begin
                         Cout <= 1; ALU_operation <= ADD; Zin <= 1;

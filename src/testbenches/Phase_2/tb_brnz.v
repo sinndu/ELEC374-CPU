@@ -1,5 +1,5 @@
 `timescale 1ns/10ps
-module tb_st_case2;
+module tb_brnz;
     reg PCout, Zlowout, MDRout, Rout;
     reg MARin, Zin, PCin, MDRin, IRin, Yin, CONin;
     reg Read, Write, Rin;
@@ -16,6 +16,7 @@ module tb_st_case2;
                 SHR = 4'b0110, SHRA = 4'b0111, SHL = 4'b1000, ROR = 4'b1001, ROL = 4'b1010,
                 MUL = 4'b1011, DIV = 4'b1100, IncPC = 4'b1101, NONE = 4'b1110;
     reg [3:0] ALU_operation = NONE;
+	 wire con_ff_out;
 	 
 Computer SRC(
 	.Clock(Clock), .clear(clear),
@@ -29,7 +30,8 @@ Computer SRC(
 	.Cout(Cout),
 	.ALU_operation(ALU_operation),
 	.Gra(Gra), .Grb(Grb), .Grc(Grc),
-    .BAout(BAout)
+    .BAout(BAout),
+	 .con_ff_out(con_ff_out)
 );
 
 initial
@@ -45,8 +47,8 @@ initial
 		clear = 0;
 
 		//initialize memory and registers
-		$readmemh("st_case2.hex", SRC.memory.mem);
-        SRC.DUT.R6.storage = 32'h00000063;
+		$readmemh("brnz_r3_48.hex", SRC.memory.mem);
+		SRC.DUT.R3.storage = 32'h00000000;
 end
 
 always @(posedge Clock) // finite state machine; if clock rising-edge
@@ -65,8 +67,7 @@ always @(posedge Clock) // finite state machine; if clock rising-edge
             T3 : Present_state = T4;
             T4 : Present_state = T5;
 			T5 : Present_state = T6;
-			T6 : Present_state = T7;
-			T7 : Present_state = done;
+			T6 : Present_state = done;
         endcase
     end
 
@@ -96,25 +97,22 @@ always @(negedge Clock)
                         PCout <= 1; MARin <= 1; ALU_operation <= IncPC; Zin <= 1;
             end
             T1: begin
-                        Zlowout <= 1; PCin <= 1; Read <= 1; MDRin <= 1;
+                        Zlowout <= 1; PCin <= 1; Read <= 1; Read <= 1; MDRin <= 1;
             end
             T2: begin
                         MDRout <= 1; IRin <= 1;
             end
             T3: begin
-                        Grb <= 1; BAout <= 1; Rout <= 1; Yin <= 1;
+                        Gra <= 1; Rout <= 1; CONin <= 1;
             end
             T4: begin
-                        Cout <= 1; ALU_operation <= ADD; Zin <= 1;
+                        PCout <= 1; Yin <= 1;
             end
             T5: begin
-                        Zlowout <= 1; MARin <= 1;
+                        Cout <= 1; ALU_operation <= ADD; Zin <= 1;
             end
             T6: begin
-                        Gra <= 1; Rout <= 1; MDRin <= 1;
-            end
-            T7: begin
-                        Write <= 1; MDRout <= 1;
+                        Zlowout <= 1; PCin <= con_ff_out;
             end
         endcase
     end
