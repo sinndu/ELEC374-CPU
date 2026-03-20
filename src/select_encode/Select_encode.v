@@ -1,5 +1,5 @@
 module Select_encode(
-    input wire Gra, Grb, Grc,
+    input wire Gra, Grb, Grc, Glr,
     input wire Rin, Rout,
     input wire Cout,
     input wire [31:0] IR_out,
@@ -10,8 +10,9 @@ module Select_encode(
 wire [3:0] Ra = IR_out[26:23];
 wire [3:0] Rb = IR_out[22:19];
 wire [3:0] Rc = IR_out[18:15];
+reg [3:0] lr = 4'b1100; // Return address (link register) is always r12
 
 assign C_sign_extended = $signed(IR_out[18:0]);
 
-assign reg_select = ({4{Gra}} & Ra) | ({4{Grb}} & Rb) | ({4{Grc}} & Rc);
+assign reg_select = ({4{Gra}} & Ra) | ({4{Grb}} & Rb) | ({4{Grc}} & Rc) | ({4{Glr}} & lr);
 endmodule

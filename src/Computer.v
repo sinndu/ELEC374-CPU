@@ -9,7 +9,7 @@ module Computer(
 	input Yin, Zin,
 	input Cout,
 	input [3:0] ALU_operation,
-	input Gra, Grb, Grc
+	input Gra, Grb, Grc, Glr
 	
 );
 
@@ -30,7 +30,7 @@ datapath DUT(
     .Yin(Yin), .Zin(Zin),
 	 .Cout(Cout),
     .ALU_operation(ALU_operation), 
-    .Gra(Gra), .Grb(Grb), .Grc(Grc),
+    .Gra(Gra), .Grb(Grb), .Grc(Grc), .Glr(Glr)
 
     .MAR_out(MAR_out),
     .MDR_out(MDR_out)

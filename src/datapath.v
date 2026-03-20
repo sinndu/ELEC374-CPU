@@ -15,7 +15,7 @@ module datapath(
     input wire OutPortin, OutPortout,
     input wire Cin, Cout,
     input wire Rin, Rout, 
-    input wire Gra, Grb, Grc,
+    input wire Gra, Grb, Grc, Glr,
     input wire BAout,
     input wire [3:0] ALU_operation,
 
@@ -71,7 +71,7 @@ wire [31:0] IR_output; //IR output does not feed back into the bus
 Register_32 IR(clock, clear, IRin, BusMuxOut, IR_output);
 //instantiate seelct and encode logic
 wire [3:0] reg_select;
-Select_encode S_E_logic(Gra, Grb, Grc, Rin, Rout, Cout, IR_output, reg_select, C_Sign_Extended);
+Select_encode S_E_logic(Gra, Grb, Grc, Glr, Rin, Rout, Cout, IR_output, reg_select, C_Sign_Extended);
 //decoder
 wire [15:0] reg_decode;
 assign reg_decode = 16'b1 << reg_select;
