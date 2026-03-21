@@ -3,40 +3,34 @@ quietly WaveActivateNextPane {} 0
 add wave -noupdate sim:/Clock
 add wave -noupdate sim:/clear
 add wave -noupdate sim:/PCout
-add wave -noupdate sim:/Zlowout
-add wave -noupdate sim:/MDRout
-add wave -noupdate sim:/Rout
 add wave -noupdate sim:/MARin
 add wave -noupdate sim:/Zin
+add wave -noupdate sim:/Zlowout
 add wave -noupdate sim:/PCin
-add wave -noupdate sim:/MDRin
-add wave -noupdate sim:/IRin
-add wave -noupdate sim:/Yin
-add wave -noupdate sim:/CONin
 add wave -noupdate sim:/Read
-add wave -noupdate sim:/Write
-add wave -noupdate sim:/Rin
+add wave -noupdate sim:/MDRin
+add wave -noupdate sim:/MDRout
+add wave -noupdate sim:/IRin
 add wave -noupdate sim:/Gra
-add wave -noupdate sim:/Grb
-add wave -noupdate sim:/Grc
-add wave -noupdate sim:/Cout
-add wave -noupdate sim:/BAout
+add wave -noupdate sim:/Rout
+add wave -noupdate sim:/Rin
+add wave -noupdate sim:/InPortin
+add wave -noupdate sim:/InPortout
+add wave -noupdate sim:/OutPortin
 add wave -noupdate -radix hexadecimal sim:/Present_state
 add wave -noupdate -radix hexadecimal sim:/ALU_operation
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/S_E_logic/reg_select
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/BusMuxOut
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/PC/storage
-add wave -noupdate -radix hexadecimal sim:/SRC/DUT/R2/storage
-add wave -noupdate -radix hexadecimal sim:/SRC/DUT/R0/storage
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/R5/storage
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/R7/storage
 add wave -noupdate -radix hexadecimal sim:/SRC/memory/addr
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/S_E_logic/Ra
-add wave -noupdate -radix hexadecimal sim:/SRC/DUT/S_E_logic/Rb
-add wave -noupdate -radix hexadecimal sim:/SRC/DUT/S_E_logic/Rc
-add wave -noupdate -radix hexadecimal sim:/SRC/DUT/S_E_logic/C_sign_extended
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/IR/storage
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/MDR/MDR_Reg/storage
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/MDR/Mux_out
-add wave -noupdate -radix hexadecimal sim:/SRC/memory/data_out
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/InPort/storage
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/OutPort/storage
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {176332 ps} 0}
 quietly wave cursor active 1

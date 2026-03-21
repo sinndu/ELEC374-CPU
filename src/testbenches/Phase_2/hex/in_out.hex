@@ -1,0 +1,2 @@
+B2800000 // Instruction 0: IN r5
+BB800000 // Instruction 1: OUT r7

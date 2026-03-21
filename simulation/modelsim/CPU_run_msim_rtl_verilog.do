@@ -21,9 +21,9 @@ vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/alu/mul {C:
 vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/alu/div {C:/Users/raele/ELEC374-CPU/src/alu/div/NR_Division.v}
 vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/alu {C:/Users/raele/ELEC374-CPU/src/alu/ALU.v}
 
-vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/testbenches/Phase_2 {C:/Users/raele/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v}
+vlog -vlog01compat -work work +incdir+C:/Users/raele/ELEC374-CPU/src/testbenches/Phase_2 {C:/Users/raele/ELEC374-CPU/src/testbenches/Phase_2/tb_in_out.v}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_ldi_case2
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_in_out
 
 add wave *
 view structure

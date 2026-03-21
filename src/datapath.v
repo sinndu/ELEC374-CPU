@@ -22,7 +22,7 @@ module datapath(
     output wire [31:0] MAR_out,
     output wire [31:0] MDR_out,
     output wire [31:0] out_outport_data,
-	 output wire con_ff_out
+	output wire con_ff_out
 );
 
 wire [31:0] BusMuxOut, BusMuxIn_R0, BusMuxIn_R1, BusMuxIn_R2, BusMuxIn_R3, 

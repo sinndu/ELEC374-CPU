@@ -31,7 +31,7 @@ Computer SRC(
 	.ALU_operation(ALU_operation),
 	.Gra(Gra), .Grb(Grb), .Grc(Grc),
     .BAout(BAout),
-	 .con_ff_out(con_ff_out)
+	.con_ff_out(con_ff_out)
 );
 
 initial

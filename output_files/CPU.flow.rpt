@@ -1,6 +1,6 @@
 Flow report for CPU
-Mon Mar 16 20:02:43 2026
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Thu Mar 19 17:18:17 2026
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -37,29 +37,29 @@ refer to the applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------+
-; Flow Summary                                                                      ;
-+---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Mon Mar 16 20:02:43 2026           ;
-; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
-; Revision Name                   ; CPU                                             ;
-; Top-level Entity Name           ; Computer                                        ;
-; Family                          ; Cyclone V                                       ;
-; Device                          ; 5CEBA4F23C7                                     ;
-; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 9,849 / 18,480 ( 53 % )                         ;
-; Total registers                 ; 17060                                           ;
-; Total pins                      ; 26 / 224 ( 12 % )                               ;
-; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                           ;
-; Total DSP Blocks                ; 0 / 66 ( 0 % )                                  ;
-; Total HSSI RX PCSs              ; 0                                               ;
-; Total HSSI PMA RX Deserializers ; 0                                               ;
-; Total HSSI TX PCSs              ; 0                                               ;
-; Total HSSI PMA TX Serializers   ; 0                                               ;
-; Total PLLs                      ; 0 / 4 ( 0 % )                                   ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
-+---------------------------------+-------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Thu Mar 19 17:18:17 2026       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; CPU                                         ;
+; Top-level Entity Name           ; Computer                                    ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CEBA4F23C7                                 ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 17060                                       ;
+; Total pins                      ; 26                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/16/2026 19:55:54 ;
+; Start date & time ; 03/19/2026 17:17:26 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPU                 ;
 +-------------------+---------------------+
@@ -78,16 +78,18 @@ refer to the applicable agreement for further details.
 +--------------------------------------+---------------------------------------------+---------------+-------------+-----------------+
 ; Assignment Name                      ; Value                                       ; Default Value ; Entity Name ; Section Id      ;
 +--------------------------------------+---------------------------------------------+---------------+-------------+-----------------+
-; COMPILER_SIGNATURE_ID                ; 53671034207461.177370535423288              ; --            ; --          ; --              ;
+; COMPILER_SIGNATURE_ID                ; 38917505025.177395504621668                 ; --            ; --          ; --              ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; datapath_shl    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_addi         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; datapath_rol    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_st_case2     ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; DataPath_tb     ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; DataPath_tb_and ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_ori          ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; datapath_not    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; DataPath_tb_div ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; DataPath_tb_sub ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_ld_case2     ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; datapath_neg    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; DataPath_tb_mul ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; datapath_ror    ;
@@ -105,12 +107,14 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_shl.v  ; --            ; --          ; datapath_shl    ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_addi.v           ; --            ; --          ; tb_addi         ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_rol.v  ; --            ; --          ; datapath_rol    ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_st_case2.v       ; --            ; --          ; tb_st_case2     ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath_tb.v               ; --            ; --          ; DataPath_tb     ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_and.v  ; --            ; --          ; DataPath_tb_and ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_ori.v            ; --            ; --          ; tb_ori          ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_not.v  ; --            ; --          ; datapath_not    ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_div.v  ; --            ; --          ; DataPath_tb_div ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_sub.v  ; --            ; --          ; DataPath_tb_sub ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_ld_case2.v       ; --            ; --          ; tb_ld_case2     ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_neg.v  ; --            ; --          ; datapath_neg    ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_mul.v  ; --            ; --          ; DataPath_tb_mul ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_ror.v  ; --            ; --          ; datapath_ror    ;
@@ -124,12 +128,14 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_shl                             ; --            ; --          ; datapath_shl    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_addi                                     ; --            ; --          ; tb_addi         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_rol                             ; --            ; --          ; datapath_rol    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_st_case2                                 ; --            ; --          ; tb_st_case2     ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb                                 ; --            ; --          ; DataPath_tb     ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_and                             ; --            ; --          ; DataPath_tb_and ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_ori                                      ; --            ; --          ; tb_ori          ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_not                             ; --            ; --          ; datapath_not    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_div                             ; --            ; --          ; DataPath_tb_div ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_sub                             ; --            ; --          ; DataPath_tb_sub ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_ld_case2                                 ; --            ; --          ; tb_ld_case2     ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_neg                             ; --            ; --          ; datapath_neg    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_mul                             ; --            ; --          ; DataPath_tb_mul ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_ror                             ; --            ; --          ; datapath_ror    ;
@@ -159,14 +165,18 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_NAME                  ; tb_ori                                      ; --            ; --          ; eda_simulation  ;
 ; EDA_TEST_BENCH_NAME                  ; tb_brzr                                     ; --            ; --          ; eda_simulation  ;
 ; EDA_TEST_BENCH_NAME                  ; tb_ld_case1                                 ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; tb_st_case2                                 ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; tb_ld_case2                                 ; --            ; --          ; eda_simulation  ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; datapath_shl    ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_addi         ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; datapath_rol    ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_st_case2     ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; DataPath_tb     ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; DataPath_tb_and ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 300 ns                                      ; --            ; --          ; tb_ori          ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; datapath_not    ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; DataPath_tb_div ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_ld_case2     ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; datapath_neg    ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; DataPath_tb_mul ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; datapath_ror    ;
@@ -195,12 +205,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:25     ; 2.1                     ; 5110 MB             ; 00:00:28                           ;
-; Fitter               ; 00:05:48     ; 1.4                     ; 7933 MB             ; 00:20:26                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 4974 MB             ; 00:00:07                           ;
-; Timing Analyzer      ; 00:00:16     ; 6.4                     ; 5564 MB             ; 00:01:05                           ;
-; EDA Netlist Writer   ; 00:00:05     ; 1.0                     ; 4996 MB             ; 00:00:05                           ;
-; Total                ; 00:06:41     ; --                      ; --                  ; 00:22:11                           ;
+; Analysis & Synthesis ; 00:00:50     ; 2.0                     ; 5081 MB             ; 00:01:19                           ;
+; Total                ; 00:00:50     ; --                      ; --                  ; 00:01:19                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -209,11 +215,7 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; WL214-20         ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; WL214-20         ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; WL214-20         ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; WL214-20         ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; WL214-20         ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; raelen           ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -221,10 +223,6 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
-quartus_fit --read_settings_files=off --write_settings_files=off CPU -c CPU
-quartus_asm --read_settings_files=off --write_settings_files=off CPU -c CPU
-quartus_sta CPU -c CPU
-quartus_eda --read_settings_files=off --write_settings_files=off CPU -c CPU
 
 
 

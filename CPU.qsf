@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE 5CEBA4F23C7
 set_global_assignment -name TOP_LEVEL_ENTITY Computer
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:58:51  JANUARY 19, 2026"
-set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Standard Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -80,7 +80,7 @@ set_global_assignment -name EDA_TEST_BENCH_NAME datapath_shr -section_id eda_sim
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id datapath_shr
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id datapath_shr
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME DataPath_tb_shr -section_id datapath_shr
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_ld_case2 -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_in_out -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME datapath_shra -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id datapath_shra
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id datapath_shra
@@ -109,10 +109,6 @@ set_global_assignment -name EDA_TEST_BENCH_NAME DataPath_tb_sub -section_id eda_
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id DataPath_tb_sub
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME DataPath_tb_sub -section_id DataPath_tb_sub
 
-set_global_assignment -name EDA_TEST_BENCH_NAME CLA_32_tb -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id CLA_32_tb
-set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id CLA_32_tb
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME CLA_32_tb -section_id CLA_32_tb
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -132,6 +128,26 @@ set_global_assignment -name EDA_TEST_BENCH_NAME tb_ld_case1 -section_id eda_simu
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_ld_case1
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id tb_ld_case1
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_ld_case1 -section_id tb_ld_case1
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_st_case2 -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_st_case2
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id tb_st_case2
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_st_case2 -section_id tb_st_case2
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_ld_case2 -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_ld_case2
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id tb_ld_case2
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_ld_case2 -section_id tb_ld_case2
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_andi -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_andi
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id tb_andi
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_andi -section_id tb_andi
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_brnz -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_brnz
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id tb_brnz
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_brnz -section_id tb_brnz
+set_global_assignment -name HEX_FILE src/testbenches/Phase_2/hex/brnz_r3_48.hex
+set_global_assignment -name VERILOG_FILE src/testbenches/Phase_2/tb_brnz.v
+set_global_assignment -name VERILOG_FILE src/testbenches/Phase_2/tb_andi.v
 set_global_assignment -name VERILOG_FILE src/testbenches/Phase_2/tb_ld_case2.v
 set_global_assignment -name HEX_FILE src/testbenches/Phase_2/hex/ld_case2.hex
 set_global_assignment -name HEX_FILE src/testbenches/Phase_2/hex/ld_case1.hex
@@ -176,17 +192,34 @@ set_global_assignment -name VERILOG_FILE src/testbenches/DataPath/DataPath_tb_su
 set_global_assignment -name VERILOG_FILE src/testbenches/Phase_2/DataPath_tb.v
 set_global_assignment -name VERILOG_FILE src/testbenches/Phase_2/tb_ori.v
 set_global_assignment -name VERILOG_FILE src/testbenches/Phase_2/tb_brzr.v
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name EDA_TEST_BENCH_NAME tb_st_case2 -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_st_case2
-set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id tb_st_case2
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_st_case2 -section_id tb_st_case2
-set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_st_case2.v -section_id tb_st_case2
-set_global_assignment -name EDA_TEST_BENCH_NAME tb_ld_case2 -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_ld_case2
-set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id tb_ld_case2
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_ld_case2 -section_id tb_ld_case2
-set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_ld_case2.v -section_id tb_ld_case2
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_brpl -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_brpl
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id tb_brpl
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_brpl -section_id tb_brpl
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_brmi -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_brmi
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id tb_brmi
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_brmi -section_id tb_brmi
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_ldi_case1 -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_ldi_case1
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id tb_ldi_case1
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_ldi_case1 -section_id tb_ldi_case1
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_ldi_case2 -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_ldi_case2
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id tb_ldi_case2
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_ldi_case2 -section_id tb_ldi_case2
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_st_case1 -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_st_case1
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id tb_st_case1
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_st_case1 -section_id tb_st_case1
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_jr -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_jr
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id tb_jr
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_jr -section_id tb_jr
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_jal -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_jal
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id tb_jal
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_jal -section_id tb_jal
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath_tb.v -section_id DataPath_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_shl.v -section_id datapath_shl
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_ror.v -section_id datapath_ror
@@ -201,8 +234,32 @@ set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPat
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_or.v -section_id DataPath_tb_or
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_add.v -section_id DataPath_tb_add
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_sub.v -section_id DataPath_tb_sub
-set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/CLA_32_tb.v -section_id CLA_32_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_addi.v -section_id tb_addi
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_ori.v -section_id tb_ori
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_brzr.v -section_id tb_brzr
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_ld_case1.v -section_id tb_ld_case1
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_st_case2.v -section_id tb_st_case2
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/hex/st_case2.hex -section_id tb_st_case2
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_ld_case2.v -section_id tb_ld_case2
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_andi.v -section_id tb_andi
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_brnz.v -section_id tb_brnz
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/hex/brnz_r3_48.hex -section_id tb_brnz
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_brpl.v -section_id tb_brpl
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/hex/brpl_r3_48.hex -section_id tb_brpl
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/hex/brmi_r3_48.hex -section_id tb_brmi
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_brmi.v -section_id tb_brmi
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_ldi_case1.v -section_id tb_ldi_case1
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/hex/ldi_case1.hex -section_id tb_ldi_case1
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_ldi_case2.v -section_id tb_ldi_case2
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/hex/ldi_case2.hex -section_id tb_ldi_case2
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_st_case1.v -section_id tb_st_case1
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/hex/st_case1.hex -section_id tb_st_case1
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_jr.v -section_id tb_jr
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_jal.v -section_id tb_jal
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/hex/jal.hex -section_id tb_jal
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_in_out -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_in_out
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id tb_in_out
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_in_out -section_id tb_in_out
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_in_out.v -section_id tb_in_out
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/hex/in_out.hex -section_id tb_in_out
