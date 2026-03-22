@@ -22,15 +22,15 @@ add wave -noupdate -radix hexadecimal sim:/ALU_operation
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/S_E_logic/reg_select
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/BusMuxOut
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/PC/storage
-add wave -noupdate -radix hexadecimal sim:/SRC/DUT/R5/storage
-add wave -noupdate -radix hexadecimal sim:/SRC/DUT/R7/storage
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/R4/storage
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/R12/storage
 add wave -noupdate -radix hexadecimal sim:/SRC/memory/addr
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/S_E_logic/Ra
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/IR/storage
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/MDR/MDR_Reg/storage
 add wave -noupdate -radix hexadecimal sim:/SRC/DUT/MDR/Mux_out
-add wave -noupdate -radix hexadecimal sim:/SRC/DUT/InPort/storage
-add wave -noupdate -radix hexadecimal sim:/SRC/DUT/OutPort/storage
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/HI/storage
+add wave -noupdate -radix hexadecimal sim:/SRC/DUT/LO/storage
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {176332 ps} 0}
 quietly wave cursor active 1

@@ -3,7 +3,7 @@ module tb_jr;
     reg PCout, Zlowout, MDRout, Rout;
     reg MARin, Zin, PCin, MDRin, IRin, Yin, CONin;
     reg Read, Write, Rin;
-    reg Gra, Grb, Grc;
+    reg Gra, Grb, Grc, Glr;
 	 reg Cout;
     reg Clock, clear;
     reg BAout;
@@ -29,7 +29,7 @@ Computer SRC(
 	.Yin(Yin), .Zin(Zin),
 	.Cout(Cout),
 	.ALU_operation(ALU_operation),
-	.Gra(Gra), .Grb(Grb), .Grc(Grc),
+	.Gra(Gra), .Grb(Grb), .Grc(Grc), .Glr(Glr),
     .BAout(BAout),
 	.con_ff_out(con_ff_out)
 );
@@ -76,7 +76,7 @@ always @(negedge Clock)
     MARin <= 0; Zin <= 0; PCin <= 0; MDRin <= 0;
     IRin <= 0; Yin <= 0; Read <= 0; Write <= 0;
     Rin <= 0; ALU_operation <= NONE;
-    Gra <= 0; Grb <= 0; Grc <= 0;
+    Gra <= 0; Grb <= 0; Grc <= 0; Glr <= 0;
 	Cout <= 0; CONin <= 0; BAout <= 0;
 
         case (Present_state)
@@ -86,7 +86,7 @@ always @(negedge Clock)
                         PCin = 0; MDRin = 0; IRin = 0; Yin = 0;
                         Read = 0; Write = 0; ALU_operation = NONE;
                         Rin = 0;
-						Gra = 0; Grb = 0; Grc = 0;
+						Gra = 0; Grb = 0; Grc = 0; Glr = 0;
 						Cout = 0; CONin = 0;
                         BAout = 0;
 								

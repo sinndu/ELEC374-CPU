@@ -1,19 +1,20 @@
 `timescale 1ns/10ps
-module tb_in_out;
+module tb_hi_lo;
+    reg Clock, clear;
     reg PCout, Zlowout, MDRout, Rout;
     reg MARin, Zin, PCin, MDRin, IRin, Yin, CONin;
     reg Read, Write, Rin;
+    reg HIin, HIout, LOin, LOout;
     reg Gra, Grb, Grc, Glr;
 	reg Cout;
-    reg Clock, clear;
     reg BAout;
     reg InPortin, InPortout, OutPortin, OutPortout;
     reg [31:0] in_port_data;
     wire [31:0] out_port_data;
 
     parameter   Default = 4'b0000,
-                T0_IN = 4'b0001, T1_IN = 4'b0010, T2_IN = 4'b0011, T3_IN = 4'b0100,
-                T0_OUT = 4'b0101, T1_OUT = 4'b0110, T2_OUT = 4'b0111, T3_OUT = 4'b1000, 
+                T0_HI = 4'b0001, T1_HI = 4'b0010, T2_HI = 4'b0011, T3_HI = 4'b0100,
+                T0_LO = 4'b0101, T1_LO = 4'b0110, T2_LO = 4'b0111, T3_LO = 4'b1000, 
                 done = 4'b1111;
     reg [3:0] Present_state = Default;
 
@@ -31,6 +32,7 @@ Computer SRC(
 	.IRin(IRin), .CONin(CONin),
 	.ZLowout(Zlowout),
 	.MARin(MARin), .MDRin(MDRin), .MDRout(MDRout),
+    .HIin(HIin), .HIout(HIout), .LOin(LOin), .LOout(LOout),
 	.Read(Read), .Write(Write),
 	.Rin(Rin), .Rout(Rout),
 	.Yin(Yin), .Zin(Zin),
@@ -51,31 +53,33 @@ end
 initial 
 	begin
 		clear = 1;
-        in_port_data = 32'h0000AAAA; // Example input data for IN instruction
+        in_port_data = 32'h0000AAAA;
 		#25;
 		clear = 0;
 
 		//initialize memory and registers
-        $readmemh("in_out.hex", SRC.memory.mem);
+        $readmemh("hi_lo.hex", SRC.memory.mem);
 		SRC.DUT.R5.storage = 32'h0000FFFF;
-        SRC.DUT.R7.storage = 32'h0000BBBB;
+        SRC.DUT.R1.storage = 32'h0000BBBB;
+        SRC.DUT.HI.storage = 32'hAAAA0000;
+        SRC.DUT.LO.storage = 32'hCCCC0000;
 end
 
 always @(posedge Clock) // finite state machine; if clock rising-edge
     begin
         case (Present_state)
-            Default  : Present_state = T0_IN;
-            // IN r5 Instruction sequence
-            T0_IN    : Present_state = T1_IN;
-            T1_IN    : Present_state = T2_IN;
-            T2_IN    : Present_state = T3_IN;
-            T3_IN    : Present_state = T0_OUT; // Move to next instruction
+            Default  : Present_state = T0_HI;
+            // mfhi r5 Instruction sequence
+            T0_HI    : Present_state = T1_HI;
+            T1_HI    : Present_state = T2_HI;
+            T2_HI    : Present_state = T3_HI;
+            T3_HI    : Present_state = T0_LO; 
             
-            // OUT r7 Instruction sequence
-            T0_OUT   : Present_state = T1_OUT;
-            T1_OUT   : Present_state = T2_OUT;
-            T2_OUT   : Present_state = T3_OUT;
-            T3_OUT   : Present_state = done;
+            // mflo r1 Instruction sequence
+            T0_LO   : Present_state = T1_LO;
+            T1_LO   : Present_state = T2_LO;
+            T2_LO   : Present_state = T3_LO;
+            T3_LO   : Present_state = done;
         endcase
     end
 
@@ -88,7 +92,7 @@ always @(negedge Clock)
     Rin <= 0; ALU_operation <= NONE;
     Gra <= 0; Grb <= 0; Grc <= 0; Glr <= 0;
 	Cout <= 0; CONin <= 0; BAout <= 0;
-    InPortin <= 0; InPortout <= 0; OutPortin <= 0; OutPortout <= 0;
+    HIout <= 0; LOout <= 0;
 
         case (Present_state)
             Default: begin
@@ -99,32 +103,32 @@ always @(negedge Clock)
                         ALU_operation = NONE; Rin = 0;
 						Gra = 0; Grb = 0; Grc = 0; Glr = 0;
 						Cout = 0; CONin = 0; BAout = 0; 
-						InPortin = 0; InPortout = 0; OutPortin = 0; OutPortout = 0;
+						HIout = 0; LOout = 0;
             end
-            T0_IN: begin
+            T0_HI: begin
                         PCout <= 1; MARin <= 1; ALU_operation <= IncPC; Zin <= 1;
             end
-            T1_IN: begin
+            T1_HI: begin
                         Zlowout <= 1; PCin <= 1; Read <= 1; MDRin <= 1;
             end
-            T2_IN: begin
+            T2_HI: begin
                         MDRout <= 1; IRin <= 1;
             end
-            T3_IN: begin
-                        Gra <= 1; Rin <= 1; InPortout <= 1;
+            T3_HI: begin
+                        Gra <= 1; Rin <= 1; HIout <= 1;
             end
 
-            T0_OUT: begin
+            T0_LO: begin
                         PCout <= 1; MARin <= 1; ALU_operation <= IncPC; Zin <= 1;
             end
-            T1_OUT: begin
+            T1_LO: begin
                         Zlowout <= 1; PCin <= 1; Read <= 1; MDRin <= 1;
             end
-            T2_OUT: begin
+            T2_LO: begin
                         MDRout <= 1; IRin <= 1;
             end
-            T3_OUT: begin
-                        Gra <= 1; Rout <= 1; OutPortin <= 1;
+            T3_LO: begin
+                        Gra <= 1; Rin <= 1; LOout <= 1;
             end
         endcase
     end

@@ -29,7 +29,7 @@ Computer SRC(
 	.Yin(Yin), .Zin(Zin),
 	.Cout(Cout),
 	.ALU_operation(ALU_operation),
-	.Gra(Gra), .Grb(Grb), .Grc(Grc), .Glr(Glr)
+	.Gra(Gra), .Grb(Grb), .Grc(Grc), .Glr(Glr),
     .BAout(BAout),
 	 .con_ff_out(con_ff_out)
 );
