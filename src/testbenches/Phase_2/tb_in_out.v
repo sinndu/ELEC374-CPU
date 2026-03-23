@@ -51,7 +51,7 @@ end
 initial 
 	begin
 		clear = 1;
-        in_port_data = 32'h0000AAAA; // Example input data for IN instruction
+        in_port_data = 32'h0000AAAA;
 		#25;
 		clear = 0;
 
@@ -105,7 +105,7 @@ always @(negedge Clock)
                         PCout <= 1; MARin <= 1; ALU_operation <= IncPC; Zin <= 1;
             end
             T1_IN: begin
-                        Zlowout <= 1; PCin <= 1; Read <= 1; MDRin <= 1;
+                        Zlowout <= 1; PCin <= 1; Read <= 1; MDRin <= 1; InPortin <= 1;
             end
             T2_IN: begin
                         MDRout <= 1; IRin <= 1;

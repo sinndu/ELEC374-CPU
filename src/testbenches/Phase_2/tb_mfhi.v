@@ -4,7 +4,7 @@ module tb_mfhi;
     reg MARin, Zin, PCin, MDRin, IRin, Yin, CONin;
     reg Read, Write, Rin;
     reg Gra, Grb, Grc;
-	 reg Cout;
+	reg Cout;
     reg Clock, clear;
     reg BAout;
     parameter   Default = 4'b0000, Reg_load1a = 4'b0001, Reg_load1b = 4'b0010, Reg_load2a = 4'b0011,

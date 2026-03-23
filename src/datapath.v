@@ -4,25 +4,24 @@ module datapath(
     //external data
     input wire [31:0] in_memory_data,
     input wire [31:0] in_inport_data,
+	output wire [31:0] out_outport_data,
 
     //control signals
     input wire PCin, PCout,
     input wire IRin, CONin,
     input wire MARin, MDRin, MDRout, read,
+	input wire Rin, Rout, 
     input wire HIin, HIout, LOin, LOout,
-    input wire Rin, Rout, 
     input wire Yin, Zin, ZHighout, ZLowout, 
+	input wire Cin, Cout,
     input wire InPortin, InPortout,
     input wire OutPortin, OutPortout,
-    input wire Cin, Cout,
+	input wire [3:0] ALU_operation,
     input wire Gra, Grb, Grc, Glr,
     input wire BAout,
-    input wire [3:0] ALU_operation,
-
+	output wire con_ff_out,
     output wire [31:0] MAR_out,
-    output wire [31:0] MDR_out,
-    output wire [31:0] out_outport_data,
-	output wire con_ff_out
+    output wire [31:0] MDR_out
 );
 
 wire [31:0] BusMuxOut, BusMuxIn_R0, BusMuxIn_R1, BusMuxIn_R2, BusMuxIn_R3, 
@@ -66,7 +65,6 @@ assign MDR_out = BusMuxIn_MDR;
 Register_32 HI(clock, clear, HIin, BusMuxOut, BusMuxIn_HI);
 Register_32 LO(clock, clear, LOin, BusMuxOut, BusMuxIn_LO);
 
-//Register_32 C(clock, clear, Cin, BusMuxOut, C_Sign_Extended);
 
 wire [31:0] IR_output; //IR output does not feed back into the bus
 Register_32 IR(clock, clear, IRin, BusMuxOut, IR_output);
@@ -82,10 +80,8 @@ assign reg_in = reg_decode & {16{Rin}};
 wire [15:0] reg_out;
 assign reg_out = reg_decode & {16{Rout}};
 
-
 //CON FF logic
 CON_FF CON_FF_logic(IR_output[22:19], BusMuxOut, CONin, con_ff_out);
-
 
 //control
 Register_32 PC(clock, clear, PCin, BusMuxOut, BusMuxIn_PC);
@@ -96,12 +92,9 @@ Register_32 MAR(clock, clear, MARin, BusMuxOut, MAR_out);
 Register_32 InPort(clock, clear, InPortin, in_inport_data, BusMuxIn_InPort);
 Register_32 OutPort(clock, clear, OutPortin, BusMuxOut, out_outport_data);  
 
-
 //ALU
-
 wire [31:0] Yout;
 wire [63:0] Z;
-
 
 Register_32 RY(clock, clear, Yin, BusMuxOut, Yout);
 //decode ALU op
@@ -121,7 +114,6 @@ ALU alu_op(
 Register_32 RZhigh(clock, clear, Zin, Z[63:32], BusMuxIn_Zhigh);
 Register_32 RZlow(clock, clear, Zin, Z[31:0], BusMuxIn_Zlow);
 
-
 //Bus
 Bus bus(
 	BusMuxIn_R0, BusMuxIn_R1, BusMuxIn_R2, BusMuxIn_R3, 
@@ -133,13 +125,7 @@ Bus bus(
 
 	reg_out[0], reg_out[1], reg_out[2], reg_out[3], reg_out[4], reg_out[5], reg_out[6], reg_out[7], 
 	reg_out[8], reg_out[9], reg_out[10], reg_out[11], reg_out[12], reg_out[13], reg_out[14], reg_out[15], 
-	HIout, LOout, ZHighout, ZLowout, PCout, MDRout, InPortout, Cout,
-			
-	BusMuxOut
+	HIout, LOout, ZHighout, ZLowout, PCout, MDRout, InPortout, Cout, BusMuxOut
 );
-
-
-
-
 
 endmodule

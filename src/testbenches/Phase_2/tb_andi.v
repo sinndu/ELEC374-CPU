@@ -1,167 +1,78 @@
-// and datapath_tb.v file: <This is the filename>
 `timescale 1ns/10ps
 module tb_andi;
-    reg PCout, Zlowout, MDRout, Rout;
-    reg MARin, Zin, PCin, MDRin, IRin, Yin, CONin;
-    reg Read, Write, Rin;
-    reg Gra, Grb, Grc;
-	 reg Cout;
     reg Clock, clear;
-	 reg BAout;
-    parameter   Default = 4'b0000, Reg_load1a = 4'b0001, Reg_load1b = 4'b0010, Reg_load2a = 4'b0011,
-                Reg_load2b = 4'b0100, Reg_load3a = 4'b0101, Reg_load3b = 4'b0110, T0 = 4'b0111,
-                T1 = 4'b1000, T2 = 4'b1001, T3 = 4'b1010, T4 = 4'b1011, T5 = 4'b1100, T6 = 4'b1101, done = 4'b1110;
+    reg PCin, PCout;
+    reg IRin;
+    reg MARin, MDRin, MDRout;
+    reg Read;
+    reg Rin, Rout;
+    reg Yin, Zin, Zlowout;
+    reg Cout;
+    reg Gra, Grb, Grc, Glr;
+    reg BAout;
+
+    parameter   Default = 4'b0000, T0 = 4'b0001, T1 = 4'b0010, T2 = 4'b0011, 
+                T3 = 4'b0100, T4 = 4'b0101, T5 = 4'b0110, done = 4'b1111;
     reg [3:0] Present_state = Default;
 
-    parameter   ADD = 4'b0000, SUB = 4'b0001, AND = 4'b0010, OR = 4'b011, NEG = 4'b0100, NOT = 4'b0101, 
-                SHR = 4'b0110, SHRA = 4'b0111, SHL = 4'b1000, ROR = 4'b1001, ROL = 4'b1010,
-                MUL = 4'b1011, DIV = 4'b1100, IncPC = 4'b1101, NONE = 4'b1110;
+    parameter   AND = 4'b0010, IncPC = 4'b1101, NONE = 4'b1110;
     reg [3:0] ALU_operation = NONE;
-	 wire con_ff_out;
-	 
-Computer SRC(
-	.Clock(Clock), .clear(clear),
-	.PCin(PCin), .PCout(PCout),
-	.IRin(IRin), .CONin(CONin),
-	.ZLowout(Zlowout),
-	.MARin(MARin), .MDRin(MDRin), .MDRout(MDRout),
-	.Read(Read), .Write(Write),
-	.Rin(Rin), .Rout(Rout),
-	.Yin(Yin), .Zin(Zin),
-	.Cout(Cout),
-	.ALU_operation(ALU_operation),
-	.Gra(Gra), .Grb(Grb), .Grc(Grc),
-	.BAout(BAout),
-	.con_ff_out(con_ff_out)
-);
 
-// add test logic here
-initial
-    begin
-		Clock = 0;
-		forever #10 Clock = ~ Clock;
-end
+    // Instance of the Computer
+    Computer SRC(
+        .Clock(Clock), .clear(clear),
+        .PCin(PCin), .PCout(PCout), 	
+        .IRin(IRin),
+        .MARin(MARin), .MDRin(MDRin), .MDRout(MDRout), .Read(Read),
+        .Rin(Rin), .Rout(Rout),
+        .Yin(Yin), .Zin(Zin), .ZLowout(Zlowout), 
+        .Cout(Cout),
+        .ALU_operation(ALU_operation), 
+        .Gra(Gra), .Grb(Grb),  .Grc(Grc), .Glr(Glr),
+        .BAout(BAout)
+    );
 
-initial 
-	begin
-		clear = 1;
-		#25;
-		clear = 0;
-		//initialize memory and registers
-		
-		$readmemh("andi_r7_r4.hex", SRC.memory.mem);
-		SRC.DUT.R7.storage = 32'h00001234;
-		SRC.DUT.R4.storage = 32'h000000f2;
-end
+    initial begin
+        Clock = 0;
+        forever #10 Clock = ~Clock;
+    end
 
-always @(posedge Clock) // finite state machine; if clock rising-edge
-    begin
+    initial begin
+        clear = 1;
+        #25;
+        clear = 0;
+        // Load memory and pre-initialize registers R7 and R4 [cite: 72]
+        $readmemh("andi_r7_r4.hex", SRC.memory.mem);
+        SRC.DUT.R7.storage = 32'h00001234;
+        SRC.DUT.R4.storage = 32'h000000f2;
+    end
+
+    always @(posedge Clock) begin
         case (Present_state)
-            Default : Present_state = Reg_load1a; //skip all reg load steps right now
-            Reg_load1a : Present_state = Reg_load1b;
-            Reg_load1b : Present_state = Reg_load2a;
-            Reg_load2a : Present_state = Reg_load2b;
-            Reg_load2b : Present_state = Reg_load3a;
-            Reg_load3a : Present_state = Reg_load3b;
-            Reg_load3b : Present_state = T0;
+            Default : Present_state = T0;
             T0 : Present_state = T1;
             T1 : Present_state = T2;
             T2 : Present_state = T3;
             T3 : Present_state = T4;
             T4 : Present_state = T5;
-				T5 : Present_state = T6;
-				T6 : Present_state = done;
+            T5 : Present_state = done;
         endcase
     end
 
-always @(negedge Clock) // do the required job in each state
-    begin
-    //clear all signals before switch case
-    PCout <= 0; Zlowout <= 0; MDRout <= 0; Rout <= 0;
-    MARin <= 0; Zin <= 0; PCin <= 0; MDRin <= 0;
-    IRin <= 0; Yin <= 0; Read <= 0; Write <= 0;
-    Rin <= 0; ALU_operation <= NONE;
-    Gra <= 0; Grb <= 0; Grc <= 0;
-	 Cout <= 0; CONin <= 0;
+    always @(negedge Clock) begin
+        // Reset all control signals [cite: 78, 79, 80, 81]
+        PCout <= 0; Zlowout <= 0; MDRout <= 0; Rout <= 0;
+        MARin <= 0; Zin <= 0; PCin <= 0; MDRin <= 0;
+        IRin <= 0; Yin <= 0; Read <= 0; Rin <= 0;
+        ALU_operation <= NONE; Gra <= 0; Grb <= 0; Grc <= 0; Glr <= 0; Cout <= 0; BAout <= 0;
 
-        case (Present_state) // assert the required signals in each clock cycle
-            Default: begin
-                        PCout = 0; Zlowout = 0; MDRout = 0; // initialize the signals
-                        Rout = 0; MARin = 0; Zin = 0;
-                        PCin = 0; MDRin = 0; IRin = 0; Yin = 0;
-                        Read = 0; Write = 0; ALU_operation = NONE;
-                        Rin = 0;
-								Gra = 0; Grb = 0; Grc = 0;
-								Cout = 0; CONin = 0;
-								
-            end
-            T0: begin // see if you need to de-assert these signals
-                        PCout <= 1; MARin <= 1; ALU_operation <= IncPC; Zin <= 1;
-            end
-            T1: begin
-                        Zlowout <= 1; PCin <= 1; Read <= 1; MDRin <= 1;
-            end
-            T2: begin
-                        MDRout <= 1; IRin <= 1;
-            end
-            T3: begin
-                        Grb <= 1; Rout <= 1; Yin <= 1;
-            end
-            T4: begin
-                        Cout <= 1; ALU_operation <= AND; Zin <= 1;
-            end
-            T5: begin
-                        Zlowout <= 1; Gra <= 1; Rin <= 1;
-            end
+        case (Present_state)
+            T0: begin PCout <= 1; MARin <= 1; ALU_operation <= IncPC; Zin <= 1; end
+            T1: begin Zlowout <= 1; PCin <= 1; Read <= 1; MDRin <= 1; end           
+            T2: begin MDRout <= 1; IRin <= 1; end                                  
+            T3: begin Grb <= 1; Rout <= 1; Yin <= 1; end                           
+            T4: begin Cout <= 1; ALU_operation <= AND; Zin <= 1; end                
+            T5: begin Zlowout <= 1; Gra <= 1; Rin <= 1; end                        
         endcase
     end
-	 
-//always @(negedge Clock) begin 
-//	case (Present_state)
-//		T0: begin
-//			$display(
-//				"T0 @ %0t | PC=%0d MAR=%h MDR=%h IR=%h ALU_op=%0d Zlow=%0d reg_select=%b R2=%h R5=%h R6=%h Y=%h Bus=%h",
-//				$time, DUT.PC.storage, DUT.MAR.storage, DUT.MDR.MDR_Reg.storage, DUT.IR.storage, ALU_operation, DUT.RZlow.storage, DUT.reg_decode, DUT.R2.storage, DUT.R5.storage, DUT.R6.storage, DUT.RY.storage, DUT.bus.q,
-//			);
-//		end
-//		T1: begin
-//			$display(
-//				"T1 @ %0t | PC=%0d MAR=%h MDR=%h IR=%h ALU_op=%0d Zlow=%0d reg_select=%b R2=%h R5=%h R6=%h Y=%h Bus=%h",
-//				$time, DUT.PC.storage, DUT.MAR.storage, DUT.MDR.MDR_Reg.storage, DUT.IR.storage, ALU_operation, DUT.RZlow.storage, DUT.reg_decode, DUT.R2.storage, DUT.R5.storage, DUT.R6.storage, DUT.RY.storage, DUT.bus.q,
-//			);
-//		end
-//		T2: begin
-//			$display(
-//				"T2 @ %0t | PC=%0d MAR=%h MDR=%h IR=%h ALU_op=%0d Zlow=%0d reg_select=%b R2=%h R5=%h R6=%h Y=%h Bus=%h",
-//				$time, DUT.PC.storage, DUT.MAR.storage, DUT.MDR.MDR_Reg.storage, DUT.IR.storage, ALU_operation, DUT.RZlow.storage, DUT.reg_decode, DUT.R2.storage, DUT.R5.storage, DUT.R6.storage, DUT.RY.storage, DUT.bus.q,
-//			);
-//		end
-//		T3: begin
-//			$display(
-//				"T3 @ %0t | PC=%0d MAR=%h MDR=%h IR=%h ALU_op=%0d Zlow=%0d reg_select=%b R2=%h R5=%h R6=%h Y=%h Bus=%h",
-//				$time, DUT.PC.storage, DUT.MAR.storage, DUT.MDR.MDR_Reg.storage, DUT.IR.storage, ALU_operation, DUT.RZlow.storage, DUT.reg_decode, DUT.R2.storage, DUT.R5.storage, DUT.R6.storage, DUT.RY.storage, DUT.bus.q,
-//			);
-//		end
-//		T4: begin
-//			$display(
-//				"T4 @ %0t | PC=%0d MAR=%h MDR=%h IR=%h ALU_op=%0d Zlow=%0d reg_select=%b R2=%h R5=%h R6=%h Y=%h Bus=%h",
-//				$time, DUT.PC.storage, DUT.MAR.storage, DUT.MDR.MDR_Reg.storage, DUT.IR.storage, ALU_operation, DUT.RZlow.storage, DUT.reg_decode, DUT.R2.storage, DUT.R5.storage, DUT.R6.storage, DUT.RY.storage, DUT.bus.q,
-//			);
-//		end
-//		T5: begin
-//			$display(
-//				"T5 @ %0t | PC=%0d MAR=%h MDR=%h IR=%h ALU_op=%0d Zlow=%0d reg_select=%b R2=%h R5=%h R6=%h Y=%h Bus=%h",
-//				$time, DUT.PC.storage, DUT.MAR.storage, DUT.MDR.MDR_Reg.storage, DUT.IR.storage, ALU_operation, DUT.RZlow.storage, DUT.reg_decode, DUT.R2.storage, DUT.R5.storage, DUT.R6.storage, DUT.RY.storage, DUT.bus.q,
-//			);
-//		end
-//		done: begin
-//			$display(
-//				"End @ %0t | PC=%0d MAR=%h MDR=%h IR=%h ALU_op=%0d Zlow=%0d reg_select=%b R2=%h R5=%h R6=%h Y=%h Bus=%h",
-//				$time, DUT.PC.storage, DUT.MAR.storage, DUT.MDR.MDR_Reg.storage, DUT.IR.storage, ALU_operation, DUT.RZlow.storage, DUT.reg_decode, DUT.R2.storage, DUT.R5.storage, DUT.R6.storage, DUT.RY.storage, DUT.bus.q,
-//			);
-//			$stop;
-//		end
-//	endcase
-//end
-
-endmodule 
+endmodule
