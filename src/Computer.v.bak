@@ -2,9 +2,8 @@ module Computer(
 	input clock, reset,
     input stop,
 
-    input InPortin,
     input [31:0] in_port_data,
-    output [31:0] out_port_data
+    output [31:0] out_port_data,
 );
 
 //data

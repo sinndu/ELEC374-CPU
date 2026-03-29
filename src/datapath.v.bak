@@ -128,5 +128,5 @@ Bus bus(
 	reg_out[8], reg_out[9], reg_out[10], reg_out[11], reg_out[12], reg_out[13], reg_out[14], reg_out[15], 
 	HIout, LOout, ZHighout, ZLowout, PCout, MDRout, InPortout, Cout, BusMuxOut
 );
-
+x
 endmodule

@@ -1,6 +1,1 @@
-Warning (10268): Verilog HDL information at tb_ld_case2.v(73): always construct contains both blocking and non-blocking assignments File: C:/Users/raele/ELEC374-CPU/src/testbenches/Phase_2/tb_ld_case2.v Line: 73
-Warning (10268): Verilog HDL information at tb_ld_case1.v(73): always construct contains both blocking and non-blocking assignments File: C:/Users/raele/ELEC374-CPU/src/testbenches/Phase_2/tb_ld_case1.v Line: 73
-Warning (10268): Verilog HDL information at tb_addi.v(73): always construct contains both blocking and non-blocking assignments File: C:/Users/raele/ELEC374-CPU/src/testbenches/Phase_2/tb_addi.v Line: 73
-Warning (10273): Verilog HDL warning at RAM.v(25): extended using "x" or "z" File: C:/Users/raele/ELEC374-CPU/src/memory/RAM.v Line: 25
-Warning (10268): Verilog HDL information at tb_ori.v(73): always construct contains both blocking and non-blocking assignments File: C:/Users/raele/ELEC374-CPU/src/testbenches/Phase_2/tb_ori.v Line: 73
-Warning (10268): Verilog HDL information at tb_brzr.v(75): always construct contains both blocking and non-blocking assignments File: C:/Users/raele/ELEC374-CPU/src/testbenches/Phase_2/tb_brzr.v Line: 75
+Warning (10273): Verilog HDL warning at RAM.v(25): extended using "x" or "z" File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/memory/RAM.v Line: 25

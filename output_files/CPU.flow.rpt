@@ -1,5 +1,5 @@
 Flow report for CPU
-Thu Mar 19 17:18:17 2026
+Sat Mar 28 20:33:11 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Mar 19 17:18:17 2026       ;
+; Flow Status                     ; Successful - Sat Mar 28 20:33:11 2026       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; CPU                                         ;
 ; Top-level Entity Name           ; Computer                                    ;
@@ -48,8 +48,8 @@ refer to the applicable agreement for further details.
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 17060                                       ;
-; Total pins                      ; 26                                          ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 68                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/19/2026 17:17:26 ;
+; Start date & time ; 03/28/2026 20:32:43 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPU                 ;
 +-------------------+---------------------+
@@ -78,15 +78,19 @@ refer to the applicable agreement for further details.
 +--------------------------------------+---------------------------------------------+---------------+-------------+-----------------+
 ; Assignment Name                      ; Value                                       ; Default Value ; Entity Name ; Section Id      ;
 +--------------------------------------+---------------------------------------------+---------------+-------------+-----------------+
-; COMPILER_SIGNATURE_ID                ; 38917505025.177395504621668                 ; --            ; --          ; --              ;
+; COMPILER_SIGNATURE_ID                ; 220812849507293.177474436310180             ; --            ; --          ; --              ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; datapath_shl    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_addi         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; datapath_rol    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_st_case1     ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_st_case2     ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; DataPath_tb     ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; DataPath_tb_and ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_jal          ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_ori          ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; datapath_not    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_andi         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_brmi         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; DataPath_tb_div ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; DataPath_tb_sub ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_ld_case2     ;
@@ -94,24 +98,37 @@ refer to the applicable agreement for further details.
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; DataPath_tb_mul ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; datapath_ror    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_ld_case1     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_in_out       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_ldi_case2    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_jr           ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; DataPath_tb_add ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; CLA_32_tb       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_brpl         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_brzr         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; DataPath_tb_or  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_ldi_case1    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; tb_brnz         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; datapath_shra   ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                          ; --            ; --          ; datapath_shr    ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_ld_case1                                 ; --            ; --          ; eda_simulation  ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_ldi_case2                                ; --            ; --          ; eda_simulation  ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                 ; --            ; --          ; eda_simulation  ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)                   ; <None>        ; --          ; --              ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                             ; --            ; --          ; eda_simulation  ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_shl.v  ; --            ; --          ; datapath_shl    ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_addi.v           ; --            ; --          ; tb_addi         ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_rol.v  ; --            ; --          ; datapath_rol    ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_st_case1.v       ; --            ; --          ; tb_st_case1     ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/hex/st_case1.hex    ; --            ; --          ; tb_st_case1     ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_st_case2.v       ; --            ; --          ; tb_st_case2     ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/hex/st_case2.hex    ; --            ; --          ; tb_st_case2     ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath_tb.v               ; --            ; --          ; DataPath_tb     ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_and.v  ; --            ; --          ; DataPath_tb_and ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_jal.v            ; --            ; --          ; tb_jal          ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/hex/jal.hex         ; --            ; --          ; tb_jal          ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_ori.v            ; --            ; --          ; tb_ori          ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_not.v  ; --            ; --          ; datapath_not    ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_andi.v           ; --            ; --          ; tb_andi         ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/hex/brmi_r3_48.hex  ; --            ; --          ; tb_brmi         ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_brmi.v           ; --            ; --          ; tb_brmi         ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_div.v  ; --            ; --          ; DataPath_tb_div ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_sub.v  ; --            ; --          ; DataPath_tb_sub ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_ld_case2.v       ; --            ; --          ; tb_ld_case2     ;
@@ -119,20 +136,34 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_mul.v  ; --            ; --          ; DataPath_tb_mul ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_ror.v  ; --            ; --          ; datapath_ror    ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_ld_case1.v       ; --            ; --          ; tb_ld_case1     ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_in_out.v         ; --            ; --          ; tb_in_out       ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/hex/in_out.hex      ; --            ; --          ; tb_in_out       ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_ldi_case2.v      ; --            ; --          ; tb_ldi_case2    ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/hex/ldi_case2.hex   ; --            ; --          ; tb_ldi_case2    ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_jr.v             ; --            ; --          ; tb_jr           ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_add.v  ; --            ; --          ; DataPath_tb_add ;
-; EDA_TEST_BENCH_FILE                  ; src/testbenches/CLA_32_tb.v                 ; --            ; --          ; CLA_32_tb       ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_brpl.v           ; --            ; --          ; tb_brpl         ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/hex/brpl_r3_48.hex  ; --            ; --          ; tb_brpl         ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_brzr.v           ; --            ; --          ; tb_brzr         ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_or.v   ; --            ; --          ; DataPath_tb_or  ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_ldi_case1.v      ; --            ; --          ; tb_ldi_case1    ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/hex/ldi_case1.hex   ; --            ; --          ; tb_ldi_case1    ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/tb_brnz.v           ; --            ; --          ; tb_brnz         ;
+; EDA_TEST_BENCH_FILE                  ; src/testbenches/Phase_2/hex/brnz_r3_48.hex  ; --            ; --          ; tb_brnz         ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_shra.v ; --            ; --          ; datapath_shra   ;
 ; EDA_TEST_BENCH_FILE                  ; src/testbenches/DataPath/DataPath_tb_shr.v  ; --            ; --          ; datapath_shr    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_shl                             ; --            ; --          ; datapath_shl    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_addi                                     ; --            ; --          ; tb_addi         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_rol                             ; --            ; --          ; datapath_rol    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_st_case1                                 ; --            ; --          ; tb_st_case1     ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_st_case2                                 ; --            ; --          ; tb_st_case2     ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb                                 ; --            ; --          ; DataPath_tb     ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_and                             ; --            ; --          ; DataPath_tb_and ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_jal                                      ; --            ; --          ; tb_jal          ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_ori                                      ; --            ; --          ; tb_ori          ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_not                             ; --            ; --          ; datapath_not    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_andi                                     ; --            ; --          ; tb_andi         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_brmi                                     ; --            ; --          ; tb_brmi         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_div                             ; --            ; --          ; DataPath_tb_div ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_sub                             ; --            ; --          ; DataPath_tb_sub ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_ld_case2                                 ; --            ; --          ; tb_ld_case2     ;
@@ -140,10 +171,15 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_mul                             ; --            ; --          ; DataPath_tb_mul ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_ror                             ; --            ; --          ; datapath_ror    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_ld_case1                                 ; --            ; --          ; tb_ld_case1     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_in_out                                   ; --            ; --          ; tb_in_out       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_ldi_case2                                ; --            ; --          ; tb_ldi_case2    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_jr                                       ; --            ; --          ; tb_jr           ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_add                             ; --            ; --          ; DataPath_tb_add ;
-; EDA_TEST_BENCH_MODULE_NAME           ; CLA_32_tb                                   ; --            ; --          ; CLA_32_tb       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_brpl                                     ; --            ; --          ; tb_brpl         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_brzr                                     ; --            ; --          ; tb_brzr         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_or                              ; --            ; --          ; DataPath_tb_or  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_ldi_case1                                ; --            ; --          ; tb_ldi_case1    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_brnz                                     ; --            ; --          ; tb_brnz         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_shra                            ; --            ; --          ; datapath_shra   ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DataPath_tb_shr                             ; --            ; --          ; datapath_shr    ;
 ; EDA_TEST_BENCH_NAME                  ; DataPath_tb                                 ; --            ; --          ; eda_simulation  ;
@@ -160,31 +196,49 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_NAME                  ; DataPath_tb_or                              ; --            ; --          ; eda_simulation  ;
 ; EDA_TEST_BENCH_NAME                  ; DataPath_tb_add                             ; --            ; --          ; eda_simulation  ;
 ; EDA_TEST_BENCH_NAME                  ; DataPath_tb_sub                             ; --            ; --          ; eda_simulation  ;
-; EDA_TEST_BENCH_NAME                  ; CLA_32_tb                                   ; --            ; --          ; eda_simulation  ;
 ; EDA_TEST_BENCH_NAME                  ; tb_addi                                     ; --            ; --          ; eda_simulation  ;
 ; EDA_TEST_BENCH_NAME                  ; tb_ori                                      ; --            ; --          ; eda_simulation  ;
 ; EDA_TEST_BENCH_NAME                  ; tb_brzr                                     ; --            ; --          ; eda_simulation  ;
 ; EDA_TEST_BENCH_NAME                  ; tb_ld_case1                                 ; --            ; --          ; eda_simulation  ;
 ; EDA_TEST_BENCH_NAME                  ; tb_st_case2                                 ; --            ; --          ; eda_simulation  ;
 ; EDA_TEST_BENCH_NAME                  ; tb_ld_case2                                 ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; tb_andi                                     ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; tb_brnz                                     ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; tb_brpl                                     ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; tb_brmi                                     ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; tb_ldi_case1                                ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; tb_ldi_case2                                ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; tb_st_case1                                 ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; tb_jr                                       ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; tb_jal                                      ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; tb_in_out                                   ; --            ; --          ; eda_simulation  ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; datapath_shl    ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_addi         ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; datapath_rol    ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_st_case1     ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_st_case2     ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; DataPath_tb     ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; DataPath_tb_and ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_jal          ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 300 ns                                      ; --            ; --          ; tb_ori          ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; datapath_not    ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_andi         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_brmi         ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; DataPath_tb_div ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_ld_case2     ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; datapath_neg    ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; DataPath_tb_mul ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; datapath_ror    ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_ld_case1     ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_in_out       ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_ldi_case2    ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_jr           ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; DataPath_tb_add ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; CLA_32_tb       ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_brpl         ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_brzr         ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; DataPath_tb_or  ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_ldi_case1    ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; tb_brnz         ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; datapath_shra   ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                      ; --            ; --          ; datapath_shr    ;
 ; EDA_TIME_SCALE                       ; 1 ps                                        ; --            ; --          ; eda_simulation  ;
@@ -205,8 +259,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:50     ; 2.0                     ; 5081 MB             ; 00:01:19                           ;
-; Total                ; 00:00:50     ; --                      ; --                  ; 00:01:19                           ;
+; Analysis & Synthesis ; 00:00:28     ; 1.0                     ; 4830 MB             ; 00:00:45                           ;
+; Total                ; 00:00:28     ; --                      ; --                  ; 00:00:45                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -215,7 +269,7 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; raelen           ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-TNA4NQD  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
