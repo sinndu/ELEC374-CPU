@@ -12,9 +12,10 @@ reg [31:0] mem [0:511];
 integer idx;
 always@(posedge clk) begin
     if (clear) begin
-        for (idx = 0; idx < 512; idx = idx + 1) begin
-            mem[idx] <= 32'b0;
-        end
+//        for (idx = 0; idx < 512; idx = idx + 1) begin
+//            mem[idx] <= 32'b0;
+//        end
+		  $readmemh("../testbenches/Phase_4/Phase_4.hex", mem);
     end
     else if (write) begin
         mem[addr] <= data_in;

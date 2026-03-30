@@ -8,11 +8,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "reset",
+					"name" : "run",
 					"strict" : false
 				},
 				{
 					"name" : "stop",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
 					"strict" : false
 				},
 				{

@@ -26,7 +26,8 @@ module control_unit(
     //ALU output
     output [3:0] ALU_op,
     output reg clear,
-    output reg tb_stop
+    output reg tb_stop,
+	 output wire run
 );
 
 parameter N_STATES  = 8;
@@ -264,7 +265,7 @@ always @(*) begin
     end
 end
 
-wire run = ~(control_signals[27] | stop); //Halt NOR stop
+assign run = ~(control_signals[27] | stop); //Halt NOR stop
 
 always @ (negedge clock, posedge reset) begin
   if (reset) begin

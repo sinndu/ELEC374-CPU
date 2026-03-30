@@ -8,7 +8,8 @@ module Computer(
     output [7:0] seven_seg_tens,
 
 
-    output tb_stop
+    output tb_stop,
+	 output run
 );
 
 //data
@@ -69,8 +70,8 @@ RAM memory(
 );
 
 control_unit control(
-    .clock(clock), .reset(reset),
-    .stop(stop),
+    .clock(clock), .reset(~reset),
+    .stop(~stop),
     .CON_FF(con_ff_out),
     .IR(IR),
     .HIin(HIin), .LOin(LOin), .CONin(CONin),
@@ -88,13 +89,14 @@ control_unit control(
     .Gra(Gra), .Grb(Grb), .Grc(Grc), .Glr(Glr),
     .ALU_op(ALU_operation),
     .clear(clear),
-    .tb_stop(tb_stop)
+    .tb_stop(tb_stop),
+	 .run(run)
 );
 
 Seven_Seg_Display_Out ones_digit(
     .outputt(seven_seg_ones),
     .clk(clock),
-    .data(out_port_data[3:0])
+    .data(4'b0011)
 );
 
 Seven_Seg_Display_Out tens_digit(
