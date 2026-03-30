@@ -1,4 +1,4 @@
-# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # do CPU_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -7,175 +7,195 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work rtl_work 
-# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/output {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/output/Seven_Seg_Display_Out.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:36:53 on Mar 23,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v 
-# -- Compiling module Computer
+# Start time: 18:23:02 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/output" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/output/Seven_Seg_Display_Out.v 
+# -- Compiling module Seven_Seg_Display_Out
 # 
 # Top level modules:
-# 	Computer
-# End time: 16:36:53 on Mar 23,2026, Elapsed time: 0:00:00
+# 	Seven_Seg_Display_Out
+# End time: 18:23:02 on Mar 29,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/memory {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/memory/RAM.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/datapath.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:36:53 on Mar 23,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/memory" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/memory/RAM.v 
-# -- Compiling module RAM
-# 
-# Top level modules:
-# 	RAM
-# End time: 16:36:54 on Mar 23,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers/MDR.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:36:54 on Mar 23,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers/MDR.v 
-# -- Compiling module MDR
-# 
-# Top level modules:
-# 	MDR
-# End time: 16:36:54 on Mar 23,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/CON_FF.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:36:54 on Mar 23,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/CON_FF.v 
-# -- Compiling module CON_FF
-# 
-# Top level modules:
-# 	CON_FF
-# End time: 16:36:54 on Mar 23,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/Select_encode.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:36:54 on Mar 23,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/select_encode/Select_encode.v 
-# -- Compiling module Select_encode
-# 
-# Top level modules:
-# 	Select_encode
-# End time: 16:36:54 on Mar 23,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/PFA.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:36:55 on Mar 23,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/PFA.v 
-# -- Compiling module PFA
-# 
-# Top level modules:
-# 	PFA
-# End time: 16:36:55 on Mar 23,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:36:55 on Mar 23,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_32.v 
-# -- Compiling module CLA_32
-# 
-# Top level modules:
-# 	CLA_32
-# End time: 16:36:55 on Mar 23,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:36:55 on Mar 23,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_16.v 
-# -- Compiling module CLA_16
-# 
-# Top level modules:
-# 	CLA_16
-# End time: 16:36:55 on Mar 23,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_4.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:36:55 on Mar 23,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/add/CLA_4.v 
-# -- Compiling module CLA_4
-# 
-# Top level modules:
-# 	CLA_4
-# End time: 16:36:55 on Mar 23,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:36:55 on Mar 23,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v 
+# Start time: 18:23:02 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/datapath.v 
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# End time: 16:36:55 on Mar 23,2026, Elapsed time: 0:00:00
+# End time: 18:23:02 on Mar 29,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers/Register_32.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/control {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/control/control_unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:36:56 on Mar 23,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/registers/Register_32.v 
+# Start time: 18:23:02 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/control" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/control/control_unit.v 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 18:23:02 on Mar 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/Computer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:23:02 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/Computer.v 
+# -- Compiling module Computer
+# 
+# Top level modules:
+# 	Computer
+# End time: 18:23:02 on Mar 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/memory {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/memory/RAM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:23:02 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/memory" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/memory/RAM.v 
+# -- Compiling module RAM
+# 
+# Top level modules:
+# 	RAM
+# End time: 18:23:02 on Mar 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/registers {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/registers/MDR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:23:02 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/registers" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/registers/MDR.v 
+# -- Compiling module MDR
+# 
+# Top level modules:
+# 	MDR
+# End time: 18:23:02 on Mar 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/select_encode {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/select_encode/CON_FF.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:23:02 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/select_encode" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/select_encode/CON_FF.v 
+# -- Compiling module CON_FF
+# 
+# Top level modules:
+# 	CON_FF
+# End time: 18:23:03 on Mar 29,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/select_encode {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/select_encode/Select_encode.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:23:03 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/select_encode" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/select_encode/Select_encode.v 
+# -- Compiling module Select_encode
+# 
+# Top level modules:
+# 	Select_encode
+# End time: 18:23:03 on Mar 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/add {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/add/PFA.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:23:03 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/add" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/add/PFA.v 
+# -- Compiling module PFA
+# 
+# Top level modules:
+# 	PFA
+# End time: 18:23:03 on Mar 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/add {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/add/CLA_32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:23:03 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/add" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/add/CLA_32.v 
+# -- Compiling module CLA_32
+# 
+# Top level modules:
+# 	CLA_32
+# End time: 18:23:03 on Mar 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/add {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/add/CLA_16.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:23:03 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/add" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/add/CLA_16.v 
+# -- Compiling module CLA_16
+# 
+# Top level modules:
+# 	CLA_16
+# End time: 18:23:03 on Mar 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/add {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/add/CLA_4.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:23:03 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/add" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/add/CLA_4.v 
+# -- Compiling module CLA_4
+# 
+# Top level modules:
+# 	CLA_4
+# End time: 18:23:03 on Mar 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/registers {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/registers/Register_32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:23:03 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/registers" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/registers/Register_32.v 
 # -- Compiling module Register_32
 # 
 # Top level modules:
 # 	Register_32
-# End time: 16:36:56 on Mar 23,2026, Elapsed time: 0:00:00
+# End time: 18:23:03 on Mar 29,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/bus {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/bus/Bus.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/bus {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/bus/Bus.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:36:56 on Mar 23,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/bus" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/bus/Bus.v 
+# Start time: 18:23:03 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/bus" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/bus/Bus.v 
 # -- Compiling module Bus
 # 
 # Top level modules:
 # 	Bus
-# End time: 16:36:56 on Mar 23,2026, Elapsed time: 0:00:00
+# End time: 18:23:03 on Mar 29,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/mul {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/mul {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:36:56 on Mar 23,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/mul" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v 
+# Start time: 18:23:03 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/mul" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/mul/Booth_Multiplier.v 
 # -- Compiling module Booth_Multiplier
 # 
 # Top level modules:
 # 	Booth_Multiplier
-# End time: 16:36:56 on Mar 23,2026, Elapsed time: 0:00:00
+# End time: 18:23:03 on Mar 29,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/div {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/div {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/div/NR_Division.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:36:56 on Mar 23,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/div" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/div/NR_Division.v 
+# Start time: 18:23:03 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/div" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/div/NR_Division.v 
 # -- Compiling module NR_Division
 # 
 # Top level modules:
 # 	NR_Division
-# End time: 16:36:56 on Mar 23,2026, Elapsed time: 0:00:00
+# End time: 18:23:03 on Mar 29,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:36:56 on Mar 23,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/alu/ALU.v 
+# Start time: 18:23:03 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/alu/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 16:36:56 on Mar 23,2026, Elapsed time: 0:00:00
+# End time: 18:23:03 on Mar 29,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2 {C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3 {C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:36:56 on Mar 23,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2" C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v 
-# -- Compiling module tb_ldi_case2
+# Start time: 18:23:03 on Mar 29,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3" C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v 
+# -- Compiling module phase_3_tb
 # 
 # Top level modules:
-# 	tb_ldi_case2
-# End time: 16:36:57 on Mar 23,2026, Elapsed time: 0:00:01
+# 	phase_3_tb
+# End time: 18:23:03 on Mar 29,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_ldi_case2
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_ldi_case2 
-# Start time: 16:36:57 on Mar 23,2026
-# Loading work.tb_ldi_case2
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  phase_3_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" phase_3_tb 
+# Start time: 18:23:03 on Mar 29,2026
+# Loading work.phase_3_tb
 # Loading work.Computer
 # Loading work.datapath
 # Loading work.Register_32
@@ -191,60 +211,143 @@
 # Loading work.NR_Division
 # Loading work.Bus
 # Loading work.RAM
-# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Too few port connections. Expected 36, found 22.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ldi_case2/SRC File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'in_port_data'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'out_port_data'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'HIin'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'HIout'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'LOin'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'LOout'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'ZHighout'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'Cin'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'InPortin'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'InPortout'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'OutPortin'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'OutPortout'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'Glr'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'con_ff_out'.
-# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v(28): [TFMPC] - Too few port connections. Expected 38, found 37.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ldi_case2/SRC/DUT File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v(28): [TFMPC] - Missing connection for port 'Cin'.
+# Loading work.control_unit
+# Loading work.Seven_Seg_Display_Out
+# ** Warning: (vsim-3017) C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v(10): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /phase_3_tb/SRC File: C:/Users/22nkj/Documents/374/ELEC374-CPU/src/Computer.v
+# ** Warning: (vsim-3722) C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v(10): [TFMPC] - Missing connection for port 'seven_seg_ones'.
+# ** Warning: (vsim-3722) C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v(10): [TFMPC] - Missing connection for port 'seven_seg_tens'.
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: raele  Hostname: RAELEN  ProcessID: 66896
-#           Attempting to use alternate WLF file "./wlftzfxym4".
+#           Attempting to use alternate WLF file "./wlft9zm7bz".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftzfxym4
+#           Using alternate file: ./wlft9zm7bz
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run 500 ns
-do C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/simulation/modelsim/waves/wave_ld.do
+# run -all
+# ** Note: $stop    : C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v(35)
+#    Time: 5300 ns  Iteration: 2  Instance: /phase_3_tb
+# Break in Module phase_3_tb at C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v line 35
+do C:/Users/22nkj/Documents/374/ELEC374-CPU/simulation/modelsim/waves/wave_p3.do
+# ** Error: (vish-4014) No objects found matching 'sim:/Clock'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 5
+# ** Error: (vish-4014) No objects found matching '/clear'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 6
+# ** Error: (vish-4014) No objects found matching '/PCin'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 7
+# ** Error: (vish-4014) No objects found matching '/PCout'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 8
+# ** Error: (vish-4014) No objects found matching '/IRin'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 9
+# ** Error: (vish-4014) No objects found matching '/MARin'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 10
+# ** Error: (vish-4014) No objects found matching '/MDRin'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 11
+# ** Error: (vish-4014) No objects found matching '/MDRout'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 12
+# ** Error: (vish-4014) No objects found matching '/Yin'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 14
+# ** Error: (vish-4014) No objects found matching '/Zin'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 15
 # ** Error: (vish-4014) No objects found matching '/ZLowout'.
-# Executing ONERROR command at macro C:\Users\asnar\OneDrive\Documents\ELEC374\ELEC374-CPU\simulation\modelsim\waves\wave_ld.do line 19
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 16
+# ** Error: (vish-4014) No objects found matching '/Cout'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 17
+# ** Error: (vish-4014) No objects found matching '/Gra'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 19
+# ** Error: (vish-4014) No objects found matching '/Grb'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 20
+# ** Error: (vish-4014) No objects found matching '/Grc'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 21
+# ** Error: (vish-4014) No objects found matching '/Rin'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 23
+# ** Error: (vish-4014) No objects found matching '/Rout'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 24
+# ** Error: (vish-4014) No objects found matching '/Read'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 26
+# ** Error: (vish-4014) No objects found matching '/Write'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 27
+# ** Error: invalid command name "MDR,"
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 33
+# ** Error: (vish-4014) No objects found matching '/SRC/DUT/MDR/storage'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 34
+# ** Error: invalid command name "R0-R15"
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 38
+# ** Error: invalid command name "HI,"
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 56
+# ** Error: invalid command name "0x89,"
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 60
+# ** Error: invalid command name "137"
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 61
+# ** Error: invalid command name "163"
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 62
 restart
-# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Too few port connections. Expected 36, found 22.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ldi_case2/SRC File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'in_port_data'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'out_port_data'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'HIin'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'HIout'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'LOin'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'LOout'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'ZHighout'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'Cin'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'InPortin'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'InPortout'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'OutPortin'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'OutPortout'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'Glr'.
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/testbenches/Phase_2/tb_ldi_case2.v(20): [TFMPC] - Missing connection for port 'con_ff_out'.
-# ** Warning: (vsim-3017) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v(28): [TFMPC] - Too few port connections. Expected 38, found 37.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ldi_case2/SRC/DUT File: C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/datapath.v
-# ** Warning: (vsim-3722) C:/Users/asnar/OneDrive/Documents/ELEC374/ELEC374-CPU/src/Computer.v(28): [TFMPC] - Missing connection for port 'Cin'.
-run 500ns
-# End time: 17:06:23 on Mar 23,2026, Elapsed time: 0:29:26
-# Errors: 3, Warnings: 36
+# ** Warning: (vsim-3017) C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v(10): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /phase_3_tb/SRC File: C:/Users/22nkj/Documents/374/ELEC374-CPU/src/Computer.v
+# ** Warning: (vsim-3722) C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v(10): [TFMPC] - Missing connection for port 'seven_seg_ones'.
+# ** Warning: (vsim-3722) C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v(10): [TFMPC] - Missing connection for port 'seven_seg_tens'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v(35)
+#    Time: 5300 ns  Iteration: 2  Instance: /phase_3_tb
+# Break in Module phase_3_tb at C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v line 35
+add wave -position insertpoint  \
+{sim:/phase_3_tb/SRC/memory/mem[137]}
+add wave -position insertpoint  \
+{sim:/phase_3_tb/SRC/memory/mem[163]}
+restart
+# ** Warning: (vsim-3017) C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v(10): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /phase_3_tb/SRC File: C:/Users/22nkj/Documents/374/ELEC374-CPU/src/Computer.v
+# ** Warning: (vsim-3722) C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v(10): [TFMPC] - Missing connection for port 'seven_seg_ones'.
+# ** Warning: (vsim-3722) C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v(10): [TFMPC] - Missing connection for port 'seven_seg_tens'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v(35)
+#    Time: 5300 ns  Iteration: 2  Instance: /phase_3_tb
+# Break in Module phase_3_tb at C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v line 35
+do C:/Users/22nkj/Documents/374/ELEC374-CPU/simulation/modelsim/waves/wave_p3.do
+# ** Error: invalid command name "MDR,"
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 31
+# ** Error: (vish-4014) No objects found matching '/SRC/DUT/MDR/storage'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 32
+# ** Error: invalid command name "R0-R15"
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 36
+# ** Error: invalid command name "HI,"
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 54
+# ** Error: invalid command name "0x89,"
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 58
+# ** Error: invalid command name "137"
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 59
+# ** Error: invalid command name "163"
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 60
+do C:/Users/22nkj/Documents/374/ELEC374-CPU/simulation/modelsim/waves/wave_p3.do
+# ** Error: (vish-4014) No objects found matching '/SRC/DUT/MDR/storage'.
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 31
+# ** Error: invalid command name "137"
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 58
+# ** Error: invalid command name "163"
+# Executing ONERROR command at macro C:\Users\22nkj\Documents\374\ELEC374-CPU\simulation\modelsim\waves\wave_p3.do line 59
+add wave -position insertpoint  \
+{sim:/phase_3_tb/SRC/memory/mem[4]}
+do C:/Users/22nkj/Documents/374/ELEC374-CPU/simulation/modelsim/waves/wave_p3.do
+restart
+# ** Warning: (vsim-3017) C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v(10): [TFMPC] - Too few port connections. Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /phase_3_tb/SRC File: C:/Users/22nkj/Documents/374/ELEC374-CPU/src/Computer.v
+# ** Warning: (vsim-3722) C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v(10): [TFMPC] - Missing connection for port 'seven_seg_ones'.
+# ** Warning: (vsim-3722) C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v(10): [TFMPC] - Missing connection for port 'seven_seg_tens'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v(35)
+#    Time: 5300 ns  Iteration: 2  Instance: /phase_3_tb
+# Break in Module phase_3_tb at C:/Users/22nkj/Documents/374/ELEC374-CPU/src/testbenches/Phase_3/phase_3_tb.v line 35
+do C:/Users/22nkj/Documents/374/ELEC374-CPU/simulation/modelsim/waves/wave_p3.do

@@ -1,0 +1,54 @@
+@00000000
+8A800043 // ldi   R5, 0x43    ; 2026 Phase 3 Program ; R5 = 0x43
+8AA80006 // ldi   R5, 6(R5)   ; R5 = 0x49
+82000089 // ld    R4, 0x89    ; R4 = (0x89) = 0xA7
+8A200004 // ldi   R4, 4(R4)   ; R4 = 0xAB
+8027FFF8 // ld    R0, -8(R4)  ; R0 = (0xA3) = 0x68
+89000004 // ldi   R2, 4       ; R2 = 4
+8A800087 // ldi   R5, 0x87    ; R5 = 0x87
+AA980003 // brmi  R5, 3       ; continue with the next instruction (will not branch)
+8AA80005 // ldi   R5, 5(R5)   ; R5 = 0x8C
+80AFFFFD // ld    R1, -3(R5)  ; R1 = (0x8C - 3) = 0xA7
+D0000000 // nop               
+A8900002 // brpl  R1, 2       ; continue with the instruction at “target” (will branch)
+89A80007 // ldi   R3, 7(R5)   ; this instruction will not execute
+8B9FFFFC // ldi   R7, -4(R3)  ; this instruction will not execute
+//   target:
+03A90000 // add   R7, R5, R2  ; R7 = 0x90
+48880003 // addi  R1, R1, 3   ; R1 = 0xAA
+70880000 // neg   R1, R1      ; R1 = 0xFFFFFF56
+78880000 // not   R1, R1      ; R1 = 0xA9
+5088000F // andi  R1, R1, 0xF ; R1 = 9
+3A010000 // ror   R4, R0, R2  ; R4 = 0x80000006
+58A00005 // ori   R1, R4, 5   ; R1 = 0x80000007
+2A090000 // shra  R4, R1, R2  ; R4 = 0xF8000000
+22A90000 // shr   R5, R5, R2  ; R5 = 0x8
+928000A3 // st    0xA3, R5    ; (0xA3) = 0x8 new value in memory with address 0xA3
+42810000 // rol   R5, R0, R2  ; R5 = 0x680
+1B900000 // or    R7, R2, R0  ; R7 = 0x6C
+12280000 // and   R4, R5, R0  ; R4 = 0
+93A00089 // st    0x89(R4), R7; (0x89) = 0x6C new value in memory with address 0x89
+082B8000 // sub   R0, R5, R7  ; R0 = 0x614
+32290000 // shl   R4, R5, R2  ; R4 = 0x6800
+8B800007 // ldi   R7, 7       ; R7 = 7
+89800019 // ldi   R3, 0x19    ; R3 = 0x19
+69B80000 // mul   R3, R7      ; HI = 0; LO = 0xAF
+C0800000 // mfhi  R1          ; R1 = 0
+CB000000 // mflo  R6          ; R6 = 0xAF
+61B80000 // div   R3, R7      ; HI = 4 , LO = 3
+8C380002 // ldi   R8, 2(R7)   ; R8 = 9 setting up argument registers
+8C9FFFFC // ldi   R9, -4(R3)  ; R9 = 0x15 R8, R9, R10, and R11
+8D300003 // ldi   R10, 3(R6)  ; R10 = 0xB2
+8D880005 // ldi   R11, 5(R1)  ; R11 = 5
+9D000000 // jal   R10         ; subA address 0xB2 in R10 into PC; return address 0x29 into R12
+D8000000 // halt              ; upon return, the program halts
+@00000089
+000000A7
+@000000A3
+00000068
+//   subA:
+@000000B2
+07450000 // add R14, R8, R10  ; procedure subA ; R13 and R14 are return value registers
+0ECD8000 // sub R13, R9, R11  ; R14 = 0xBB, R13 = 0x10
+0F768000 // sub R14, R14, R13 ; R14 = 0xAB
+A6000000 // jr R12            ; return from subA procedure with address 0x29 in R12

@@ -29,9 +29,9 @@ and(mi, bus_neg, IR_decode[3]);
 
 
 //latched input
-always@(CONin or IR_output or BusMuxOut) begin
+always@(CONin or D) begin
     if (CONin) begin
-        CON <= D;
+        CON = D;
     end
 end
 

@@ -23,7 +23,10 @@ module control_unit(
                Rin, Rout,
                Gra, Grb, Grc, Glr,
 
-    output reg clear
+    //ALU output
+    output [3:0] ALU_op,
+    output reg clear,
+    output reg tb_stop
 );
 
 parameter N_STATES  = 8;
@@ -89,6 +92,9 @@ parameter ADD = 5'b00000, SUB = 5'b00001, AND = 5'b00010, OR = 5'b00011,
 //LUT for opcodes
 //Each entry is the T_enable value for that opcode
 reg [7:0] opcode_lut [0:27]; 
+
+//reg for signal assertion
+reg [N_SIGNALS-1:0] control_signals;
 
 integer i;
 initial begin
@@ -167,7 +173,7 @@ initial begin
     ctrl_rom[ROR][T5]   = s_Gra   | s_Rin  | s_ZLowout;
 
     ctrl_rom[ROL][T3]   = s_Grb   | s_Rout | s_Yin;
-    ctrl_rom[ROL][T4]   = s_Grc   | s_Rout | s_Zin | s_ROR;
+    ctrl_rom[ROL][T4]   = s_Grc   | s_Rout | s_Zin | s_ROL;
     ctrl_rom[ROL][T5]   = s_Gra   | s_Rin  | s_ZLowout;
 
     ctrl_rom[ADDI][T3]  = s_Grb   | s_Rout | s_Yin;
@@ -183,12 +189,12 @@ initial begin
     ctrl_rom[ORI][T5]   = s_Gra   | s_Rin  | s_ZLowout;
 
     ctrl_rom[DIV][T3]   = s_Gra   | s_Rout | s_Yin;
-    ctrl_rom[DIV][T4]   = s_Grb   | s_Zin  | s_DIV;
+    ctrl_rom[DIV][T4]   = s_Grb   | s_Rout | s_Zin  | s_DIV;
     ctrl_rom[DIV][T5]   = s_LOin  | s_ZLowout;
     ctrl_rom[DIV][T6]   = s_HIin  | s_ZHighout;
 
     ctrl_rom[MUL][T3]   = s_Gra   | s_Rout | s_Yin;
-    ctrl_rom[MUL][T4]   = s_Grb   | s_Zin  | s_MUL;
+    ctrl_rom[MUL][T4]   = s_Grb   | s_Rout | s_Zin  | s_MUL;
     ctrl_rom[MUL][T5]   = s_LOin  | s_ZLowout;
     ctrl_rom[MUL][T6]   = s_HIin  | s_ZHighout;
 
@@ -226,30 +232,35 @@ initial begin
 
     ctrl_rom[IN][T3]    = s_Gra   | s_Rin  | s_InPortout;
 
-    ctrl_rom[IN][T3]    = s_Gra   | s_Rout | s_OutPortin;
+    ctrl_rom[OUT][T3]   = s_Gra   | s_Rout | s_OutPortin;
 
     ctrl_rom[MFHI][T3]  = s_Gra   | s_Rin  | s_HIout;
 
     ctrl_rom[MFLO][T3]  = s_Gra   | s_Rin  | s_LOout;
 
-    ctrl_rom[MFLO][T3]  = s_Halt;
+    ctrl_rom[HALT][T3]  = s_Halt;
 
+    control_signals = 32'b0;
+    tb_stop = 0;
 end
 
 //IR opcode decoding
 wire [4:0] instr_id = IR[31:27];
 wire [7:0] T_enable = opcode_lut[instr_id];
 
-//reg's for FSM and signal assertion
-reg [N_SIGNALS-1:0] control_signals;
+//reg's for FSM
 reg [3:0] current_state, next_state;
 
 always @(*) begin
-    control_signals = ctrl_rom[instr_id][current_state];
-    
-    //handling PCin for branch instruction now
-    if (instr_id == BR && current_state == T6) begin
-        control_signals[3] = CON_FF; //3 is the PCin bit
+    if (current_state != RESET_STATE) begin
+        control_signals = ctrl_rom[instr_id][current_state];
+        //handling PCin for branch instruction now
+        if (instr_id == BR && current_state == T6) begin
+            control_signals[3] = CON_FF; //3 is the PCin bit
+        end
+    end
+    else begin 
+        control_signals = 32'b0;
     end
 end
 
@@ -264,6 +275,9 @@ always @ (negedge clock, posedge reset) begin
     clear <= 0;
     current_state <= next_state;
   end
+  else begin //send stop command to testbench
+    tb_stop <= 1;
+  end
 end
 
 always @(*) begin
@@ -273,7 +287,7 @@ always @(*) begin
         default:
             //T_enable stores whether to transition FROM that state
             if (T_enable[current_state]) begin
-                next_state = current_state + 1;
+                next_state = current_state + 4'b1;
             end
             else begin
                 next_state = T0;
@@ -308,5 +322,6 @@ assign Gra          = control_signals[23];
 assign Grb          = control_signals[24];
 assign Grc          = control_signals[25];
 assign Glr          = control_signals[26];
+assign ALU_op       = control_signals[31:28];
 
 endmodule

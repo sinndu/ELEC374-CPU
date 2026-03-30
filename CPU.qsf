@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE 5CEBA4F23C7
 set_global_assignment -name TOP_LEVEL_ENTITY Computer
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:58:51  JANUARY 19, 2026"
-set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Standard Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -80,7 +80,7 @@ set_global_assignment -name EDA_TEST_BENCH_NAME datapath_shr -section_id eda_sim
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id datapath_shr
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id datapath_shr
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME DataPath_tb_shr -section_id datapath_shr
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_ldi_case2 -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH phase_3_tb -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME datapath_shra -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id datapath_shra
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id datapath_shra
@@ -176,6 +176,31 @@ set_global_assignment -name EDA_TEST_BENCH_NAME tb_in_out -section_id eda_simula
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_in_out
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id tb_in_out
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_in_out -section_id tb_in_out
+set_global_assignment -name EDA_TEST_BENCH_NAME phase_3_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id phase_3_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME phase_3_tb -section_id phase_3_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME phase_4_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id phase_4_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME phase_4_tb -section_id phase_4_tb
+set_global_assignment -name VERILOG_FILE src/output/Seven_Seg_Display_Out.v
+set_global_assignment -name VERILOG_FILE src/datapath.v
+set_global_assignment -name VERILOG_FILE src/control/control_unit.v
+set_global_assignment -name VERILOG_FILE src/Computer.v
+set_global_assignment -name VERILOG_FILE src/memory/RAM.v
+set_global_assignment -name VERILOG_FILE src/registers/MDR.v
+set_global_assignment -name VERILOG_FILE src/select_encode/CON_FF.v
+set_global_assignment -name VERILOG_FILE src/select_encode/Select_encode.v
+set_global_assignment -name VERILOG_FILE src/alu/add/RCA_4.v
+set_global_assignment -name VERILOG_FILE src/alu/add/PFA.v
+set_global_assignment -name VERILOG_FILE src/alu/add/CLA_32.v
+set_global_assignment -name VERILOG_FILE src/alu/add/CLA_16.v
+set_global_assignment -name VERILOG_FILE src/alu/add/CLA_4.v
+set_global_assignment -name VERILOG_FILE src/registers/Register_32.v
+set_global_assignment -name VERILOG_FILE src/bus/Bus.v
+set_global_assignment -name VERILOG_FILE src/alu/mul/Booth_Multiplier.v
+set_global_assignment -name VERILOG_FILE src/alu/div/NR_Division.v
+set_global_assignment -name VERILOG_FILE src/alu/ALU.v
+set_global_assignment -name SOURCE_FILE db/CPU.cmp.rdb
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath_tb.v -section_id DataPath_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_shl.v -section_id datapath_shl
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/DataPath/DataPath_tb_ror.v -section_id datapath_ror
@@ -215,22 +240,8 @@ set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_jal.v
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/hex/jal.hex -section_id tb_jal
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/tb_in_out.v -section_id tb_in_out
 set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_2/hex/in_out.hex -section_id tb_in_out
-set_global_assignment -name VERILOG_FILE src/datapath.v
-set_global_assignment -name VERILOG_FILE src/control/control_unit.v
-set_global_assignment -name VERILOG_FILE src/Computer.v
-set_global_assignment -name VERILOG_FILE src/memory/RAM.v
-set_global_assignment -name VERILOG_FILE src/registers/MDR.v
-set_global_assignment -name VERILOG_FILE src/select_encode/CON_FF.v
-set_global_assignment -name VERILOG_FILE src/select_encode/Select_encode.v
-set_global_assignment -name VERILOG_FILE src/alu/add/RCA_4.v
-set_global_assignment -name VERILOG_FILE src/alu/add/PFA.v
-set_global_assignment -name VERILOG_FILE src/alu/add/CLA_32.v
-set_global_assignment -name VERILOG_FILE src/alu/add/CLA_16.v
-set_global_assignment -name VERILOG_FILE src/alu/add/CLA_4.v
-set_global_assignment -name VERILOG_FILE src/registers/Register_32.v
-set_global_assignment -name VERILOG_FILE src/bus/Bus.v
-set_global_assignment -name VERILOG_FILE src/alu/mul/Booth_Multiplier.v
-set_global_assignment -name VERILOG_FILE src/alu/div/NR_Division.v
-set_global_assignment -name VERILOG_FILE src/alu/ALU.v
-set_global_assignment -name SOURCE_FILE db/CPU.cmp.rdb
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_3/phase_3_tb.v -section_id phase_3_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_3/Phase_3.hex -section_id phase_3_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_4/phase_4_tb.v -section_id phase_4_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE src/testbenches/Phase_4/Phase_4.hex -section_id phase_4_tb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

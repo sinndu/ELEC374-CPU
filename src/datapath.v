@@ -13,8 +13,8 @@ module datapath(
 	input wire Rin, Rout, 
     input wire HIin, HIout, LOin, LOout,
     input wire Yin, Zin, ZHighout, ZLowout, 
-	input wire Cin, Cout,
-    input wire InPortin, InPortout,
+	input wire Cout,
+    input wire InPortout,
     input wire OutPortin,
 	input wire [3:0] ALU_operation,
     input wire Gra, Grb, Grc, Glr,
@@ -90,7 +90,8 @@ Register_32 PC(clock, clear, PCin, BusMuxOut, BusMuxIn_PC);
 Register_32 MAR(clock, clear, MARin, BusMuxOut, MAR_out);
 
 //IO
-Register_32 InPort(clock, clear, InPortin, in_inport_data, BusMuxIn_InPort);
+//No strobe (enable) input for IR -- data will be read each clock cycle
+Register_32 InPort(clock, clear, 1'b1, in_inport_data, BusMuxIn_InPort);
 Register_32 OutPort(clock, clear, OutPortin, BusMuxOut, out_outport_data);  
 
 //ALU
